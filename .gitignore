@@ -57,3 +57,10 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+
+# Others
+
+tree.md
+storybooktree.md
+storetree.md

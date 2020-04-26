@@ -1,0 +1,14 @@
+[
+  {
+    "key": "DARK",
+    "backgroundColor": "#101112",
+    "color": "#ffffff",
+    "statusBar": "light-content"
+  },
+  {
+    "key": "WHITE",
+    "backgroundColor": "#ffffff",
+    "color": "#101112",
+    "statusBar": "dark-content"
+  }
+]
