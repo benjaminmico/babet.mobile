@@ -1,14 +1,70 @@
 [
   {
-    "key": "DARK",
+    "key": "dark",
     "backgroundColor": "#101112",
     "color": "#ffffff",
-    "statusBar": "light-content"
+    "statusBar": "light-content",
+    "colors": {
+      "components": {
+        "background": "#101112",
+        "backgroundContainer": "#2F3134",
+        "backgroundFilter": "#F3F2F2",
+        "backgroundAction": "#5100FF",
+        "icon": "#FFFFFF"
+      },
+      "texts": {
+        "title": "#000000",
+        "text": "#FFFFFF",
+        "description": "#ADADAD",
+        "labelInput": "#7C7C7C",
+        "buttons": {
+          "actions": "#5100FF",
+          "filter": "#3E3E3E"
+        },
+        "filters": {
+          "selected": "#000000",
+          "unselected": "#A3A2A2"
+        }
+      },
+      "palette": {
+        "purple": "#5100FF",
+        "black": "#000000",
+        "white": "#FFFFFF"
+      }
+    }
   },
   {
-    "key": "WHITE",
+    "key": "white",
     "backgroundColor": "#ffffff",
     "color": "#101112",
-    "statusBar": "dark-content"
+    "statusBar": "dark-content",
+    "colors": {
+      "components": {
+        "background": "#FFFFFF",
+        "backgroundContainer": "#FFFFFF",
+        "backgroundFilter": "#F3F2F2",
+        "backgroundAction": "#5100FF",
+        "icon": "#000000"
+      },
+      "texts": {
+        "title": "#000000",
+        "text": "#000000",
+        "description": "#ADADAD",
+        "labelInput": "#7C7C7C",
+        "buttons": {
+          "actions": "#5100FF",
+          "filter": "#3E3E3E"
+        },
+        "filters": {
+          "selected": "#000000",
+          "unselected": "#A3A2A2"
+        }
+      },
+      "palette": {
+        "purple": "#5100FF",
+        "black": "#000000",
+        "white": "#FFFFFF"
+      }
+    }
   }
 ]
