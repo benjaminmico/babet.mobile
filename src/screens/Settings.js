@@ -9,8 +9,26 @@ import {
 
 import { withTheme } from "../core/themeProvider";
 
-SettingsScreen = ({ theme, themes, setTheme }) => {
-  renderItem = ({ item }) => (
+
+const style = StyleSheet.create({
+  container: { flex: 1 },
+  headline: {
+    marginTop: 60,
+    marginBottom: 20,
+    marginLeft: 20,
+    fontWeight: "200",
+    fontSize: 24,
+  },
+  itemContainer: {
+    height: 100,
+    justifyContent: "center",
+    paddingLeft: 20,
+  },
+  itemText: { fontWeight: "bold" },
+});
+
+const SettingsScreen = ({ theme, themes, setTheme }) => {
+  const renderItem = ({ item }) => (
     <TouchableOpacity onPress={() => setTheme(item.key)}>
       <View
         style={[
@@ -39,21 +57,6 @@ SettingsScreen = ({ theme, themes, setTheme }) => {
   );
 };
 
-const style = StyleSheet.create({
-  container: { flex: 1 },
-  headline: {
-    marginTop: 60,
-    marginBottom: 20,
-    marginLeft: 20,
-    fontWeight: "200",
-    fontSize: 24,
-  },
-  itemContainer: {
-    height: 100,
-    justifyContent: "center",
-    paddingLeft: 20,
-  },
-  itemText: { fontWeight: "bold" },
-});
+
 
 export default withTheme(SettingsScreen);

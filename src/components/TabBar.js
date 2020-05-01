@@ -1,22 +1,29 @@
-import React from "react";
-import { StyleSheet } from "react-native";
-import { BottomTabBar } from "react-navigation";
+// @flow
 
-import { withTheme } from "../core/themeProvider";
+import React from 'react'
+import {StyleSheet} from 'react-native'
+import {BottomTabBar} from 'react-navigation'
 
-const TabBar = (props) => {
+import {withTheme} from '../core/themeProvider'
+
+const style = StyleSheet.create({
+  label: {fontSize: 22, fontWeight: '400'},
+})
+
+const TabBar = props => {
+  const {
+    theme: {backgroundColor},
+  } = props
+  const {label} = style
+
   return (
     <BottomTabBar
       {...props}
-      activeTintColor={props.theme.backgroundColor}
-      labelStyle={style.label}
-      getLabelText={({ route }) => route.key.toUpperCase()}
+      activeTintColor={backgroundColor}
+      labelStyle={label}
+      getLabelText={({route}) => route.key.toUpperCase()}
     />
-  );
-};
+  )
+}
 
-const style = StyleSheet.create({
-  label: { fontSize: 22, fontWeight: "400" },
-});
-
-export default withTheme(TabBar);
+export default withTheme(TabBar)
