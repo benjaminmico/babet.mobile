@@ -13,5 +13,7 @@ module.exports = {
   moduleNameMapper: {
     'styled-components': '<rootDir>/node_modules/styled-components/native/dist/styled-components.native.cjs.js',
     'react-native-doc-viewer': '<rootDir>/mocks/react-native-doc-viewer.js',
+    '\\.svg': '<rootDir>/__mocks__/svgMock.js',
   },
+  verbose: true,
 }

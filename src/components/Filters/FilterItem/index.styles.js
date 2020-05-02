@@ -3,9 +3,12 @@ import styled from 'styled-components'
 export const FilterItemContainer = styled.TouchableOpacity`
   background-color: ${props => props.backgroundColor};
   border-radius: 8px;
-  margin-top: ${props => (props.index === 0 ? '0px' : '11px')};
-  width: 74px;
+  flex-direction: row;
+  margin-top: ${props => (props.index === 0 ? '0px' : props.horizontal ? '0px' : '11px')};
+  margin-left: ${props => (props.index === 0 ? '0px' : props.horizontal ? '19px' : '0px')};
   height: 24px;
+  padding-left: 9px;
+  padding-right: 9px;
   justify-content: center;
   align-items: center;
 `

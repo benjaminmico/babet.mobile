@@ -16,15 +16,15 @@ const style = StyleSheet.create({
 })
 
 const filters = [
-  {label: '1 sem.', selected: true},
-  {label: '1 mois', selected: false},
-  {label: 'Début', selected: false},
+  {id: 0, label: '1 sem.', selected: true},
+  {id: 1, label: '1 mois', selected: false},
+  {id: 2, label: 'Début', selected: false},
 ]
 
 const MainScreen = ({theme}) => {
   return (
     <View style={[style.container, {backgroundColor: theme.backgroundColor}]}>
-      <Filters items={filters} />
+      <Filters items={filters} multiFilters horizontal />
       <StatusBar barStyle={theme.statusBar} />
     </View>
   )

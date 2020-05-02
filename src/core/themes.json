@@ -23,7 +23,8 @@
         },
         "filters": {
           "selected": "#000000",
-          "unselected": "#A3A2A2"
+          "unselected": "#A3A2A2",
+          "multiFilter": "#5100FF"
         }
       },
       "palette": {
@@ -57,7 +58,8 @@
         },
         "filters": {
           "selected": "#000000",
-          "unselected": "#A3A2A2"
+          "unselected": "#A3A2A2",
+          "multiFilter": "#5100FF"
         }
       },
       "palette": {

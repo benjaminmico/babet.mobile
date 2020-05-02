@@ -37,6 +37,7 @@
     "react-native-reanimated": "^1.8.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.7.0",
+    "react-native-svg": "^12.1.0",
     "styled-components": "^5.1.0",
     "xhr2": "^0.2.0"
   },
@@ -55,6 +56,7 @@
     "jest": "^25.4.0",
     "metro-react-native-babel-preset": "^0.59.0",
     "react-dom": "16.11.0",
+    "react-native-svg-transformer": "^0.14.3",
     "react-test-renderer": "^16.13.1"
   },
   "jest": {

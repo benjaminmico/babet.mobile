@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="10px" viewBox="0 0 13 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Commons/Selections/SelectedItemWithTick" transform="translate(-82.000000, -7.000000)" fill="#5100FF" fill-rule="nonzero">
+            <g id="SelectedItem">
+                <path d="M88.5784276,16.4977954 C88.2221676,16.8095229 88.1860668,17.3510338 88.4977944,17.7072939 C88.8095219,18.0635539 89.3510328,18.0996546 89.7072928,17.7879271 L93.1358649,14.7879266 C93.516333,14.455017 93.5275111,13.8668317 93.1599668,13.5197065 L85.4456798,6.23399096 C85.1015212,5.9089523 84.5590296,5.92445205 84.233991,6.26861064 C83.9089523,6.61276922 83.9244521,7.15526077 84.2686106,7.48029943 L91.2974517,14.1186493 L88.5784276,16.4977954 Z" id="Shape" transform="translate(88.714288, 12.000008) rotate(-270.000000) translate(-88.714288, -12.000008) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
