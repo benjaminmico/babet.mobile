@@ -7,7 +7,7 @@ import {ThemeContextProvider} from '@core/themeProvider'
 import {mount} from 'enzyme'
 import FilterItem from '.'
 
-describe.only('./FilterItem', () => {
+describe.only('FilterItem', () => {
   describe('Integrity tests', () => {
     it('renders FilterItem correctly', () => {
       const item = {label: '1 sem.', selected: true}

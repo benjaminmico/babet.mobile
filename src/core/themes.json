@@ -4,12 +4,14 @@
     "backgroundColor": "#101112",
     "color": "#ffffff",
     "statusBar": "light-content",
+    "isShadow": false,
     "colors": {
       "components": {
         "background": "#101112",
         "backgroundContainer": "#2F3134",
         "backgroundFilter": "#F3F2F2",
-        "backgroundAction": "#5100FF",
+        "backgroundAction": "#F3F2F2",
+        "backgroundPrimaryAction": "#5100FF",
         "icon": "#FFFFFF"
       },
       "texts": {
@@ -19,6 +21,8 @@
         "labelInput": "#7C7C7C",
         "buttons": {
           "actions": "#5100FF",
+          "cancellable": "#3E3E3E",
+          "isPrimaryAction": "#FFFFFF",
           "filter": "#3E3E3E"
         },
         "filters": {
@@ -39,12 +43,14 @@
     "backgroundColor": "#ffffff",
     "color": "#101112",
     "statusBar": "dark-content",
+    "isShadow": true,
     "colors": {
       "components": {
         "background": "#FFFFFF",
         "backgroundContainer": "#FFFFFF",
         "backgroundFilter": "#F3F2F2",
-        "backgroundAction": "#5100FF",
+        "backgroundAction": "#F3F2F2",
+        "backgroundPrimaryAction": "#5100FF",
         "icon": "#000000"
       },
       "texts": {
@@ -54,6 +60,8 @@
         "labelInput": "#7C7C7C",
         "buttons": {
           "actions": "#5100FF",
+          "cancellable": "#3E3E3E",
+          "isPrimaryAction": "#FFFFFF",
           "filter": "#3E3E3E"
         },
         "filters": {
@@ -66,7 +74,8 @@
         "purple": "#5100FF",
         "black": "#000000",
         "white": "#FFFFFF"
-      }
+      },
+      "shadows": {}
     }
   }
 ]
