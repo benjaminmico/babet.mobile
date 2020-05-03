@@ -40,6 +40,10 @@ exports[`AlertPending Props tests renders AlertPending 1`] = `
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -82,7 +86,10 @@ exports[`AlertPending Props tests renders AlertPending 1`] = `
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -121,6 +128,10 @@ exports[`AlertPending Props tests renders AlertPending 1`] = `
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",

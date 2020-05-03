@@ -48,6 +48,10 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -90,7 +94,10 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -129,6 +136,10 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",
@@ -474,6 +485,10 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -516,7 +531,10 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -555,6 +573,10 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",
@@ -898,6 +920,10 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -940,7 +966,10 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -979,6 +1008,10 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",
@@ -1326,6 +1359,10 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -1368,7 +1405,10 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -1407,6 +1447,10 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",
@@ -1752,6 +1796,10 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -1794,7 +1842,10 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -1833,6 +1884,10 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",
@@ -2180,6 +2235,10 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -2222,7 +2281,10 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -2261,6 +2323,10 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",
@@ -2615,6 +2681,10 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -2657,7 +2727,10 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -2696,6 +2769,10 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",
@@ -2995,7 +3072,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
 </ThemeContextProvider>
 `;
 
-exports[`FilterItem Props tests renders unselected multi filterFilterItem 1`] = `
+exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] = `
 <ThemeContextProvider>
   <Component
     horizontal={false}
@@ -3043,6 +3120,10 @@ exports[`FilterItem Props tests renders unselected multi filterFilterItem 1`] = 
                 "selected": "#000000",
                 "unselected": "#A3A2A2",
               },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
               "labelInput": "#7C7C7C",
               "text": "#000000",
               "title": "#000000",
@@ -3085,7 +3166,10 @@ exports[`FilterItem Props tests renders unselected multi filterFilterItem 1`] = 
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
                 },
-                "labelInput": "#7C7C7C",
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#000000",
               },
@@ -3124,6 +3208,10 @@ exports[`FilterItem Props tests renders unselected multi filterFilterItem 1`] = 
                   "multiFilter": "#5100FF",
                   "selected": "#000000",
                   "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
                 "text": "#000000",

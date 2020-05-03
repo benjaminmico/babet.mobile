@@ -144,7 +144,7 @@ describe.only('FilterItem', () => {
       expect(FilterItemTick.prop('width')).toBe(12)
       expect(FilterItemTick.prop('height')).toBe(12)
     })
-    it('renders unselected multi filterFilterItem', () => {
+    it('renders unselected multi filter FilterItem', () => {
       const item = {label: '1 sem.', selected: false}
 
       const wrapper = mount(

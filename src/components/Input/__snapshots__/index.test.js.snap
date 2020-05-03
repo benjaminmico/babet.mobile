@@ -1,0 +1,359 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Props tests renders  Input 1`] = `
+<ThemeContextProvider>
+  <Component
+    inputLabel="Pseudo"
+  >
+    <Input
+      inputLabel="Pseudo"
+      setTheme={[Function]}
+      theme={
+        Object {
+          "backgroundColor": "#ffffff",
+          "color": "#101112",
+          "colors": Object {
+            "components": Object {
+              "background": "#FFFFFF",
+              "backgroundAction": "#F3F2F2",
+              "backgroundContainer": "#FFFFFF",
+              "backgroundFilter": "#F3F2F2",
+              "backgroundPrimaryAction": "#5100FF",
+              "icon": "#000000",
+            },
+            "palette": Object {
+              "black": "#000000",
+              "purple": "#5100FF",
+              "white": "#FFFFFF",
+            },
+            "shadows": Object {},
+            "texts": Object {
+              "buttons": Object {
+                "actions": "#5100FF",
+                "cancellable": "#3E3E3E",
+                "filter": "#3E3E3E",
+                "isPrimaryAction": "#FFFFFF",
+              },
+              "description": "#ADADAD",
+              "filters": Object {
+                "multiFilter": "#5100FF",
+                "selected": "#000000",
+                "unselected": "#A3A2A2",
+              },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
+              "labelInput": "#7C7C7C",
+              "text": "#000000",
+              "title": "#000000",
+            },
+          },
+          "isShadow": true,
+          "key": "white",
+          "statusBar": "dark-content",
+        }
+      }
+      themes={
+        Array [
+          Object {
+            "backgroundColor": "#101112",
+            "color": "#ffffff",
+            "colors": Object {
+              "components": Object {
+                "background": "#101112",
+                "backgroundAction": "#F3F2F2",
+                "backgroundContainer": "#2F3134",
+                "backgroundFilter": "#F3F2F2",
+                "backgroundPrimaryAction": "#5100FF",
+                "icon": "#FFFFFF",
+              },
+              "palette": Object {
+                "black": "#000000",
+                "purple": "#5100FF",
+                "white": "#FFFFFF",
+              },
+              "texts": Object {
+                "buttons": Object {
+                  "actions": "#5100FF",
+                  "cancellable": "#3E3E3E",
+                  "filter": "#3E3E3E",
+                  "isPrimaryAction": "#FFFFFF",
+                },
+                "description": "#ADADAD",
+                "filters": Object {
+                  "multiFilter": "#5100FF",
+                  "selected": "#000000",
+                  "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
+                "text": "#FFFFFF",
+                "title": "#000000",
+              },
+            },
+            "isShadow": false,
+            "key": "dark",
+            "statusBar": "light-content",
+          },
+          Object {
+            "backgroundColor": "#ffffff",
+            "color": "#101112",
+            "colors": Object {
+              "components": Object {
+                "background": "#FFFFFF",
+                "backgroundAction": "#F3F2F2",
+                "backgroundContainer": "#FFFFFF",
+                "backgroundFilter": "#F3F2F2",
+                "backgroundPrimaryAction": "#5100FF",
+                "icon": "#000000",
+              },
+              "palette": Object {
+                "black": "#000000",
+                "purple": "#5100FF",
+                "white": "#FFFFFF",
+              },
+              "shadows": Object {},
+              "texts": Object {
+                "buttons": Object {
+                  "actions": "#5100FF",
+                  "cancellable": "#3E3E3E",
+                  "filter": "#3E3E3E",
+                  "isPrimaryAction": "#FFFFFF",
+                },
+                "description": "#ADADAD",
+                "filters": Object {
+                  "multiFilter": "#5100FF",
+                  "selected": "#000000",
+                  "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
+                },
+                "labelInput": "#7C7C7C",
+                "text": "#000000",
+                "title": "#000000",
+              },
+            },
+            "isShadow": true,
+            "key": "white",
+            "statusBar": "dark-content",
+          },
+        ]
+      }
+    >
+      <Styled(View)>
+        <StyledNativeComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(View)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  border-bottom-width: 1px;
+  border-color: rgba(220, 218, 218, 0.5);
+  width: 100%;
+  height: 72px;
+  padding-top: 11px;
+  padding-left: 21.5px;
+  padding-bottom: 11px;
+",
+                ],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "borderBottomWidth": 1,
+                  "borderColor": "rgba(220, 218, 218, 0.5)",
+                  "height": 72,
+                  "paddingBottom": 11,
+                  "paddingLeft": 21.5,
+                  "paddingTop": 11,
+                  "width": "100%",
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "borderBottomWidth": 1,
+                    "borderColor": "rgba(220, 218, 218, 0.5)",
+                    "height": 72,
+                    "paddingBottom": 11,
+                    "paddingLeft": 21.5,
+                    "paddingTop": 11,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Styled(Text)
+                color="#7C7C7C"
+              >
+                <StyledNativeComponent
+                  color="#7C7C7C"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "displayName": "Styled(Text)",
+                      "inlineStyle": InlineStyle {
+                        "rules": Array [
+                          "
+  color: ",
+                          [Function],
+                          ";
+  font-family: 'AvenirNext-Medium';
+  font-size: 13px;
+  letter-spacing: -0.14px;
+  line-height: 18px;
+  text-align: left;
+",
+                        ],
+                      },
+                      "render": [Function],
+                      "styledComponentId": "StyledNativeComponent",
+                      "target": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <Text
+                    color="#7C7C7C"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#7C7C7C",
+                          "fontFamily": "AvenirNext-Medium",
+                          "fontSize": 13,
+                          "letterSpacing": -0.14,
+                          "lineHeight": 18,
+                          "textAlign": "left",
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      color="#7C7C7C"
+                      style={
+                        Array [
+                          Object {
+                            "color": "#7C7C7C",
+                            "fontFamily": "AvenirNext-Medium",
+                            "fontSize": 13,
+                            "letterSpacing": -0.14,
+                            "lineHeight": 18,
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                    >
+                      Pseudo
+                    </Text>
+                  </Text>
+                </StyledNativeComponent>
+              </Styled(Text)>
+              <Styled(Component)
+                color="#000000"
+              >
+                <StyledNativeComponent
+                  color="#000000"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "State": Object {
+                        "blurTextInput": [Function],
+                        "currentlyFocusedField": [Function],
+                        "focusTextInput": [Function],
+                      },
+                      "attrs": Array [],
+                      "displayName": "Styled(Component)",
+                      "inlineStyle": InlineStyle {
+                        "rules": Array [
+                          "
+  color: ",
+                          [Function],
+                          ";
+  font-family: 'AvenirNext-DemiBold';
+  font-size: 15px;
+  letter-spacing: -0.16px;
+  line-height: 20px;
+  margin-top: 8px;
+  text-align: left;
+",
+                        ],
+                      },
+                      "render": [Function],
+                      "styledComponentId": "StyledNativeComponent",
+                      "target": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <Component
+                    allowFontScaling={true}
+                    color="#000000"
+                    rejectResponderTermination={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "AvenirNext-DemiBold",
+                          "fontSize": 15,
+                          "letterSpacing": -0.16,
+                          "lineHeight": 20,
+                          "marginTop": 8,
+                          "textAlign": "left",
+                        },
+                      ]
+                    }
+                    underlineColorAndroid="transparent"
+                  >
+                    <TextInput
+                      allowFontScaling={true}
+                      color="#000000"
+                      rejectResponderTermination={true}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#000000",
+                            "fontFamily": "AvenirNext-DemiBold",
+                            "fontSize": 15,
+                            "letterSpacing": -0.16,
+                            "lineHeight": 20,
+                            "marginTop": 8,
+                            "textAlign": "left",
+                          },
+                        ]
+                      }
+                      underlineColorAndroid="transparent"
+                    />
+                  </Component>
+                </StyledNativeComponent>
+              </Styled(Component)>
+            </View>
+          </View>
+        </StyledNativeComponent>
+      </Styled(View)>
+    </Input>
+  </Component>
+</ThemeContextProvider>
+`;

@@ -18,7 +18,10 @@
         "title": "#000000",
         "text": "#FFFFFF",
         "description": "#ADADAD",
-        "labelInput": "#7C7C7C",
+        "input": {
+          "label": "#7C7C7C",
+          "value": "#FFFFFF"
+        },
         "buttons": {
           "actions": "#5100FF",
           "cancellable": "#3E3E3E",
@@ -63,6 +66,10 @@
           "cancellable": "#3E3E3E",
           "isPrimaryAction": "#FFFFFF",
           "filter": "#3E3E3E"
+        },
+        "input": {
+          "label": "#7C7C7C",
+          "value": "#000000"
         },
         "filters": {
           "selected": "#000000",
