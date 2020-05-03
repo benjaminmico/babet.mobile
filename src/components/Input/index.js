@@ -7,11 +7,13 @@ import {InputContainer, InputLabel, InputValue} from './index.styles'
 type Props = {
   // input label
   inputLabel: String,
+  // if text input is editable or not
+  editable: Boolean,
   // theme
   theme: Object,
 }
 
-const Input = ({inputLabel, theme}: Props) => {
+const Input = ({inputLabel, editable, theme}: Props) => {
   // get theme props
   const {
     colors: {
@@ -25,7 +27,7 @@ const Input = ({inputLabel, theme}: Props) => {
   return (
     <InputContainer>
       <InputLabel color={inputLabelTextColor}>{inputLabel}</InputLabel>
-      <InputValue color={inputValueTextColor} />
+      <InputValue color={inputValueTextColor} editable={editable} />
     </InputContainer>
   )
 }

@@ -1,3 +1,5 @@
+import AlertInput from '@components/Alerts/AlertInput'
+import Button from '@components/Buttons/Button'
 import Input from '@components/Input'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
@@ -18,7 +20,16 @@ const MainScreen = ({theme}) => {
   return (
     <View style={[style.container, {backgroundColor: theme.backgroundColor}]}>
       <StatusBar barStyle={theme.statusBar} />
-      <Input inputLabel="Pseudo" inputValue="@leparieur" />
+      <Button label="Supprimer" />
+      <AlertInput
+        questionLabel="Es-tu sûr de vouloir supprimer la bankroll “Summer Bankroll” ?"
+        cancellableButtonLabel="Annuler"
+        cancellableButtonPress={() => console.log('cancel button')}
+        actionButtonLabel="Supprimer"
+        actionButtonPress={() => console.log('action button')}
+      >
+        <Input inputLabel="aaaaa" editable={false} />
+      </AlertInput>
     </View>
   )
 }
