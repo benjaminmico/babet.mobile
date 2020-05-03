@@ -7,12 +7,12 @@ import {ButtonContainer, ButtonText} from './index.styles'
 type Props = {
   // button label
   label: String,
-  // theme
-  theme: Object,
   // check if action is primary or not (consequence on background color)
   isPrimaryAction: Boolean,
   // check if it's a cancellable button
   isCancellable: Boolean,
+  // theme
+  theme: Object,
 }
 
 const Button = ({isPrimaryAction, isCancellable, label, theme}: Props) => {

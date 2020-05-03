@@ -91,7 +91,7 @@ exports[`AlertPending Props tests renders AlertPending 1`] = `
                   "value": "#FFFFFF",
                 },
                 "text": "#FFFFFF",
-                "title": "#000000",
+                "title": "#FFFFFF",
               },
             },
             "isShadow": false,

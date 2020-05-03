@@ -91,7 +91,7 @@ exports[`Input Props tests renders  Input 1`] = `
                   "value": "#FFFFFF",
                 },
                 "text": "#FFFFFF",
-                "title": "#000000",
+                "title": "#FFFFFF",
               },
             },
             "isShadow": false,

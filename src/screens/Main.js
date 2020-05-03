@@ -1,6 +1,4 @@
-import AlertInput from '@components/Alerts/AlertInput'
-import Button from '@components/Buttons/Button'
-import Input from '@components/Input'
+import ListItem from '@components/Lists/ListItem'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {StatusBar, StyleSheet, View} from 'react-native'
@@ -20,16 +18,14 @@ const MainScreen = ({theme}) => {
   return (
     <View style={[style.container, {backgroundColor: theme.backgroundColor}]}>
       <StatusBar barStyle={theme.statusBar} />
-      <Button label="Supprimer" />
-      <AlertInput
-        questionLabel="Es-tu sûr de vouloir supprimer la bankroll “Summer Bankroll” ?"
-        cancellableButtonLabel="Annuler"
-        cancellableButtonPress={() => console.log('cancel button')}
-        actionButtonLabel="Supprimer"
-        actionButtonPress={() => console.log('action button')}
-      >
-        <Input inputLabel="aaaaa" editable={false} />
-      </AlertInput>
+      <ListItem
+        label="Mes bankrolls"
+        leftActionIcon="informations"
+        rightActionIcon="bankroll"
+        onLeftAction={() => console.log('onLeft')}
+        onRightAction={() => console.log('onRight')}
+      />
+      <ListItem label="Mes informations" icon="informations" />
     </View>
   )
 }

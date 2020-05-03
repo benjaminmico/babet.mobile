@@ -91,7 +91,7 @@ exports[`AlertQuestion Props tests renders AlertQuestion 1`] = `
                   "value": "#FFFFFF",
                 },
                 "text": "#FFFFFF",
-                "title": "#000000",
+                "title": "#FFFFFF",
               },
             },
             "isShadow": false,
