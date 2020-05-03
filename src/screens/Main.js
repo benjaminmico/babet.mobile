@@ -1,3 +1,4 @@
+import AlertImage from '@components/Alerts/AlertImage'
 import Button from '@components/Buttons/Button'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
@@ -19,6 +20,14 @@ const MainScreen = ({theme}) => {
     <View style={[style.container, {backgroundColor: theme.backgroundColor}]}>
       <StatusBar barStyle={theme.statusBar} />
       <Button label="Supprimer" />
+      <AlertImage
+        imageLink="https://reactjs.org/logo-og.png"
+        questionLabel="Es-tu sûr de vouloir supprimer la bankroll “Summer Bankroll” ?"
+        cancellableButtonLabel="Annuler"
+        cancellableButtonPress={() => console.log('cancel button')}
+        actionButtonLabel="Supprimer"
+        actionButtonPress={() => console.log('action button')}
+      />
     </View>
   )
 }
