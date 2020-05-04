@@ -10,6 +10,9 @@ import BankrollBlackIcon from '@assets/icons/blacks/bankrollIcon.svg'
 import BankrollWhiteIcon from '@assets/icons/whites/bankrollIcon.svg'
 import GoBackBlackIcon from '@assets/icons/blacks/goBackIcon.svg'
 import GoBackWhiteIcon from '@assets/icons/whites/goBackIcon.svg'
+import PendingIcon from '@assets/icons/gameStatus/pending.svg'
+import WonIcon from '@assets/icons/gameStatus/won.svg'
+import LostIcon from '@assets/icons/gameStatus/lost.svg'
 
 type Props = {
   // icon name
@@ -52,6 +55,13 @@ const renderIcon = (label, size, themeKey) => {
       ) : (
         <GoBackWhiteIcon width={size} height={size} />
       )
+    case 'pending':
+      return <PendingIcon width={size} height={size} />
+    case 'won':
+      return <WonIcon width={size} height={size} />
+    case 'lost':
+      return <LostIcon width={size} height={size} />
+
     default:
       return <EmptyView />
   }
