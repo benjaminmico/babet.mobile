@@ -1,6 +1,6 @@
 // @flow
 
-import {withTheme} from '@core/themeProvider'
+import {withTheme} from './node_modules/@core/themeProvider'
 import React from 'react'
 import {ButtonContainer, ButtonText} from './index.styles'
 

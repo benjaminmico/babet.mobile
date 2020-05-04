@@ -1,4 +1,4 @@
-import ListItem from '@components/Lists/ListItem'
+import InputButton from '@components/Buttons/InputButton'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {StatusBar, StyleSheet, View} from 'react-native'
@@ -18,14 +18,7 @@ const MainScreen = ({theme}) => {
   return (
     <View style={[style.container, {backgroundColor: theme.backgroundColor}]}>
       <StatusBar barStyle={theme.statusBar} />
-      <ListItem
-        label="Mes bankrolls"
-        leftActionIcon="informations"
-        rightActionIcon="bankroll"
-        onLeftAction={() => console.log('onLeft')}
-        onRightAction={() => console.log('onRight')}
-      />
-      <ListItem label="Mes informations" icon="informations" />
+      <InputButton label="Se connecter" onPress={() => console.log('ok')} />
     </View>
   )
 }

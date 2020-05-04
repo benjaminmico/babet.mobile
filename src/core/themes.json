@@ -11,6 +11,7 @@
         "backgroundContainer": "#2F3134",
         "backgroundFilter": "#F3F2F2",
         "backgroundAction": "#F3F2F2",
+        "backgroundInputButton": "#5100FF",
         "backgroundPrimaryAction": "#5100FF",
         "icon": "#FFFFFF"
       },
@@ -53,6 +54,7 @@
         "backgroundContainer": "#FFFFFF",
         "backgroundFilter": "#F3F2F2",
         "backgroundAction": "#F3F2F2",
+        "backgroundInputButton": "#5100FF",
         "backgroundPrimaryAction": "#5100FF",
         "icon": "#000000"
       },

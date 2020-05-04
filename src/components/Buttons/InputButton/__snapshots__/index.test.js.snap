@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AlertPending Props tests renders AlertPending 1`] = `
+exports[`InputButton Props tests renders default InputButton 1`] = `
 <ThemeContextProvider>
   <Component
-    label="Traitement de la photo en cours…"
+    label="Supprimer"
   >
-    <AlertPending
-      label="Traitement de la photo en cours…"
+    <InputButton
+      label="Supprimer"
       setTheme={[Function]}
       theme={
         Object {
@@ -148,180 +148,203 @@ exports[`AlertPending Props tests renders AlertPending 1`] = `
         ]
       }
     >
-      <Styled(View)>
+      <Styled(Component)
+        backgroundColor="#5100FF"
+        disabled={true}
+      >
         <StyledNativeComponent
+          backgroundColor="#5100FF"
+          disabled={true}
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
-              "displayName": "Styled(View)",
+              "displayName": "Styled(Component)",
               "inlineStyle": InlineStyle {
                 "rules": Array [
                   "
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  align-items: center;
+  background-color: ",
+                  [Function],
+                  ";
+  width: 339px;
+  height: 53px;
+  padding-top: 6px;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 6px;
   justify-content: center;
+  align-items: center;
 ",
                 ],
               },
               "render": [Function],
               "styledComponentId": "StyledNativeComponent",
-              "target": [Function],
+              "target": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
               "withComponent": [Function],
             }
           }
           forwardedRef={null}
         >
-          <View
+          <ForwardRef
+            backgroundColor="#5100FF"
+            disabled={true}
             style={
               Array [
                 Object {
                   "alignItems": "center",
-                  "bottom": 0,
+                  "backgroundColor": "#5100FF",
+                  "height": 53,
                   "justifyContent": "center",
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
+                  "paddingBottom": 6,
+                  "paddingLeft": 9,
+                  "paddingRight": 9,
+                  "paddingTop": 6,
+                  "width": 339,
                 },
               ]
             }
           >
-            <View
+            <TouchableOpacity
+              backgroundColor="#5100FF"
+              disabled={true}
+              hostRef={null}
               style={
                 Array [
                   Object {
                     "alignItems": "center",
-                    "bottom": 0,
+                    "backgroundColor": "#5100FF",
+                    "height": 53,
                     "justifyContent": "center",
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
+                    "paddingBottom": 6,
+                    "paddingLeft": 9,
+                    "paddingRight": 9,
+                    "paddingTop": 6,
+                    "width": 339,
                   },
                 ]
               }
             >
-              <Styled(View)
-                backgroundColor="#FFFFFF"
-              >
-                <StyledNativeComponent
-                  backgroundColor="#FFFFFF"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "displayName": "Styled(View)",
-                      "inlineStyle": InlineStyle {
-                        "rules": Array [
-                          "
-  background-color: ",
-                          [Function],
-                          ";
-  border-radius: 12.6px;
-  width: 335px;
-  height: 176px;
-  justify-content: center;
-  align-items: center;
-",
-                        ],
+              <ForwardRef(AnimatedComponentWrapper)
+                accessible={true}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#5100FF",
+                        "height": 53,
+                        "justifyContent": "center",
+                        "paddingBottom": 6,
+                        "paddingLeft": 9,
+                        "paddingRight": 9,
+                        "paddingTop": 6,
+                        "width": 339,
                       },
-                      "render": [Function],
-                      "styledComponentId": "StyledNativeComponent",
-                      "target": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <View
-                    backgroundColor="#FFFFFF"
-                    style={
+                    ],
+                    Object {
+                      "opacity": 1,
+                    },
+                  ]
+                }
+              >
+                <AnimatedComponent
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
                       Array [
                         Object {
                           "alignItems": "center",
-                          "backgroundColor": "#FFFFFF",
-                          "borderRadius": 12.6,
-                          "height": 176,
+                          "backgroundColor": "#5100FF",
+                          "height": 53,
                           "justifyContent": "center",
-                          "width": 335,
+                          "paddingBottom": 6,
+                          "paddingLeft": 9,
+                          "paddingRight": 9,
+                          "paddingTop": 6,
+                          "width": 339,
                         },
-                      ]
+                      ],
+                      Object {
+                        "opacity": 1,
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessible={true}
+                    focusable={false}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#5100FF",
+                        "height": 53,
+                        "justifyContent": "center",
+                        "opacity": 1,
+                        "paddingBottom": 6,
+                        "paddingLeft": 9,
+                        "paddingRight": 9,
+                        "paddingTop": 6,
+                        "width": 339,
+                      }
                     }
                   >
                     <View
-                      backgroundColor="#FFFFFF"
+                      accessible={true}
+                      focusable={false}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
                       style={
-                        Array [
-                          Object {
-                            "alignItems": "center",
-                            "backgroundColor": "#FFFFFF",
-                            "borderRadius": 12.6,
-                            "height": 176,
-                            "justifyContent": "center",
-                            "width": 335,
-                          },
-                        ]
+                        Object {
+                          "alignItems": "center",
+                          "backgroundColor": "#5100FF",
+                          "height": 53,
+                          "justifyContent": "center",
+                          "opacity": 1,
+                          "paddingBottom": 6,
+                          "paddingLeft": 9,
+                          "paddingRight": 9,
+                          "paddingTop": 6,
+                          "width": 339,
+                        }
                       }
                     >
-                      <Styled(ActivityIndicator)
-                        size="large"
-                      >
-                        <StyledNativeComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "displayName": "Styled(ActivityIndicator)",
-                              "inlineStyle": InlineStyle {
-                                "rules": Array [
-                                  "",
-                                ],
-                              },
-                              "render": [Function],
-                              "styledComponentId": "StyledNativeComponent",
-                              "target": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          size="large"
-                        >
-                          <ActivityIndicator
-                            animating={true}
-                            color="#999999"
-                            hidesWhenStopped={true}
-                            size="large"
-                            style={
-                              Array [
-                                Object {},
-                              ]
-                            }
-                          >
-                            <ActivityIndicator
-                              animating={true}
-                              color="#999999"
-                              hidesWhenStopped={true}
-                              size="large"
-                              style={
-                                Array [
-                                  Object {},
-                                ]
-                              }
-                            />
-                          </ActivityIndicator>
-                        </StyledNativeComponent>
-                      </Styled(ActivityIndicator)>
                       <Styled(Text)
-                        color="#000000"
-                        numberOfLines={3}
+                        color="#FFFFFF"
+                        numberOfLines={1}
                       >
                         <StyledNativeComponent
-                          color="#000000"
+                          color="#FFFFFF"
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -333,12 +356,10 @@ exports[`AlertPending Props tests renders AlertPending 1`] = `
   color: ",
                                   [Function],
                                   ";
-  font-family: 'AvenirNext-DemiBold';
-  font-size: 15px;
-  letter-spacing: -0.16px;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-family: 'AvenirNext-Bold';
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 1px;
   text-align: center;
 ",
                                 ],
@@ -350,58 +371,57 @@ exports[`AlertPending Props tests renders AlertPending 1`] = `
                             }
                           }
                           forwardedRef={null}
-                          numberOfLines={3}
+                          numberOfLines={1}
                         >
                           <Text
-                            color="#000000"
-                            numberOfLines={3}
+                            color="#FFFFFF"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {
-                                  "color": "#000000",
-                                  "fontFamily": "AvenirNext-DemiBold",
-                                  "fontSize": 15,
-                                  "letterSpacing": -0.16,
-                                  "marginTop": 20,
-                                  "paddingLeft": 20,
-                                  "paddingRight": 20,
+                                  "color": "#FFFFFF",
+                                  "fontFamily": "AvenirNext-Bold",
+                                  "fontSize": 14,
+                                  "letterSpacing": 1,
+                                  "lineHeight": 19,
                                   "textAlign": "center",
                                 },
                               ]
                             }
                           >
                             <Text
-                              color="#000000"
-                              numberOfLines={3}
+                              color="#FFFFFF"
+                              numberOfLines={1}
                               style={
                                 Array [
                                   Object {
-                                    "color": "#000000",
-                                    "fontFamily": "AvenirNext-DemiBold",
-                                    "fontSize": 15,
-                                    "letterSpacing": -0.16,
-                                    "marginTop": 20,
-                                    "paddingLeft": 20,
-                                    "paddingRight": 20,
+                                    "color": "#FFFFFF",
+                                    "fontFamily": "AvenirNext-Bold",
+                                    "fontSize": 14,
+                                    "letterSpacing": 1,
+                                    "lineHeight": 19,
                                     "textAlign": "center",
                                   },
                                 ]
                               }
                             >
-                              Traitement de la photo en cours…
+                              SUPPRIMER
                             </Text>
                           </Text>
                         </StyledNativeComponent>
                       </Styled(Text)>
+                      <PressabilityDebugView
+                        color="cyan"
+                      />
                     </View>
                   </View>
-                </StyledNativeComponent>
-              </Styled(View)>
-            </View>
-          </View>
+                </AnimatedComponent>
+              </ForwardRef(AnimatedComponentWrapper)>
+            </TouchableOpacity>
+          </ForwardRef>
         </StyledNativeComponent>
-      </Styled(View)>
-    </AlertPending>
+      </Styled(Component)>
+    </InputButton>
   </Component>
 </ThemeContextProvider>
 `;
