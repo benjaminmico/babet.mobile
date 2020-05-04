@@ -1,0 +1,976 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
+<ThemeContextProvider>
+  <Component
+    goBack={true}
+    title="s'inscrire"
+  >
+    <HeaderTitle
+      goBack={true}
+      setTheme={[Function]}
+      theme={
+        Object {
+          "backgroundColor": "#ffffff",
+          "color": "#101112",
+          "colors": Object {
+            "components": Object {
+              "background": "#FFFFFF",
+              "backgroundAction": "#F3F2F2",
+              "backgroundContainer": "#FFFFFF",
+              "backgroundFilter": "#F3F2F2",
+              "backgroundInputButton": "#5100FF",
+              "backgroundPrimaryAction": "#5100FF",
+              "icon": "#000000",
+            },
+            "palette": Object {
+              "black": "#000000",
+              "purple": "#5100FF",
+              "white": "#FFFFFF",
+            },
+            "shadows": Object {},
+            "texts": Object {
+              "buttons": Object {
+                "actions": "#5100FF",
+                "cancellable": "#3E3E3E",
+                "filter": "#3E3E3E",
+                "isPrimaryAction": "#FFFFFF",
+              },
+              "description": "#ADADAD",
+              "filters": Object {
+                "multiFilter": "#5100FF",
+                "selected": "#000000",
+                "unselected": "#A3A2A2",
+              },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
+              "labelInput": "#7C7C7C",
+              "text": "#000000",
+              "title": "#000000",
+            },
+          },
+          "isShadow": true,
+          "key": "white",
+          "statusBar": "dark-content",
+        }
+      }
+      themes={
+        Array [
+          Object {
+            "backgroundColor": "#101112",
+            "color": "#ffffff",
+            "colors": Object {
+              "components": Object {
+                "background": "#101112",
+                "backgroundAction": "#F3F2F2",
+                "backgroundContainer": "#2F3134",
+                "backgroundFilter": "#F3F2F2",
+                "backgroundInputButton": "#5100FF",
+                "backgroundPrimaryAction": "#5100FF",
+                "icon": "#FFFFFF",
+              },
+              "palette": Object {
+                "black": "#000000",
+                "purple": "#5100FF",
+                "white": "#FFFFFF",
+              },
+              "texts": Object {
+                "buttons": Object {
+                  "actions": "#5100FF",
+                  "cancellable": "#3E3E3E",
+                  "filter": "#3E3E3E",
+                  "isPrimaryAction": "#FFFFFF",
+                },
+                "description": "#ADADAD",
+                "filters": Object {
+                  "multiFilter": "#5100FF",
+                  "selected": "#000000",
+                  "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
+                "text": "#FFFFFF",
+                "title": "#FFFFFF",
+              },
+            },
+            "isShadow": false,
+            "key": "dark",
+            "statusBar": "light-content",
+          },
+          Object {
+            "backgroundColor": "#ffffff",
+            "color": "#101112",
+            "colors": Object {
+              "components": Object {
+                "background": "#FFFFFF",
+                "backgroundAction": "#F3F2F2",
+                "backgroundContainer": "#FFFFFF",
+                "backgroundFilter": "#F3F2F2",
+                "backgroundInputButton": "#5100FF",
+                "backgroundPrimaryAction": "#5100FF",
+                "icon": "#000000",
+              },
+              "palette": Object {
+                "black": "#000000",
+                "purple": "#5100FF",
+                "white": "#FFFFFF",
+              },
+              "shadows": Object {},
+              "texts": Object {
+                "buttons": Object {
+                  "actions": "#5100FF",
+                  "cancellable": "#3E3E3E",
+                  "filter": "#3E3E3E",
+                  "isPrimaryAction": "#FFFFFF",
+                },
+                "description": "#ADADAD",
+                "filters": Object {
+                  "multiFilter": "#5100FF",
+                  "selected": "#000000",
+                  "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
+                },
+                "labelInput": "#7C7C7C",
+                "text": "#000000",
+                "title": "#000000",
+              },
+            },
+            "isShadow": true,
+            "key": "white",
+            "statusBar": "dark-content",
+          },
+        ]
+      }
+      title="s'inscrire"
+    >
+      <Styled(View)>
+        <StyledNativeComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(View)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  flex-direction: row;
+  align-items: center;
+  padding-left: 14px;
+",
+                ],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingLeft": 14,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "paddingLeft": 14,
+                  },
+                ]
+              }
+            >
+              <Component
+                label="goBack"
+                onPress={[Function]}
+                size={16}
+              >
+                <Icon
+                  label="goBack"
+                  onPress={[Function]}
+                  setTheme={[Function]}
+                  size={16}
+                  theme={
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "color": "#101112",
+                      "colors": Object {
+                        "components": Object {
+                          "background": "#FFFFFF",
+                          "backgroundAction": "#F3F2F2",
+                          "backgroundContainer": "#FFFFFF",
+                          "backgroundFilter": "#F3F2F2",
+                          "backgroundInputButton": "#5100FF",
+                          "backgroundPrimaryAction": "#5100FF",
+                          "icon": "#000000",
+                        },
+                        "palette": Object {
+                          "black": "#000000",
+                          "purple": "#5100FF",
+                          "white": "#FFFFFF",
+                        },
+                        "shadows": Object {},
+                        "texts": Object {
+                          "buttons": Object {
+                            "actions": "#5100FF",
+                            "cancellable": "#3E3E3E",
+                            "filter": "#3E3E3E",
+                            "isPrimaryAction": "#FFFFFF",
+                          },
+                          "description": "#ADADAD",
+                          "filters": Object {
+                            "multiFilter": "#5100FF",
+                            "selected": "#000000",
+                            "unselected": "#A3A2A2",
+                          },
+                          "input": Object {
+                            "label": "#7C7C7C",
+                            "value": "#000000",
+                          },
+                          "labelInput": "#7C7C7C",
+                          "text": "#000000",
+                          "title": "#000000",
+                        },
+                      },
+                      "isShadow": true,
+                      "key": "white",
+                      "statusBar": "dark-content",
+                    }
+                  }
+                  themes={
+                    Array [
+                      Object {
+                        "backgroundColor": "#101112",
+                        "color": "#ffffff",
+                        "colors": Object {
+                          "components": Object {
+                            "background": "#101112",
+                            "backgroundAction": "#F3F2F2",
+                            "backgroundContainer": "#2F3134",
+                            "backgroundFilter": "#F3F2F2",
+                            "backgroundInputButton": "#5100FF",
+                            "backgroundPrimaryAction": "#5100FF",
+                            "icon": "#FFFFFF",
+                          },
+                          "palette": Object {
+                            "black": "#000000",
+                            "purple": "#5100FF",
+                            "white": "#FFFFFF",
+                          },
+                          "texts": Object {
+                            "buttons": Object {
+                              "actions": "#5100FF",
+                              "cancellable": "#3E3E3E",
+                              "filter": "#3E3E3E",
+                              "isPrimaryAction": "#FFFFFF",
+                            },
+                            "description": "#ADADAD",
+                            "filters": Object {
+                              "multiFilter": "#5100FF",
+                              "selected": "#000000",
+                              "unselected": "#A3A2A2",
+                            },
+                            "input": Object {
+                              "label": "#7C7C7C",
+                              "value": "#FFFFFF",
+                            },
+                            "text": "#FFFFFF",
+                            "title": "#FFFFFF",
+                          },
+                        },
+                        "isShadow": false,
+                        "key": "dark",
+                        "statusBar": "light-content",
+                      },
+                      Object {
+                        "backgroundColor": "#ffffff",
+                        "color": "#101112",
+                        "colors": Object {
+                          "components": Object {
+                            "background": "#FFFFFF",
+                            "backgroundAction": "#F3F2F2",
+                            "backgroundContainer": "#FFFFFF",
+                            "backgroundFilter": "#F3F2F2",
+                            "backgroundInputButton": "#5100FF",
+                            "backgroundPrimaryAction": "#5100FF",
+                            "icon": "#000000",
+                          },
+                          "palette": Object {
+                            "black": "#000000",
+                            "purple": "#5100FF",
+                            "white": "#FFFFFF",
+                          },
+                          "shadows": Object {},
+                          "texts": Object {
+                            "buttons": Object {
+                              "actions": "#5100FF",
+                              "cancellable": "#3E3E3E",
+                              "filter": "#3E3E3E",
+                              "isPrimaryAction": "#FFFFFF",
+                            },
+                            "description": "#ADADAD",
+                            "filters": Object {
+                              "multiFilter": "#5100FF",
+                              "selected": "#000000",
+                              "unselected": "#A3A2A2",
+                            },
+                            "input": Object {
+                              "label": "#7C7C7C",
+                              "value": "#000000",
+                            },
+                            "labelInput": "#7C7C7C",
+                            "text": "#000000",
+                            "title": "#000000",
+                          },
+                        },
+                        "isShadow": true,
+                        "key": "white",
+                        "statusBar": "dark-content",
+                      },
+                    ]
+                  }
+                >
+                  <Styled(Component)
+                    disabled={false}
+                    onPress={[Function]}
+                    setTheme={[Function]}
+                    themes={
+                      Array [
+                        Object {
+                          "backgroundColor": "#101112",
+                          "color": "#ffffff",
+                          "colors": Object {
+                            "components": Object {
+                              "background": "#101112",
+                              "backgroundAction": "#F3F2F2",
+                              "backgroundContainer": "#2F3134",
+                              "backgroundFilter": "#F3F2F2",
+                              "backgroundInputButton": "#5100FF",
+                              "backgroundPrimaryAction": "#5100FF",
+                              "icon": "#FFFFFF",
+                            },
+                            "palette": Object {
+                              "black": "#000000",
+                              "purple": "#5100FF",
+                              "white": "#FFFFFF",
+                            },
+                            "texts": Object {
+                              "buttons": Object {
+                                "actions": "#5100FF",
+                                "cancellable": "#3E3E3E",
+                                "filter": "#3E3E3E",
+                                "isPrimaryAction": "#FFFFFF",
+                              },
+                              "description": "#ADADAD",
+                              "filters": Object {
+                                "multiFilter": "#5100FF",
+                                "selected": "#000000",
+                                "unselected": "#A3A2A2",
+                              },
+                              "input": Object {
+                                "label": "#7C7C7C",
+                                "value": "#FFFFFF",
+                              },
+                              "text": "#FFFFFF",
+                              "title": "#FFFFFF",
+                            },
+                          },
+                          "isShadow": false,
+                          "key": "dark",
+                          "statusBar": "light-content",
+                        },
+                        Object {
+                          "backgroundColor": "#ffffff",
+                          "color": "#101112",
+                          "colors": Object {
+                            "components": Object {
+                              "background": "#FFFFFF",
+                              "backgroundAction": "#F3F2F2",
+                              "backgroundContainer": "#FFFFFF",
+                              "backgroundFilter": "#F3F2F2",
+                              "backgroundInputButton": "#5100FF",
+                              "backgroundPrimaryAction": "#5100FF",
+                              "icon": "#000000",
+                            },
+                            "palette": Object {
+                              "black": "#000000",
+                              "purple": "#5100FF",
+                              "white": "#FFFFFF",
+                            },
+                            "shadows": Object {},
+                            "texts": Object {
+                              "buttons": Object {
+                                "actions": "#5100FF",
+                                "cancellable": "#3E3E3E",
+                                "filter": "#3E3E3E",
+                                "isPrimaryAction": "#FFFFFF",
+                              },
+                              "description": "#ADADAD",
+                              "filters": Object {
+                                "multiFilter": "#5100FF",
+                                "selected": "#000000",
+                                "unselected": "#A3A2A2",
+                              },
+                              "input": Object {
+                                "label": "#7C7C7C",
+                                "value": "#000000",
+                              },
+                              "labelInput": "#7C7C7C",
+                              "text": "#000000",
+                              "title": "#000000",
+                            },
+                          },
+                          "isShadow": true,
+                          "key": "white",
+                          "statusBar": "dark-content",
+                        },
+                      ]
+                    }
+                  >
+                    <StyledNativeComponent
+                      disabled={false}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "displayName": "Styled(Component)",
+                          "inlineStyle": InlineStyle {
+                            "rules": Array [
+                              "
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+",
+                            ],
+                          },
+                          "render": [Function],
+                          "styledComponentId": "StyledNativeComponent",
+                          "target": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      onPress={[Function]}
+                      setTheme={[Function]}
+                      themes={
+                        Array [
+                          Object {
+                            "backgroundColor": "#101112",
+                            "color": "#ffffff",
+                            "colors": Object {
+                              "components": Object {
+                                "background": "#101112",
+                                "backgroundAction": "#F3F2F2",
+                                "backgroundContainer": "#2F3134",
+                                "backgroundFilter": "#F3F2F2",
+                                "backgroundInputButton": "#5100FF",
+                                "backgroundPrimaryAction": "#5100FF",
+                                "icon": "#FFFFFF",
+                              },
+                              "palette": Object {
+                                "black": "#000000",
+                                "purple": "#5100FF",
+                                "white": "#FFFFFF",
+                              },
+                              "texts": Object {
+                                "buttons": Object {
+                                  "actions": "#5100FF",
+                                  "cancellable": "#3E3E3E",
+                                  "filter": "#3E3E3E",
+                                  "isPrimaryAction": "#FFFFFF",
+                                },
+                                "description": "#ADADAD",
+                                "filters": Object {
+                                  "multiFilter": "#5100FF",
+                                  "selected": "#000000",
+                                  "unselected": "#A3A2A2",
+                                },
+                                "input": Object {
+                                  "label": "#7C7C7C",
+                                  "value": "#FFFFFF",
+                                },
+                                "text": "#FFFFFF",
+                                "title": "#FFFFFF",
+                              },
+                            },
+                            "isShadow": false,
+                            "key": "dark",
+                            "statusBar": "light-content",
+                          },
+                          Object {
+                            "backgroundColor": "#ffffff",
+                            "color": "#101112",
+                            "colors": Object {
+                              "components": Object {
+                                "background": "#FFFFFF",
+                                "backgroundAction": "#F3F2F2",
+                                "backgroundContainer": "#FFFFFF",
+                                "backgroundFilter": "#F3F2F2",
+                                "backgroundInputButton": "#5100FF",
+                                "backgroundPrimaryAction": "#5100FF",
+                                "icon": "#000000",
+                              },
+                              "palette": Object {
+                                "black": "#000000",
+                                "purple": "#5100FF",
+                                "white": "#FFFFFF",
+                              },
+                              "shadows": Object {},
+                              "texts": Object {
+                                "buttons": Object {
+                                  "actions": "#5100FF",
+                                  "cancellable": "#3E3E3E",
+                                  "filter": "#3E3E3E",
+                                  "isPrimaryAction": "#FFFFFF",
+                                },
+                                "description": "#ADADAD",
+                                "filters": Object {
+                                  "multiFilter": "#5100FF",
+                                  "selected": "#000000",
+                                  "unselected": "#A3A2A2",
+                                },
+                                "input": Object {
+                                  "label": "#7C7C7C",
+                                  "value": "#000000",
+                                },
+                                "labelInput": "#7C7C7C",
+                                "text": "#000000",
+                                "title": "#000000",
+                              },
+                            },
+                            "isShadow": true,
+                            "key": "white",
+                            "statusBar": "dark-content",
+                          },
+                        ]
+                      }
+                    >
+                      <ForwardRef
+                        disabled={false}
+                        onPress={[Function]}
+                        setTheme={[Function]}
+                        style={
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "height": 25,
+                              "justifyContent": "center",
+                              "width": 25,
+                            },
+                          ]
+                        }
+                        themes={
+                          Array [
+                            Object {
+                              "backgroundColor": "#101112",
+                              "color": "#ffffff",
+                              "colors": Object {
+                                "components": Object {
+                                  "background": "#101112",
+                                  "backgroundAction": "#F3F2F2",
+                                  "backgroundContainer": "#2F3134",
+                                  "backgroundFilter": "#F3F2F2",
+                                  "backgroundInputButton": "#5100FF",
+                                  "backgroundPrimaryAction": "#5100FF",
+                                  "icon": "#FFFFFF",
+                                },
+                                "palette": Object {
+                                  "black": "#000000",
+                                  "purple": "#5100FF",
+                                  "white": "#FFFFFF",
+                                },
+                                "texts": Object {
+                                  "buttons": Object {
+                                    "actions": "#5100FF",
+                                    "cancellable": "#3E3E3E",
+                                    "filter": "#3E3E3E",
+                                    "isPrimaryAction": "#FFFFFF",
+                                  },
+                                  "description": "#ADADAD",
+                                  "filters": Object {
+                                    "multiFilter": "#5100FF",
+                                    "selected": "#000000",
+                                    "unselected": "#A3A2A2",
+                                  },
+                                  "input": Object {
+                                    "label": "#7C7C7C",
+                                    "value": "#FFFFFF",
+                                  },
+                                  "text": "#FFFFFF",
+                                  "title": "#FFFFFF",
+                                },
+                              },
+                              "isShadow": false,
+                              "key": "dark",
+                              "statusBar": "light-content",
+                            },
+                            Object {
+                              "backgroundColor": "#ffffff",
+                              "color": "#101112",
+                              "colors": Object {
+                                "components": Object {
+                                  "background": "#FFFFFF",
+                                  "backgroundAction": "#F3F2F2",
+                                  "backgroundContainer": "#FFFFFF",
+                                  "backgroundFilter": "#F3F2F2",
+                                  "backgroundInputButton": "#5100FF",
+                                  "backgroundPrimaryAction": "#5100FF",
+                                  "icon": "#000000",
+                                },
+                                "palette": Object {
+                                  "black": "#000000",
+                                  "purple": "#5100FF",
+                                  "white": "#FFFFFF",
+                                },
+                                "shadows": Object {},
+                                "texts": Object {
+                                  "buttons": Object {
+                                    "actions": "#5100FF",
+                                    "cancellable": "#3E3E3E",
+                                    "filter": "#3E3E3E",
+                                    "isPrimaryAction": "#FFFFFF",
+                                  },
+                                  "description": "#ADADAD",
+                                  "filters": Object {
+                                    "multiFilter": "#5100FF",
+                                    "selected": "#000000",
+                                    "unselected": "#A3A2A2",
+                                  },
+                                  "input": Object {
+                                    "label": "#7C7C7C",
+                                    "value": "#000000",
+                                  },
+                                  "labelInput": "#7C7C7C",
+                                  "text": "#000000",
+                                  "title": "#000000",
+                                },
+                              },
+                              "isShadow": true,
+                              "key": "white",
+                              "statusBar": "dark-content",
+                            },
+                          ]
+                        }
+                      >
+                        <TouchableOpacity
+                          disabled={false}
+                          hostRef={null}
+                          onPress={[Function]}
+                          setTheme={[Function]}
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "height": 25,
+                                "justifyContent": "center",
+                                "width": 25,
+                              },
+                            ]
+                          }
+                          themes={
+                            Array [
+                              Object {
+                                "backgroundColor": "#101112",
+                                "color": "#ffffff",
+                                "colors": Object {
+                                  "components": Object {
+                                    "background": "#101112",
+                                    "backgroundAction": "#F3F2F2",
+                                    "backgroundContainer": "#2F3134",
+                                    "backgroundFilter": "#F3F2F2",
+                                    "backgroundInputButton": "#5100FF",
+                                    "backgroundPrimaryAction": "#5100FF",
+                                    "icon": "#FFFFFF",
+                                  },
+                                  "palette": Object {
+                                    "black": "#000000",
+                                    "purple": "#5100FF",
+                                    "white": "#FFFFFF",
+                                  },
+                                  "texts": Object {
+                                    "buttons": Object {
+                                      "actions": "#5100FF",
+                                      "cancellable": "#3E3E3E",
+                                      "filter": "#3E3E3E",
+                                      "isPrimaryAction": "#FFFFFF",
+                                    },
+                                    "description": "#ADADAD",
+                                    "filters": Object {
+                                      "multiFilter": "#5100FF",
+                                      "selected": "#000000",
+                                      "unselected": "#A3A2A2",
+                                    },
+                                    "input": Object {
+                                      "label": "#7C7C7C",
+                                      "value": "#FFFFFF",
+                                    },
+                                    "text": "#FFFFFF",
+                                    "title": "#FFFFFF",
+                                  },
+                                },
+                                "isShadow": false,
+                                "key": "dark",
+                                "statusBar": "light-content",
+                              },
+                              Object {
+                                "backgroundColor": "#ffffff",
+                                "color": "#101112",
+                                "colors": Object {
+                                  "components": Object {
+                                    "background": "#FFFFFF",
+                                    "backgroundAction": "#F3F2F2",
+                                    "backgroundContainer": "#FFFFFF",
+                                    "backgroundFilter": "#F3F2F2",
+                                    "backgroundInputButton": "#5100FF",
+                                    "backgroundPrimaryAction": "#5100FF",
+                                    "icon": "#000000",
+                                  },
+                                  "palette": Object {
+                                    "black": "#000000",
+                                    "purple": "#5100FF",
+                                    "white": "#FFFFFF",
+                                  },
+                                  "shadows": Object {},
+                                  "texts": Object {
+                                    "buttons": Object {
+                                      "actions": "#5100FF",
+                                      "cancellable": "#3E3E3E",
+                                      "filter": "#3E3E3E",
+                                      "isPrimaryAction": "#FFFFFF",
+                                    },
+                                    "description": "#ADADAD",
+                                    "filters": Object {
+                                      "multiFilter": "#5100FF",
+                                      "selected": "#000000",
+                                      "unselected": "#A3A2A2",
+                                    },
+                                    "input": Object {
+                                      "label": "#7C7C7C",
+                                      "value": "#000000",
+                                    },
+                                    "labelInput": "#7C7C7C",
+                                    "text": "#000000",
+                                    "title": "#000000",
+                                  },
+                                },
+                                "isShadow": true,
+                                "key": "white",
+                                "statusBar": "dark-content",
+                              },
+                            ]
+                          }
+                        >
+                          <ForwardRef(AnimatedComponentWrapper)
+                            accessible={true}
+                            focusable={true}
+                            onClick={[Function]}
+                            onResponderGrant={[Function]}
+                            onResponderMove={[Function]}
+                            onResponderRelease={[Function]}
+                            onResponderTerminate={[Function]}
+                            onResponderTerminationRequest={[Function]}
+                            onStartShouldSetResponder={[Function]}
+                            style={
+                              Array [
+                                Array [
+                                  Object {
+                                    "alignItems": "center",
+                                    "height": 25,
+                                    "justifyContent": "center",
+                                    "width": 25,
+                                  },
+                                ],
+                                Object {
+                                  "opacity": 1,
+                                },
+                              ]
+                            }
+                          >
+                            <AnimatedComponent
+                              accessible={true}
+                              focusable={true}
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Array [
+                                  Array [
+                                    Object {
+                                      "alignItems": "center",
+                                      "height": 25,
+                                      "justifyContent": "center",
+                                      "width": 25,
+                                    },
+                                  ],
+                                  Object {
+                                    "opacity": 1,
+                                  },
+                                ]
+                              }
+                            >
+                              <View
+                                accessible={true}
+                                focusable={true}
+                                onClick={[Function]}
+                                onResponderGrant={[Function]}
+                                onResponderMove={[Function]}
+                                onResponderRelease={[Function]}
+                                onResponderTerminate={[Function]}
+                                onResponderTerminationRequest={[Function]}
+                                onStartShouldSetResponder={[Function]}
+                                style={
+                                  Object {
+                                    "alignItems": "center",
+                                    "height": 25,
+                                    "justifyContent": "center",
+                                    "opacity": 1,
+                                    "width": 25,
+                                  }
+                                }
+                              >
+                                <View
+                                  accessible={true}
+                                  focusable={true}
+                                  onClick={[Function]}
+                                  onResponderGrant={[Function]}
+                                  onResponderMove={[Function]}
+                                  onResponderRelease={[Function]}
+                                  onResponderTerminate={[Function]}
+                                  onResponderTerminationRequest={[Function]}
+                                  onStartShouldSetResponder={[Function]}
+                                  style={
+                                    Object {
+                                      "alignItems": "center",
+                                      "height": 25,
+                                      "justifyContent": "center",
+                                      "opacity": 1,
+                                      "width": 25,
+                                    }
+                                  }
+                                >
+                                  <SvgMock
+                                    height={16}
+                                    width={16}
+                                  />
+                                  <PressabilityDebugView
+                                    color="cyan"
+                                  />
+                                </View>
+                              </View>
+                            </AnimatedComponent>
+                          </ForwardRef(AnimatedComponentWrapper)>
+                        </TouchableOpacity>
+                      </ForwardRef>
+                    </StyledNativeComponent>
+                  </Styled(Component)>
+                </Icon>
+              </Component>
+              <Styled(Text)
+                color="#000000"
+                numberOfLines={1}
+              >
+                <StyledNativeComponent
+                  color="#000000"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "displayName": "Styled(Text)",
+                      "inlineStyle": InlineStyle {
+                        "rules": Array [
+                          "
+  color: ",
+                          [Function],
+                          ";
+  max-width: 349px;
+  font-family: 'AvenirNext-Bold';
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 33px;
+  padding-left: 10px;
+",
+                        ],
+                      },
+                      "render": [Function],
+                      "styledComponentId": "StyledNativeComponent",
+                      "target": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  numberOfLines={1}
+                >
+                  <Text
+                    color="#000000"
+                    numberOfLines={1}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "AvenirNext-Bold",
+                          "fontSize": 24,
+                          "fontWeight": "bold",
+                          "letterSpacing": 0,
+                          "lineHeight": 33,
+                          "maxWidth": 349,
+                          "paddingLeft": 10,
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      color="#000000"
+                      numberOfLines={1}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#000000",
+                            "fontFamily": "AvenirNext-Bold",
+                            "fontSize": 24,
+                            "fontWeight": "bold",
+                            "letterSpacing": 0,
+                            "lineHeight": 33,
+                            "maxWidth": 349,
+                            "paddingLeft": 10,
+                          },
+                        ]
+                      }
+                    >
+                      S'inscrire
+                    </Text>
+                  </Text>
+                </StyledNativeComponent>
+              </Styled(Text)>
+            </View>
+          </View>
+        </StyledNativeComponent>
+      </Styled(View)>
+    </HeaderTitle>
+  </Component>
+</ThemeContextProvider>
+`;

@@ -8,6 +8,8 @@ import InformationsBlackIcon from '@assets/icons/blacks/informationsIcon.svg'
 import InformationsWhiteIcon from '@assets/icons/whites/informationsIcon.svg'
 import BankrollBlackIcon from '@assets/icons/blacks/bankrollIcon.svg'
 import BankrollWhiteIcon from '@assets/icons/whites/bankrollIcon.svg'
+import GoBackBlackIcon from '@assets/icons/blacks/goBackIcon.svg'
+import GoBackWhiteIcon from '@assets/icons/whites/goBackIcon.svg'
 
 type Props = {
   // icon name
@@ -43,6 +45,12 @@ const renderIcon = (label, size, themeKey) => {
         <BankrollBlackIcon width={size} height={size} />
       ) : (
         <BankrollWhiteIcon width={size} height={size} />
+      )
+    case 'goBack':
+      return themeKey === 'white' ? (
+        <GoBackBlackIcon width={size} height={size} />
+      ) : (
+        <GoBackWhiteIcon width={size} height={size} />
       )
     default:
       return <EmptyView />

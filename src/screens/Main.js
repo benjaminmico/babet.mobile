@@ -1,4 +1,5 @@
 import InputButton from '@components/Buttons/InputButton'
+import HeaderTitle from '@components/Navigation/Headers/HeaderTitle'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {StatusBar, StyleSheet, View} from 'react-native'
@@ -6,7 +7,6 @@ import {StatusBar, StyleSheet, View} from 'react-native'
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
   },
   text: {
@@ -18,6 +18,7 @@ const MainScreen = ({theme}) => {
   return (
     <View style={[style.container, {backgroundColor: theme.backgroundColor}]}>
       <StatusBar barStyle={theme.statusBar} />
+      <HeaderTitle goBack title="S'inscrire" />
       <InputButton label="Se connecter" onPress={() => console.log('ok')} />
     </View>
   )
