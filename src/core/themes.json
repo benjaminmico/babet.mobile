@@ -18,6 +18,7 @@
       "texts": {
         "title": "#FFFFFF",
         "text": "#FFFFFF",
+        "reverseText": "#FFFFFF",
         "description": "#ADADAD",
         "input": {
           "label": "#7C7C7C",
@@ -38,7 +39,10 @@
       "palette": {
         "purple": "#5100FF",
         "black": "#000000",
-        "white": "#FFFFFF"
+        "white": "#FFFFFF",
+        "pending": "#7C7C7C",
+        "won": "#14B916",
+        "lost": "#CA1010"
       }
     }
   },
@@ -61,6 +65,7 @@
       "texts": {
         "title": "#000000",
         "text": "#000000",
+        "reverseText": "#FFFFFF",
         "description": "#ADADAD",
         "labelInput": "#7C7C7C",
         "buttons": {
@@ -82,7 +87,10 @@
       "palette": {
         "purple": "#5100FF",
         "black": "#000000",
-        "white": "#FFFFFF"
+        "white": "#FFFFFF",
+        "pending": "#7C7C7C",
+        "won": "#14B916",
+        "lost": "#CA1010"
       },
       "shadows": {}
     }

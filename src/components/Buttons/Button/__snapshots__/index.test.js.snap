@@ -26,8 +26,11 @@ exports[`Button Props tests renders cancellable Button 1`] = `
             },
             "palette": Object {
               "black": "#000000",
+              "lost": "#CA1010",
+              "pending": "#7C7C7C",
               "purple": "#5100FF",
               "white": "#FFFFFF",
+              "won": "#14B916",
             },
             "shadows": Object {},
             "texts": Object {
@@ -48,6 +51,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                 "value": "#000000",
               },
               "labelInput": "#7C7C7C",
+              "reverseText": "#FFFFFF",
               "text": "#000000",
               "title": "#000000",
             },
@@ -74,8 +78,11 @@ exports[`Button Props tests renders cancellable Button 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "lost": "#CA1010",
+                "pending": "#7C7C7C",
                 "purple": "#5100FF",
                 "white": "#FFFFFF",
+                "won": "#14B916",
               },
               "texts": Object {
                 "buttons": Object {
@@ -94,6 +101,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                   "label": "#7C7C7C",
                   "value": "#FFFFFF",
                 },
+                "reverseText": "#FFFFFF",
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -117,8 +125,11 @@ exports[`Button Props tests renders cancellable Button 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "lost": "#CA1010",
+                "pending": "#7C7C7C",
                 "purple": "#5100FF",
                 "white": "#FFFFFF",
+                "won": "#14B916",
               },
               "shadows": Object {},
               "texts": Object {
@@ -139,6 +150,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                   "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
+                "reverseText": "#FFFFFF",
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -458,8 +470,11 @@ exports[`Button Props tests renders default Button 1`] = `
             },
             "palette": Object {
               "black": "#000000",
+              "lost": "#CA1010",
+              "pending": "#7C7C7C",
               "purple": "#5100FF",
               "white": "#FFFFFF",
+              "won": "#14B916",
             },
             "shadows": Object {},
             "texts": Object {
@@ -480,6 +495,7 @@ exports[`Button Props tests renders default Button 1`] = `
                 "value": "#000000",
               },
               "labelInput": "#7C7C7C",
+              "reverseText": "#FFFFFF",
               "text": "#000000",
               "title": "#000000",
             },
@@ -506,8 +522,11 @@ exports[`Button Props tests renders default Button 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "lost": "#CA1010",
+                "pending": "#7C7C7C",
                 "purple": "#5100FF",
                 "white": "#FFFFFF",
+                "won": "#14B916",
               },
               "texts": Object {
                 "buttons": Object {
@@ -526,6 +545,7 @@ exports[`Button Props tests renders default Button 1`] = `
                   "label": "#7C7C7C",
                   "value": "#FFFFFF",
                 },
+                "reverseText": "#FFFFFF",
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -549,8 +569,11 @@ exports[`Button Props tests renders default Button 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "lost": "#CA1010",
+                "pending": "#7C7C7C",
                 "purple": "#5100FF",
                 "white": "#FFFFFF",
+                "won": "#14B916",
               },
               "shadows": Object {},
               "texts": Object {
@@ -571,6 +594,7 @@ exports[`Button Props tests renders default Button 1`] = `
                   "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
+                "reverseText": "#FFFFFF",
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -892,8 +916,11 @@ exports[`Button Props tests renders primary Action Button 1`] = `
             },
             "palette": Object {
               "black": "#000000",
+              "lost": "#CA1010",
+              "pending": "#7C7C7C",
               "purple": "#5100FF",
               "white": "#FFFFFF",
+              "won": "#14B916",
             },
             "shadows": Object {},
             "texts": Object {
@@ -914,6 +941,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                 "value": "#000000",
               },
               "labelInput": "#7C7C7C",
+              "reverseText": "#FFFFFF",
               "text": "#000000",
               "title": "#000000",
             },
@@ -940,8 +968,11 @@ exports[`Button Props tests renders primary Action Button 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "lost": "#CA1010",
+                "pending": "#7C7C7C",
                 "purple": "#5100FF",
                 "white": "#FFFFFF",
+                "won": "#14B916",
               },
               "texts": Object {
                 "buttons": Object {
@@ -960,6 +991,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                   "label": "#7C7C7C",
                   "value": "#FFFFFF",
                 },
+                "reverseText": "#FFFFFF",
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -983,8 +1015,11 @@ exports[`Button Props tests renders primary Action Button 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "lost": "#CA1010",
+                "pending": "#7C7C7C",
                 "purple": "#5100FF",
                 "white": "#FFFFFF",
+                "won": "#14B916",
               },
               "shadows": Object {},
               "texts": Object {
@@ -1005,6 +1040,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                   "value": "#000000",
                 },
                 "labelInput": "#7C7C7C",
+                "reverseText": "#FFFFFF",
                 "text": "#000000",
                 "title": "#000000",
               },

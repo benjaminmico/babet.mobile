@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
-export const GameContainer = styled.View`
+export const BetContainer = styled.View`
   margin-top: 11px;
   flex-direction: row;
   align-items: center;
 `
 
-export const GameContentContainer = styled.View``
+export const BetContentContainer = styled.View``
 
-export const GameLabel = styled.Text`
+export const BetLabel = styled.Text`
   color: ${props => props.color};
   font-family: 'AvenirNext-Medium';
   font-size: 13px;
@@ -17,32 +17,31 @@ export const GameLabel = styled.Text`
   padding-bottom: 2.5px;
 `
 
-export const GameResultLabel = styled.Text`
+export const BetResultLabel = styled.Text`
   color: ${props => props.color};
   width: 275px;
-  font-family: 'AvenirNext-DemiBold';
+  font-family: 'AvenirNext-Medium';
   font-size: 13px;
   letter-spacing: -0.14px;
   line-height: 18px;
 `
 
-export const GameResultValue = styled.Text`
+export const BetResultValue = styled.Text`
   color: ${props => props.color};
-  width: 90px;
   font-family: 'AvenirNext-DemiBold';
   font-size: 13px;
   letter-spacing: -0.14px;
   line-height: 18px;
 `
 
-export const GameOddContainer = styled.View`
+export const BetOddContainer = styled.View`
   position: absolute;
   right: 15.59px;
   justify-content: center;
   align-items: center;
 `
 
-export const GameOddValue = styled.Text`
+export const BetOddValue = styled.Text`
   color: ${props => props.color};
   font-family: 'AvenirNext-DemiBold';
   font-size: 13px;
@@ -51,7 +50,7 @@ export const GameOddValue = styled.Text`
   text-align: right;
 `
 
-export const GameLine = styled.View`
+export const BetLine = styled.View`
   background-color: rgba(173, 173, 173, 0.32);
   height: 1px;
   width: 100%;

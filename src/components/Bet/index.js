@@ -5,14 +5,14 @@
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {
-  GameContainer,
-  GameContentContainer,
-  GameLabel,
-  GameResultLabel,
-  GameResultValue,
-  GameOddContainer,
-  GameOddValue,
-  GameLine,
+  BetContainer,
+  BetContentContainer,
+  BetLabel,
+  BetResultLabel,
+  BetResultValue,
+  BetOddContainer,
+  BetOddValue,
+  BetLine,
 } from './index.styles'
 import {sportEmoji} from './utils/sport'
 import Icon from '@components/Icon'
@@ -32,11 +32,13 @@ type Props = {
   status: String,
   // // If it's a special bet or not (for example, if bet is made on a League Winner)
   // specialBet: Boolean,
+  // check if game is last game of the list
+  isLast: Boolean,
   // theme
   theme: Object,
 }
 
-const Game = ({sport, localTeam, visitorTeam, name, odd, status, theme}: Props) => {
+const Bet = ({sport, localTeam, visitorTeam, name, odd, status, isLast, theme}: Props) => {
   // get theme props
   const {
     colors: {
@@ -50,24 +52,24 @@ const Game = ({sport, localTeam, visitorTeam, name, odd, status, theme}: Props) 
    * */
   return (
     <>
-      <GameContainer>
-        <GameContentContainer>
-          <GameLabel color={colorText}>{`${sportEmoji(sport)}  ${localTeam} - ${visitorTeam}`}</GameLabel>
-          <GameResultLabel color={colorText}>
-            Mon pari : <GameResultValue color={colorText}>{name}</GameResultValue>
-          </GameResultLabel>
-        </GameContentContainer>
+      <BetContainer>
+        <BetContentContainer>
+          <BetLabel color={colorText}>{`${sportEmoji(sport)}  ${localTeam} - ${visitorTeam}`}</BetLabel>
+          <BetResultLabel color={colorText}>
+            Mon pari : <BetResultValue color={colorText}>{name}</BetResultValue>
+          </BetResultLabel>
+        </BetContentContainer>
 
-        <GameOddContainer>
+        <BetOddContainer>
           <Icon size={18} label={status} />
-          <GameOddValue numberOfLines={1} color={colorText}>
+          <BetOddValue numberOfLines={1} color={colorText}>
             {odd.toFixed(2)}
-          </GameOddValue>
-        </GameOddContainer>
-      </GameContainer>
-      <GameLine />
+          </BetOddValue>
+        </BetOddContainer>
+      </BetContainer>
+      {!isLast && <BetLine />}
     </>
   )
 }
 
-export default withTheme(Game)
+export default withTheme(Bet)
