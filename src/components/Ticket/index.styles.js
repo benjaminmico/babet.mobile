@@ -15,7 +15,7 @@ export const TicketHeader = styled.View`
   align-items: center;
   width: 100%;
   height: 37px;
-  padding-left: 12px;
+  padding-left: 10px;
   border-bottom-width: 1px;
   border-color: rgba(173, 173, 173, 0.32);
 `
@@ -54,8 +54,8 @@ export const TicketKPIContainer = styled.View`
 `
 
 export const TicketKPILabel = styled.Text`
-  right: 12px;
   color: ${props => props.color};
+  right: 12px;
   max-width: 120px;
   font-family: 'AvenirNext-Medium';
   font-size: 13px;

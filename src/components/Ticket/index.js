@@ -55,7 +55,7 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
    * @returns Simple or Combiné depends on bets length
    */
   function getTicketType(bets) {
-    return bets.length === 1 ? 'Simple' : 'Combiné'
+    return bets?.length === 1 ? 'Simple' : 'Combiné'
   }
 
   /**
