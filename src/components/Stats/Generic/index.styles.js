@@ -3,12 +3,11 @@ import {Dimensions} from 'react-native'
 
 const windowWidth = Dimensions.get('window').width
 
-export const BalanceSheetContainer = styled.View`
+export const GenericContainer = styled.View`
   background-color: ${props => props.backgroundColor};
   flex-direction: row;
-  align-items: center;
-  width: ${windowWidth * 0.89}px;
-  height: 127px;
+  width: ${windowWidth * 0.42}px;
+  height: 143px;
   border-radius: 12.6px;
   shadow-offset: ${props => (props.theme === 'white' ? '0px 10px' : '0px')};
   shadow-radius: ${props => (props.theme === 'white' ? '18px' : '0px')};
@@ -16,14 +15,13 @@ export const BalanceSheetContainer = styled.View`
   shadow-opacity: ${props => (props.theme === 'white' ? '0.5' : '0')};
 `
 
-export const BalanceSheetContentContainer = styled.View`
-  height: 100px;
-  width: 223.64px;
-  margin-left: 12.14px;
-  justify-content: space-between;
+export const GenericContentContainer = styled.View`
+  margin-left: 11px;
 `
 
-export const BalanceSheetLabel = styled.Text`
+export const GenericLabel = styled.Text`
+  position: absolute;
+  top: 10px;
   color: ${props => props.color};
   font-family: 'AvenirNext-DemiBold';
   font-size: 13px;
@@ -31,7 +29,9 @@ export const BalanceSheetLabel = styled.Text`
   line-height: 18px;
 `
 
-export const BalanceSheetValue = styled.Text`
+export const GenericValue = styled.Text`
+  position: absolute;
+  top: 30px;
   color: ${props => props.color};
   font-family: 'AvenirNext-Bold';
   font-size: 35px;
@@ -39,7 +39,9 @@ export const BalanceSheetValue = styled.Text`
   line-height: 48px;
 `
 
-export const BalanceSheetDescription = styled.Text`
+export const GenericKPILabel = styled.Text`
+  position: absolute;
+  top: 73px;
   color: ${props => props.color};
   font-family: 'AvenirNext-Medium';
   font-size: 13px;
@@ -47,7 +49,18 @@ export const BalanceSheetDescription = styled.Text`
   line-height: 18px;
 `
 
-export const BalanceSheetFilters = styled.View`
+export const GenericDescription = styled.Text`
+  position: absolute;
+  top: 97px;
+  width: 142.94px;
+  color: ${props => props.color};
+  font-family: 'AvenirNext-Medium';
+  font-size: 13px;
+  letter-spacing: -0.14px;
+  line-height: 18px;
+`
+
+export const GenericFilters = styled.View`
   position: absolute;
   right: 20px;
 `

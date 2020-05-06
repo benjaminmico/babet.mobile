@@ -51,6 +51,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -101,6 +104,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -150,6 +156,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -260,6 +269,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                           },
                           "labelInput": "#7C7C7C",
                           "reverseText": "#FFFFFF",
+                          "stats": Object {
+                            "kpiValue": "#3E3E3E",
+                          },
                           "text": "#000000",
                           "title": "#000000",
                         },
@@ -310,6 +322,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                               "value": "#FFFFFF",
                             },
                             "reverseText": "#FFFFFF",
+                            "stats": Object {
+                              "kpiValue": "#FFFFFF",
+                            },
                             "text": "#FFFFFF",
                             "title": "#FFFFFF",
                           },
@@ -359,6 +374,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                             },
                             "labelInput": "#7C7C7C",
                             "reverseText": "#FFFFFF",
+                            "stats": Object {
+                              "kpiValue": "#3E3E3E",
+                            },
                             "text": "#000000",
                             "title": "#000000",
                           },
@@ -415,6 +433,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                 "value": "#FFFFFF",
                               },
                               "reverseText": "#FFFFFF",
+                              "stats": Object {
+                                "kpiValue": "#FFFFFF",
+                              },
                               "text": "#FFFFFF",
                               "title": "#FFFFFF",
                             },
@@ -464,6 +485,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                               },
                               "labelInput": "#7C7C7C",
                               "reverseText": "#FFFFFF",
+                              "stats": Object {
+                                "kpiValue": "#3E3E3E",
+                              },
                               "text": "#000000",
                               "title": "#000000",
                             },
@@ -545,6 +569,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                   "value": "#FFFFFF",
                                 },
                                 "reverseText": "#FFFFFF",
+                                "stats": Object {
+                                  "kpiValue": "#FFFFFF",
+                                },
                                 "text": "#FFFFFF",
                                 "title": "#FFFFFF",
                               },
@@ -594,6 +621,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                 },
                                 "labelInput": "#7C7C7C",
                                 "reverseText": "#FFFFFF",
+                                "stats": Object {
+                                  "kpiValue": "#3E3E3E",
+                                },
                                 "text": "#000000",
                                 "title": "#000000",
                               },
@@ -660,6 +690,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                     "value": "#FFFFFF",
                                   },
                                   "reverseText": "#FFFFFF",
+                                  "stats": Object {
+                                    "kpiValue": "#FFFFFF",
+                                  },
                                   "text": "#FFFFFF",
                                   "title": "#FFFFFF",
                                 },
@@ -709,6 +742,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                   },
                                   "labelInput": "#7C7C7C",
                                   "reverseText": "#FFFFFF",
+                                  "stats": Object {
+                                    "kpiValue": "#3E3E3E",
+                                  },
                                   "text": "#000000",
                                   "title": "#000000",
                                 },
@@ -776,6 +812,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                       "value": "#FFFFFF",
                                     },
                                     "reverseText": "#FFFFFF",
+                                    "stats": Object {
+                                      "kpiValue": "#FFFFFF",
+                                    },
                                     "text": "#FFFFFF",
                                     "title": "#FFFFFF",
                                   },
@@ -825,6 +864,9 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                     },
                                     "labelInput": "#7C7C7C",
                                     "reverseText": "#FFFFFF",
+                                    "stats": Object {
+                                      "kpiValue": "#3E3E3E",
+                                    },
                                     "text": "#000000",
                                     "title": "#000000",
                                   },

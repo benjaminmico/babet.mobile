@@ -58,6 +58,9 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -108,6 +111,9 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -157,6 +163,9 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -510,6 +519,9 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -560,6 +572,9 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -609,6 +624,9 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -960,6 +978,9 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -1010,6 +1031,9 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -1059,6 +1083,9 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -1414,6 +1441,9 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -1464,6 +1494,9 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -1513,6 +1546,9 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -1866,6 +1902,9 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -1916,6 +1955,9 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -1965,6 +2007,9 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -2320,6 +2365,9 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -2370,6 +2418,9 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -2419,6 +2470,9 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -2781,6 +2835,9 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -2831,6 +2888,9 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -2880,6 +2940,9 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -3235,6 +3298,9 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -3285,6 +3351,9 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -3334,6 +3403,9 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },

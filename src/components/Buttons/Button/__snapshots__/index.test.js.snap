@@ -52,6 +52,9 @@ exports[`Button Props tests renders cancellable Button 1`] = `
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -102,6 +105,9 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -151,6 +157,9 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -496,6 +505,9 @@ exports[`Button Props tests renders default Button 1`] = `
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -546,6 +558,9 @@ exports[`Button Props tests renders default Button 1`] = `
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -595,6 +610,9 @@ exports[`Button Props tests renders default Button 1`] = `
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },
@@ -942,6 +960,9 @@ exports[`Button Props tests renders primary Action Button 1`] = `
               },
               "labelInput": "#7C7C7C",
               "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
               "text": "#000000",
               "title": "#000000",
             },
@@ -992,6 +1013,9 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                   "value": "#FFFFFF",
                 },
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
                 "text": "#FFFFFF",
                 "title": "#FFFFFF",
               },
@@ -1041,6 +1065,9 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                 },
                 "labelInput": "#7C7C7C",
                 "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
                 "text": "#000000",
                 "title": "#000000",
               },

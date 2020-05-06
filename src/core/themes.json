@@ -34,6 +34,9 @@
           "selected": "#000000",
           "unselected": "#A3A2A2",
           "multiFilter": "#5100FF"
+        },
+        "stats": {
+          "kpiValue": "#FFFFFF"
         }
       },
       "palette": {
@@ -82,6 +85,9 @@
           "selected": "#000000",
           "unselected": "#A3A2A2",
           "multiFilter": "#5100FF"
+        },
+        "stats": {
+          "kpiValue": "#3E3E3E"
         }
       },
       "palette": {
