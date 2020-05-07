@@ -1,8 +1,11 @@
 import styled from 'styled-components'
+import {Dimensions} from 'react-native'
+
+const windowWidth = Dimensions.get('window').width
 
 export const TicketContainer = styled.View`
   background-color: ${props => props.backgroundColor};
-  width: 336px;
+  width: ${windowWidth * 0.89}px;
   border-radius: 12.6px;
   shadow-offset: ${props => (props.theme === 'white' ? '0px 10px' : '0px')};
   shadow-radius: ${props => (props.theme === 'white' ? '18px' : '0px')};

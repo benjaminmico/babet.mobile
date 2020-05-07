@@ -46,7 +46,7 @@ const Generic = ({value, description, theme}: Props) => {
       <GenericContentContainer>
         <GenericLabel color={textColor}>Mon bilan</GenericLabel>
         <GenericValue color={kpiValueColor}>{value}</GenericValue>
-        <GenericKPILabel color={textColor}>En augmentation</GenericKPILabel>
+        <GenericKPILabel color={kpiValueColor}>En augmentation</GenericKPILabel>
         <GenericDescription color={descriptionColor}>{description}</GenericDescription>
       </GenericContentContainer>
     </GenericContainer>

@@ -144,6 +144,8 @@ describe.only('Ticket', () => {
 
       const status = 'pending'
 
+      const windowWidth = 375
+
       const wrapper = mount(
         <ThemeContextProvider>
           <Ticket
@@ -171,7 +173,7 @@ describe.only('Ticket', () => {
 
       const stylesContainer = StyleSheet.flatten(TicketContainer.prop('style'))
       expect(stylesContainer.backgroundColor).toBe('#FFFFFF')
-      expect(stylesContainer.width).toBe(336)
+      expect(stylesContainer.width).toBe(windowWidth * 0.89 * 2)
       expect(stylesContainer.borderRadius).toBe(12.6)
       expect(stylesContainer.shadowRadius).toBe(18)
       expect(stylesContainer.shadowOpacity).toBe(0.5)
@@ -270,6 +272,8 @@ describe.only('Ticket', () => {
 
       const status = 'lost'
 
+      const windowWidth = 375
+
       const wrapper = mount(
         <ThemeContextProvider>
           <Ticket
@@ -297,7 +301,7 @@ describe.only('Ticket', () => {
 
       const stylesContainer = StyleSheet.flatten(TicketContainer.prop('style'))
       expect(stylesContainer.backgroundColor).toBe('#FFFFFF')
-      expect(stylesContainer.width).toBe(336)
+      expect(stylesContainer.width).toBe(windowWidth * 0.89 * 2)
       expect(stylesContainer.borderRadius).toBe(12.6)
       expect(stylesContainer.shadowRadius).toBe(18)
       expect(stylesContainer.shadowOpacity).toBe(0.5)
@@ -396,6 +400,8 @@ describe.only('Ticket', () => {
 
       const status = 'won'
 
+      const windowWidth = 375
+
       const wrapper = mount(
         <ThemeContextProvider>
           <Ticket
@@ -423,7 +429,7 @@ describe.only('Ticket', () => {
 
       const stylesContainer = StyleSheet.flatten(TicketContainer.prop('style'))
       expect(stylesContainer.backgroundColor).toBe('#FFFFFF')
-      expect(stylesContainer.width).toBe(336)
+      expect(stylesContainer.width).toBe(windowWidth * 0.89 * 2)
       expect(stylesContainer.borderRadius).toBe(12.6)
       expect(stylesContainer.shadowRadius).toBe(18)
       expect(stylesContainer.shadowOpacity).toBe(0.5)
