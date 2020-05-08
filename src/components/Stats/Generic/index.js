@@ -12,17 +12,20 @@ import {
   GenericLabel,
   GenericValue,
 } from './index.styles'
+import History from '@components/History'
 
 type Props = {
   // Balance sheet value
   value: Number,
   // Balance sheet description
   description: String,
+  // bet history to display
+  history: [String],
   // theme
   theme: Object,
 }
 
-const Generic = ({value, description, theme}: Props) => {
+const Generic = ({value, description, history, theme}: Props) => {
   // get theme props
   const {
     key: keyTheme,
@@ -46,7 +49,11 @@ const Generic = ({value, description, theme}: Props) => {
       <GenericContentContainer>
         <GenericLabel color={textColor}>Mon bilan</GenericLabel>
         <GenericValue color={kpiValueColor}>{value}</GenericValue>
-        <GenericKPILabel color={kpiValueColor}>En augmentation</GenericKPILabel>
+        {history?.length > 0 ? (
+          <History style={{position: 'absolute', top: 77}} items={history} />
+        ) : (
+          <GenericKPILabel color={kpiValueColor}>En augmentation</GenericKPILabel>
+        )}
         <GenericDescription color={descriptionColor}>{description}</GenericDescription>
       </GenericContentContainer>
     </GenericContainer>

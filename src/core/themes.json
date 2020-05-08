@@ -43,9 +43,11 @@
         "purple": "#5100FF",
         "black": "#000000",
         "white": "#FFFFFF",
+        "comparisonDescription": "#A3A2A2",
         "pending": "#7C7C7C",
         "won": "#14B916",
-        "lost": "#CA1010"
+        "lost": "#CA1010",
+        "line": "#D4D8D9"
       }
     }
   },
@@ -94,9 +96,11 @@
         "purple": "#5100FF",
         "black": "#000000",
         "white": "#FFFFFF",
+        "comparisonDescription": "#A3A2A2",
         "pending": "#7C7C7C",
         "won": "#14B916",
-        "lost": "#CA1010"
+        "lost": "#CA1010",
+        "line": "#D4D8D9"
       },
       "shadows": {}
     }

@@ -32,6 +32,8 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -87,6 +89,8 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -137,6 +141,8 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -493,6 +499,8 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -548,6 +556,8 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -598,6 +608,8 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -952,6 +964,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -1007,6 +1021,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -1057,6 +1073,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -1415,6 +1433,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -1470,6 +1490,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -1520,6 +1542,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -1876,6 +1900,8 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -1931,6 +1957,8 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -1981,6 +2009,8 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -2339,6 +2369,8 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -2394,6 +2426,8 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -2444,6 +2478,8 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -2809,6 +2845,8 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -2864,6 +2902,8 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -2914,6 +2954,8 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -3272,6 +3314,8 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -3327,6 +3371,8 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -3377,6 +3423,8 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",

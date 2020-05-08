@@ -24,6 +24,8 @@ exports[`AlertQuestion Props tests renders AlertQuestion 1`] = `
             },
             "palette": Object {
               "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
@@ -79,6 +81,8 @@ exports[`AlertQuestion Props tests renders AlertQuestion 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
@@ -129,6 +133,8 @@ exports[`AlertQuestion Props tests renders AlertQuestion 1`] = `
               },
               "palette": Object {
                 "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",

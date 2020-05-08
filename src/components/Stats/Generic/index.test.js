@@ -9,7 +9,7 @@ import Generic from '.'
 
 describe.only('Generic', () => {
   describe('Integrity tests', () => {
-    it('renders pending Generic correctly', () => {
+    it('renders Generic correctly', () => {
       const value = 3.04
       const kpiLabel = 'En augmentation'
       const description = 'T’es sur une série folle ! 7/7 ! truc de malade !'
