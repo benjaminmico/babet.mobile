@@ -28,7 +28,12 @@
           "actions": "#5100FF",
           "cancellable": "#3E3E3E",
           "isPrimaryAction": "#FFFFFF",
-          "filter": "#3E3E3E"
+          "filter": "#3E3E3E",
+          "social": {
+            "facebook": "#1976D2",
+            "apple": "#000000",
+            "gmail": "#F44336"
+          }
         },
         "filters": {
           "selected": "#000000",
@@ -77,7 +82,12 @@
           "actions": "#5100FF",
           "cancellable": "#3E3E3E",
           "isPrimaryAction": "#FFFFFF",
-          "filter": "#3E3E3E"
+          "filter": "#3E3E3E",
+          "social": {
+            "facebook": "#1976D2",
+            "apple": "#000000",
+            "gmail": "#F44336"
+          }
         },
         "input": {
           "label": "#7C7C7C",

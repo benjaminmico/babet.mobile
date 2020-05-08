@@ -1,4 +1,5 @@
 import Generic from '@components/Stats/Generic'
+import SocialButton from '@components/Buttons/SocialButton'
 import Comparisons from '@components/Stats/Comparisons'
 import Graph from '@components/Stats/Graph'
 import Ticket from '@components/Ticket'
@@ -60,27 +61,142 @@ const comparisonsItems = [
   {value: 321, label: '⚽️ 🇫🇷 Ligue 1 '},
   {value: 321, label: '⚽️ 🇫🇷 Ligue 1 '},
 ]
-// const graphItems = [50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80]
-const graphItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]
+const graphItems = [
+  50,
+  10,
+  40,
+  95,
+  -4,
+  -24,
+  85,
+  91,
+  35,
+  53,
+  -53,
+  24,
+  50,
+  -20,
+  -80,
+  50,
+  10,
+  40,
+  95,
+  -4,
+  -24,
+  85,
+  91,
+  35,
+  53,
+  -53,
+  24,
+  50,
+  -20,
+  -80,
+  50,
+  10,
+  40,
+  95,
+  -4,
+  -24,
+  85,
+  91,
+  35,
+  53,
+  -53,
+  24,
+  50,
+  -20,
+  -80,
+  50,
+  10,
+  40,
+  95,
+  -4,
+  -24,
+  85,
+  91,
+  35,
+  53,
+  -53,
+  24,
+  50,
+  -20,
+  -80,
+  50,
+  10,
+  40,
+  95,
+  -4,
+  -24,
+  85,
+  91,
+  35,
+  53,
+  -53,
+  24,
+  50,
+  -20,
+  -80,
+  50,
+  10,
+  40,
+  95,
+  -4,
+  -24,
+  85,
+  91,
+  35,
+  53,
+  -53,
+  24,
+  50,
+  -20,
+  -80,
+]
+// const graphItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]
 
 const MainScreen = ({theme}) => {
   return (
     <ScrollView style={[style.container, {backgroundColor: theme.backgroundColor}]}>
       <View style={{marginTop: 159, justifyContent: 'center', alignItems: 'center'}}>
         <StatusBar barStyle={theme.statusBar} />
-        <BalanceSheet value={3.43} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
+        <SocialButton isPrimaryAction type="facebook" />
+        <SocialButton isPrimaryAction type="apple" />
+        <SocialButton isPrimaryAction type="gmail" />
+
+        <BalanceSheet value={405.93} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
 
         <View style={{flexDirection: 'row', width: windowWidth * 0.89, justifyContent: 'space-between', marginTop: 16}}>
           <Generic
-            value={3.43}
+            label="Ma forme"
+            value={7}
             description="T’es sur une série folle ! 7/7 ! truc de malade !"
-            history={['won', 'lost', 'won', 'won', 'lost', 'won']}
+            history={['won', 'won', 'won', 'won', 'won', 'won', 'won']}
+            type="ratio"
           />
-          <Generic value={3.43} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
+          <Generic
+            label="Côte moyenne"
+            value={3.43}
+            KPIDescription="En augmentation"
+            description="Depuis plusieurs tu joues des côtes elevés ! 💪"
+            type="odd"
+          />
         </View>
         <View style={{flexDirection: 'row', width: windowWidth * 0.89, justifyContent: 'space-between', marginTop: 16}}>
-          <Generic value={3.43} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
-          <Generic value={3.43} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
+          <Generic
+            label="Ma progression"
+            value={-28.9}
+            KPIDescription="En 7 jours"
+            description="T’es sur une série folle ! 7/7 ! truc de malade !"
+            type="percentage"
+          />
+          <Generic
+            label="Mise moyenne"
+            value={25.98}
+            KPIDescription="C'est raisonnable"
+            description="T’es sur une série folle ! 7/7 ! truc de malade !"
+            type="currency"
+          />
         </View>
         <View style={{marginTop: 16}}>
           <Graph

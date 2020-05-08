@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 // @flow
 
 import BankrollBlackIcon from '@assets/icons/blacks/bankrollIcon.svg'
@@ -13,6 +14,7 @@ import GoBackWhiteIcon from '@assets/icons/whites/goBackIcon.svg'
 import InformationsWhiteIcon from '@assets/icons/whites/informationsIcon.svg'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
+import {Image} from 'react-native'
 import {EmptyView, IconContainer} from './index.styles'
 
 type Props = {
@@ -64,6 +66,17 @@ const renderIcon = (label, size, themeKey) => {
       return <WonIcon width={size} height={size} />
     case 'lost':
       return <LostIcon width={size} height={size} />
+    case 'facebook':
+      return (
+        <Image
+          style={{width: size, height: size, resizeMode: 'contain'}}
+          source={require('../../../assets/icons/social/facebook.png')}
+        />
+      )
+    case 'apple':
+      return <Image style={{width: size, height: size}} source={require('../../../assets/icons/social/apple.png')} />
+    case 'gmail':
+      return <Image style={{width: size, height: size}} source={require('../../../assets/icons/social/gmail.png')} />
 
     default:
       return <EmptyView />

@@ -41,6 +41,11 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -97,6 +102,11 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -150,6 +160,11 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -500,6 +515,11 @@ exports[`Button Props tests renders default Button 1`] = `
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -556,6 +576,11 @@ exports[`Button Props tests renders default Button 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -609,6 +634,11 @@ exports[`Button Props tests renders default Button 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -961,6 +991,11 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -1017,6 +1052,11 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -1070,6 +1110,11 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {

@@ -9,13 +9,14 @@ import Generic from '.'
 
 describe.only('Generic', () => {
   describe('Integrity tests', () => {
-    it('renders Generic correctly', () => {
-      const value = 3.04
+    it('renders odd correctly', () => {
+      const value = 3.0
+      const label = 'Mon bilan'
       const kpiLabel = 'En augmentation'
       const description = 'T’es sur une série folle ! 7/7 ! truc de malade !'
       const wrapper = mount(
         <ThemeContextProvider>
-          <Generic value={value} description={description} />
+          <Generic label={label} KPIDescription={kpiLabel} value={value} description={description} type="odd" />
         </ThemeContextProvider>,
       )
 
@@ -26,8 +27,78 @@ describe.only('Generic', () => {
       const GenericDescription = wrapper.find('Text').at(6)
 
       expect(GenericContainer.exists()).toBe(true)
-      expect(GenericLabel.prop('children')).toBe('Mon bilan')
-      expect(GenericValue.prop('children')).toBe(value)
+      expect(GenericLabel.prop('children')).toBe(label)
+      expect(GenericValue.prop('children')).toBe('3.00')
+      expect(GenericKPILabel.prop('children')).toBe(kpiLabel)
+      expect(GenericDescription.prop('children')).toBe(description)
+    })
+
+    it('renders positive percentage correctly', () => {
+      const value = 28.54
+      const label = 'Mon bilan'
+      const kpiLabel = 'En augmentation'
+      const description = 'T’es sur une série folle ! 7/7 ! truc de malade !'
+      const wrapper = mount(
+        <ThemeContextProvider>
+          <Generic label={label} KPIDescription={kpiLabel} value={value} description={description} type="percentage" />
+        </ThemeContextProvider>,
+      )
+
+      const GenericContainer = wrapper.find('View').first()
+      const GenericLabel = wrapper.find('Text').first()
+      const GenericValue = wrapper.find('Text').at(2)
+      const GenericKPILabel = wrapper.find('Text').at(4)
+      const GenericDescription = wrapper.find('Text').at(6)
+
+      expect(GenericContainer.exists()).toBe(true)
+      expect(GenericLabel.prop('children')).toBe(label)
+      expect(GenericValue.prop('children')).toBe('+28.54%')
+      expect(GenericKPILabel.prop('children')).toBe(kpiLabel)
+      expect(GenericDescription.prop('children')).toBe(description)
+    })
+    it('renders negative percentage correctly', () => {
+      const value = 13.2
+      const label = 'Mon bilan'
+      const kpiLabel = 'En augmentation'
+      const description = 'T’es sur une série folle ! 7/7 ! truc de malade !'
+      const wrapper = mount(
+        <ThemeContextProvider>
+          <Generic label={label} KPIDescription={kpiLabel} value={value} description={description} type="currency" />
+        </ThemeContextProvider>,
+      )
+
+      const GenericContainer = wrapper.find('View').first()
+      const GenericLabel = wrapper.find('Text').first()
+      const GenericValue = wrapper.find('Text').at(2)
+      const GenericKPILabel = wrapper.find('Text').at(4)
+      const GenericDescription = wrapper.find('Text').at(6)
+
+      expect(GenericContainer.exists()).toBe(true)
+      expect(GenericLabel.prop('children')).toBe(label)
+      expect(GenericValue.prop('children')).toBe('€13.20')
+      expect(GenericKPILabel.prop('children')).toBe(kpiLabel)
+      expect(GenericDescription.prop('children')).toBe(description)
+    })
+    it('renders currency correctly', () => {
+      const value = -28.54
+      const label = 'Mon bilan'
+      const kpiLabel = 'En augmentation'
+      const description = 'T’es sur une série folle ! 7/7 ! truc de malade !'
+      const wrapper = mount(
+        <ThemeContextProvider>
+          <Generic label={label} KPIDescription={kpiLabel} value={value} description={description} type="percentage" />
+        </ThemeContextProvider>,
+      )
+
+      const GenericContainer = wrapper.find('View').first()
+      const GenericLabel = wrapper.find('Text').first()
+      const GenericValue = wrapper.find('Text').at(2)
+      const GenericKPILabel = wrapper.find('Text').at(4)
+      const GenericDescription = wrapper.find('Text').at(6)
+
+      expect(GenericContainer.exists()).toBe(true)
+      expect(GenericLabel.prop('children')).toBe(label)
+      expect(GenericValue.prop('children')).toBe('-28.54%')
       expect(GenericKPILabel.prop('children')).toBe(kpiLabel)
       expect(GenericDescription.prop('children')).toBe(description)
     })
@@ -35,14 +106,16 @@ describe.only('Generic', () => {
 
   describe('Props tests', () => {
     it('renders default Generic correctly', () => {
+      const label = 'Mon bilan'
       const value = 403.02
       const description = 'Depuis une semaine, tu as gagné 405,93€ grâce aux paris sportifs 😊.'
+      const kpiLabel = 'En augmentation'
 
       const windowWidth = 375
 
       const wrapper = mount(
         <ThemeContextProvider>
-          <Generic value={value} description={description} />
+          <Generic label={label} KPIDescription={kpiLabel} value={value} description={description} />
         </ThemeContextProvider>,
       )
 

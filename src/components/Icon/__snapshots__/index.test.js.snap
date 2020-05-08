@@ -41,6 +41,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -97,6 +102,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -150,6 +160,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -211,6 +226,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                     "cancellable": "#3E3E3E",
                     "filter": "#3E3E3E",
                     "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
                   },
                   "description": "#ADADAD",
                   "filters": Object {
@@ -264,6 +284,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                     "cancellable": "#3E3E3E",
                     "filter": "#3E3E3E",
                     "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
                   },
                   "description": "#ADADAD",
                   "filters": Object {
@@ -350,6 +375,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                       "cancellable": "#3E3E3E",
                       "filter": "#3E3E3E",
                       "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
                     },
                     "description": "#ADADAD",
                     "filters": Object {
@@ -403,6 +433,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                       "cancellable": "#3E3E3E",
                       "filter": "#3E3E3E",
                       "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
                     },
                     "description": "#ADADAD",
                     "filters": Object {
@@ -474,6 +509,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                         "cancellable": "#3E3E3E",
                         "filter": "#3E3E3E",
                         "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
                       },
                       "description": "#ADADAD",
                       "filters": Object {
@@ -527,6 +567,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                         "cancellable": "#3E3E3E",
                         "filter": "#3E3E3E",
                         "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
                       },
                       "description": "#ADADAD",
                       "filters": Object {
@@ -599,6 +644,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                           "cancellable": "#3E3E3E",
                           "filter": "#3E3E3E",
                           "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
                         },
                         "description": "#ADADAD",
                         "filters": Object {
@@ -652,6 +702,11 @@ exports[`Icon Props tests renders Icon 1`] = `
                           "cancellable": "#3E3E3E",
                           "filter": "#3E3E3E",
                           "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
                         },
                         "description": "#ADADAD",
                         "filters": Object {

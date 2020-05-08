@@ -85,7 +85,7 @@ const Charts = ({data, theme}: Props) => {
           style={{
             position: 'absolute',
             top: yLastItemPos - 5,
-            left: 239,
+            left: windowWidth * 0.603 - 11,
             width: 11,
             height: 11,
             borderRadius: 7.5,

@@ -47,6 +47,11 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -103,6 +108,11 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -156,6 +166,11 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -514,6 +529,11 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -570,6 +590,11 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -623,6 +648,11 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -979,6 +1009,11 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -1035,6 +1070,11 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -1088,6 +1128,11 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -1448,6 +1493,11 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -1504,6 +1554,11 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -1557,6 +1612,11 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -1915,6 +1975,11 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -1971,6 +2036,11 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -2024,6 +2094,11 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -2384,6 +2459,11 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -2440,6 +2520,11 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -2493,6 +2578,11 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -2860,6 +2950,11 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -2916,6 +3011,11 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -2969,6 +3069,11 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -3329,6 +3434,11 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                 "cancellable": "#3E3E3E",
                 "filter": "#3E3E3E",
                 "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
               },
               "description": "#ADADAD",
               "filters": Object {
@@ -3385,6 +3495,11 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {
@@ -3438,6 +3553,11 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                   "cancellable": "#3E3E3E",
                   "filter": "#3E3E3E",
                   "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
                 },
                 "description": "#ADADAD",
                 "filters": Object {

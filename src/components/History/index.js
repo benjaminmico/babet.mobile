@@ -25,7 +25,12 @@ const History = ({items, theme, ...props}: Props) => {
       <HistoryItemContainer>
         {items.map((item, index) => {
           return (
-            <HistoryItem marginLeft={index !== 0} color={item === 'won' ? backgroundWonColor : backgroundLostColor} />
+            <HistoryItem
+              // eslint-disable-next-line react/no-array-index-key
+              key={index + item}
+              marginLeft={index !== 0}
+              color={item === 'won' ? backgroundWonColor : backgroundLostColor}
+            />
           )
         })}
       </HistoryItemContainer>

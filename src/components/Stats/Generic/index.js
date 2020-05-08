@@ -13,19 +13,26 @@ import {
   GenericValue,
 } from './index.styles'
 import History from '@components/History'
+import formatValue from './utils/formatValue'
 
 type Props = {
-  // Balance sheet value
+  // Label of generic
+  label: String,
+  // Generic value
   value: Number,
-  // Balance sheet description
+  // KPI description (for example 'Skyrocketing')
+  KPIDescription: String,
+  // Generic description
   description: String,
   // bet history to display
   history: [String],
+  // type of value => 'percentage', odd', 'currency' or 'ratio
+  type: String,
   // theme
   theme: Object,
 }
 
-const Generic = ({value, description, history, theme}: Props) => {
+const Generic = ({label, value, KPIDescription, type, description, history, theme}: Props) => {
   // get theme props
   const {
     key: keyTheme,
@@ -43,18 +50,19 @@ const Generic = ({value, description, history, theme}: Props) => {
    * render game button
    * text can only be de displayed on one line
    * */
-
   return (
     <GenericContainer backgroundColor={backgroundContainerColor} theme={keyTheme}>
       <GenericContentContainer>
-        <GenericLabel color={textColor}>Mon bilan</GenericLabel>
-        <GenericValue color={kpiValueColor}>{value}</GenericValue>
+        <GenericLabel color={textColor}>{label}</GenericLabel>
+        <GenericValue color={kpiValueColor}>{formatValue(value, type, history?.length)}</GenericValue>
         {history?.length > 0 ? (
           <History style={{position: 'absolute', top: 77}} items={history} />
         ) : (
-          <GenericKPILabel color={kpiValueColor}>En augmentation</GenericKPILabel>
+          <GenericKPILabel color={kpiValueColor}>{KPIDescription}</GenericKPILabel>
         )}
-        <GenericDescription color={descriptionColor}>{description}</GenericDescription>
+        <GenericDescription numberOfLines={2} color={descriptionColor}>
+          {description}
+        </GenericDescription>
       </GenericContentContainer>
     </GenericContainer>
   )
