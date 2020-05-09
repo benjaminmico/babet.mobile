@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android --variant=devDebug --appIdSuffix=dev",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --scheme babetmobile-dev",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",

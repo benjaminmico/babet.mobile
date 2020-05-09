@@ -68,9 +68,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>configName</key>
-	<string>$(CONFIGURATION)</string>
-	<key>targetName</key>
-	<string>$(TARGET_NAME)</string>
 </dict>
 </plist>

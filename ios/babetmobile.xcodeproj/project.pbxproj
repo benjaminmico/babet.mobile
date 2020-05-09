@@ -14,10 +14,27 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		196BAB18C5C2444A886B3B3A /* AvenirNext-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91319D3482A24627B4C17D11 /* AvenirNext-HeavyItalic.ttf */; };
 		324D0474A15041C9B8FB8F3A /* AvenirNext-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07C9F49065494C4E8A3EE2E6 /* AvenirNext-Bold.ttf */; };
+		4188F29324670B9F0084E04B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		4188F29424670B9F0084E04B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4188F29824670B9F0084E04B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		4188F29924670B9F0084E04B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		4188F29A24670B9F0084E04B /* AvenirNext-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07C9F49065494C4E8A3EE2E6 /* AvenirNext-Bold.ttf */; };
+		4188F29B24670B9F0084E04B /* AvenirNext-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA5C522570F4B93BE4648CD /* AvenirNext-BoldItalic.ttf */; };
+		4188F29C24670B9F0084E04B /* AvenirNext-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C910D456ABC4956A0339441 /* AvenirNext-DemiBold.ttf */; };
+		4188F29D24670B9F0084E04B /* AvenirNext-DemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67164EBAA0184CC286479405 /* AvenirNext-DemiBoldItalic.ttf */; };
+		4188F29E24670B9F0084E04B /* AvenirNext-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73500C059EC94B64AF4EE069 /* AvenirNext-Heavy.ttf */; };
+		4188F29F24670B9F0084E04B /* AvenirNext-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91319D3482A24627B4C17D11 /* AvenirNext-HeavyItalic.ttf */; };
+		4188F2A024670B9F0084E04B /* AvenirNext-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A60EEF4954F6E99DCA987 /* AvenirNext-Italic.ttf */; };
+		4188F2A124670B9F0084E04B /* AvenirNext-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8329C9100A964B139FC17445 /* AvenirNext-Medium.ttf */; };
+		4188F2A224670B9F0084E04B /* AvenirNext-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE181B17483A418884FE3FF2 /* AvenirNext-MediumItalic.ttf */; };
+		4188F2A324670B9F0084E04B /* AvenirNext-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5658238EC15743BF81CA4D25 /* AvenirNext-Regular.ttf */; };
+		4188F2A424670B9F0084E04B /* AvenirNext-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE9BBB540D5946DBBC2F775A /* AvenirNext-UltraLight.ttf */; };
+		4188F2A524670B9F0084E04B /* AvenirNext-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 372520B949E94FC8A605C893 /* AvenirNext-UltraLightItalic.ttf */; };
+		4188F2B324670EC50084E04B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4188F2B224670EC50084E04B /* GoogleService-Info.plist */; };
+		6E11FEED6238C070B5CCFBED /* libPods-babetmobile-dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53593F3417BCA52E6B0F1B6E /* libPods-babetmobile-dev.a */; };
 		807D20E19C644F679EDB177D /* AvenirNext-DemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67164EBAA0184CC286479405 /* AvenirNext-DemiBoldItalic.ttf */; };
 		88D7757894B34083A72DD2A1 /* AvenirNext-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA5C522570F4B93BE4648CD /* AvenirNext-BoldItalic.ttf */; };
 		9067F2D2D851445DB587D64F /* AvenirNext-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 372520B949E94FC8A605C893 /* AvenirNext-UltraLightItalic.ttf */; };
-		99D7802A289AC26762B83639 /* libPods-babetmobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E065FBC8BFEA16E26FC1E0F2 /* libPods-babetmobile.a */; };
 		A9D48E9DD4814A24AD7AE3EC /* AvenirNext-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE181B17483A418884FE3FF2 /* AvenirNext-MediumItalic.ttf */; };
 		BAE70E39C4874C938BB3503B /* AvenirNext-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5658238EC15743BF81CA4D25 /* AvenirNext-Regular.ttf */; };
 		CCDCFFF97278428B8A3B6FFF /* AvenirNext-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8329C9100A964B139FC17445 /* AvenirNext-Medium.ttf */; };
@@ -27,7 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0019BC7C56E76F3F616A4ED9 /* Pods-babetmobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile.debug.xcconfig"; path = "Target Support Files/Pods-babetmobile/Pods-babetmobile.debug.xcconfig"; sourceTree = "<group>"; };
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* babetmobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = babetmobileTests.m; sourceTree = "<group>"; };
@@ -41,23 +57,29 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = babetmobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = babetmobile/main.m; sourceTree = "<group>"; };
 		17612157111C8D8481863C7B /* libPods-babetmobile-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-babetmobile-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		206CF9E511FF5A016E1A7D04 /* Pods-babetmobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile.release.xcconfig"; path = "Target Support Files/Pods-babetmobile/Pods-babetmobile.release.xcconfig"; sourceTree = "<group>"; };
 		372520B949E94FC8A605C893 /* AvenirNext-UltraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-UltraLightItalic.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-UltraLightItalic.ttf"; sourceTree = "<group>"; };
 		3A2A60EEF4954F6E99DCA987 /* AvenirNext-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Italic.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-Italic.ttf"; sourceTree = "<group>"; };
 		3C910D456ABC4956A0339441 /* AvenirNext-DemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-DemiBold.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-DemiBold.ttf"; sourceTree = "<group>"; };
+		4188F28B24670B910084E04B /* babetmobile-dev copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "babetmobile-dev copy-Info.plist"; path = "/Users/benjaminmico/Code/babet.mobile/ios/babetmobile-dev copy-Info.plist"; sourceTree = "<absolute>"; };
+		4188F28D24670B960084E04B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Resources-iPad/babetmobile/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
+		4188F2AB24670B9F0084E04B /* babetmobile-prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babetmobile-prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4188F2AC24670B9F0084E04B /* babetmobile-dev copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "babetmobile-dev copy2-Info.plist"; path = "/Users/benjaminmico/Code/babet.mobile/ios/babetmobile-dev copy2-Info.plist"; sourceTree = "<absolute>"; };
+		4188F2B224670EC50084E04B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/fjzeifeoz/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		45EC9C303D34A683CAE20167 /* Pods-babetmobile-babetmobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile-babetmobileTests.debug.xcconfig"; path = "Target Support Files/Pods-babetmobile-babetmobileTests/Pods-babetmobile-babetmobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53593F3417BCA52E6B0F1B6E /* libPods-babetmobile-dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-babetmobile-dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5658238EC15743BF81CA4D25 /* AvenirNext-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Regular.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-Regular.ttf"; sourceTree = "<group>"; };
 		5EA3B73EB418C7875FC63E50 /* Pods-babetmobile-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile-tvOS.release.xcconfig"; path = "Target Support Files/Pods-babetmobile-tvOS/Pods-babetmobile-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		5F150D851EC0798854E48C33 /* libPods-babetmobile-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-babetmobile-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67164EBAA0184CC286479405 /* AvenirNext-DemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-DemiBoldItalic.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-DemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		72CE9B6CE76E92F6FDD39D89 /* Pods-babetmobile-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile-dev.release.xcconfig"; path = "Target Support Files/Pods-babetmobile-dev/Pods-babetmobile-dev.release.xcconfig"; sourceTree = "<group>"; };
 		73500C059EC94B64AF4EE069 /* AvenirNext-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Heavy.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-Heavy.ttf"; sourceTree = "<group>"; };
 		774044527AAE6DD1C38BB39B /* Pods-babetmobile-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-babetmobile-tvOS/Pods-babetmobile-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		788E2380CC6551C18FD32485 /* Pods-babetmobile-babetmobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile-babetmobileTests.release.xcconfig"; path = "Target Support Files/Pods-babetmobile-babetmobileTests/Pods-babetmobile-babetmobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		8329C9100A964B139FC17445 /* AvenirNext-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Medium.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-Medium.ttf"; sourceTree = "<group>"; };
 		8BD722E0236B39FE9775345D /* Pods-babetmobile-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-babetmobile-tvOSTests/Pods-babetmobile-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DE60DB09B0D88DB7A30B45B /* Pods-babetmobile-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babetmobile-dev.debug.xcconfig"; path = "Target Support Files/Pods-babetmobile-dev/Pods-babetmobile-dev.debug.xcconfig"; sourceTree = "<group>"; };
 		91319D3482A24627B4C17D11 /* AvenirNext-HeavyItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-HeavyItalic.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-HeavyItalic.ttf"; sourceTree = "<group>"; };
 		AEA5C522570F4B93BE4648CD /* AvenirNext-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-BoldItalic.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-BoldItalic.ttf"; sourceTree = "<group>"; };
-		E065FBC8BFEA16E26FC1E0F2 /* libPods-babetmobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-babetmobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EE9BBB540D5946DBBC2F775A /* AvenirNext-UltraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-UltraLight.ttf"; path = "../assets/fonts/AvenirNext/AvenirNext-UltraLight.ttf"; sourceTree = "<group>"; };
@@ -70,7 +92,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99D7802A289AC26762B83639 /* libPods-babetmobile.a in Frameworks */,
+				6E11FEED6238C070B5CCFBED /* libPods-babetmobile-dev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4188F29524670B9F0084E04B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,12 +142,44 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				E065FBC8BFEA16E26FC1E0F2 /* libPods-babetmobile.a */,
 				066A5CEBDD33C330CA2EC8D1 /* libPods-babetmobile-babetmobileTests.a */,
 				17612157111C8D8481863C7B /* libPods-babetmobile-tvOS.a */,
 				5F150D851EC0798854E48C33 /* libPods-babetmobile-tvOSTests.a */,
+				53593F3417BCA52E6B0F1B6E /* libPods-babetmobile-dev.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4188F28A24670B910084E04B /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4188F28C24670B960084E04B /* LaunchScreen.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+		4188F2AF24670E350084E04B /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				4188F2B124670E710084E04B /* babetmobile-prod */,
+				4188F2B024670E6A0084E04B /* babetmobile-dev */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		4188F2B024670E6A0084E04B /* babetmobile-dev */ = {
+			isa = PBXGroup;
+			children = (
+				4188F2B224670EC50084E04B /* GoogleService-Info.plist */,
+			);
+			path = "babetmobile-dev";
+			sourceTree = "<group>";
+		};
+		4188F2B124670E710084E04B /* babetmobile-prod */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "babetmobile-prod";
 			sourceTree = "<group>";
 		};
 		75DCE1D9891849318AD21C0A /* Resources */ = {
@@ -150,6 +211,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4188F2AF24670E350084E04B /* Firebase */,
 				13B07FAE1A68108700A75B9A /* babetmobile */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* babetmobileTests */,
@@ -157,6 +219,9 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				91CAEFFA6CD738AF09B3BC01 /* Pods */,
 				75DCE1D9891849318AD21C0A /* Resources */,
+				4188F28A24670B910084E04B /* Resources-iPad */,
+				4188F28B24670B910084E04B /* babetmobile-dev copy-Info.plist */,
+				4188F2AC24670B9F0084E04B /* babetmobile-dev copy2-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -167,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* babetmobile.app */,
+				4188F2AB24670B9F0084E04B /* babetmobile-prod.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,14 +240,14 @@
 		91CAEFFA6CD738AF09B3BC01 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0019BC7C56E76F3F616A4ED9 /* Pods-babetmobile.debug.xcconfig */,
-				206CF9E511FF5A016E1A7D04 /* Pods-babetmobile.release.xcconfig */,
 				45EC9C303D34A683CAE20167 /* Pods-babetmobile-babetmobileTests.debug.xcconfig */,
 				788E2380CC6551C18FD32485 /* Pods-babetmobile-babetmobileTests.release.xcconfig */,
 				774044527AAE6DD1C38BB39B /* Pods-babetmobile-tvOS.debug.xcconfig */,
 				5EA3B73EB418C7875FC63E50 /* Pods-babetmobile-tvOS.release.xcconfig */,
 				8BD722E0236B39FE9775345D /* Pods-babetmobile-tvOSTests.debug.xcconfig */,
 				F41A538167AE16216C00DE14 /* Pods-babetmobile-tvOSTests.release.xcconfig */,
+				8DE60DB09B0D88DB7A30B45B /* Pods-babetmobile-dev.debug.xcconfig */,
+				72CE9B6CE76E92F6FDD39D89 /* Pods-babetmobile-dev.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -189,9 +255,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* babetmobile */ = {
+		13B07F861A680F5B00A75B9A /* babetmobile-dev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "babetmobile" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "babetmobile-dev" */;
 			buildPhases = (
 				1E7C92522B8ACCF5D1F1E18C /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -200,14 +266,35 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				1AD66A4C3841D9B2A881FFAC /* [CP-User] [RNFB] Core Configuration */,
+				4188F2AD24670D090084E04B /* Setup Firebase plist files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = babetmobile;
+			name = "babetmobile-dev";
 			productName = babetmobile;
 			productReference = 13B07F961A680F5B00A75B9A /* babetmobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4188F28F24670B9F0084E04B /* babetmobile-prod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4188F2A824670B9F0084E04B /* Build configuration list for PBXNativeTarget "babetmobile-prod" */;
+			buildPhases = (
+				4188F29124670B9F0084E04B /* Start Packager */,
+				4188F29224670B9F0084E04B /* Sources */,
+				4188F29524670B9F0084E04B /* Frameworks */,
+				4188F29724670B9F0084E04B /* Resources */,
+				4188F2A624670B9F0084E04B /* Bundle React Native code and images */,
+				4188F2AE24670D720084E04B /* Setup Firebase plist files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "babetmobile-prod";
+			productName = babetmobile;
+			productReference = 4188F2AB24670B9F0084E04B /* babetmobile-prod.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -221,6 +308,9 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 4E7NWZLU53;
 						LastSwiftMigration = 1120;
+					};
+					4188F28F24670B9F0084E04B = {
+						DevelopmentTeam = 4E7NWZLU53;
 					};
 				};
 			};
@@ -237,7 +327,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* babetmobile */,
+				13B07F861A680F5B00A75B9A /* babetmobile-dev */,
+				4188F28F24670B9F0084E04B /* babetmobile-prod */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +340,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				4188F2B324670EC50084E04B /* GoogleService-Info.plist in Resources */,
 				324D0474A15041C9B8FB8F3A /* AvenirNext-Bold.ttf in Resources */,
 				88D7757894B34083A72DD2A1 /* AvenirNext-BoldItalic.ttf in Resources */,
 				0C214DE558D946EF98703F74 /* AvenirNext-DemiBold.ttf in Resources */,
@@ -261,6 +353,27 @@
 				BAE70E39C4874C938BB3503B /* AvenirNext-Regular.ttf in Resources */,
 				FE53D9FB2F3648E5B286ECD1 /* AvenirNext-UltraLight.ttf in Resources */,
 				9067F2D2D851445DB587D64F /* AvenirNext-UltraLightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4188F29724670B9F0084E04B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4188F29824670B9F0084E04B /* Images.xcassets in Resources */,
+				4188F29924670B9F0084E04B /* LaunchScreen.xib in Resources */,
+				4188F29A24670B9F0084E04B /* AvenirNext-Bold.ttf in Resources */,
+				4188F29B24670B9F0084E04B /* AvenirNext-BoldItalic.ttf in Resources */,
+				4188F29C24670B9F0084E04B /* AvenirNext-DemiBold.ttf in Resources */,
+				4188F29D24670B9F0084E04B /* AvenirNext-DemiBoldItalic.ttf in Resources */,
+				4188F29E24670B9F0084E04B /* AvenirNext-Heavy.ttf in Resources */,
+				4188F29F24670B9F0084E04B /* AvenirNext-HeavyItalic.ttf in Resources */,
+				4188F2A024670B9F0084E04B /* AvenirNext-Italic.ttf in Resources */,
+				4188F2A124670B9F0084E04B /* AvenirNext-Medium.ttf in Resources */,
+				4188F2A224670B9F0084E04B /* AvenirNext-MediumItalic.ttf in Resources */,
+				4188F2A324670B9F0084E04B /* AvenirNext-Regular.ttf in Resources */,
+				4188F2A424670B9F0084E04B /* AvenirNext-UltraLight.ttf in Resources */,
+				4188F2A524670B9F0084E04B /* AvenirNext-UltraLightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +419,81 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-babetmobile-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-babetmobile-dev-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4188F29124670B9F0084E04B /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4188F2A624670B9F0084E04B /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		4188F2AD24670D090084E04B /* Setup Firebase plist files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Setup Firebase plist files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Name of the resource to copy\nINFO_PLIST_FILE=GoogleService-Info.plist\n \n# Get references to babetmobile-dev or babetmobile-prod versions of the plist file\nTARGET_INFO_PLIST_FILE=${PROJECT_DIR}/Firebase/${TARGET_NAME}/${INFO_PLIST_FILE}\n \n \n# Make sure the selected babetmobile-dev or babetmobile-prod version exists\necho \"Looking for ${INFO_PLIST_FILE} in ${TARGET_INFO_PLIST_FILE}\"\nif [ ! -f $TARGET_INFO_PLIST_FILE ] ; then\n    echo \"File GoogleService-Info.plist ($TARGET_NAME) not found.\"\n    exit 1\nfi\n \n \n# Get a reference to the destination location for the plist file\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Copying ${INFO_PLIST_FILE} to final destination: ${PLIST_DESTINATION}\"\n \n# Copy the appropiate file to app bundle\ncp ${TARGET_INFO_PLIST_FILE} GoogleService-Info.plist\ncp \"GoogleService-Info.plist\" \"${PLIST_DESTINATION}\"\necho \"File ${DIRECT_INFO_PLIST_FILE} copied\"\n\n";
+		};
+		4188F2AE24670D720084E04B /* Setup Firebase plist files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Setup Firebase plist files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Name of the resource to copy\nINFO_PLIST_FILE=GoogleService-Info-${CONFIGURATION}.plist\n \n# Get references to babetmobile-dev or babetmobile-prod versions of the plist file\nTARGET_INFO_PLIST_FILE=${PROJECT_DIR}/Firebase/${CONFIGURATION}/${INFO_PLIST_FILE}\n \n \n# Make sure the selected babetmobile-dev or babetmobile-prod version exists\necho \"Looking for ${INFO_PLIST_FILE} in ${TARGET_INFO_PLIST_FILE}\"\nif [ ! -f $TARGET_INFO_PLIST_FILE ] ; then\n    echo \"File GoogleService-Info.plist ($TARGET_NAME) not found.\"\n    exit 1\nfi\n \n \n# Get a reference to the destination location for the plist file\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Copying ${INFO_PLIST_FILE} to final destination: ${PLIST_DESTINATION}\"\n \n# Copy the appropiate file to app bundle\ncp ${TARGET_INFO_PLIST_FILE} GoogleService-Info.plist\ncp \"GoogleService-Info.plist\" \"${PLIST_DESTINATION}\"\necho \"File ${DIRECT_INFO_PLIST_FILE} copied\"\n\n";
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -344,6 +526,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4188F29224670B9F0084E04B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4188F29324670B9F0084E04B /* AppDelegate.m in Sources */,
+				4188F29424670B9F0084E04B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -356,12 +547,20 @@
 			path = babetmobile;
 			sourceTree = "<group>";
 		};
+		4188F28C24670B960084E04B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4188F28D24670B960084E04B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0019BC7C56E76F3F616A4ED9 /* Pods-babetmobile.debug.xcconfig */;
+			baseConfigurationReference = 8DE60DB09B0D88DB7A30B45B /* Pods-babetmobile-dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -379,7 +578,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.babet.app;
 				PRODUCT_NAME = babetmobile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -389,7 +588,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 206CF9E511FF5A016E1A7D04 /* Pods-babetmobile.release.xcconfig */;
+			baseConfigurationReference = 72CE9B6CE76E92F6FDD39D89 /* Pods-babetmobile-dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -402,8 +601,56 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.babet.app;
 				PRODUCT_NAME = babetmobile;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		4188F2A924670B9F0084E04B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4E7NWZLU53;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = "babetmobile-dev copy2-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.babetmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		4188F2AA24670B9F0084E04B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4E7NWZLU53;
+				INFOPLIST_FILE = "babetmobile-dev copy2-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.babetmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -525,11 +772,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "babetmobile" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "babetmobile-dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4188F2A824670B9F0084E04B /* Build configuration list for PBXNativeTarget "babetmobile-prod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4188F2A924670B9F0084E04B /* Debug */,
+				4188F2AA24670B9F0084E04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

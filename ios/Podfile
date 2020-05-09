@@ -44,7 +44,7 @@ def flipper_post_install(installer)
   end
 end
 
-target 'babetmobile' do
+target 'babetmobile-dev' do
   # Pods for babetmobile
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
@@ -77,10 +77,8 @@ target 'babetmobile' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'babetmobileTests' do
-    inherit! :complete
-    # Pods for testing
-  end
+  pod 'Firebase/Analytics'
+  
 
   use_native_modules!
 
@@ -91,14 +89,5 @@ target 'babetmobile' do
   add_flipper_pods!
   post_install do |installer|
     flipper_post_install(installer)
-  end
-end
-
-target 'babetmobile-tvOS' do
-  # Pods for babetmobile-tvOS
-
-  target 'babetmobile-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
   end
 end
