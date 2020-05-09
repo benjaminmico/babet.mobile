@@ -25,6 +25,7 @@ export const ChartLastItemContainer = styled.View`
   shadow-radius: ${props => (props.theme === 'white' ? '18px' : '0px')};
   shadow-color: #c8c9ca;
   shadow-opacity: ${props => (props.theme === 'white' ? '0.5' : '0')};
+  elevation: 3;
 `
 
 export const ChartLastItemValue = styled.Text`
