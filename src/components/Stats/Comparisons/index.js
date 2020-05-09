@@ -38,7 +38,14 @@ const Comparisons = ({label, items, theme}: Props) => {
       <ComparisonsItemsContainer>
         {items.map(comparison => {
           const {label: comparisonLabel, value: comparisonValue} = comparison
-          return <ComparisonItem label={comparisonLabel} value={comparisonValue} />
+          console.log('`${comparisonLabel}${comparisonValue}`', `${comparisonLabel}${comparisonValue}`)
+          return (
+            <ComparisonItem
+              key={`${comparisonLabel}${comparisonValue}`}
+              label={comparisonLabel}
+              value={comparisonValue}
+            />
+          )
         })}
       </ComparisonsItemsContainer>
     </ComparisonsContainer>

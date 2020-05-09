@@ -7,6 +7,7 @@ import BalanceSheet from '@components/Stats/BalanceSheet'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {Dimensions, StatusBar, StyleSheet, ScrollView, View} from 'react-native'
+import {useSelector} from 'react-redux'
 
 const style = StyleSheet.create({
   container: {
@@ -58,8 +59,8 @@ const rugbyBetItem = {
 const bets = [footballBetItem, tennisBetItem, rugbyBetItem]
 const comparisonsItems = [
   {value: -321.24, label: '⚽️ 🇫🇷 Ligue 1 '},
-  {value: 321, label: '⚽️ 🇫🇷 Ligue 1 '},
-  {value: 321, label: '⚽️ 🇫🇷 Ligue 1 '},
+  {value: 319, label: '⚽️ 🇫🇷 Ligue 1 '},
+  {value: 318, label: '⚽️ 🇫🇷 Ligue 1 '},
 ]
 const graphItems = [
   50,
@@ -156,6 +157,10 @@ const graphItems = [
 // const graphItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]
 
 const MainScreen = ({theme}) => {
+  console.log(
+    'store',
+    useSelector(state => state),
+  )
   return (
     <ScrollView style={[style.container, {backgroundColor: theme.backgroundColor}]}>
       <View style={{marginTop: 159, justifyContent: 'center', alignItems: 'center'}}>

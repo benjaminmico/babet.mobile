@@ -9,6 +9,11 @@ import {initReactI18next} from 'react-i18next'
 import en from './src/languages/en.json'
 import fr from './src/languages/fr.json'
 import * as RNLocalize from 'react-native-localize'
+import {PersistGate} from 'redux-persist/integration/react'
+import {Provider} from 'react-redux'
+
+// Imports: Redux Persist Persister
+import {store, persistor} from './src/store/store'
 
 const Tab = createBottomTabNavigator()
 
@@ -52,11 +57,15 @@ export default class App extends React.Component {
   render() {
     // set ThemeContext as High Order Component
     return (
-      <ThemeContextProvider>
-        <NavigationContainer>
-          <MyTabs />
-        </NavigationContainer>
-      </ThemeContextProvider>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <ThemeContextProvider>
+            <NavigationContainer>
+              <MyTabs />
+            </NavigationContainer>
+          </ThemeContextProvider>
+        </PersistGate>
+      </Provider>
     )
   }
 }
