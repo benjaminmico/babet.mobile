@@ -11,7 +11,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import actions from '@store/actions'
 import {loginToFirebase} from '@api/auth/login'
 import {useQuery} from '@apollo/react-hooks'
-import {getUser} from '@api/graphql/queries/user'
+import {getUserInformations} from '@api/graphql/queries/user'
 
 const style = StyleSheet.create({
   container: {
@@ -165,7 +165,7 @@ const MainScreen = ({theme}) => {
   ]
   // const graphItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]
 
-  const {data} = useQuery(getUser)
+  const {data} = useQuery(getUserInformations)
 
   useEffect(() => {
     async function fetchData() {
