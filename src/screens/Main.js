@@ -7,7 +7,7 @@ import BalanceSheet from '@components/Stats/BalanceSheet'
 import {withTheme} from '@core/themeProvider'
 import React, {useState, useEffect} from 'react'
 import {Dimensions, StatusBar, StyleSheet, ScrollView, View} from 'react-native'
-import {useSelector, useDispatch} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import actions from '@store/actions'
 import {loginToFirebase} from '@api/auth/login'
 import {useQuery} from '@apollo/react-hooks'
@@ -185,11 +185,6 @@ const MainScreen = ({theme}) => {
     }
     fetchData()
   }, [isConnected])
-
-  console.log(
-    'store',
-    useSelector(state => state),
-  )
 
   return (
     <ScrollView style={[style.container, {backgroundColor: theme.backgroundColor}]}>

@@ -14,17 +14,34 @@ import en from './src/languages/en.json'
 import fr from './src/languages/fr.json'
 import MainScreen from './src/screens/Main'
 import SettingsScreen from './src/screens/Settings'
-// Imports: Redux Persist Persister
 import {persistor, store} from './src/store/store'
+import BottomTab from '@components/Navigation/Tabs/BottomTab'
 
 const Tab = createBottomTabNavigator()
-
 // create Bottom Tab of the app
 const MyTabs = () => {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="Main" component={MainScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
+    <Tab.Navigator
+      tabBar={props => <BottomTab {...props} />}
+      // tabBarOptions={{
+      //   activeTintColor: '#FFFFFF',
+      //   inactiveTintColor: '#F8F8F8',
+      //   tabStyle: {
+      //     backgroundColor: 'red',
+      //     width: 30,
+      //   },
+      //   style: {
+      //     borderTopWidth: 0,
+      //     backgroundColor: '#5100FF',
+      //     position: 'absolute',
+      //     bottom: 0,
+      //     right: 0,
+      //     left: 0,
+      //   },
+      // }}
+    >
+      <Tab.Screen name="AddTicket" component={MainScreen} />
+      <Tab.Screen name="Profile" component={SettingsScreen} />
     </Tab.Navigator>
   )
 }
@@ -54,8 +71,6 @@ i18next.use(languageDetector).use(initReactI18next).init({
     fr,
   },
 })
-
-console.log('storeaaa', store.getState().auth?.token)
 
 // graphQL client
 const client = new ApolloClient({

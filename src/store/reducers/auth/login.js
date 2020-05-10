@@ -4,7 +4,6 @@
  * @param {*} action
  */
 export function login(state, action) {
-  console.log('action', action.userInformations)
   const {
     isNewUser,
     firstname,

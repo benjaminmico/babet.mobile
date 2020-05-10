@@ -12,6 +12,10 @@ import Tick from '@assets/icons/tick.svg'
 import BankrollWhiteIcon from '@assets/icons/whites/bankrollIcon.svg'
 import GoBackWhiteIcon from '@assets/icons/whites/goBackIcon.svg'
 import InformationsWhiteIcon from '@assets/icons/whites/informationsIcon.svg'
+import SelectedAddTicket from '@assets/icons/navigation/selectedAddTicket.svg'
+import AddTicket from '@assets/icons/navigation/addTicket.svg'
+import SelectedProfile from '@assets/icons/navigation/selectedProfile.svg'
+import Profile from '@assets/icons/navigation/profile.svg'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {Image} from 'react-native'
@@ -77,7 +81,14 @@ const renderIcon = (label, size, themeKey) => {
       return <Image style={{width: size, height: size}} source={require('../../../assets/icons/social/apple.png')} />
     case 'gmail':
       return <Image style={{width: size, height: size}} source={require('../../../assets/icons/social/gmail.png')} />
-
+    case 'selectedProfile':
+      return <SelectedProfile width={size} height={size} />
+    case 'profile':
+      return <Profile width={size} height={size} />
+    case 'selectedAddTicket':
+      return <SelectedAddTicket width={size} height={size} />
+    case 'addTicket':
+      return <AddTicket width={size} height={size} />
     default:
       return <EmptyView />
   }
