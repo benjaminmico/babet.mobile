@@ -5,10 +5,13 @@ import Graph from '@components/Stats/Graph'
 import Ticket from '@components/Ticket'
 import BalanceSheet from '@components/Stats/BalanceSheet'
 import {withTheme} from '@core/themeProvider'
-import React, {useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Dimensions, StatusBar, StyleSheet, ScrollView, View} from 'react-native'
 import {useSelector, useDispatch} from 'react-redux'
 import actions from '@store/actions'
+import {loginToFirebase} from '@api/auth/login'
+import {useQuery} from '@apollo/react-hooks'
+import {getUser} from '@api/graphql/queries/user'
 
 const style = StyleSheet.create({
   container: {
@@ -20,6 +23,7 @@ const style = StyleSheet.create({
 })
 
 const MainScreen = ({theme}) => {
+  const [isConnected, setConnected] = useState(false)
   const dispatch = useDispatch()
 
   const windowWidth = Dimensions.get('window').width
@@ -160,11 +164,27 @@ const MainScreen = ({theme}) => {
     -80,
   ]
   // const graphItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]
+
+  const {data} = useQuery(getUser)
+
   useEffect(() => {
-    const {login} = actions
-    console.log('dispatch', login)
-    dispatch(login(true))
-  }, [])
+    async function fetchData() {
+      // You can await here
+      const userInformations = await loginToFirebase('dev+test@babet.app', 'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM')
+      const {login} = actions
+
+      if (userInformations) {
+        setConnected(true)
+        if (data?.user) {
+          const {firstname, lastname} = data.user
+          dispatch(login({...userInformations, firstname, lastname}))
+        } else {
+          dispatch(login(userInformations))
+        }
+      }
+    }
+    fetchData()
+  }, [isConnected])
 
   console.log(
     'store',

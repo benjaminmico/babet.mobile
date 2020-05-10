@@ -4,10 +4,29 @@
  * @param {*} action
  */
 export function login(state, action) {
+  console.log('action', action.userInformations)
+  const {
+    isNewUser,
+    firstname,
+    lastname,
+    email,
+    emailValidation,
+    creationTime,
+    lastTimeLogged,
+    uid,
+    token,
+  } = action.userInformations
   return {
-    // State
     ...state,
-    // Redux Store
-    loggedIn: action.trueFalse,
+    isNewUser,
+    firstname,
+    lastname,
+    email,
+    emailValidation,
+    creationTime,
+    lastTimeLogged,
+    uid,
+    token,
+    loggedIn: true,
   }
 }

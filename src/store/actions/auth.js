@@ -1,10 +1,5 @@
 // Login
-export const login = trueFalse => ({
+export const login = userInformations => ({
   type: 'LOGIN',
-  trueFalse,
-})
-
-export const login2 = trueFalse => ({
-  type: 'LOGIN',
-  trueFalse,
+  userInformations,
 })
