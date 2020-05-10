@@ -1,5 +1,6 @@
 import {ApolloProvider} from '@apollo/react-hooks'
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
+import InNavigator from '@navigators/InNavigator'
+import OutNavigator from '@navigators/OutNavigator'
 import {NavigationContainer} from '@react-navigation/native'
 import {HttpLink, InMemoryCache} from 'apollo-boost'
 import {ApolloClient} from 'apollo-client'
@@ -12,39 +13,9 @@ import {PersistGate} from 'redux-persist/integration/react'
 import {ThemeContextProvider} from './src/core/themeProvider'
 import en from './src/languages/en.json'
 import fr from './src/languages/fr.json'
-import MainScreen from './src/screens/Main'
-import SettingsScreen from './src/screens/Settings'
 import {persistor, store} from './src/store/store'
-import BottomTab from '@components/Navigation/Tabs/BottomTab'
 
-const Tab = createBottomTabNavigator()
-// create Bottom Tab of the app
-const MyTabs = () => {
-  return (
-    <Tab.Navigator
-      tabBar={props => <BottomTab {...props} />}
-      // tabBarOptions={{
-      //   activeTintColor: '#FFFFFF',
-      //   inactiveTintColor: '#F8F8F8',
-      //   tabStyle: {
-      //     backgroundColor: 'red',
-      //     width: 30,
-      //   },
-      //   style: {
-      //     borderTopWidth: 0,
-      //     backgroundColor: '#5100FF',
-      //     position: 'absolute',
-      //     bottom: 0,
-      //     right: 0,
-      //     left: 0,
-      //   },
-      // }}
-    >
-      <Tab.Screen name="AddTicket" component={MainScreen} />
-      <Tab.Screen name="Profile" component={SettingsScreen} />
-    </Tab.Navigator>
-  )
-}
+const token = store.getState().auth?.token || null
 
 // get local language from device
 const currentLanguage = RNLocalize.getLocales()[0].languageCode
@@ -90,9 +61,7 @@ export default class App extends React.Component {
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
             <ThemeContextProvider>
-              <NavigationContainer>
-                <MyTabs />
-              </NavigationContainer>
+              <NavigationContainer>{token ? <InNavigator /> : <OutNavigator />}</NavigationContainer>
             </ThemeContextProvider>
           </PersistGate>
         </Provider>
