@@ -29,6 +29,7 @@ exports[`Input Props tests renders  Input 1`] = `
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
+              "separator": "#979797",
               "white": "#FFFFFF",
               "won": "#14B916",
             },
@@ -91,6 +92,7 @@ exports[`Input Props tests renders  Input 1`] = `
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
+                "separator": "#979797",
                 "white": "#FFFFFF",
                 "won": "#14B916",
               },
@@ -148,6 +150,7 @@ exports[`Input Props tests renders  Input 1`] = `
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
+                "separator": "#979797",
                 "white": "#FFFFFF",
                 "won": "#14B916",
               },
@@ -204,9 +207,9 @@ exports[`Input Props tests renders  Input 1`] = `
   border-color: rgba(220, 218, 218, 0.5);
   width: 100%;
   height: 72px;
-  padding-top: 11px;
+  padding-top: 14px;
   padding-left: 21.5px;
-  padding-bottom: 11px;
+  padding-bottom: 6px;
 ",
                 ],
               },
@@ -225,9 +228,9 @@ exports[`Input Props tests renders  Input 1`] = `
                   "borderBottomWidth": 1,
                   "borderColor": "rgba(220, 218, 218, 0.5)",
                   "height": 72,
-                  "paddingBottom": 11,
+                  "paddingBottom": 6,
                   "paddingLeft": 21.5,
-                  "paddingTop": 11,
+                  "paddingTop": 14,
                   "width": "100%",
                 },
               ]
@@ -240,9 +243,9 @@ exports[`Input Props tests renders  Input 1`] = `
                     "borderBottomWidth": 1,
                     "borderColor": "rgba(220, 218, 218, 0.5)",
                     "height": 72,
-                    "paddingBottom": 11,
+                    "paddingBottom": 6,
                     "paddingLeft": 21.5,
-                    "paddingTop": 11,
+                    "paddingTop": 14,
                     "width": "100%",
                   },
                 ]
@@ -317,6 +320,11 @@ exports[`Input Props tests renders  Input 1`] = `
               </Styled(Text)>
               <Styled(Component)
                 color="#000000"
+                style={
+                  Object {
+                    "marginTop": 8,
+                  }
+                }
               >
                 <StyledNativeComponent
                   color="#000000"
@@ -340,7 +348,8 @@ exports[`Input Props tests renders  Input 1`] = `
   font-size: 15px;
   letter-spacing: -0.16px;
   line-height: 20px;
-  margin-top: 8px;
+  padding: 0px;
+  border-width: 0px;
   text-align: left;
 ",
                         ],
@@ -352,6 +361,11 @@ exports[`Input Props tests renders  Input 1`] = `
                     }
                   }
                   forwardedRef={null}
+                  style={
+                    Object {
+                      "marginTop": 8,
+                    }
+                  }
                 >
                   <Component
                     allowFontScaling={true}
@@ -360,13 +374,20 @@ exports[`Input Props tests renders  Input 1`] = `
                     style={
                       Array [
                         Object {
+                          "borderWidth": 0,
                           "color": "#000000",
                           "fontFamily": "AvenirNext-DemiBold",
                           "fontSize": 15,
                           "letterSpacing": -0.16,
                           "lineHeight": 20,
-                          "marginTop": 8,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
                           "textAlign": "left",
+                        },
+                        Object {
+                          "marginTop": 8,
                         },
                       ]
                     }
@@ -379,13 +400,20 @@ exports[`Input Props tests renders  Input 1`] = `
                       style={
                         Array [
                           Object {
+                            "borderWidth": 0,
                             "color": "#000000",
                             "fontFamily": "AvenirNext-DemiBold",
                             "fontSize": 15,
                             "letterSpacing": -0.16,
                             "lineHeight": 20,
-                            "marginTop": 8,
+                            "paddingBottom": 0,
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "paddingTop": 0,
                             "textAlign": "left",
+                          },
+                          Object {
+                            "marginTop": 8,
                           },
                         ]
                       }

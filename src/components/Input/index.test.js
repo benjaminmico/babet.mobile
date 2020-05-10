@@ -11,10 +11,11 @@ describe.only('Input', () => {
   describe('Integrity tests', () => {
     it('renders Input correctly', () => {
       const inputLabel = 'Pseudo'
+      const placeholder = 'Entrez votre pseudo'
 
       const wrapper = mount(
         <ThemeContextProvider>
-          <Input inputLabel={inputLabel} />
+          <Input inputLabel={inputLabel} placeholder={placeholder} />
         </ThemeContextProvider>,
       )
 
@@ -24,6 +25,7 @@ describe.only('Input', () => {
       expect(InputLabel.exists()).toBe(true)
       expect(InputLabel.prop('children')).toBe(inputLabel)
       expect(InputItem.exists()).toBe(true)
+      expect(InputItem.prop('placeholder')).toBe(placeholder)
     })
   })
 
@@ -47,9 +49,8 @@ describe.only('Input', () => {
       expect(stylesContainer.borderColor).toBe('rgba(220, 218, 218, 0.5)')
       expect(stylesContainer.width).toBe('100%')
       expect(stylesContainer.height).toBe(72)
-      expect(stylesContainer.paddingTop).toBe(11)
+      expect(stylesContainer.paddingTop).toBe(14)
       expect(stylesContainer.paddingLeft).toBe(21.5)
-      expect(stylesContainer.paddingBottom).toBe(11)
 
       const stylesLabel = StyleSheet.flatten(InputLabel.prop('style'))
       expect(stylesLabel.color).toBe('#7C7C7C')

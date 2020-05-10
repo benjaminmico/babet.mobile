@@ -40,6 +40,8 @@ describe.only('HeaderTitle', () => {
       expect(wrapper).toMatchSnapshot()
 
       const stylesContainer = StyleSheet.flatten(HeaderTitleContainer.prop('style'))
+      expect(stylesContainer.position).toBe('absolute')
+      expect(stylesContainer.bottom).toBe(0)
       expect(stylesContainer.flexDirection).toBe('row')
       expect(stylesContainer.alignItems).toBe('center')
       expect(stylesContainer.paddingLeft).toBe(14)
@@ -49,7 +51,6 @@ describe.only('HeaderTitle', () => {
       expect(stylesText.maxWidth).toBe(349)
       expect(stylesText.fontFamily).toBe('AvenirNext-Bold')
       expect(stylesText.fontSize).toBe(24)
-      expect(stylesText.fontWeight).toBe('bold')
       expect(stylesText.letterSpacing).toBe(0)
       expect(stylesText.lineHeight).toBe(33)
       expect(stylesText.paddingLeft).toBe(10)

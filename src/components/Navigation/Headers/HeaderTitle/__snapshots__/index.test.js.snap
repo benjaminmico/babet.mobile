@@ -30,6 +30,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
+              "separator": "#979797",
               "white": "#FFFFFF",
               "won": "#14B916",
             },
@@ -92,6 +93,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
+                "separator": "#979797",
                 "white": "#FFFFFF",
                 "won": "#14B916",
               },
@@ -149,6 +151,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
+                "separator": "#979797",
                 "white": "#FFFFFF",
                 "won": "#14B916",
               },
@@ -202,6 +205,8 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
               "inlineStyle": InlineStyle {
                 "rules": Array [
                   "
+  position: absolute;
+  bottom: 0;
   flex-direction: row;
   align-items: center;
   padding-left: 14px;
@@ -221,8 +226,10 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
               Array [
                 Object {
                   "alignItems": "center",
+                  "bottom": 0,
                   "flexDirection": "row",
                   "paddingLeft": 14,
+                  "position": "absolute",
                 },
               ]
             }
@@ -232,8 +239,10 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                 Array [
                   Object {
                     "alignItems": "center",
+                    "bottom": 0,
                     "flexDirection": "row",
                     "paddingLeft": 14,
+                    "position": "absolute",
                   },
                 ]
               }
@@ -269,6 +278,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                           "lost": "#CA1010",
                           "pending": "#7C7C7C",
                           "purple": "#5100FF",
+                          "separator": "#979797",
                           "white": "#FFFFFF",
                           "won": "#14B916",
                         },
@@ -331,6 +341,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                             "lost": "#CA1010",
                             "pending": "#7C7C7C",
                             "purple": "#5100FF",
+                            "separator": "#979797",
                             "white": "#FFFFFF",
                             "won": "#14B916",
                           },
@@ -388,6 +399,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                             "lost": "#CA1010",
                             "pending": "#7C7C7C",
                             "purple": "#5100FF",
+                            "separator": "#979797",
                             "white": "#FFFFFF",
                             "won": "#14B916",
                           },
@@ -456,6 +468,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                               "lost": "#CA1010",
                               "pending": "#7C7C7C",
                               "purple": "#5100FF",
+                              "separator": "#979797",
                               "white": "#FFFFFF",
                               "won": "#14B916",
                             },
@@ -513,6 +526,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                               "lost": "#CA1010",
                               "pending": "#7C7C7C",
                               "purple": "#5100FF",
+                              "separator": "#979797",
                               "white": "#FFFFFF",
                               "won": "#14B916",
                             },
@@ -606,6 +620,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                 "lost": "#CA1010",
                                 "pending": "#7C7C7C",
                                 "purple": "#5100FF",
+                                "separator": "#979797",
                                 "white": "#FFFFFF",
                                 "won": "#14B916",
                               },
@@ -663,6 +678,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                 "lost": "#CA1010",
                                 "pending": "#7C7C7C",
                                 "purple": "#5100FF",
+                                "separator": "#979797",
                                 "white": "#FFFFFF",
                                 "won": "#14B916",
                               },
@@ -741,6 +757,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                   "lost": "#CA1010",
                                   "pending": "#7C7C7C",
                                   "purple": "#5100FF",
+                                  "separator": "#979797",
                                   "white": "#FFFFFF",
                                   "won": "#14B916",
                                 },
@@ -798,6 +815,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                   "lost": "#CA1010",
                                   "pending": "#7C7C7C",
                                   "purple": "#5100FF",
+                                  "separator": "#979797",
                                   "white": "#FFFFFF",
                                   "won": "#14B916",
                                 },
@@ -877,6 +895,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                     "lost": "#CA1010",
                                     "pending": "#7C7C7C",
                                     "purple": "#5100FF",
+                                    "separator": "#979797",
                                     "white": "#FFFFFF",
                                     "won": "#14B916",
                                   },
@@ -934,6 +953,7 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                                     "lost": "#CA1010",
                                     "pending": "#7C7C7C",
                                     "purple": "#5100FF",
+                                    "separator": "#979797",
                                     "white": "#FFFFFF",
                                     "won": "#14B916",
                                   },
@@ -1105,7 +1125,6 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
   max-width: 349px;
   font-family: 'AvenirNext-Bold';
   font-size: 24px;
-  font-weight: bold;
   letter-spacing: 0;
   line-height: 33px;
   padding-left: 10px;
@@ -1130,7 +1149,6 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                           "color": "#000000",
                           "fontFamily": "AvenirNext-Bold",
                           "fontSize": 24,
-                          "fontWeight": "bold",
                           "letterSpacing": 0,
                           "lineHeight": 33,
                           "maxWidth": 349,
@@ -1148,7 +1166,6 @@ exports[`HeaderTitle Props tests renders default HeaderTitle 1`] = `
                             "color": "#000000",
                             "fontFamily": "AvenirNext-Bold",
                             "fontSize": 24,
-                            "fontWeight": "bold",
                             "letterSpacing": 0,
                             "lineHeight": 33,
                             "maxWidth": 349,

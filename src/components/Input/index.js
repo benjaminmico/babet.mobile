@@ -2,6 +2,7 @@
 
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
+import {Platform} from 'react-native'
 import {InputContainer, InputLabel, InputValue} from './index.styles'
 
 type Props = {
@@ -9,11 +10,13 @@ type Props = {
   inputLabel: String,
   // if text input is editable or not
   editable: Boolean,
+  // placeholder input
+  placeholder: String,
   // theme
   theme: Object,
 }
 
-const Input = ({inputLabel, editable, theme}: Props) => {
+const Input = ({inputLabel, editable, placeholder, theme}: Props) => {
   // get theme props
   const {
     colors: {
@@ -27,7 +30,12 @@ const Input = ({inputLabel, editable, theme}: Props) => {
   return (
     <InputContainer>
       <InputLabel color={inputLabelTextColor}>{inputLabel}</InputLabel>
-      <InputValue color={inputValueTextColor} editable={editable} />
+      <InputValue
+        style={{marginTop: Platform.OS === 'android' ? 0 : 8}}
+        placeholder={placeholder}
+        color={inputValueTextColor}
+        editable={editable}
+      />
     </InputContainer>
   )
 }

@@ -40,8 +40,8 @@ describe.only('InputButton', () => {
 
       const stylesContainer = StyleSheet.flatten(InputButtonContainer.prop('style'))
       expect(stylesContainer.backgroundColor).toBe('#5100FF')
-      expect(stylesContainer.width).toBe(339)
-      expect(stylesContainer.height).toBe(53)
+      expect(stylesContainer.width).toBe('100%')
+      expect(stylesContainer.height).toBe(39)
       expect(stylesContainer.paddingTop).toBe(6)
       expect(stylesContainer.paddingLeft).toBe(9)
       expect(stylesContainer.paddingRight).toBe(9)

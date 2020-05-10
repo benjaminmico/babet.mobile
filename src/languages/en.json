@@ -1,6 +1,8 @@
 {
   "translation": {
-    "hello": "Hello world",
-    "change": "Change language"
+    "LoginScreenHeaderTitle": "Se connecter",
+    "facebook": "sign in with facebook",
+    "apple": "sign in with apple",
+    "gmail": "sign in with gmail"
   }
 }

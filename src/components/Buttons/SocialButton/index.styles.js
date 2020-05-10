@@ -4,8 +4,8 @@ export const SocialButtonContainer = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
   background-color: ${props => props.backgroundColor};
-  width: 339px;
-  height: 53px;
+  width: 100%;
+  height: 41px;
   padding-top: 6px;
   padding-left: 9px;
   padding-right: 9px;

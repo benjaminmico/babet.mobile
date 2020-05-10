@@ -1,6 +1,13 @@
 {
   "translation": {
-    "hello": "Bonjour monde",
-    "change": "Changer la langue"
+    "LoginScreenHeaderTitle": "Se connecter",
+    "facebook": "se connecter avec facebook",
+    "apple": "se connecter avec apple",
+    "gmail": "se connecter avec gmail",
+    "acceptTerms": "En vous inscrivant, vous acceptez nos conditions générales et politique de confidentialité",
+    "email": "Email",
+    "password": "Mot de passe",
+    "login": "Se connecter",
+    "signupWithEmail": "S’inscrire avec mon mail"
   }
 }

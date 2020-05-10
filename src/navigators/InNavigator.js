@@ -12,8 +12,8 @@ const InNavigator = () => {
 
   return (
     <InTab.Navigator tabBar={props => <BottomTab {...props} />}>
-      <InTab.Screen name="AddTicket" component={MainScreen} />
-      <InTab.Screen name="Profile" component={SettingsScreen} />
+      <InTab.Screen name="AddTicketScreen" component={MainScreen} />
+      <InTab.Screen name="ProfileScreen" component={SettingsScreen} />
     </InTab.Navigator>
   )
 }

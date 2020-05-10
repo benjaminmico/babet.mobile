@@ -29,6 +29,7 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
               "lost": "#CA1010",
               "pending": "#7C7C7C",
               "purple": "#5100FF",
+              "separator": "#979797",
               "white": "#FFFFFF",
               "won": "#14B916",
             },
@@ -91,6 +92,7 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
+                "separator": "#979797",
                 "white": "#FFFFFF",
                 "won": "#14B916",
               },
@@ -148,6 +150,7 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
                 "purple": "#5100FF",
+                "separator": "#979797",
                 "white": "#FFFFFF",
                 "won": "#14B916",
               },
@@ -208,8 +211,8 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
   background-color: ",
                   [Function],
                   ";
-  width: 339px;
-  height: 53px;
+  width: 100%;
+  height: 39px;
   padding-top: 6px;
   padding-left: 9px;
   padding-right: 9px;
@@ -238,13 +241,13 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                 Object {
                   "alignItems": "center",
                   "backgroundColor": "#5100FF",
-                  "height": 53,
+                  "height": 39,
                   "justifyContent": "center",
                   "paddingBottom": 6,
                   "paddingLeft": 9,
                   "paddingRight": 9,
                   "paddingTop": 6,
-                  "width": 339,
+                  "width": "100%",
                 },
               ]
             }
@@ -258,13 +261,13 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                   Object {
                     "alignItems": "center",
                     "backgroundColor": "#5100FF",
-                    "height": 53,
+                    "height": 39,
                     "justifyContent": "center",
                     "paddingBottom": 6,
                     "paddingLeft": 9,
                     "paddingRight": 9,
                     "paddingTop": 6,
-                    "width": 339,
+                    "width": "100%",
                   },
                 ]
               }
@@ -285,13 +288,13 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                       Object {
                         "alignItems": "center",
                         "backgroundColor": "#5100FF",
-                        "height": 53,
+                        "height": 39,
                         "justifyContent": "center",
                         "paddingBottom": 6,
                         "paddingLeft": 9,
                         "paddingRight": 9,
                         "paddingTop": 6,
-                        "width": 339,
+                        "width": "100%",
                       },
                     ],
                     Object {
@@ -316,13 +319,13 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                         Object {
                           "alignItems": "center",
                           "backgroundColor": "#5100FF",
-                          "height": 53,
+                          "height": 39,
                           "justifyContent": "center",
                           "paddingBottom": 6,
                           "paddingLeft": 9,
                           "paddingRight": 9,
                           "paddingTop": 6,
-                          "width": 339,
+                          "width": "100%",
                         },
                       ],
                       Object {
@@ -345,14 +348,14 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                       Object {
                         "alignItems": "center",
                         "backgroundColor": "#5100FF",
-                        "height": 53,
+                        "height": 39,
                         "justifyContent": "center",
                         "opacity": 1,
                         "paddingBottom": 6,
                         "paddingLeft": 9,
                         "paddingRight": 9,
                         "paddingTop": 6,
-                        "width": 339,
+                        "width": "100%",
                       }
                     }
                   >
@@ -370,14 +373,14 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                         Object {
                           "alignItems": "center",
                           "backgroundColor": "#5100FF",
-                          "height": 53,
+                          "height": 39,
                           "justifyContent": "center",
                           "opacity": 1,
                           "paddingBottom": 6,
                           "paddingLeft": 9,
                           "paddingRight": 9,
                           "paddingTop": 6,
-                          "width": 339,
+                          "width": "100%",
                         }
                       }
                     >

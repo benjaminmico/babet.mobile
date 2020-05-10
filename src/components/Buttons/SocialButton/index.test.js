@@ -20,7 +20,7 @@ describe.only('SocialButton', () => {
 
       const SocialButtonText = wrapper.find('Text').first()
       expect(SocialButtonText.exists()).toBe(true)
-      expect(SocialButtonText.prop('children')).toBe('SIGN IN WITH FACEBOOK')
+      expect(SocialButtonText.prop('children')).toBe(type.toUpperCase())
     })
     it('renders apple SocialButton correctly', () => {
       const type = 'apple'
@@ -33,7 +33,7 @@ describe.only('SocialButton', () => {
 
       const SocialButtonText = wrapper.find('Text').first()
       expect(SocialButtonText.exists()).toBe(true)
-      expect(SocialButtonText.prop('children')).toBe('SIGN IN WITH APPLE')
+      expect(SocialButtonText.prop('children')).toBe(type.toUpperCase())
     })
     it('renders gmail SocialButton correctly', () => {
       const type = 'gmail'
@@ -46,7 +46,7 @@ describe.only('SocialButton', () => {
 
       const SocialButtonText = wrapper.find('Text').first()
       expect(SocialButtonText.exists()).toBe(true)
-      expect(SocialButtonText.prop('children')).toBe('SIGN IN WITH GMAIL')
+      expect(SocialButtonText.prop('children')).toBe(type.toUpperCase())
     })
   })
 
@@ -65,8 +65,8 @@ describe.only('SocialButton', () => {
 
       const stylesContainer = StyleSheet.flatten(SocialButtonContainer.prop('style'))
       expect(stylesContainer.backgroundColor).toBe('#1976D2')
-      expect(stylesContainer.width).toBe(339)
-      expect(stylesContainer.height).toBe(53)
+      expect(stylesContainer.width).toBe('100%')
+      expect(stylesContainer.height).toBe(41)
       expect(stylesContainer.paddingTop).toBe(6)
       expect(stylesContainer.paddingLeft).toBe(9)
       expect(stylesContainer.paddingRight).toBe(9)
@@ -96,8 +96,8 @@ describe.only('SocialButton', () => {
 
       const stylesContainer = StyleSheet.flatten(SocialButtonContainer.prop('style'))
       expect(stylesContainer.backgroundColor).toBe('#000000')
-      expect(stylesContainer.width).toBe(339)
-      expect(stylesContainer.height).toBe(53)
+      expect(stylesContainer.width).toBe('100%')
+      expect(stylesContainer.height).toBe(41)
       expect(stylesContainer.paddingTop).toBe(6)
       expect(stylesContainer.paddingLeft).toBe(9)
       expect(stylesContainer.paddingRight).toBe(9)
@@ -127,8 +127,8 @@ describe.only('SocialButton', () => {
 
       const stylesContainer = StyleSheet.flatten(SocialButtonContainer.prop('style'))
       expect(stylesContainer.backgroundColor).toBe('#F44336')
-      expect(stylesContainer.width).toBe(339)
-      expect(stylesContainer.height).toBe(53)
+      expect(stylesContainer.width).toBe('100%')
+      expect(stylesContainer.height).toBe(41)
       expect(stylesContainer.paddingTop).toBe(6)
       expect(stylesContainer.paddingLeft).toBe(9)
       expect(stylesContainer.paddingRight).toBe(9)

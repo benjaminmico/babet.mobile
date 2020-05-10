@@ -5,9 +5,9 @@ export const InputContainer = styled.View`
   border-color: rgba(220, 218, 218, 0.5);
   width: 100%;
   height: 72px;
-  padding-top: 11px;
+  padding-top: 14px;
   padding-left: 21.5px;
-  padding-bottom: 11px;
+  padding-bottom: 6px;
 `
 
 export const InputLabel = styled.Text`
@@ -25,6 +25,7 @@ export const InputValue = styled.TextInput`
   font-size: 15px;
   letter-spacing: -0.16px;
   line-height: 20px;
-  margin-top: 8px;
+  padding: 0px;
+  border-width: 0px;
   text-align: left;
 `

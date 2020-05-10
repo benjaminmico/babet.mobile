@@ -4,6 +4,7 @@ import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {SocialButtonContainer, SocialButtonText} from './index.styles'
 import Icon from '@components/Icon'
+import {useTranslation} from 'react-i18next'
 
 type Props = {
   // social button type
@@ -13,6 +14,8 @@ type Props = {
 }
 
 const SocialButton = ({type, theme}: Props) => {
+  const {t} = useTranslation()
+
   // get theme props
   const {
     colors: {
@@ -51,11 +54,11 @@ const SocialButton = ({type, theme}: Props) => {
   const getLabel = type => {
     switch (type) {
       case 'facebook':
-        return 'Sign in with Facebook'
+        return t('facebook')
       case 'apple':
-        return 'Sign in with Apple'
+        return t('apple')
       case 'gmail':
-        return 'Sign in with Gmail'
+        return t('gmail')
       default:
         return null
     }

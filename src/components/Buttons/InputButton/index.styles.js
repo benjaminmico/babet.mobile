@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const InputButtonContainer = styled.TouchableOpacity`
   background-color: ${props => props.backgroundColor};
-  width: 339px;
-  height: 53px;
+  width: 100%;
+  height: 39px;
   padding-top: 6px;
   padding-left: 9px;
   padding-right: 9px;
