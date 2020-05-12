@@ -12,9 +12,11 @@ const OutNavigator = () => {
   const OutTab = createStackNavigator()
 
   const {
+    auth,
     auth: {token},
   } = useSelector(state => state)
 
+  console.log('auth', auth)
   return (
     <OutTab.Navigator options={{}} initialRouteName={token ? 'InNavigator' : 'LoginScreen'}>
       <OutTab.Screen name="LoginScreen" component={LoginScreen} options={headerStyle('LoginScreen', 'Login', true)} />

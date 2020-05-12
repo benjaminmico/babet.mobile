@@ -47,11 +47,11 @@ const LoginScreen = ({theme}: Props) => {
     },
   } = theme
 
-  const login = async (email, password) => {
+  const login = async () => {
     setLoading(true)
     setError(null)
     // You can await here
-    const userInformations = await loginToFirebase(email, password)
+    const userInformations = await loginToFirebase('dev+test@babet.app', 'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM')
 
     console.log('userInformations', userInformations)
 

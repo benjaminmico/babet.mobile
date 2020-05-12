@@ -1,6 +1,7 @@
 import {createReducer} from '../reducerFactory'
 
 import {login} from './login'
+import {addUserInformations} from './addUserInformations'
 
 import {initialMode} from 'react-native-dark-mode'
 import * as RNLocalize from 'react-native-localize'
@@ -28,6 +29,8 @@ const defaultState = {
 const strategies = {
   /* login */
   LOGIN: login,
+  /* add user informations */
+  ADD_USER_INFORMATIONS: addUserInformations,
   /* commons */
   __default__: state => state,
 }
