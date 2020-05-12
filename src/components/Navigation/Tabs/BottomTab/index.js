@@ -1,7 +1,7 @@
 // @flow
 
 import {withTheme} from '@core/themeProvider'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {BottomTabContainer, BottomTabContentContainer} from './index.styles'
 import Icon from '@components/Icon'
 
@@ -10,13 +10,36 @@ type Props = {
   theme: Object,
 }
 
-const BottomTab = ({state, descriptors, navigation: {navigate}, theme}: Props) => {
+const BottomTab = ({state, navigation: {navigate}, theme}: Props) => {
+  // set current screen as first history
   const [currentNavigationKey, setCurrentNavigationKey] = useState(state.history[0].key)
 
+  // navigation routes
   const navigationRoutes = state.routes
-  console.log('state', state)
-  console.log('descriptors', descriptors)
-  console.log('currentNavigationKey', currentNavigationKey)
+
+  /**
+   * find focused screen when swiping left or right
+   * @returns {String} current screen
+   */
+  const findFocusedNavigationKey = () => {
+    const screensStatus = navigationRoutes.map((route, index) => {
+      const isFocused = state.index === index
+      // if screen is focused
+      if (isFocused) return route.key
+      return null
+    })
+    // find focused screen => other are null
+    return screensStatus.find(screen => {
+      return screen != null
+    })
+  }
+
+  /**
+   * set current navigation when focused screen is changing by swiping
+   */
+  useEffect(() => {
+    setCurrentNavigationKey(findFocusedNavigationKey())
+  }, [findFocusedNavigationKey()])
 
   // get theme props
   const {

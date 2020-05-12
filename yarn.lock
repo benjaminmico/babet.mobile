@@ -1566,6 +1566,13 @@
     react-is "^16.13.0"
     use-subscription "^1.4.0"
 
+"@react-navigation/material-top-tabs@^5.2.2":
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/@react-navigation/material-top-tabs/-/material-top-tabs-5.2.2.tgz#9373fc624a0037ebeb2df6fd5c6d39b7b7768e7c"
+  integrity sha512-SPnDb0p88CVv7zm1/FxijL1SgUkllbrmWINxaJSMDJAJE/NlDet8vapKeI5zF4irk2OFYNkebIAvaip/sR0okQ==
+  dependencies:
+    color "^3.1.2"
+
 "@react-navigation/native@^5.1.6":
   version "5.2.6"
   resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.2.6.tgz#e17f89a1939b8f2bebcc0e8a87dfe68ff3a9c995"
@@ -10723,6 +10730,11 @@ react-native-swipe-gestures@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.5.tgz#a172cb0f3e7478ccd681fd36b8bfbcdd098bde7c"
   integrity sha512-Ns7Bn9H/Tyw278+5SQx9oAblDZ7JixyzeOczcBK8dipQk2pD7Djkcfnf1nB/8RErAmMLL9iXgW0QHqiII8AhKw==
+
+react-native-tab-view@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-2.14.0.tgz#dd801f82fdb8e92fce9688b78d13923f3a5a2b3f"
+  integrity sha512-Z7XAM3NsMB96c17e9EAveunk7SUgilXWwVUTmWI1u/+p2SeOMUOB87z+//UXrcVlD1e9BPweR73q7dq7krTzTg==
 
 react-native@0.62.2:
   version "0.62.2"
