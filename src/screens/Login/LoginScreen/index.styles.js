@@ -57,3 +57,15 @@ export const LoginScreenEmailSignUpText = styled.Text`
   margin-top: 26px;
   text-align: center;
 `
+
+export const LoginScreenEmailErrorText = styled.Text`
+  color: ${props => props.color};
+  position: absolute;
+  bottom: 50px;
+  font-size: 13px;
+  width: ${windowWidth * 0.75}px;
+  align-self: center;
+  letter-spacing: -0.14px;
+  line-height: 18px;
+  text-align: center;
+`

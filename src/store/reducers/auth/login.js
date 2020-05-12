@@ -4,28 +4,30 @@
  * @param {*} action
  */
 export function login(state, action) {
-  const {
-    isNewUser,
-    firstname,
-    lastname,
-    email,
-    emailValidation,
-    creationTime,
-    lastTimeLogged,
-    uid,
-    token,
-  } = action.userInformations
-  return {
-    ...state,
-    isNewUser,
-    firstname,
-    lastname,
-    email,
-    emailValidation,
-    creationTime,
-    lastTimeLogged,
-    uid,
-    token,
-    loggedIn: true,
+  console.log('actions aaa', action?.userInformations?.userInformations)
+
+  if (action?.userInformations?.userInformations) {
+    const {
+      isNewUser,
+      email,
+      emailValidation,
+      creationTime,
+      lastTimeLogged,
+      uid,
+      token,
+    } = action?.userInformations?.userInformations
+
+    return {
+      ...state,
+      isNewUser,
+      email,
+      emailValidation,
+      creationTime,
+      lastTimeLogged,
+      uid,
+      token,
+      loggedIn: true,
+    }
   }
+  return state
 }

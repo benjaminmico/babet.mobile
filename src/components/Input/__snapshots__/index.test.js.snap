@@ -320,6 +320,7 @@ exports[`Input Props tests renders  Input 1`] = `
               </Styled(Text)>
               <Styled(Component)
                 color="#000000"
+                onChangeText={[Function]}
                 style={
                   Object {
                     "marginTop": 8,
@@ -361,6 +362,7 @@ exports[`Input Props tests renders  Input 1`] = `
                     }
                   }
                   forwardedRef={null}
+                  onChangeText={[Function]}
                   style={
                     Object {
                       "marginTop": 8,
@@ -370,6 +372,7 @@ exports[`Input Props tests renders  Input 1`] = `
                   <Component
                     allowFontScaling={true}
                     color="#000000"
+                    onChangeText={[Function]}
                     rejectResponderTermination={true}
                     style={
                       Array [
@@ -396,6 +399,7 @@ exports[`Input Props tests renders  Input 1`] = `
                     <TextInput
                       allowFontScaling={true}
                       color="#000000"
+                      onChangeText={[Function]}
                       rejectResponderTermination={true}
                       style={
                         Array [

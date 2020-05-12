@@ -12,11 +12,13 @@ type Props = {
   editable: Boolean,
   // placeholder input
   placeholder: String,
+  // on change text,
+  onChangeText: () => void,
   // theme
   theme: Object,
 }
 
-const Input = ({inputLabel, editable, placeholder, theme}: Props) => {
+const Input = ({inputLabel, editable, placeholder, onChangeText, theme}: Props) => {
   // get theme props
   const {
     colors: {
@@ -31,6 +33,7 @@ const Input = ({inputLabel, editable, placeholder, theme}: Props) => {
     <InputContainer>
       <InputLabel color={inputLabelTextColor}>{inputLabel}</InputLabel>
       <InputValue
+        onChangeText={text => onChangeText(text)}
         style={{marginTop: Platform.OS === 'android' ? 0 : 8}}
         placeholder={placeholder}
         color={inputValueTextColor}

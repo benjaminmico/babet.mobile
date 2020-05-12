@@ -1,18 +1,18 @@
-import React from 'react'
-import {createStackNavigator} from '@react-navigation/stack'
-import MainScreen from '@screens/Main'
-import SettingsScreen from '@screens/Settings'
 import BottomTab from '@components/Navigation/Tabs/BottomTab'
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
+import AddTicketScreen from '@screens/AddTicket/AddTicketScreen'
+import SettingsScreen from '@screens/Settings'
+import React from 'react'
 
 /**
  * Signed in screens
  */
 const InNavigator = () => {
-  const InTab = createStackNavigator()
+  const InTab = createBottomTabNavigator()
 
   return (
-    <InTab.Navigator tabBar={props => <BottomTab {...props} />}>
-      <InTab.Screen name="AddTicketScreen" component={MainScreen} />
+    <InTab.Navigator tabBar={props => <BottomTab {...props} />} initialRouteName="AddTicketScreen">
+      <InTab.Screen name="AddTicketScreen" component={AddTicketScreen} options={{headerShown: false}} />
       <InTab.Screen name="ProfileScreen" component={SettingsScreen} />
     </InTab.Navigator>
   )

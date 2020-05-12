@@ -53,12 +53,12 @@ const BottomTab = ({state, descriptors, navigation: {navigate}, theme}: Props) =
         <Icon
           size={updateIconSize('AddTicket')}
           label={currentNavigationKey.includes('AddTicket') ? 'selectedAddTicket' : 'addTicket'}
-          onPress={() => navigateToKey('AddTicket')}
+          onPress={() => navigateToKey('AddTicketScreen')}
         />
         <Icon
           size={updateIconSize('Profile')}
           label={currentNavigationKey.includes('Profile') ? 'selectedProfile' : 'profile'}
-          onPress={() => navigateToKey('Profile')}
+          onPress={() => navigateToKey('ProfileScreen')}
         />
       </BottomTabContentContainer>
     </BottomTabContainer>

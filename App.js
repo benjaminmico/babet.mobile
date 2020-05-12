@@ -48,8 +48,7 @@ const client = new ApolloClient({
   link: new HttpLink({
     uri: 'https://us-central1-dev-babet.cloudfunctions.net/graphql',
     headers: {
-      authorization: store.getState().auth?.token || '', // on production you need to store token
-      // in storage or in redux persist, for demonstration purposes we do this like that
+      authorization: store.getState().auth?.token || '',
     },
   }),
   cache: new InMemoryCache(),

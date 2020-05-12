@@ -23,19 +23,21 @@ export const loginToFirebase = async (email, password) => {
       const {token} = await auth().currentUser.getIdTokenResult()
 
       // informations to return
-      const userFirebaseInformations = {isNewUser, email, emailValidation, creationTime, uid, lastTimeLogged, token}
+      const userInformations = {isNewUser, email, emailValidation, creationTime, uid, lastTimeLogged, token}
 
-      return userFirebaseInformations
+      return {success: true, userInformations}
     })
     .catch(error => {
-      if (error.code === 'auth/email-already-in-use') {
-        console.log('That email address is already in use!')
+      console.log('error')
+      if (error.code === 'auth/wrong-password') {
+        return {success: false, error: 'passwordIncorrect'}
       }
 
-      if (error.code === 'auth/invalid-email') {
+      if (error.code === 'auth/user-not-found') {
         console.log('That email address is invalid!')
+        return {success: false, error: 'emailIncorrect'}
       }
 
-      console.error(error)
+      return {success: false, error: null}
     })
 }

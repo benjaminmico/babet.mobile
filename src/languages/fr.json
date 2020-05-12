@@ -8,6 +8,8 @@
     "email": "Email",
     "password": "Mot de passe",
     "login": "Se connecter",
-    "signupWithEmail": "S’inscrire avec mon mail"
+    "signupWithEmail": "S’inscrire avec mon mail",
+    "passwordIncorrect": "Votre mot de passe est incorrect. 😢",
+    "emailIncorrect": "Votre email n'existe pas encore chez babet 😢."
   }
 }
