@@ -1,13 +1,12 @@
+import {ApolloProvider} from '@apollo/react-hooks'
 import BottomTab from '@components/Navigation/Tabs/BottomTab'
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs'
 import AddTicketScreen from '@screens/AddTicket/AddTicketScreen'
-import SettingsScreen from '@screens/Settings'
+import MainScreen from '@screens/Main'
+import {HttpLink, InMemoryCache} from 'apollo-boost'
+import {ApolloClient} from 'apollo-client'
 import React from 'react'
 import {useSelector} from 'react-redux'
-
-import {ApolloClient} from 'apollo-client'
-import {HttpLink, InMemoryCache} from 'apollo-boost'
-import {ApolloProvider} from '@apollo/react-hooks'
 
 /**
  * Signed in screens
@@ -37,7 +36,7 @@ const InNavigator = () => {
         initialRouteName="AddTicketScreen"
       >
         <InTab.Screen name="AddTicketScreen" component={AddTicketScreen} options={{headerShown: false}} />
-        <InTab.Screen name="ProfileScreen" component={SettingsScreen} />
+        <InTab.Screen name="ProfileScreen" component={MainScreen} />
       </InTab.Navigator>
     </ApolloProvider>
   )

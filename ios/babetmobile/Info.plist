@@ -72,5 +72,9 @@
 	<string>$(CONFIGURATION)</string>
 	<key>targetName</key>
 	<string>$(TARGET_NAME)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Scan my documents</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Use my microphone</string>
 </dict>
 </plist>

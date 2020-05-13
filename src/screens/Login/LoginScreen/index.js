@@ -51,13 +51,15 @@ const LoginScreen = ({theme}: Props) => {
     setLoading(true)
     setError(null)
     // You can await here
-    const userInformations = await loginToFirebase('dev+test@babet.app', 'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM')
+    const {userInformations, success} = await loginToFirebase(
+      'dev+test@babet.app',
+      'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM',
+    )
 
-    console.log('userInformations', userInformations)
-
-    if (userInformations.success) {
+    // if firebase returned success dispatch user informations on store & navigate to
+    if (success) {
       const {login} = actions
-      await dispatch(login(userInformations.userInformations))
+      await dispatch(login(userInformations))
       await navigate('InNavigator')
       setLoading(false)
     } else {
@@ -67,8 +69,8 @@ const LoginScreen = ({theme}: Props) => {
   }
 
   return (
-    <LoginScreenContainer activeOpacity={1.0} backgroundColor={backgroundColor} onPress={() => Keyboard.dismiss()}>
-      <KeyboardAvoidingView behavior="position" style={{flex: 1}}>
+    <KeyboardAvoidingView behavior="position" style={{flex: 1}}>
+      <LoginScreenContainer activeOpacity={1.0} backgroundColor={backgroundColor} onPress={() => Keyboard.dismiss()}>
         <LoginScreenSocialButtonsContainer>
           <SocialButton type="facebook" />
           <SocialButton type="apple" />
@@ -83,10 +85,10 @@ const LoginScreen = ({theme}: Props) => {
         <LoginScreenInputButtonContainer>
           {error && <LoginScreenEmailErrorText color={errorColor}>{t(error)}</LoginScreenEmailErrorText>}
           {loading ? <ActivityIndicator /> : <InputButton label={t('login')} onPress={() => login(email, password)} />}
+          <LoginScreenEmailSignUpText color={textColor}>{t('signupWithEmail')}</LoginScreenEmailSignUpText>
         </LoginScreenInputButtonContainer>
-        <LoginScreenEmailSignUpText color={textColor}>{t('signupWithEmail')}</LoginScreenEmailSignUpText>
-      </KeyboardAvoidingView>
-    </LoginScreenContainer>
+      </LoginScreenContainer>
+    </KeyboardAvoidingView>
   )
 }
 

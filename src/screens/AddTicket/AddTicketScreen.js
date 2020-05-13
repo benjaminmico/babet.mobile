@@ -8,6 +8,9 @@ import {View} from 'react-native'
 import {setUserInformations} from '../../api/graphql/mutations/setUser'
 import {useDispatch} from 'react-redux'
 import actions from '@store/actions'
+import {RNCamera} from 'react-native-camera'
+import Button from '@components/Buttons/Button'
+import {AddTicketScreenSnapper} from './index.styles'
 
 // type Props = {
 //   theme: Object,
@@ -43,7 +46,18 @@ const AddTicketScreen = (/* {theme}: Props */) => {
     setUserInformations()
   }, [userInformations])
 
-  return <View style={{flex: 1, backgroundColor: 'gold'}} />
+  return (
+    <View style={{flex: 1, backgroundColor: 'black'}}>
+      <RNCamera
+        style={{
+          flex: 1,
+          backgroundColor: 'black',
+        }}
+      />
+      <Button style={{position: 'absolute', bottom: 201, alignSelf: 'center'}} label="choisir une photo" black />
+      <AddTicketScreenSnapper />
+    </View>
+  )
 }
 
 export default withTheme(AddTicketScreen)

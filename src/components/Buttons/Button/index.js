@@ -3,6 +3,7 @@
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {ButtonContainer, ButtonText} from './index.styles'
+import Icon from '@components/Icon'
 
 type Props = {
   // button label
@@ -11,11 +12,13 @@ type Props = {
   isPrimaryAction: Boolean,
   // check if it's a cancellable button
   isCancellable: Boolean,
+  // black color label
+  black: Boolean,
   // theme
   theme: Object,
 }
 
-const Button = ({isPrimaryAction, isCancellable, label, theme}: Props) => {
+const Button = ({isPrimaryAction, isCancellable, label, black, theme, ...props}: Props) => {
   // get theme props
   const {
     colors: {
@@ -27,6 +30,7 @@ const Button = ({isPrimaryAction, isCancellable, label, theme}: Props) => {
           isPrimaryAction: isPrimaryActionButtonTextColor,
         },
       },
+      palette: {black: blackColor},
     },
   } = theme
 
@@ -36,10 +40,13 @@ const Button = ({isPrimaryAction, isCancellable, label, theme}: Props) => {
    * */
 
   return (
-    <ButtonContainer backgroundColor={isPrimaryAction ? backgroundPrimaryAction : backgroundAction}>
+    <ButtonContainer {...props} backgroundColor={isPrimaryAction ? backgroundPrimaryAction : backgroundAction}>
+      <Icon style={{marginRight: 3}} size={18} label="ticket" />
       <ButtonText
         color={
-          isCancellable
+          black
+            ? blackColor
+            : isCancellable
             ? cancellableButtonTextColor
             : isPrimaryAction
             ? isPrimaryActionButtonTextColor

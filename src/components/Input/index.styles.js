@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
-export const InputContainer = styled.View`
-  border-bottom-width: 1px;
-  border-color: rgba(220, 218, 218, 0.5);
+export const InputContainer = styled.TouchableOpacity`
+  border-bottom-width: ${props => (props.theme === 'dark' ? 0 : 1)}px;
+  border-color: ${props => (props.theme === 'dark' ? 'transparent' : 'rgba(220, 218, 218, 0.5)')};
+
+  ${'' /* border-color: rgba(220, 218, 218, 0.5); */}
   width: 100%;
   height: 72px;
   padding-top: 14px;

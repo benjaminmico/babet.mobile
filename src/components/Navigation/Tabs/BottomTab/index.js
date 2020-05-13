@@ -74,11 +74,13 @@ const BottomTab = ({state, navigation: {navigate}, theme}: Props) => {
     <BottomTabContainer backgroundColor={backgroundContainer}>
       <BottomTabContentContainer>
         <Icon
+          hitSlop={{left: 20, top: 20, bottom: 20, right: 20}}
           size={updateIconSize('AddTicket')}
           label={currentNavigationKey.includes('AddTicket') ? 'selectedAddTicket' : 'addTicket'}
           onPress={() => navigateToKey('AddTicketScreen')}
         />
         <Icon
+          hitSlop={{left: 20, top: 20, bottom: 20, right: 20}}
           size={updateIconSize('Profile')}
           label={currentNavigationKey.includes('Profile') ? 'selectedProfile' : 'profile'}
           onPress={() => navigateToKey('ProfileScreen')}

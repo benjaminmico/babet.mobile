@@ -1,8 +1,15 @@
 {
   "translation": {
     "LoginScreenHeaderTitle": "Se connecter",
-    "facebook": "sign in with facebook",
-    "apple": "sign in with apple",
-    "gmail": "sign in with gmail"
+    "facebook": "se connecter avec facebook",
+    "apple": "se connecter avec apple",
+    "gmail": "se connecter avec gmail",
+    "acceptTerms": "En vous inscrivant, vous acceptez nos conditions générales et politique de confidentialité",
+    "email": "Email",
+    "password": "Mot de passe",
+    "login": "Se connecter",
+    "signupWithEmail": "S’inscrire avec mon mail",
+    "passwordIncorrect": "Votre mot de passe est incorrect. 😢",
+    "emailIncorrect": "Votre email n'existe pas encore chez babet 😢."
   }
 }

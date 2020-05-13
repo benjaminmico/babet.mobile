@@ -1,17 +1,11 @@
-import Generic from '@components/Stats/Generic'
-import SocialButton from '@components/Buttons/SocialButton'
+import BalanceSheet from '@components/Stats/BalanceSheet'
 import Comparisons from '@components/Stats/Comparisons'
+import Generic from '@components/Stats/Generic'
 import Graph from '@components/Stats/Graph'
 import Ticket from '@components/Ticket'
-import BalanceSheet from '@components/Stats/BalanceSheet'
 import {withTheme} from '@core/themeProvider'
-import React, {useState, useEffect} from 'react'
-import {Dimensions, StatusBar, StyleSheet, ScrollView, View} from 'react-native'
-import {useDispatch} from 'react-redux'
-import actions from '@store/actions'
-import {loginToFirebase} from '@api/auth/login'
-import {useQuery} from '@apollo/react-hooks'
-import {getUserInformations} from '@api/graphql/queries/user'
+import React from 'react'
+import {Dimensions, ScrollView, StatusBar, StyleSheet, View} from 'react-native'
 
 const style = StyleSheet.create({
   container: {
@@ -23,9 +17,6 @@ const style = StyleSheet.create({
 })
 
 const MainScreen = ({theme}) => {
-  const [isConnected, setConnected] = useState(false)
-  const dispatch = useDispatch()
-
   const windowWidth = Dimensions.get('window').width
 
   const updatedDate = 1588707873
@@ -165,34 +156,10 @@ const MainScreen = ({theme}) => {
   ]
   // const graphItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]
 
-  const {data} = useQuery(getUserInformations)
-
-  useEffect(() => {
-    async function fetchData() {
-      // You can await here
-      const userInformations = await loginToFirebase('dev+test@babet.app', 'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM')
-      const {login} = actions
-
-      if (userInformations) {
-        setConnected(true)
-        if (data?.user) {
-          const {firstname, lastname} = data.user
-          dispatch(login({...userInformations, firstname, lastname}))
-        } else {
-          dispatch(login(userInformations))
-        }
-      }
-    }
-    fetchData()
-  }, [isConnected])
-
   return (
     <ScrollView style={[style.container, {backgroundColor: theme.backgroundColor}]}>
-      <View style={{marginTop: 159, justifyContent: 'center', alignItems: 'center'}}>
+      <View style={{marginTop: 70, justifyContent: 'center', alignItems: 'center'}}>
         <StatusBar barStyle={theme.statusBar} />
-        <SocialButton isPrimaryAction type="facebook" />
-        <SocialButton isPrimaryAction type="apple" />
-        <SocialButton isPrimaryAction type="gmail" />
 
         <BalanceSheet value={405.93} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
 

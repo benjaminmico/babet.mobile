@@ -16,6 +16,7 @@ import SelectedAddTicket from '@assets/icons/navigation/selectedAddTicket.svg'
 import AddTicket from '@assets/icons/navigation/addTicket.svg'
 import SelectedProfile from '@assets/icons/navigation/selectedProfile.svg'
 import Profile from '@assets/icons/navigation/profile.svg'
+import Ticket from '@assets/icons/ticket.svg'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {Image} from 'react-native'
@@ -89,6 +90,8 @@ const renderIcon = (label, size, themeKey) => {
       return <SelectedAddTicket width={size} height={size} />
     case 'addTicket':
       return <AddTicket width={size} height={size} />
+    case 'ticket':
+      return <Ticket width={size} height={size} />
     default:
       return <EmptyView />
   }

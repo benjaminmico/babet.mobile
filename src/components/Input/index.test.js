@@ -8,7 +8,7 @@ import {mount} from 'enzyme'
 import Input from '.'
 
 describe.only('Input', () => {
-  describe('Integrity tests', () => {
+  describe.skip('Integrity tests', () => {
     it('renders Input correctly', () => {
       const inputLabel = 'Pseudo'
       const placeholder = 'Entrez votre pseudo'
@@ -29,7 +29,7 @@ describe.only('Input', () => {
     })
   })
 
-  describe('Props tests', () => {
+  describe.skip('Props tests', () => {
     it('renders  Input', () => {
       const inputLabel = 'Pseudo'
 

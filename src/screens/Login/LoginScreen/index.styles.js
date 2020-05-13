@@ -6,6 +6,7 @@ const windowWidth = Dimensions.get('window').width
 export const LoginScreenContainer = styled.TouchableOpacity`
   background-color: ${props => props.backgroundColor};
   height: 100%;
+  padding-bottom: 20px;
 `
 
 export const LoginScreenSocialButtonsContainer = styled.View`
@@ -62,6 +63,7 @@ export const LoginScreenEmailErrorText = styled.Text`
   color: ${props => props.color};
   position: absolute;
   bottom: 50px;
+  margin-bottom: 100px;
   font-size: 13px;
   width: ${windowWidth * 0.75}px;
   align-self: center;
