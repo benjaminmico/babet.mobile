@@ -12,6 +12,7 @@ export const TicketContainer = styled.View`
   shadow-color: #c8c9ca;
   shadow-opacity: ${props => (props.theme === 'white' ? '0.5' : '0')};
   elevation: 3;
+  margin-bottom: 16px;
 `
 
 export const TicketHeader = styled.View`

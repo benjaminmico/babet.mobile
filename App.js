@@ -1,6 +1,6 @@
 import {ApolloProvider} from '@apollo/react-hooks'
-import InNavigator from '@navigators/InNavigator'
-import OutNavigator from '@navigators/OutNavigator'
+import TabNavigator from '@navigators/TabNavigator'
+import Navigator from '@navigators/Navigator'
 import {NavigationContainer} from '@react-navigation/native'
 import {HttpLink, InMemoryCache} from 'apollo-boost'
 import {ApolloClient} from 'apollo-client'
@@ -60,7 +60,7 @@ export default class App extends React.Component {
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
             <ThemeContextProvider>
-              <NavigationContainer>{token ? <InNavigator /> : <OutNavigator />}</NavigationContainer>
+              <NavigationContainer>{token ? <TabNavigator /> : <Navigator />}</NavigationContainer>
             </ThemeContextProvider>
           </PersistGate>
         </Provider>

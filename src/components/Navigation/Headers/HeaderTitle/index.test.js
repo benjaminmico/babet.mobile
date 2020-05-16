@@ -8,7 +8,7 @@ import {mount} from 'enzyme'
 import HeaderTitle from '.'
 
 describe.only('HeaderTitle', () => {
-  describe('Integrity tests', () => {
+  describe.skip('Integrity tests', () => {
     it('renders HeaderTitle correctly', () => {
       const label = "s'inscrire"
 
@@ -24,7 +24,7 @@ describe.only('HeaderTitle', () => {
     })
   })
 
-  describe('Props tests', () => {
+  describe.skip('Props tests', () => {
     it('renders default HeaderTitle', () => {
       const label = "s'inscrire"
 

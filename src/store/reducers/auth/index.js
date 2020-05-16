@@ -1,6 +1,7 @@
 import {createReducer} from '../reducerFactory'
 
 import {login} from './login'
+import {logout} from './logout'
 import {addUserInformations} from './addUserInformations'
 
 import {initialMode} from 'react-native-dark-mode'
@@ -29,6 +30,8 @@ const defaultState = {
 const strategies = {
   /* login */
   LOGIN: login,
+  /* logout */
+  LOGOUT: logout,
   /* add user informations */
   ADD_USER_INFORMATIONS: addUserInformations,
   /* commons */

@@ -17,7 +17,7 @@ const headerStyle = (key, title, goBack) => {
   const {t} = useTranslation()
 
   return {
-    headerLeft: props => <HeaderTitle {...props} title={t(`${key}HeaderTitle`)} goBack={goBack} />,
+    headerLeft: props => <HeaderTitle {...props} title={t(`${key}HeaderTitle`)} isGoBack={goBack} />,
     headerTitle: () => null,
     headerStyle: {
       height: Platform.OS === 'android' ? 60 : 88,

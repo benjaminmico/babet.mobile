@@ -60,7 +60,7 @@ const LoginScreen = ({theme}: Props) => {
     if (success) {
       const {login} = actions
       await dispatch(login(userInformations))
-      await navigate('InNavigator')
+      await navigate('InNavigator', {screen: 'AddTicketScreen'})
       setLoading(false)
     } else {
       setLoading(false)

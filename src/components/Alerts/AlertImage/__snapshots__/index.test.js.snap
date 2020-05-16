@@ -73,7 +73,7 @@ exports[`AlertImage Props tests renders AlertImage 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#101112",
+            "backgroundColor": "#000000",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {

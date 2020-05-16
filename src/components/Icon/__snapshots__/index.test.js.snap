@@ -75,7 +75,7 @@ exports[`Icon Props tests renders Icon 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#101112",
+            "backgroundColor": "#000000",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -201,7 +201,7 @@ exports[`Icon Props tests renders Icon 1`] = `
         themes={
           Array [
             Object {
-              "backgroundColor": "#101112",
+              "backgroundColor": "#000000",
               "color": "#ffffff",
               "colors": Object {
                 "components": Object {
@@ -352,7 +352,7 @@ exports[`Icon Props tests renders Icon 1`] = `
           themes={
             Array [
               Object {
-                "backgroundColor": "#101112",
+                "backgroundColor": "#000000",
                 "color": "#ffffff",
                 "colors": Object {
                   "components": Object {
@@ -488,7 +488,7 @@ exports[`Icon Props tests renders Icon 1`] = `
             themes={
               Array [
                 Object {
-                  "backgroundColor": "#101112",
+                  "backgroundColor": "#000000",
                   "color": "#ffffff",
                   "colors": Object {
                     "components": Object {
@@ -625,7 +625,7 @@ exports[`Icon Props tests renders Icon 1`] = `
               themes={
                 Array [
                   Object {
-                    "backgroundColor": "#101112",
+                    "backgroundColor": "#000000",
                     "color": "#ffffff",
                     "colors": Object {
                       "components": Object {

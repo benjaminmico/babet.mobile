@@ -5,12 +5,9 @@ import Graph from '@components/Stats/Graph'
 import Ticket from '@components/Ticket'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
-import {Dimensions, ScrollView, StatusBar, StyleSheet, View} from 'react-native'
+import {Dimensions, StatusBar, StyleSheet, View} from 'react-native'
 
 const style = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   text: {
     fontWeight: 'bold',
   },
@@ -157,8 +154,8 @@ const MainScreen = ({theme}) => {
   // const graphItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]
 
   return (
-    <ScrollView style={[style.container, {backgroundColor: theme.backgroundColor}]}>
-      <View style={{marginTop: 70, justifyContent: 'center', alignItems: 'center'}}>
+    <View style={[style.container, {backgroundColor: theme.backgroundColor}]}>
+      <View style={{marginTop: 31}}>
         <StatusBar barStyle={theme.statusBar} />
 
         <BalanceSheet value={405.93} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
@@ -208,7 +205,87 @@ const MainScreen = ({theme}) => {
             items={comparisonsItems}
           />
         </View>
-        <View style={{marginTop: 16}}>
+        <View style={{marginTop: 75}}>
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
+          <Ticket
+            updatedDate={updatedDate}
+            bets={bets}
+            stake={stake}
+            globalOdd={globalOdd}
+            total={total}
+            status={status}
+          />
           <Ticket
             updatedDate={updatedDate}
             bets={bets}
@@ -219,7 +296,7 @@ const MainScreen = ({theme}) => {
           />
         </View>
       </View>
-    </ScrollView>
+    </View>
   )
 }
 

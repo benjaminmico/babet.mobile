@@ -46,6 +46,8 @@ const AddTicketScreen = (/* {theme}: Props */) => {
     setUserInformations()
   }, [userInformations])
 
+  const {logout} = actions
+
   return (
     <View style={{flex: 1, backgroundColor: 'black'}}>
       <RNCamera
@@ -54,7 +56,18 @@ const AddTicketScreen = (/* {theme}: Props */) => {
           backgroundColor: 'black',
         }}
       />
-      <Button style={{position: 'absolute', bottom: 201, alignSelf: 'center'}} label="choisir une photo" black />
+      <Button
+        style={{position: 'absolute', bottom: 201, alignSelf: 'center'}}
+        label="choisir une photo"
+        iconLabel="ticket"
+        black
+      />
+      <Button
+        style={{position: 'absolute', bottom: 401, alignSelf: 'center'}}
+        label="logout"
+        onPress={() => dispatch(logout())}
+        black
+      />
       <AddTicketScreenSnapper />
     </View>
   )

@@ -4,6 +4,7 @@
 import BankrollBlackIcon from '@assets/icons/blacks/bankrollIcon.svg'
 import GoBackBlackIcon from '@assets/icons/blacks/goBackIcon.svg'
 import InformationsBlackIcon from '@assets/icons/blacks/informationsIcon.svg'
+import SettingsBlackIcon from '@assets/icons/blacks/settingsIcon.svg'
 import LostIcon from '@assets/icons/gameStatus/lost.svg'
 import PendingIcon from '@assets/icons/gameStatus/pending.svg'
 import WonIcon from '@assets/icons/gameStatus/won.svg'
@@ -12,6 +13,7 @@ import Tick from '@assets/icons/tick.svg'
 import BankrollWhiteIcon from '@assets/icons/whites/bankrollIcon.svg'
 import GoBackWhiteIcon from '@assets/icons/whites/goBackIcon.svg'
 import InformationsWhiteIcon from '@assets/icons/whites/informationsIcon.svg'
+import SettingsWhiteIcon from '@assets/icons/whites/settingsIcon.svg'
 import SelectedAddTicket from '@assets/icons/navigation/selectedAddTicket.svg'
 import AddTicket from '@assets/icons/navigation/addTicket.svg'
 import SelectedProfile from '@assets/icons/navigation/selectedProfile.svg'
@@ -52,6 +54,12 @@ const renderIcon = (label, size, themeKey) => {
         <InformationsBlackIcon width={size} height={size} />
       ) : (
         <InformationsWhiteIcon width={size} height={size} />
+      )
+    case 'settings':
+      return themeKey === 'white' ? (
+        <SettingsBlackIcon width={size} height={size} />
+      ) : (
+        <SettingsWhiteIcon width={size} height={size} />
       )
     case 'bankroll':
       return themeKey === 'white' ? (
