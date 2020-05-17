@@ -27,6 +27,12 @@ const defaultState = {
   fcmToken: null,
 }
 
+function initializeReducer() {
+  return {
+    ...defaultState,
+  }
+}
+
 const strategies = {
   /* login */
   LOGIN: login,
@@ -36,6 +42,8 @@ const strategies = {
   ADD_USER_INFORMATIONS: addUserInformations,
   /* commons */
   __default__: state => state,
+  /* reinit */
+  __reinit__: initializeReducer,
 }
 
 // Exports

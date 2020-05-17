@@ -6,7 +6,6 @@ export const login = userInformations => ({
 
 // Logout
 export const logout = () => {
-  console.log('okkkk')
   return {
     type: 'LOGOUT',
   }

@@ -75,7 +75,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -201,7 +201,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
         themes={
           Array [
             Object {
-              "backgroundColor": "#000000",
+              "backgroundColor": "#101112",
               "color": "#ffffff",
               "colors": Object {
                 "components": Object {
@@ -360,7 +360,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
           themes={
             Array [
               Object {
-                "backgroundColor": "#000000",
+                "backgroundColor": "#101112",
                 "color": "#ffffff",
                 "colors": Object {
                   "components": Object {
@@ -502,7 +502,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
             themes={
               Array [
                 Object {
-                  "backgroundColor": "#000000",
+                  "backgroundColor": "#101112",
                   "color": "#ffffff",
                   "colors": Object {
                     "components": Object {
@@ -645,7 +645,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
               themes={
                 Array [
                   Object {
-                    "backgroundColor": "#000000",
+                    "backgroundColor": "#101112",
                     "color": "#ffffff",
                     "colors": Object {
                       "components": Object {
@@ -1034,7 +1034,7 @@ exports[`Button Props tests renders default Button 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -1160,7 +1160,7 @@ exports[`Button Props tests renders default Button 1`] = `
         themes={
           Array [
             Object {
-              "backgroundColor": "#000000",
+              "backgroundColor": "#101112",
               "color": "#ffffff",
               "colors": Object {
                 "components": Object {
@@ -1319,7 +1319,7 @@ exports[`Button Props tests renders default Button 1`] = `
           themes={
             Array [
               Object {
-                "backgroundColor": "#000000",
+                "backgroundColor": "#101112",
                 "color": "#ffffff",
                 "colors": Object {
                   "components": Object {
@@ -1461,7 +1461,7 @@ exports[`Button Props tests renders default Button 1`] = `
             themes={
               Array [
                 Object {
-                  "backgroundColor": "#000000",
+                  "backgroundColor": "#101112",
                   "color": "#ffffff",
                   "colors": Object {
                     "components": Object {
@@ -1604,7 +1604,7 @@ exports[`Button Props tests renders default Button 1`] = `
               themes={
                 Array [
                   Object {
-                    "backgroundColor": "#000000",
+                    "backgroundColor": "#101112",
                     "color": "#ffffff",
                     "colors": Object {
                       "components": Object {
@@ -1995,7 +1995,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -2121,7 +2121,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
         themes={
           Array [
             Object {
-              "backgroundColor": "#000000",
+              "backgroundColor": "#101112",
               "color": "#ffffff",
               "colors": Object {
                 "components": Object {
@@ -2280,7 +2280,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
           themes={
             Array [
               Object {
-                "backgroundColor": "#000000",
+                "backgroundColor": "#101112",
                 "color": "#ffffff",
                 "colors": Object {
                   "components": Object {
@@ -2422,7 +2422,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
             themes={
               Array [
                 Object {
-                  "backgroundColor": "#000000",
+                  "backgroundColor": "#101112",
                   "color": "#ffffff",
                   "colors": Object {
                     "components": Object {
@@ -2565,7 +2565,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
               themes={
                 Array [
                   Object {
-                    "backgroundColor": "#000000",
+                    "backgroundColor": "#101112",
                     "color": "#ffffff",
                     "colors": Object {
                       "components": Object {

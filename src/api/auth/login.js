@@ -28,16 +28,23 @@ export const loginToFirebase = async (email, password) => {
       return {success: true, userInformations}
     })
     .catch(error => {
-      console.log('error')
       if (error.code === 'auth/wrong-password') {
         return {success: false, error: 'passwordIncorrect'}
       }
 
       if (error.code === 'auth/user-not-found') {
-        console.log('That email address is invalid!')
         return {success: false, error: 'emailIncorrect'}
       }
 
       return {success: false, error: null}
     })
+}
+
+/**
+ * Refresh firebase token if user exists
+ * Returns null if there's no current user
+ */
+export const loginWithRefreshToken = () => {
+  const idToken = auth().currentUser ? auth().currentUser.getIdToken(true) : null
+  return idToken
 }

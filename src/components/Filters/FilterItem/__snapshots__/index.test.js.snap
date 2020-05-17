@@ -81,7 +81,7 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -566,7 +566,7 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -1049,7 +1049,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -1536,7 +1536,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -2021,7 +2021,7 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -2508,7 +2508,7 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -3002,7 +3002,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -3489,7 +3489,7 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {

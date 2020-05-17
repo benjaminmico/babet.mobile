@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-export const SettingsScreenContainer = styled.View`
+export const PrivacyScreenContainer = styled.View`
   background-color: ${props => props.backgroundColor};
   height: 100%;
 `
 
-export const SettingsScreenContentContainer = styled.View`
+export const PrivacyScreenContentContainer = styled.View`
   padding-top: 31px;
 `

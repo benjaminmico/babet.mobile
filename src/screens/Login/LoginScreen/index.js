@@ -40,8 +40,8 @@ const LoginScreen = ({theme}: Props) => {
 
   // get theme props
   const {
+    backgroundColor,
     colors: {
-      components: {background: backgroundColor},
       texts: {text: textColor},
       palette: {separator: separatorColor, lost: errorColor},
     },
@@ -60,7 +60,7 @@ const LoginScreen = ({theme}: Props) => {
     if (success) {
       const {login} = actions
       await dispatch(login(userInformations))
-      await navigate('InNavigator', {screen: 'AddTicketScreen'})
+      await navigate('TabNavigator')
       setLoading(false)
     } else {
       setLoading(false)

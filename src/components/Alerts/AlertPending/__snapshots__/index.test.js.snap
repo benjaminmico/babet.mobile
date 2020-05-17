@@ -73,7 +73,7 @@ exports[`AlertPending Props tests renders AlertPending 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {

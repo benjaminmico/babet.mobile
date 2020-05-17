@@ -83,7 +83,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -442,7 +442,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                           themes={
                             Array [
                               Object {
-                                "backgroundColor": "#000000",
+                                "backgroundColor": "#101112",
                                 "color": "#ffffff",
                                 "colors": Object {
                                   "components": Object {
@@ -568,7 +568,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                             themes={
                               Array [
                                 Object {
-                                  "backgroundColor": "#000000",
+                                  "backgroundColor": "#101112",
                                   "color": "#ffffff",
                                   "colors": Object {
                                     "components": Object {
@@ -719,7 +719,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                               themes={
                                 Array [
                                   Object {
-                                    "backgroundColor": "#000000",
+                                    "backgroundColor": "#101112",
                                     "color": "#ffffff",
                                     "colors": Object {
                                       "components": Object {
@@ -855,7 +855,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                 themes={
                                   Array [
                                     Object {
-                                      "backgroundColor": "#000000",
+                                      "backgroundColor": "#101112",
                                       "color": "#ffffff",
                                       "colors": Object {
                                         "components": Object {
@@ -992,7 +992,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                   themes={
                                     Array [
                                       Object {
-                                        "backgroundColor": "#000000",
+                                        "backgroundColor": "#101112",
                                         "color": "#ffffff",
                                         "colors": Object {
                                           "components": Object {
@@ -1430,7 +1430,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                   themes={
                                     Array [
                                       Object {
-                                        "backgroundColor": "#000000",
+                                        "backgroundColor": "#101112",
                                         "color": "#ffffff",
                                         "colors": Object {
                                           "components": Object {
@@ -1557,7 +1557,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                     themes={
                                       Array [
                                         Object {
-                                          "backgroundColor": "#000000",
+                                          "backgroundColor": "#101112",
                                           "color": "#ffffff",
                                           "colors": Object {
                                             "components": Object {
@@ -1709,7 +1709,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                       themes={
                                         Array [
                                           Object {
-                                            "backgroundColor": "#000000",
+                                            "backgroundColor": "#101112",
                                             "color": "#ffffff",
                                             "colors": Object {
                                               "components": Object {
@@ -1846,7 +1846,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                         themes={
                                           Array [
                                             Object {
-                                              "backgroundColor": "#000000",
+                                              "backgroundColor": "#101112",
                                               "color": "#ffffff",
                                               "colors": Object {
                                                 "components": Object {
@@ -1984,7 +1984,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                           themes={
                                             Array [
                                               Object {
-                                                "backgroundColor": "#000000",
+                                                "backgroundColor": "#101112",
                                                 "color": "#ffffff",
                                                 "colors": Object {
                                                   "components": Object {
@@ -2288,7 +2288,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                   themes={
                                     Array [
                                       Object {
-                                        "backgroundColor": "#000000",
+                                        "backgroundColor": "#101112",
                                         "color": "#ffffff",
                                         "colors": Object {
                                           "components": Object {
@@ -2415,7 +2415,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                     themes={
                                       Array [
                                         Object {
-                                          "backgroundColor": "#000000",
+                                          "backgroundColor": "#101112",
                                           "color": "#ffffff",
                                           "colors": Object {
                                             "components": Object {
@@ -2567,7 +2567,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                       themes={
                                         Array [
                                           Object {
-                                            "backgroundColor": "#000000",
+                                            "backgroundColor": "#101112",
                                             "color": "#ffffff",
                                             "colors": Object {
                                               "components": Object {
@@ -2704,7 +2704,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                         themes={
                                           Array [
                                             Object {
-                                              "backgroundColor": "#000000",
+                                              "backgroundColor": "#101112",
                                               "color": "#ffffff",
                                               "colors": Object {
                                                 "components": Object {
@@ -2842,7 +2842,7 @@ exports[`ListItem Props tests renders default ListItem 1`] = `
                                           themes={
                                             Array [
                                               Object {
-                                                "backgroundColor": "#000000",
+                                                "backgroundColor": "#101112",
                                                 "color": "#ffffff",
                                                 "colors": Object {
                                                   "components": Object {
@@ -3221,7 +3221,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
       themes={
         Array [
           Object {
-            "backgroundColor": "#000000",
+            "backgroundColor": "#101112",
             "color": "#ffffff",
             "colors": Object {
               "components": Object {
@@ -3712,7 +3712,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                   themes={
                                     Array [
                                       Object {
-                                        "backgroundColor": "#000000",
+                                        "backgroundColor": "#101112",
                                         "color": "#ffffff",
                                         "colors": Object {
                                           "components": Object {
@@ -3839,7 +3839,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                     themes={
                                       Array [
                                         Object {
-                                          "backgroundColor": "#000000",
+                                          "backgroundColor": "#101112",
                                           "color": "#ffffff",
                                           "colors": Object {
                                             "components": Object {
@@ -3991,7 +3991,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                       themes={
                                         Array [
                                           Object {
-                                            "backgroundColor": "#000000",
+                                            "backgroundColor": "#101112",
                                             "color": "#ffffff",
                                             "colors": Object {
                                               "components": Object {
@@ -4128,7 +4128,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                         themes={
                                           Array [
                                             Object {
-                                              "backgroundColor": "#000000",
+                                              "backgroundColor": "#101112",
                                               "color": "#ffffff",
                                               "colors": Object {
                                                 "components": Object {
@@ -4266,7 +4266,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                           themes={
                                             Array [
                                               Object {
-                                                "backgroundColor": "#000000",
+                                                "backgroundColor": "#101112",
                                                 "color": "#ffffff",
                                                 "colors": Object {
                                                   "components": Object {
@@ -4570,7 +4570,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                   themes={
                                     Array [
                                       Object {
-                                        "backgroundColor": "#000000",
+                                        "backgroundColor": "#101112",
                                         "color": "#ffffff",
                                         "colors": Object {
                                           "components": Object {
@@ -4697,7 +4697,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                     themes={
                                       Array [
                                         Object {
-                                          "backgroundColor": "#000000",
+                                          "backgroundColor": "#101112",
                                           "color": "#ffffff",
                                           "colors": Object {
                                             "components": Object {
@@ -4849,7 +4849,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                       themes={
                                         Array [
                                           Object {
-                                            "backgroundColor": "#000000",
+                                            "backgroundColor": "#101112",
                                             "color": "#ffffff",
                                             "colors": Object {
                                               "components": Object {
@@ -4986,7 +4986,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                         themes={
                                           Array [
                                             Object {
-                                              "backgroundColor": "#000000",
+                                              "backgroundColor": "#101112",
                                               "color": "#ffffff",
                                               "colors": Object {
                                                 "components": Object {
@@ -5124,7 +5124,7 @@ exports[`ListItem Props tests renders default ListItem without left Icon 1`] = `
                                           themes={
                                             Array [
                                               Object {
-                                                "backgroundColor": "#000000",
+                                                "backgroundColor": "#101112",
                                                 "color": "#ffffff",
                                                 "colors": Object {
                                                   "components": Object {

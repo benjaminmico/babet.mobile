@@ -4,6 +4,7 @@
         "Informations",
         "lastname",
         "pari",
-        "persistor"
+        "persistor",
+        "reinit"
     ]
 }

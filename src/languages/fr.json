@@ -10,6 +10,17 @@
     "login": "Se connecter",
     "signupWithEmail": "S’inscrire avec mon mail",
     "passwordIncorrect": "Votre mot de passe est incorrect. 😢",
-    "emailIncorrect": "Votre email n'existe pas encore chez babet 😢."
+    "emailIncorrect": "Votre email n'existe pas encore chez babet 😢.",
+    "SettingsScreenHeaderTitle": "Réglages",
+    "myBankrolls": "Mes bankrolls",
+    "myInformations": "Mes informations",
+    "changePassword": "Changer mon mot de passe",
+    "privacy": "Politique de confidentialité",
+    "contactUs": "Nous contacter",
+    "logOut": "Se déconnecter",
+    "MyBankrollsScreenHeaderTitle": "Mes bankrolls",
+    "MyInformationsScreenHeaderTitle": "Mes informations",
+    "ChangePasswordScreenHeaderTitle": "Changer mon mot de passe",
+    "PrivacyScreenHeaderTitle": "Politique de confidentialité"
   }
 }

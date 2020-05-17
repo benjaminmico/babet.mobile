@@ -1,6 +1,5 @@
 import {initialMode} from 'react-native-dark-mode'
 import * as RNLocalize from 'react-native-localize'
-
 /**
  * logout
  */

@@ -2,23 +2,33 @@
 // @flow
 
 import BankrollBlackIcon from '@assets/icons/blacks/bankrollIcon.svg'
+import ContactUsBlackIcon from '@assets/icons/blacks/contactUsIcon.svg'
 import GoBackBlackIcon from '@assets/icons/blacks/goBackIcon.svg'
 import InformationsBlackIcon from '@assets/icons/blacks/informationsIcon.svg'
+import LogOutBlackIcon from '@assets/icons/blacks/logOutIcon.svg'
+import PasswordBlackIcon from '@assets/icons/blacks/passwordIcon.svg'
+import PrivacyBlackIcon from '@assets/icons/blacks/privacyIcon.svg'
 import SettingsBlackIcon from '@assets/icons/blacks/settingsIcon.svg'
+import DeleteBlackIcon from '@assets/icons/blacks/deleteIcon.svg'
+import DeleteWhiteIcon from '@assets/icons/whites/deleteIcon.svg'
 import LostIcon from '@assets/icons/gameStatus/lost.svg'
 import PendingIcon from '@assets/icons/gameStatus/pending.svg'
 import WonIcon from '@assets/icons/gameStatus/won.svg'
+import AddTicket from '@assets/icons/navigation/addTicket.svg'
+import Profile from '@assets/icons/navigation/profile.svg'
+import SelectedAddTicket from '@assets/icons/navigation/selectedAddTicket.svg'
+import SelectedProfile from '@assets/icons/navigation/selectedProfile.svg'
 import ShareIcon from '@assets/icons/share.svg'
 import Tick from '@assets/icons/tick.svg'
+import Ticket from '@assets/icons/ticket.svg'
 import BankrollWhiteIcon from '@assets/icons/whites/bankrollIcon.svg'
+import ContactUsWhiteIcon from '@assets/icons/whites/contactUsIcon.svg'
 import GoBackWhiteIcon from '@assets/icons/whites/goBackIcon.svg'
 import InformationsWhiteIcon from '@assets/icons/whites/informationsIcon.svg'
+import LogOutWhiteIcon from '@assets/icons/whites/logOutIcon.svg'
+import PasswordWhiteIcon from '@assets/icons/whites/passwordIcon.svg'
+import PrivacyWhiteIcon from '@assets/icons/whites/privacyIcon.svg'
 import SettingsWhiteIcon from '@assets/icons/whites/settingsIcon.svg'
-import SelectedAddTicket from '@assets/icons/navigation/selectedAddTicket.svg'
-import AddTicket from '@assets/icons/navigation/addTicket.svg'
-import SelectedProfile from '@assets/icons/navigation/selectedProfile.svg'
-import Profile from '@assets/icons/navigation/profile.svg'
-import Ticket from '@assets/icons/ticket.svg'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {Image} from 'react-native'
@@ -54,6 +64,42 @@ const renderIcon = (label, size, themeKey) => {
         <InformationsBlackIcon width={size} height={size} />
       ) : (
         <InformationsWhiteIcon width={size} height={size} />
+      )
+    case 'privacy':
+      return themeKey === 'white' ? (
+        <PrivacyBlackIcon width={size} height={size} />
+      ) : (
+        <PrivacyWhiteIcon width={size} height={size} />
+      )
+    case 'contact':
+      return themeKey === 'white' ? (
+        <ContactUsBlackIcon width={size} height={size} />
+      ) : (
+        <ContactUsWhiteIcon width={size} height={size} />
+      )
+    case 'update':
+      return themeKey === 'white' ? (
+        <ContactUsBlackIcon width={size} height={size} />
+      ) : (
+        <ContactUsWhiteIcon width={size} height={size} />
+      )
+    case 'delete':
+      return themeKey === 'white' ? (
+        <DeleteBlackIcon width={size} height={size} />
+      ) : (
+        <DeleteWhiteIcon width={size} height={size} />
+      )
+    case 'password':
+      return themeKey === 'white' ? (
+        <PasswordBlackIcon width={size} height={size} />
+      ) : (
+        <PasswordWhiteIcon width={size} height={size} />
+      )
+    case 'logOut':
+      return themeKey === 'white' ? (
+        <LogOutBlackIcon width={size} height={size} />
+      ) : (
+        <LogOutWhiteIcon width={size} height={size} />
       )
     case 'settings':
       return themeKey === 'white' ? (

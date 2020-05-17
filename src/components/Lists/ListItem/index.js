@@ -12,6 +12,8 @@ type Props = {
   icon: Icon,
   // action left icon of list item
   leftActionIcon: Icon,
+  // action wheen pressing item
+  onPress: () => void,
   // action to make on action left icon
   onLeftAction: () => void,
   // action right icon of list item
@@ -22,7 +24,16 @@ type Props = {
   theme: Object,
 }
 
-const ListItem = ({label, icon, leftActionIcon, onLeftAction, rightActionIcon, onRightAction, theme}: Props) => {
+const ListItem = ({
+  label,
+  icon,
+  leftActionIcon,
+  onPress,
+  onLeftAction,
+  rightActionIcon,
+  onRightAction,
+  theme,
+}: Props) => {
   // get theme props
   const {
     colors: {
@@ -37,15 +48,29 @@ const ListItem = ({label, icon, leftActionIcon, onLeftAction, rightActionIcon, o
    * */
   return (
     <>
-      <ListItemContainer>
+      <ListItemContainer onPress={onPress}>
         {icon && <Icon size={24} label={icon} />}
         <ListItemText isIcon={icon} color={colorTitle}>
           {label}
         </ListItemText>
         {(leftActionIcon || rightActionIcon) && (
           <ListItemIconsContainer>
-            {leftActionIcon && <Icon size={16} label={leftActionIcon} onPress={onLeftAction} />}
-            {rightActionIcon && <Icon size={16} label={rightActionIcon} onPress={onRightAction} />}
+            {leftActionIcon && (
+              <Icon
+                hitSlop={{left: 20, top: 20, bottom: 20, right: 20}}
+                size={16}
+                label={leftActionIcon}
+                onPress={onLeftAction}
+              />
+            )}
+            {rightActionIcon && (
+              <Icon
+                hitSlop={{left: 20, top: 20, bottom: 20, right: 20}}
+                size={16}
+                label={rightActionIcon}
+                onPress={onRightAction}
+              />
+            )}
           </ListItemIconsContainer>
         )}
       </ListItemContainer>

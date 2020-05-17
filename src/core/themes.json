@@ -1,7 +1,7 @@
 [
   {
     "key": "dark",
-    "backgroundColor": "#000000",
+    "backgroundColor": "#101112",
     "color": "#ffffff",
     "statusBar": "light-content",
     "isShadow": false,
