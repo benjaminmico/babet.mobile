@@ -17,11 +17,13 @@ type Props = {
   selected: Boolean,
   // if filter is on a multi filters list
   multiFilter: Boolean,
+  // onPress filter
+  onPress: () => void,
   // theme
   theme: Object,
 }
 
-const FilterItem = ({horizontal, index, label, selected, multiFilter, theme}: Props) => {
+const FilterItem = ({horizontal, index, label, onPress, selected, multiFilter, theme}: Props) => {
   //   const {t} = useTranslation()
 
   // get theme props
@@ -40,6 +42,7 @@ const FilterItem = ({horizontal, index, label, selected, multiFilter, theme}: Pr
       index={index}
       backgroundColor={selected ? backgroundFilter : 'transparent'}
       horizontal={horizontal}
+      onPress={() => onPress(index)}
     >
       <FilterItemText color={selected ? (multiFilter ? colorMultiFilter : colorSelected) : colorUnselected}>
         {label}

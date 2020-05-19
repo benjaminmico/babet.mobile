@@ -16,7 +16,9 @@ type Props = {
 const MyBankrollsScreen = ({theme}: Props) => {
   const {data} = useQuery(getBankrolls)
 
-  const {bankrolls} = useSelector(state => state)
+  const {
+    bankrolls: {items: bankrolls},
+  } = useSelector(state => state)
 
   const dispatch = useDispatch()
   /**

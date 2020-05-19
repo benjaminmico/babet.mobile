@@ -1,5 +1,7 @@
 // @flow
 
+import {getBankrolls} from '@api/graphql/queries/bankrolls'
+import {useQuery} from '@apollo/react-hooks'
 import Button from '@components/Buttons/Button'
 import Icon from '@components/Icon'
 import BalanceSheet from '@components/Stats/BalanceSheet'
@@ -8,9 +10,11 @@ import Generic from '@components/Stats/Generic'
 import Graph from '@components/Stats/Graph'
 import Ticket from '@components/Ticket'
 import {withTheme} from '@core/themeProvider'
-import React, {useState} from 'react'
-import {Image} from 'react-native'
 import {useNavigation} from '@react-navigation/native'
+import React, {useEffect, useState} from 'react'
+import {Image} from 'react-native'
+import {useDispatch, useSelector} from 'react-redux'
+import Filters from '@components/Filters'
 import {
   ProfileScreenContainer,
   ProfileScreenContentContainer,
@@ -26,12 +30,34 @@ import {
   ProfileScreenTitleDescription,
   ProfileScreenTitleHeader,
 } from './index.styles'
+import actions from '@store/actions'
 
 type Props = {
   theme: Object,
 }
 
 const ProfileScreen = ({theme}: Props) => {
+  const {data: dataBankrolls} = useQuery(getBankrolls)
+
+  const {
+    bankrolls: {items: bankrolls},
+  } = useSelector(state => state)
+
+  const dispatch = useDispatch()
+
+  const {setBankrollsList, setCurrentBankroll} = actions
+
+  /**
+   * Load GraphQL user bankrolls and add it to local state when :
+   * Bankrolls store are empty
+   * Bankrolls queries are different than bankrolls store
+   */
+  useEffect(() => {
+    if (dataBankrolls?.bankrolls && !bankrolls?.length && dataBankrolls?.bankrolls !== bankrolls)
+      dispatch(setBankrollsList(dataBankrolls.bankrolls))
+  }, [dataBankrolls])
+
+  console.log('bankrolls', bankrolls)
   // get theme props
   const {
     backgroundColor,
@@ -185,6 +211,10 @@ const ProfileScreen = ({theme}: Props) => {
     -80,
   ]
 
+  const onPressBankrollItem = index => {
+    console.log('index', index)
+    dispatch(setCurrentBankroll(bankrolls[index]))
+  }
   return (
     <ProfileScreenContainer backgroundColor={backgroundColor}>
       <ProfileScreenContentContainer showsVerticalScrollIndicator={false}>
@@ -210,6 +240,9 @@ const ProfileScreen = ({theme}: Props) => {
             onPress={() => navigate('SettingsScreen')}
           />
         </ProfileScreenHeaderContainer>
+        {bankrolls?.length > 0 && (
+          <Filters style={{marginTop: 31}} items={bankrolls} onPress={onPressBankrollItem} horizontal />
+        )}
         <ProfileScreenKPIContainer style={{marginTop: 31}}>
           <BalanceSheet value={405.93} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
         </ProfileScreenKPIContainer>

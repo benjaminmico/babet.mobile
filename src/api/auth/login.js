@@ -46,5 +46,6 @@ export const loginToFirebase = async (email, password) => {
  */
 export const loginWithRefreshToken = () => {
   const idToken = auth().currentUser ? auth().currentUser.getIdToken(true) : null
+  console.log('result', auth().currentUser.getIdTokenResult())
   return idToken
 }

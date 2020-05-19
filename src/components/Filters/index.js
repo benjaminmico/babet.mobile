@@ -12,9 +12,11 @@ type Props = {
   items: Array,
   // if it is a multifiters list or not
   multiFilters: Boolean,
+  // onPress filters
+  onPress: () => void,
 }
 
-const Filters = ({items, multiFilters, horizontal}: Props) => {
+const Filters = ({items, multiFilters, onPress, horizontal, ...props}: Props) => {
   /**
    * mapping & render FilterItem for each values
    * render filters horizontally with scroll on verticaly with a view depends on display option "horizontal"
@@ -22,17 +24,24 @@ const Filters = ({items, multiFilters, horizontal}: Props) => {
   return (
     <>
       {horizontal ? (
-        <FiltersScrollContainer scrollEnabled={horizontal} horizontal={horizontal}>
+        <FiltersScrollContainer
+          {...props}
+          showsVerticalScrollIndicator={false}
+          showsHorizontalScrollIndicator={false}
+          scrollEnabled={horizontal}
+          horizontal={horizontal}
+        >
           <FiltersContentContainer horizontal={horizontal}>
             {items.map((item, index) => {
               return (
                 <FilterItem
-                  key={item.id + item.label}
+                  key={`${item.creationDate}`}
                   horizontal={horizontal}
                   index={index}
-                  label={item.label}
+                  label={item.label || item.name}
                   multiFilter={multiFilters}
                   selected={item.selected}
+                  onPress={onPress}
                 />
               )
             })}
@@ -50,6 +59,7 @@ const Filters = ({items, multiFilters, horizontal}: Props) => {
                   label={item.label}
                   multiFilter={multiFilters}
                   selected={item.selected}
+                  onPress={onPress}
                 />
               )
             })}
