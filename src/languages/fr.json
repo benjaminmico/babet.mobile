@@ -9,8 +9,8 @@
     "password": "Mot de passe",
     "login": "Se connecter",
     "signupWithEmail": "S’inscrire avec mon mail",
-    "passwordIncorrect": "Votre mot de passe est incorrect. 😢",
-    "emailIncorrect": "Votre email n'existe pas encore chez babet 😢.",
+    "passwordIncorrect": "Ton mot de passe est incorrect. 😢",
+    "emailIncorrect": "Ton email n'existe pas encore chez babet 😢.",
     "SettingsScreenHeaderTitle": "Réglages",
     "myBankrolls": "Mes bankrolls",
     "myInformations": "Mes informations",
@@ -21,6 +21,13 @@
     "MyBankrollsScreenHeaderTitle": "Mes bankrolls",
     "MyInformationsScreenHeaderTitle": "Mes informations",
     "ChangePasswordScreenHeaderTitle": "Changer mon mot de passe",
-    "PrivacyScreenHeaderTitle": "Politique de confidentialité"
+    "PrivacyScreenHeaderTitle": "Politique de confidentialité",
+    "deleteBankrollAlert": "Es-tu sûr de vouloir supprimer la bankroll",
+    "nameBankrollCreation": "Création d'une bankroll",
+    "nameBankrollCreationInputLabel": "Nom de la bankroll",
+    "nameBankrollCreationInputPlaceholder": "Ajoute un nom ici...",
+    "nameBankrollEdit": "Edition d'une bankroll",
+    "nameBankrollEditnputLabel": "Nom de la bankroll",
+    "nameBankrollEditInputPlaceholder": "Nouveau nom de ma bankroll"
   }
 }

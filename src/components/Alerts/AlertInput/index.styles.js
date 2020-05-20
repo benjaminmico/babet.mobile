@@ -8,6 +8,7 @@ export const AlertInputContainer = styled.View`
   bottom: 0;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
 `
 export const AlertInputContentContainer = styled.View`
   background-color: ${props => props.backgroundColor};
@@ -21,8 +22,8 @@ export const AlertInputContentContainer = styled.View`
 
 export const AlertInputButtonsContainer = styled.View`
   position: absolute;
-  width: 192px;
-  left: 120px;
+  width: 162px;
+  left: 150px;
   bottom: 15px;
   flex-direction: row;
   justify-content: space-between;
@@ -39,8 +40,6 @@ export const AlertInputText = styled.Text`
   font-family: 'AvenirNext-DemiBold';
   font-size: 15px;
   letter-spacing: -0.16px;
-  margin-bottom: 37px;
-  padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;

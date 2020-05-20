@@ -57,6 +57,7 @@ const ListItem = ({
           <ListItemIconsContainer>
             {leftActionIcon && (
               <Icon
+                style={{position: 'absolute', left: 0}}
                 hitSlop={{left: 20, top: 20, bottom: 20, right: 20}}
                 size={16}
                 label={leftActionIcon}
@@ -65,6 +66,7 @@ const ListItem = ({
             )}
             {rightActionIcon && (
               <Icon
+                style={{position: 'absolute', left: 42}}
                 hitSlop={{left: 20, top: 20, bottom: 20, right: 20}}
                 size={16}
                 label={rightActionIcon}

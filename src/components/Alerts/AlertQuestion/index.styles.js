@@ -5,9 +5,11 @@ export const AlertQuestionContainer = styled.View`
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
+  z-index: 100;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
 `
 export const AlertQuestionContentContainer = styled.View`
   background-color: ${props => props.backgroundColor};
@@ -20,8 +22,8 @@ export const AlertQuestionContentContainer = styled.View`
 
 export const AlertQuestionButtonsContainer = styled.View`
   position: absolute;
-  width: 192px;
-  left: 120px;
+  width: 162px;
+  left: 150px;
   bottom: 15px;
   flex-direction: row;
   justify-content: space-between;

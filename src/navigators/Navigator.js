@@ -28,7 +28,7 @@ const Navigator = () => {
    * get token from loginWithRefreshToken actions (onAuthStateChanged)
    * token should be refreshed by this action if exists and also persist session
    * if there's no user it returned null
-   * token or not..., it is store on local state stateToken
+   * token (or not) is store on local state stateToken
    * */
   useEffect(() => {
     async function getToken() {

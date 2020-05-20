@@ -8,6 +8,7 @@ import {
   AlertInputContentContainer,
   AlertInputText,
 } from './index.styles'
+import Input from '@components/Input'
 import Button from '@components/Buttons/Button'
 
 type Props = {
@@ -22,6 +23,12 @@ type Props = {
   actionButtonLabel: String,
   // action button action
   actionButtonPress: () => void,
+  // input label
+  inputLabel: () => void,
+  // input placeholder
+  inputPlaceholder: () => void,
+  // on change input value
+  onChangeInputValue: () => void,
   // input component
   children: Node,
   // theme
@@ -34,6 +41,9 @@ const AlertInput = ({
   cancellableButtonPress,
   actionButtonLabel,
   actionButtonPress,
+  inputLabel,
+  inputPlaceholder,
+  onChangeInputValue,
   children,
   theme,
 }: Props) => {
@@ -56,6 +66,14 @@ const AlertInput = ({
         <AlertInputText numberOfLines={3} color={textColor}>
           {questionLabel}
         </AlertInputText>
+        <Input
+          inputLabel={inputLabel}
+          onChangeText={text => {
+            onChangeInputValue(text)
+          }}
+          placeholder={inputPlaceholder}
+        />
+
         <AlertInputButtonsContainer>
           {cancellableButtonLabel && (
             <Button onPress={cancellableButtonPress} label={cancellableButtonLabel} isCancellable />
