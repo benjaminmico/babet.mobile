@@ -8,6 +8,7 @@
     "email": "Email",
     "password": "Mot de passe",
     "login": "Se connecter",
+    "update": "Modifier",
     "signupWithEmail": "S’inscrire avec mon mail",
     "passwordIncorrect": "Ton mot de passe est incorrect. 😢",
     "emailIncorrect": "Ton email n'existe pas encore chez babet 😢.",
@@ -28,6 +29,8 @@
     "nameBankrollCreationInputPlaceholder": "Ajoute un nom ici...",
     "nameBankrollEdit": "Edition d'une bankroll",
     "nameBankrollEditnputLabel": "Nom de la bankroll",
-    "nameBankrollEditInputPlaceholder": "Nouveau nom de ma bankroll"
+    "nameBankrollEditInputPlaceholder": "Nouveau nom de ma bankroll",
+    "nickname": "Pseudo",
+    "description": "Description"
   }
 }

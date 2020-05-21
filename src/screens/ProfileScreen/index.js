@@ -40,6 +40,10 @@ const ProfileScreen = ({theme}: Props) => {
   const {data: dataBankrolls} = useQuery(getBankrolls)
 
   const {
+    auth: {nickname, description},
+  } = useSelector(state => state)
+
+  const {
     bankrolls: {items: bankrolls},
   } = useSelector(state => state)
 
@@ -228,10 +232,8 @@ const ProfileScreen = ({theme}: Props) => {
             />
           </ProfileScreenImageHeaderContainer>
           <ProfileScreenContentHeaderContainer>
-            <ProfileScreenTitleHeader color={textColor}>@leparieur</ProfileScreenTitleHeader>
-            <ProfileScreenTitleDescription color={descriptionColor}>
-              28 ans, Paris , Le meilleur parieur et de loin !
-            </ProfileScreenTitleDescription>
+            <ProfileScreenTitleHeader color={textColor}>{nickname}</ProfileScreenTitleHeader>
+            <ProfileScreenTitleDescription color={descriptionColor}>{description}</ProfileScreenTitleDescription>
           </ProfileScreenContentHeaderContainer>
           <Icon
             style={{position: 'absolute', top: 0, right: 5}}

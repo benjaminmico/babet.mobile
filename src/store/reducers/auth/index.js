@@ -14,6 +14,8 @@ const defaultState = {
   emailValidation: null,
   firstname: null,
   lastname: null,
+  nickname: null,
+  description: null,
   creationTime: null,
   lastTimeLogged: null,
   isNewUser: null,

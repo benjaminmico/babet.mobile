@@ -13,7 +13,7 @@ type Props = {
   theme: Object,
 }
 
-const InputButton = ({label, onPress, theme}: Props) => {
+const InputButton = ({label, onPress, theme, ...props}: Props) => {
   // get theme props
   const {
     colors: {
@@ -30,7 +30,7 @@ const InputButton = ({label, onPress, theme}: Props) => {
    * */
 
   return (
-    <InputButtonContainer disabled={!onPress} onPress={onPress} backgroundColor={backgroundInputButton}>
+    <InputButtonContainer {...props} disabled={!onPress} onPress={onPress} backgroundColor={backgroundInputButton}>
       <InputButtonText numberOfLines={1} color={isPrimaryActionInputButtonTextColor}>
         {label.toUpperCase()}
       </InputButtonText>

@@ -12,13 +12,15 @@ type Props = {
   editable: Boolean,
   // placeholder input
   placeholder: String,
+  // value input
+  value: String,
   // on change text,
   onChangeText: () => void,
   // theme
   theme: Object,
 }
 
-const Input = ({inputLabel, editable, placeholder, onChangeText, theme}: Props) => {
+const Input = ({inputLabel, editable, placeholder, value, onChangeText, theme}: Props) => {
   // get theme props
   const {
     key: keyTheme,
@@ -41,6 +43,7 @@ const Input = ({inputLabel, editable, placeholder, onChangeText, theme}: Props) 
         placeholder={placeholder}
         color={inputValueTextColor}
         editable={editable}
+        value={value}
       />
     </InputContainer>
   )

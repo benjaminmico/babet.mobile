@@ -9,6 +9,8 @@ export const getUserInformations = gql`
       uid
       firstname
       lastname
+      nickname
+      description
       email
       loginMethod
       emailValidation

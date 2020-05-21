@@ -4,7 +4,7 @@ import {Platform} from 'react-native'
 export const MyBankrollsScreenContainer = styled.View`
   background-color: ${props => props.backgroundColor};
   height: 100%;
-  padding-top: ${props => (props.alert ? (Platform.OS === 'android' ? 60 : 88) : 0)};
+  padding-top: ${props => (props.alert ? (Platform.OS === 'android' ? 60 : 88) : 0)}px;
 `
 
 export const MyBankrollsScreenContentContainer = styled.ScrollView`

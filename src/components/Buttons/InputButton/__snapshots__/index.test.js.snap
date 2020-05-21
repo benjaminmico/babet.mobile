@@ -196,6 +196,129 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
       <Styled(Component)
         backgroundColor="#5100FF"
         disabled={true}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="#5100FF"
@@ -232,10 +355,134 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
             }
           }
           forwardedRef={null}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="#5100FF"
             disabled={true}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -251,11 +498,134 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                 },
               ]
             }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
+                },
+              ]
+            }
           >
             <TouchableOpacity
               backgroundColor="#5100FF"
               disabled={true}
               hostRef={null}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -268,6 +638,128 @@ exports[`InputButton Props tests renders default InputButton 1`] = `
                     "paddingRight": 9,
                     "paddingTop": 6,
                     "width": "100%",
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }

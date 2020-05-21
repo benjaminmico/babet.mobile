@@ -205,6 +205,7 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
         backgroundColor="transparent"
         horizontal={true}
         index={0}
+        onPress={[Function]}
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -247,11 +248,13 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
           forwardedRef={null}
           horizontal={true}
           index={0}
+          onPress={[Function]}
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={true}
             index={0}
+            onPress={[Function]}
             style={
               Array [
                 Object {
@@ -274,6 +277,7 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
               horizontal={true}
               hostRef={null}
               index={0}
+              onPress={[Function]}
               style={
                 Array [
                   Object {
@@ -293,7 +297,7 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
             >
               <ForwardRef(AnimatedComponentWrapper)
                 accessible={true}
-                focusable={false}
+                focusable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
@@ -325,7 +329,7 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
               >
                 <AnimatedComponent
                   accessible={true}
-                  focusable={false}
+                  focusable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -357,7 +361,7 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                 >
                   <View
                     accessible={true}
-                    focusable={false}
+                    focusable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -383,7 +387,7 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                   >
                     <View
                       accessible={true}
-                      focusable={false}
+                      focusable={true}
                       onClick={[Function]}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
@@ -689,6 +693,7 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
       <Styled(Component)
         backgroundColor="transparent"
         index={1}
+        onPress={[Function]}
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -730,10 +735,12 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
           }
           forwardedRef={null}
           index={1}
+          onPress={[Function]}
         >
           <ForwardRef
             backgroundColor="transparent"
             index={1}
+            onPress={[Function]}
             style={
               Array [
                 Object {
@@ -755,6 +762,7 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
               backgroundColor="transparent"
               hostRef={null}
               index={1}
+              onPress={[Function]}
               style={
                 Array [
                   Object {
@@ -774,7 +782,7 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
             >
               <ForwardRef(AnimatedComponentWrapper)
                 accessible={true}
-                focusable={false}
+                focusable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
@@ -806,7 +814,7 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
               >
                 <AnimatedComponent
                   accessible={true}
-                  focusable={false}
+                  focusable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -838,7 +846,7 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                 >
                   <View
                     accessible={true}
-                    focusable={false}
+                    focusable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -864,7 +872,7 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                   >
                     <View
                       accessible={true}
-                      focusable={false}
+                      focusable={true}
                       onClick={[Function]}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
@@ -1173,6 +1181,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
         backgroundColor="transparent"
         horizontal={true}
         index={0}
+        onPress={[Function]}
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -1215,11 +1224,13 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
           forwardedRef={null}
           horizontal={true}
           index={0}
+          onPress={[Function]}
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={true}
             index={0}
+            onPress={[Function]}
             style={
               Array [
                 Object {
@@ -1242,6 +1253,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
               horizontal={true}
               hostRef={null}
               index={0}
+              onPress={[Function]}
               style={
                 Array [
                   Object {
@@ -1261,7 +1273,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
             >
               <ForwardRef(AnimatedComponentWrapper)
                 accessible={true}
-                focusable={false}
+                focusable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
@@ -1293,7 +1305,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
               >
                 <AnimatedComponent
                   accessible={true}
-                  focusable={false}
+                  focusable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -1325,7 +1337,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                 >
                   <View
                     accessible={true}
-                    focusable={false}
+                    focusable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -1351,7 +1363,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                   >
                     <View
                       accessible={true}
-                      focusable={false}
+                      focusable={true}
                       onClick={[Function]}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
@@ -1660,6 +1672,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
         backgroundColor="transparent"
         horizontal={true}
         index={1}
+        onPress={[Function]}
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -1702,11 +1715,13 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
           forwardedRef={null}
           horizontal={true}
           index={1}
+          onPress={[Function]}
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={true}
             index={1}
+            onPress={[Function]}
             style={
               Array [
                 Object {
@@ -1729,6 +1744,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
               horizontal={true}
               hostRef={null}
               index={1}
+              onPress={[Function]}
               style={
                 Array [
                   Object {
@@ -1748,7 +1764,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
             >
               <ForwardRef(AnimatedComponentWrapper)
                 accessible={true}
-                focusable={false}
+                focusable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
@@ -1780,7 +1796,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
               >
                 <AnimatedComponent
                   accessible={true}
-                  focusable={false}
+                  focusable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -1812,7 +1828,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                 >
                   <View
                     accessible={true}
-                    focusable={false}
+                    focusable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -1838,7 +1854,7 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                   >
                     <View
                       accessible={true}
-                      focusable={false}
+                      focusable={true}
                       onClick={[Function]}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
@@ -2145,6 +2161,7 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
         backgroundColor="#F3F2F2"
         horizontal={false}
         index={0}
+        onPress={[Function]}
       >
         <StyledNativeComponent
           backgroundColor="#F3F2F2"
@@ -2187,11 +2204,13 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
           forwardedRef={null}
           horizontal={false}
           index={0}
+          onPress={[Function]}
         >
           <ForwardRef
             backgroundColor="#F3F2F2"
             horizontal={false}
             index={0}
+            onPress={[Function]}
             style={
               Array [
                 Object {
@@ -2214,6 +2233,7 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
               horizontal={false}
               hostRef={null}
               index={0}
+              onPress={[Function]}
               style={
                 Array [
                   Object {
@@ -2233,7 +2253,7 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
             >
               <ForwardRef(AnimatedComponentWrapper)
                 accessible={true}
-                focusable={false}
+                focusable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
@@ -2265,7 +2285,7 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
               >
                 <AnimatedComponent
                   accessible={true}
-                  focusable={false}
+                  focusable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -2297,7 +2317,7 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                 >
                   <View
                     accessible={true}
-                    focusable={false}
+                    focusable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -2323,7 +2343,7 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                   >
                     <View
                       accessible={true}
-                      focusable={false}
+                      focusable={true}
                       onClick={[Function]}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
@@ -2632,6 +2652,7 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
         backgroundColor="#F3F2F2"
         horizontal={false}
         index={0}
+        onPress={[Function]}
       >
         <StyledNativeComponent
           backgroundColor="#F3F2F2"
@@ -2674,11 +2695,13 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
           forwardedRef={null}
           horizontal={false}
           index={0}
+          onPress={[Function]}
         >
           <ForwardRef
             backgroundColor="#F3F2F2"
             horizontal={false}
             index={0}
+            onPress={[Function]}
             style={
               Array [
                 Object {
@@ -2701,6 +2724,7 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
               horizontal={false}
               hostRef={null}
               index={0}
+              onPress={[Function]}
               style={
                 Array [
                   Object {
@@ -2720,7 +2744,7 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
             >
               <ForwardRef(AnimatedComponentWrapper)
                 accessible={true}
-                focusable={false}
+                focusable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
@@ -2752,7 +2776,7 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
               >
                 <AnimatedComponent
                   accessible={true}
-                  focusable={false}
+                  focusable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -2784,7 +2808,7 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                 >
                   <View
                     accessible={true}
-                    focusable={false}
+                    focusable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -2810,7 +2834,7 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                   >
                     <View
                       accessible={true}
-                      focusable={false}
+                      focusable={true}
                       onClick={[Function]}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
@@ -3126,6 +3150,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
         backgroundColor="transparent"
         horizontal={false}
         index={0}
+        onPress={[Function]}
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -3168,11 +3193,13 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
           forwardedRef={null}
           horizontal={false}
           index={0}
+          onPress={[Function]}
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={false}
             index={0}
+            onPress={[Function]}
             style={
               Array [
                 Object {
@@ -3195,6 +3222,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
               horizontal={false}
               hostRef={null}
               index={0}
+              onPress={[Function]}
               style={
                 Array [
                   Object {
@@ -3214,7 +3242,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
             >
               <ForwardRef(AnimatedComponentWrapper)
                 accessible={true}
-                focusable={false}
+                focusable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
@@ -3246,7 +3274,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
               >
                 <AnimatedComponent
                   accessible={true}
-                  focusable={false}
+                  focusable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -3278,7 +3306,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                 >
                   <View
                     accessible={true}
-                    focusable={false}
+                    focusable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -3304,7 +3332,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                   >
                     <View
                       accessible={true}
-                      focusable={false}
+                      focusable={true}
                       onClick={[Function]}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}
@@ -3613,6 +3641,7 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
         backgroundColor="transparent"
         horizontal={false}
         index={0}
+        onPress={[Function]}
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -3655,11 +3684,13 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
           forwardedRef={null}
           horizontal={false}
           index={0}
+          onPress={[Function]}
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={false}
             index={0}
+            onPress={[Function]}
             style={
               Array [
                 Object {
@@ -3682,6 +3713,7 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
               horizontal={false}
               hostRef={null}
               index={0}
+              onPress={[Function]}
               style={
                 Array [
                   Object {
@@ -3701,7 +3733,7 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
             >
               <ForwardRef(AnimatedComponentWrapper)
                 accessible={true}
-                focusable={false}
+                focusable={true}
                 onClick={[Function]}
                 onResponderGrant={[Function]}
                 onResponderMove={[Function]}
@@ -3733,7 +3765,7 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
               >
                 <AnimatedComponent
                   accessible={true}
-                  focusable={false}
+                  focusable={true}
                   onClick={[Function]}
                   onResponderGrant={[Function]}
                   onResponderMove={[Function]}
@@ -3765,7 +3797,7 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                 >
                   <View
                     accessible={true}
-                    focusable={false}
+                    focusable={true}
                     onClick={[Function]}
                     onResponderGrant={[Function]}
                     onResponderMove={[Function]}
@@ -3791,7 +3823,7 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                   >
                     <View
                       accessible={true}
-                      focusable={false}
+                      focusable={true}
                       onClick={[Function]}
                       onResponderGrant={[Function]}
                       onResponderMove={[Function]}

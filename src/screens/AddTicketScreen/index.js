@@ -40,12 +40,12 @@ const AddTicketScreen = (/* {theme}: Props */) => {
     const {addUserInformations} = actions
 
     if (queryUserInformations) {
-      const {firstname, lastname} = queryUserInformations
+      const {firstname, lastname, nickname, description} = queryUserInformations
       // add mutation to update lastTimeLogged
-      mutationSetUserInformations({variables: {firstname, lastname}})
+      mutationSetUserInformations({variables: {firstname, lastname, nickname, description}})
 
       // action to add firstname && last name on store
-      dispatch(addUserInformations({firstname, lastname}))
+      dispatch(addUserInformations({firstname, lastname, nickname, description}))
     }
   }, [queryUserInformations?.firstname])
 
