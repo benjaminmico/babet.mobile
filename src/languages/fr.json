@@ -31,6 +31,8 @@
     "nameBankrollEditnputLabel": "Nom de la bankroll",
     "nameBankrollEditInputPlaceholder": "Nouveau nom de ma bankroll",
     "nickname": "Pseudo",
-    "description": "Description"
+    "description": "Description",
+    "updatePassword": "Nouveau mot de passe",
+    "confirmPassword": "Confirmer le nouveau mot de passe"
   }
 }

@@ -2,6 +2,7 @@
 
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
+import {Linking} from 'react-native'
 import {SettingsScreenContainer, SettingsScreenContentContainer} from './index.styles'
 import ListItem from '@components/Lists/ListItem'
 import {useTranslation} from 'react-i18next'
@@ -48,7 +49,7 @@ const SettingsScreen = ({theme}: Props) => {
       onPress: () => navigate('ChangePasswordScreen'),
     },
     {label: t('privacy'), icon: 'privacy', onPress: () => navigate('PrivacyScreen')},
-    {label: t('contactUs'), icon: 'contact', onPress: () => navigate('PrivacyScreen')},
+    {label: t('contactUs'), icon: 'contact', onPress: () => Linking.openURL('mailto:babet@babet.app')},
     {label: t('logOut'), icon: 'logOut', onPress: () => userLogout()},
   ]
 

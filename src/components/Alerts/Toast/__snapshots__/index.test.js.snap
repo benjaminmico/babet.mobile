@@ -1,0 +1,469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlertQuestion Props tests renders AlertQuestion 1`] = `
+<ThemeContextProvider>
+  <Component
+    label="Traitement de la photo en cours…"
+  >
+    <AlertQuestion
+      label="Traitement de la photo en cours…"
+      setTheme={[Function]}
+      theme={
+        Object {
+          "backgroundColor": "#ffffff",
+          "color": "#101112",
+          "colors": Object {
+            "components": Object {
+              "background": "#FFFFFF",
+              "backgroundAction": "#F3F2F2",
+              "backgroundContainer": "#FFFFFF",
+              "backgroundFilter": "#F3F2F2",
+              "backgroundInputButton": "#5100FF",
+              "backgroundPrimaryAction": "#5100FF",
+              "icon": "#000000",
+            },
+            "palette": Object {
+              "black": "#000000",
+              "comparisonDescription": "#A3A2A2",
+              "line": "#D4D8D9",
+              "lost": "#CA1010",
+              "pending": "#7C7C7C",
+              "purple": "#5100FF",
+              "separator": "#979797",
+              "white": "#FFFFFF",
+              "won": "#14B916",
+            },
+            "shadows": Object {},
+            "texts": Object {
+              "buttons": Object {
+                "actions": "#5100FF",
+                "cancellable": "#3E3E3E",
+                "filter": "#3E3E3E",
+                "isPrimaryAction": "#FFFFFF",
+                "social": Object {
+                  "apple": "#000000",
+                  "facebook": "#1976D2",
+                  "gmail": "#F44336",
+                },
+              },
+              "description": "#ADADAD",
+              "filters": Object {
+                "multiFilter": "#5100FF",
+                "selected": "#000000",
+                "unselected": "#A3A2A2",
+              },
+              "input": Object {
+                "label": "#7C7C7C",
+                "value": "#000000",
+              },
+              "labelInput": "#7C7C7C",
+              "reverseText": "#FFFFFF",
+              "stats": Object {
+                "kpiValue": "#3E3E3E",
+              },
+              "text": "#000000",
+              "title": "#000000",
+            },
+          },
+          "isShadow": true,
+          "key": "white",
+          "statusBar": "dark-content",
+        }
+      }
+      themes={
+        Array [
+          Object {
+            "backgroundColor": "#101112",
+            "color": "#ffffff",
+            "colors": Object {
+              "components": Object {
+                "background": "#101112",
+                "backgroundAction": "#F3F2F2",
+                "backgroundContainer": "#2F3134",
+                "backgroundFilter": "#F3F2F2",
+                "backgroundInputButton": "#5100FF",
+                "backgroundPrimaryAction": "#5100FF",
+                "icon": "#FFFFFF",
+              },
+              "palette": Object {
+                "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
+                "lost": "#CA1010",
+                "pending": "#7C7C7C",
+                "purple": "#5100FF",
+                "separator": "#979797",
+                "white": "#FFFFFF",
+                "won": "#14B916",
+              },
+              "texts": Object {
+                "buttons": Object {
+                  "actions": "#5100FF",
+                  "cancellable": "#3E3E3E",
+                  "filter": "#3E3E3E",
+                  "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
+                },
+                "description": "#ADADAD",
+                "filters": Object {
+                  "multiFilter": "#5100FF",
+                  "selected": "#000000",
+                  "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#FFFFFF",
+                },
+                "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#FFFFFF",
+                },
+                "text": "#FFFFFF",
+                "title": "#FFFFFF",
+              },
+            },
+            "isShadow": false,
+            "key": "dark",
+            "statusBar": "light-content",
+          },
+          Object {
+            "backgroundColor": "#ffffff",
+            "color": "#101112",
+            "colors": Object {
+              "components": Object {
+                "background": "#FFFFFF",
+                "backgroundAction": "#F3F2F2",
+                "backgroundContainer": "#FFFFFF",
+                "backgroundFilter": "#F3F2F2",
+                "backgroundInputButton": "#5100FF",
+                "backgroundPrimaryAction": "#5100FF",
+                "icon": "#000000",
+              },
+              "palette": Object {
+                "black": "#000000",
+                "comparisonDescription": "#A3A2A2",
+                "line": "#D4D8D9",
+                "lost": "#CA1010",
+                "pending": "#7C7C7C",
+                "purple": "#5100FF",
+                "separator": "#979797",
+                "white": "#FFFFFF",
+                "won": "#14B916",
+              },
+              "shadows": Object {},
+              "texts": Object {
+                "buttons": Object {
+                  "actions": "#5100FF",
+                  "cancellable": "#3E3E3E",
+                  "filter": "#3E3E3E",
+                  "isPrimaryAction": "#FFFFFF",
+                  "social": Object {
+                    "apple": "#000000",
+                    "facebook": "#1976D2",
+                    "gmail": "#F44336",
+                  },
+                },
+                "description": "#ADADAD",
+                "filters": Object {
+                  "multiFilter": "#5100FF",
+                  "selected": "#000000",
+                  "unselected": "#A3A2A2",
+                },
+                "input": Object {
+                  "label": "#7C7C7C",
+                  "value": "#000000",
+                },
+                "labelInput": "#7C7C7C",
+                "reverseText": "#FFFFFF",
+                "stats": Object {
+                  "kpiValue": "#3E3E3E",
+                },
+                "text": "#000000",
+                "title": "#000000",
+              },
+            },
+            "isShadow": true,
+            "key": "white",
+            "statusBar": "dark-content",
+          },
+        ]
+      }
+    >
+      <Styled(View)>
+        <StyledNativeComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "displayName": "Styled(View)",
+              "inlineStyle": InlineStyle {
+                "rules": Array [
+                  "
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+",
+                ],
+              },
+              "render": [Function],
+              "styledComponentId": "StyledNativeComponent",
+              "target": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(0, 0, 0, 0.7)",
+                  "bottom": 0,
+                  "justifyContent": "center",
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "zIndex": 100,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0, 0, 0, 0.7)",
+                    "bottom": 0,
+                    "justifyContent": "center",
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "zIndex": 100,
+                  },
+                ]
+              }
+            >
+              <Styled(View)
+                backgroundColor="#FFFFFF"
+              >
+                <StyledNativeComponent
+                  backgroundColor="#FFFFFF"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "displayName": "Styled(View)",
+                      "inlineStyle": InlineStyle {
+                        "rules": Array [
+                          "
+  background-color: ",
+                          [Function],
+                          ";
+  border-radius: 12.6px;
+  width: 335px;
+  height: 176px;
+  justify-content: center;
+  align-items: center;
+",
+                        ],
+                      },
+                      "render": [Function],
+                      "styledComponentId": "StyledNativeComponent",
+                      "target": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <View
+                    backgroundColor="#FFFFFF"
+                    style={
+                      Array [
+                        Object {
+                          "alignItems": "center",
+                          "backgroundColor": "#FFFFFF",
+                          "borderRadius": 12.6,
+                          "height": 176,
+                          "justifyContent": "center",
+                          "width": 335,
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      backgroundColor="#FFFFFF"
+                      style={
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#FFFFFF",
+                            "borderRadius": 12.6,
+                            "height": 176,
+                            "justifyContent": "center",
+                            "width": 335,
+                          },
+                        ]
+                      }
+                    >
+                      <Styled(Text)
+                        color="#000000"
+                        numberOfLines={3}
+                      >
+                        <StyledNativeComponent
+                          color="#000000"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "displayName": "Styled(Text)",
+                              "inlineStyle": InlineStyle {
+                                "rules": Array [
+                                  "
+  color: ",
+                                  [Function],
+                                  ";
+  font-family: 'AvenirNext-DemiBold';
+  font-size: 15px;
+  letter-spacing: -0.16px;
+  margin-bottom: 37px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+",
+                                ],
+                              },
+                              "render": [Function],
+                              "styledComponentId": "StyledNativeComponent",
+                              "target": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          numberOfLines={3}
+                        >
+                          <Text
+                            color="#000000"
+                            numberOfLines={3}
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#000000",
+                                  "fontFamily": "AvenirNext-DemiBold",
+                                  "fontSize": 15,
+                                  "letterSpacing": -0.16,
+                                  "marginBottom": 37,
+                                  "paddingLeft": 20,
+                                  "paddingRight": 20,
+                                  "textAlign": "center",
+                                },
+                              ]
+                            }
+                          >
+                            <Text
+                              color="#000000"
+                              numberOfLines={3}
+                              style={
+                                Array [
+                                  Object {
+                                    "color": "#000000",
+                                    "fontFamily": "AvenirNext-DemiBold",
+                                    "fontSize": 15,
+                                    "letterSpacing": -0.16,
+                                    "marginBottom": 37,
+                                    "paddingLeft": 20,
+                                    "paddingRight": 20,
+                                    "textAlign": "center",
+                                  },
+                                ]
+                              }
+                            />
+                          </Text>
+                        </StyledNativeComponent>
+                      </Styled(Text)>
+                      <Styled(View)>
+                        <StyledNativeComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "displayName": "Styled(View)",
+                              "inlineStyle": InlineStyle {
+                                "rules": Array [
+                                  "
+  position: absolute;
+  width: 162px;
+  left: 150px;
+  bottom: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+",
+                                ],
+                              },
+                              "render": [Function],
+                              "styledComponentId": "StyledNativeComponent",
+                              "target": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <View
+                            style={
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "bottom": 15,
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "left": 150,
+                                  "position": "absolute",
+                                  "width": 162,
+                                },
+                              ]
+                            }
+                          >
+                            <View
+                              style={
+                                Array [
+                                  Object {
+                                    "alignItems": "center",
+                                    "bottom": 15,
+                                    "flexDirection": "row",
+                                    "justifyContent": "space-between",
+                                    "left": 150,
+                                    "position": "absolute",
+                                    "width": 162,
+                                  },
+                                ]
+                              }
+                            />
+                          </View>
+                        </StyledNativeComponent>
+                      </Styled(View)>
+                    </View>
+                  </View>
+                </StyledNativeComponent>
+              </Styled(View)>
+            </View>
+          </View>
+        </StyledNativeComponent>
+      </Styled(View)>
+    </AlertQuestion>
+  </Component>
+</ThemeContextProvider>
+`;

@@ -8,3 +8,9 @@ export const ChangePasswordScreenContainer = styled.View`
 export const ChangePasswordScreenContentContainer = styled.View`
   padding-top: 31px;
 `
+
+export const ChangePasswordButtonContainer = styled.View`
+  margin-top: 39px;
+  padding-left: 21px;
+  padding-right: 21px;
+`
