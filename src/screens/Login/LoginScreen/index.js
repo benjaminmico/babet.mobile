@@ -51,11 +51,11 @@ const LoginScreen = ({theme}: Props) => {
   const login = async () => {
     setLoading(true)
     // You can await here
-    // const {userInformations, success, error} = await loginToFirebase(
-    //   'dev+test@babet.app',
-    //   'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM',
-    // )
-    const {userInformations, success, error} = await loginToFirebase('benjamin.mico@gmail.com', 'Azertyuiop')
+    const {userInformations, success, error} = await loginToFirebase(
+      'dev+test@babet.app',
+      'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM',
+    )
+    // const {userInformations, success, error} = await loginToFirebase('benjamin.mico@gmail.com', 'Azertyuiop')
 
     // if firebase returned success dispatch user informations on store & navigate to
     if (success) {

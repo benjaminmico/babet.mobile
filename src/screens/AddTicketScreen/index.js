@@ -37,9 +37,12 @@ const AddTicketScreen = (/* {theme}: Props */) => {
     if (userInformations?.user && !queryUserInformations) setQueryUserInformations(userInformations?.user)
   }, [userInformations])
 
+  /**
+   * handle GraphQL query error by displaying toast
+   *
+   * */
   useEffect(() => {
     if (error) {
-      console.log('erreuuuuur', error)
       show({
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),

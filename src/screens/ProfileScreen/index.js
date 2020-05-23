@@ -13,7 +13,7 @@ import Ticket from '@components/Ticket'
 import {withTheme} from '@core/themeProvider'
 import {useNavigation} from '@react-navigation/native'
 import actions from '@store/actions'
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {Image} from 'react-native'
 import {useDispatch, useSelector} from 'react-redux'
 import {
@@ -31,13 +31,15 @@ import {
   ProfileScreenTitleDescription,
   ProfileScreenTitleHeader,
 } from './index.styles'
+import {useTranslation} from 'react-i18next'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 
 type Props = {
   theme: Object,
 }
 
 const ProfileScreen = ({theme}: Props) => {
-  const {data: dataBankrolls} = useQuery(getBankrolls)
+  const {data: dataBankrolls, error} = useQuery(getBankrolls)
 
   const {
     auth: {nickname, description},
@@ -46,6 +48,10 @@ const ProfileScreen = ({theme}: Props) => {
   const {
     bankrolls: {items: bankrolls},
   } = useSelector(state => state)
+
+  const {t} = useTranslation()
+
+  const {show} = useContext(ToastContext)
 
   const dispatch = useDispatch()
 
@@ -60,6 +66,20 @@ const ProfileScreen = ({theme}: Props) => {
     if (dataBankrolls?.bankrolls && !bankrolls?.length && dataBankrolls?.bankrolls !== bankrolls)
       dispatch(setBankrollsList(dataBankrolls.bankrolls))
   }, [dataBankrolls])
+
+  /**
+   * handle GraphQL query error by displaying toast
+   *
+   * */
+  useEffect(() => {
+    if (error) {
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+      })
+    }
+  }, [error])
 
   console.log('bankrolls', bankrolls)
   // get theme props

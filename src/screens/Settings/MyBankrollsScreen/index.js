@@ -1,7 +1,7 @@
 // @flow
 
 import {withTheme} from '@core/themeProvider'
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import {createBankroll} from '@api/graphql/mutations/createBankroll'
 import {editBankroll} from '@api/graphql/mutations/editBankroll'
 import {deleteBankroll} from '@api/graphql/mutations/deleteBankroll'
@@ -15,6 +15,7 @@ import AlertQuestion from '@components/Alerts/AlertQuestion'
 import AlertInput from '@components/Alerts/AlertInput'
 import {useNavigation} from '@react-navigation/native'
 import {useTranslation} from 'react-i18next'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 
 type Props = {
   theme: Object,
@@ -39,6 +40,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
     bankrolls: {items: bankrolls},
   } = useSelector(state => state)
 
+  const {show} = useContext(ToastContext)
   const {t} = useTranslation()
   const {setOptions} = useNavigation()
 
@@ -70,11 +72,27 @@ const MyBankrollsScreen = ({theme}: Props) => {
    *
    */
   const onCreateBankroll = async name => {
-    const {data} = await mutationCreateBankroll({
-      variables: {name},
-    })
-    setAlertCreate(false)
-    dispatch(createBankrollAction(data.createBankroll))
+    try {
+      const {data, error} = await mutationCreateBankroll({
+        variables: {name},
+      })
+      setAlertCreate(false)
+      if (error) {
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
+      }
+      dispatch(createBankrollAction(data.createBankroll))
+    } catch (error) {
+      setAlertCreate(false)
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+      })
+    }
   }
 
   /**
@@ -86,11 +104,27 @@ const MyBankrollsScreen = ({theme}: Props) => {
    *
    */
   const onEditBankroll = async (id, newName) => {
-    const {data} = await mutationEditBankroll({
-      variables: {id, name: newName},
-    })
-    setAlertEdit(false)
-    dispatch(editBankrollAction(data.editBankroll))
+    try {
+      const {data, error} = await mutationEditBankroll({
+        variables: {id, name: newName},
+      })
+      setAlertEdit(false)
+      if (error) {
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
+      }
+      dispatch(editBankrollAction(data.editBankroll))
+    } catch (error) {
+      setAlertEdit(false)
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+      })
+    }
   }
 
   /**
@@ -101,10 +135,25 @@ const MyBankrollsScreen = ({theme}: Props) => {
    *
    */
   const onDeleteBankroll = async id => {
-    setAlertDelete(false)
-    const {data} = await mutationDeleteBankroll({variables: {id}})
-
-    if (data.deleteBankroll) dispatch(deleteBankrollAction(bankrolls.find(bankroll => bankroll.id === id)))
+    try {
+      setAlertDelete(false)
+      const {data, error} = await mutationDeleteBankroll({variables: {id}})
+      if (error) {
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
+      }
+      if (data.deleteBankroll) dispatch(deleteBankrollAction(bankrolls.find(bankroll => bankroll.id === id)))
+    } catch (error) {
+      setAlertDelete(false)
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+      })
+    }
   }
 
   // get theme props
