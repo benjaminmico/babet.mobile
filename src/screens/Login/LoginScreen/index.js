@@ -7,13 +7,12 @@ import Input from '@components/Input'
 import {withTheme} from '@core/themeProvider'
 import {useNavigation} from '@react-navigation/native'
 import actions from '@store/actions'
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import {ActivityIndicator, Keyboard, KeyboardAvoidingView} from 'react-native'
 import {useDispatch} from 'react-redux'
 import {
   LoginScreenContainer,
-  LoginScreenEmailErrorText,
   LoginScreenEmailSignUpText,
   LoginScreenInputButtonContainer,
   LoginScreenInputsContainer,
@@ -21,6 +20,7 @@ import {
   LoginScreenSocialButtonsContainer,
   LoginScreenTermsText,
 } from './index.styles'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 
 type Props = {
   theme: Object,
@@ -29,10 +29,11 @@ type Props = {
 const LoginScreen = ({theme}: Props) => {
   const {t} = useTranslation()
 
+  const {show} = useContext(ToastContext)
+
   const [email, setEmail] = useState(null)
   const [password, setPassword] = useState(null)
   const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
 
   const dispatch = useDispatch()
 
@@ -43,19 +44,18 @@ const LoginScreen = ({theme}: Props) => {
     backgroundColor,
     colors: {
       texts: {text: textColor},
-      palette: {separator: separatorColor, lost: errorColor},
+      palette: {separator: separatorColor},
     },
   } = theme
 
   const login = async () => {
     setLoading(true)
-    setError(null)
     // You can await here
-    // const {userInformations, success} = await loginToFirebase(
+    // const {userInformations, success, error} = await loginToFirebase(
     //   'dev+test@babet.app',
     //   'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM',
     // )
-    const {userInformations, success} = await loginToFirebase('benjamin.mico@gmail.com', 'Azertyuiop')
+    const {userInformations, success, error} = await loginToFirebase('benjamin.mico@gmail.com', 'Azertyuiop')
 
     // if firebase returned success dispatch user informations on store & navigate to
     if (success) {
@@ -64,8 +64,32 @@ const LoginScreen = ({theme}: Props) => {
       await navigate('TabNavigator')
       setLoading(false)
     } else {
+      console.log('error', error)
+      if (error === 'passwordIncorrect')
+        show({
+          title: t('passwordIncorrectTitle'),
+          message: t('passwordIncorrectDescription'),
+          type: 'error',
+        })
+      else if (error === 'emailIncorrect')
+        show({
+          title: t('emailIncorrectTitle'),
+          message: t('emailIncorrectDescription'),
+          type: 'error',
+        })
+      else if (error === 'tooManyRequests')
+        show({
+          title: t('tooManyRequestsTitle'),
+          message: t('tooManyRequestsDescription'),
+          type: 'error',
+        })
+      else
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
       setLoading(false)
-      setError(error)
     }
   }
 
@@ -84,7 +108,6 @@ const LoginScreen = ({theme}: Props) => {
           <Input inputLabel={t('password')} onChangeText={setPassword} placeholder="●●●●●●●●●●●●●●●" />
         </LoginScreenInputsContainer>
         <LoginScreenInputButtonContainer>
-          {error && <LoginScreenEmailErrorText color={errorColor}>{t(error)}</LoginScreenEmailErrorText>}
           {loading ? <ActivityIndicator /> : <InputButton label={t('login')} onPress={() => login(email, password)} />}
           <LoginScreenEmailSignUpText color={textColor}>{t('signupWithEmail')}</LoginScreenEmailSignUpText>
         </LoginScreenInputButtonContainer>

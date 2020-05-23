@@ -25,6 +25,7 @@ exports[`AlertQuestion Props tests renders AlertQuestion 1`] = `
             "palette": Object {
               "black": "#000000",
               "comparisonDescription": "#A3A2A2",
+              "error": "#F34949",
               "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
@@ -88,6 +89,7 @@ exports[`AlertQuestion Props tests renders AlertQuestion 1`] = `
               "palette": Object {
                 "black": "#000000",
                 "comparisonDescription": "#A3A2A2",
+                "error": "#F34949",
                 "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
@@ -146,6 +148,7 @@ exports[`AlertQuestion Props tests renders AlertQuestion 1`] = `
               "palette": Object {
                 "black": "#000000",
                 "comparisonDescription": "#A3A2A2",
+                "error": "#F34949",
                 "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",

@@ -27,6 +27,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
             "palette": Object {
               "black": "#000000",
               "comparisonDescription": "#A3A2A2",
+              "error": "#F34949",
               "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
@@ -90,6 +91,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
               "palette": Object {
                 "black": "#000000",
                 "comparisonDescription": "#A3A2A2",
+                "error": "#F34949",
                 "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
@@ -148,6 +150,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
               "palette": Object {
                 "black": "#000000",
                 "comparisonDescription": "#A3A2A2",
+                "error": "#F34949",
                 "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
@@ -216,6 +219,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                 "palette": Object {
                   "black": "#000000",
                   "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
                   "line": "#D4D8D9",
                   "lost": "#CA1010",
                   "pending": "#7C7C7C",
@@ -274,6 +278,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                 "palette": Object {
                   "black": "#000000",
                   "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
                   "line": "#D4D8D9",
                   "lost": "#CA1010",
                   "pending": "#7C7C7C",
@@ -375,6 +380,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                   "palette": Object {
                     "black": "#000000",
                     "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
                     "line": "#D4D8D9",
                     "lost": "#CA1010",
                     "pending": "#7C7C7C",
@@ -433,6 +439,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                   "palette": Object {
                     "black": "#000000",
                     "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
                     "line": "#D4D8D9",
                     "lost": "#CA1010",
                     "pending": "#7C7C7C",
@@ -517,6 +524,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                     "palette": Object {
                       "black": "#000000",
                       "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
                       "line": "#D4D8D9",
                       "lost": "#CA1010",
                       "pending": "#7C7C7C",
@@ -575,6 +583,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                     "palette": Object {
                       "black": "#000000",
                       "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
                       "line": "#D4D8D9",
                       "lost": "#CA1010",
                       "pending": "#7C7C7C",
@@ -660,6 +669,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                       "palette": Object {
                         "black": "#000000",
                         "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
                         "line": "#D4D8D9",
                         "lost": "#CA1010",
                         "pending": "#7C7C7C",
@@ -718,6 +728,7 @@ exports[`Button Props tests renders cancellable Button 1`] = `
                       "palette": Object {
                         "black": "#000000",
                         "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
                         "line": "#D4D8D9",
                         "lost": "#CA1010",
                         "pending": "#7C7C7C",
@@ -986,6 +997,7 @@ exports[`Button Props tests renders default Button 1`] = `
             "palette": Object {
               "black": "#000000",
               "comparisonDescription": "#A3A2A2",
+              "error": "#F34949",
               "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
@@ -1049,6 +1061,7 @@ exports[`Button Props tests renders default Button 1`] = `
               "palette": Object {
                 "black": "#000000",
                 "comparisonDescription": "#A3A2A2",
+                "error": "#F34949",
                 "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
@@ -1107,6 +1120,7 @@ exports[`Button Props tests renders default Button 1`] = `
               "palette": Object {
                 "black": "#000000",
                 "comparisonDescription": "#A3A2A2",
+                "error": "#F34949",
                 "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
@@ -1175,6 +1189,7 @@ exports[`Button Props tests renders default Button 1`] = `
                 "palette": Object {
                   "black": "#000000",
                   "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
                   "line": "#D4D8D9",
                   "lost": "#CA1010",
                   "pending": "#7C7C7C",
@@ -1233,6 +1248,7 @@ exports[`Button Props tests renders default Button 1`] = `
                 "palette": Object {
                   "black": "#000000",
                   "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
                   "line": "#D4D8D9",
                   "lost": "#CA1010",
                   "pending": "#7C7C7C",
@@ -1334,6 +1350,7 @@ exports[`Button Props tests renders default Button 1`] = `
                   "palette": Object {
                     "black": "#000000",
                     "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
                     "line": "#D4D8D9",
                     "lost": "#CA1010",
                     "pending": "#7C7C7C",
@@ -1392,6 +1409,7 @@ exports[`Button Props tests renders default Button 1`] = `
                   "palette": Object {
                     "black": "#000000",
                     "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
                     "line": "#D4D8D9",
                     "lost": "#CA1010",
                     "pending": "#7C7C7C",
@@ -1476,6 +1494,7 @@ exports[`Button Props tests renders default Button 1`] = `
                     "palette": Object {
                       "black": "#000000",
                       "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
                       "line": "#D4D8D9",
                       "lost": "#CA1010",
                       "pending": "#7C7C7C",
@@ -1534,6 +1553,7 @@ exports[`Button Props tests renders default Button 1`] = `
                     "palette": Object {
                       "black": "#000000",
                       "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
                       "line": "#D4D8D9",
                       "lost": "#CA1010",
                       "pending": "#7C7C7C",
@@ -1619,6 +1639,7 @@ exports[`Button Props tests renders default Button 1`] = `
                       "palette": Object {
                         "black": "#000000",
                         "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
                         "line": "#D4D8D9",
                         "lost": "#CA1010",
                         "pending": "#7C7C7C",
@@ -1677,6 +1698,7 @@ exports[`Button Props tests renders default Button 1`] = `
                       "palette": Object {
                         "black": "#000000",
                         "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
                         "line": "#D4D8D9",
                         "lost": "#CA1010",
                         "pending": "#7C7C7C",
@@ -1947,6 +1969,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
             "palette": Object {
               "black": "#000000",
               "comparisonDescription": "#A3A2A2",
+              "error": "#F34949",
               "line": "#D4D8D9",
               "lost": "#CA1010",
               "pending": "#7C7C7C",
@@ -2010,6 +2033,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
               "palette": Object {
                 "black": "#000000",
                 "comparisonDescription": "#A3A2A2",
+                "error": "#F34949",
                 "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
@@ -2068,6 +2092,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
               "palette": Object {
                 "black": "#000000",
                 "comparisonDescription": "#A3A2A2",
+                "error": "#F34949",
                 "line": "#D4D8D9",
                 "lost": "#CA1010",
                 "pending": "#7C7C7C",
@@ -2136,6 +2161,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                 "palette": Object {
                   "black": "#000000",
                   "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
                   "line": "#D4D8D9",
                   "lost": "#CA1010",
                   "pending": "#7C7C7C",
@@ -2194,6 +2220,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                 "palette": Object {
                   "black": "#000000",
                   "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
                   "line": "#D4D8D9",
                   "lost": "#CA1010",
                   "pending": "#7C7C7C",
@@ -2295,6 +2322,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                   "palette": Object {
                     "black": "#000000",
                     "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
                     "line": "#D4D8D9",
                     "lost": "#CA1010",
                     "pending": "#7C7C7C",
@@ -2353,6 +2381,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                   "palette": Object {
                     "black": "#000000",
                     "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
                     "line": "#D4D8D9",
                     "lost": "#CA1010",
                     "pending": "#7C7C7C",
@@ -2437,6 +2466,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                     "palette": Object {
                       "black": "#000000",
                       "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
                       "line": "#D4D8D9",
                       "lost": "#CA1010",
                       "pending": "#7C7C7C",
@@ -2495,6 +2525,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                     "palette": Object {
                       "black": "#000000",
                       "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
                       "line": "#D4D8D9",
                       "lost": "#CA1010",
                       "pending": "#7C7C7C",
@@ -2580,6 +2611,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                       "palette": Object {
                         "black": "#000000",
                         "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
                         "line": "#D4D8D9",
                         "lost": "#CA1010",
                         "pending": "#7C7C7C",
@@ -2638,6 +2670,7 @@ exports[`Button Props tests renders primary Action Button 1`] = `
                       "palette": Object {
                         "black": "#000000",
                         "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
                         "line": "#D4D8D9",
                         "lost": "#CA1010",
                         "pending": "#7C7C7C",

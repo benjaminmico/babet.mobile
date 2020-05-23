@@ -8,7 +8,7 @@ import auth from '@react-native-firebase/auth'
 const getCurrentUser = async () => {
   // sign in with RN Firebase
   return auth()
-    .currentUser.getIdTokenResult()
+    .currentUser?.getIdTokenResult()
     .then(async user => {
       if (user.token) return {success: true, error: false}
       return {success: false, error: true}

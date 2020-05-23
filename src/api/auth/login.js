@@ -12,6 +12,7 @@ export const loginToFirebase = async (email, password) => {
     .then(async data => {
       const {
         additionalUserInfo: {isNewUser},
+        user,
         user: {
           email,
           emailVerified: emailValidation,
@@ -20,12 +21,24 @@ export const loginToFirebase = async (email, password) => {
         },
       } = data
       // user token
-      const {token} = await auth().currentUser.getIdTokenResult()
+      console.log('user', user)
+      const tokensData = await auth().currentUser?.getIdTokenResult()
 
-      // informations to return
-      const userInformations = {isNewUser, email, emailValidation, creationTime, uid, lastTimeLogged, token}
+      if (tokensData) {
+        // informations to return
+        const userInformations = {
+          isNewUser,
+          email,
+          emailValidation,
+          creationTime,
+          uid,
+          lastTimeLogged,
+          token: tokensData.token,
+        }
 
-      return {success: true, userInformations}
+        return {success: true, userInformations}
+      }
+      return {success: false, error: 'unknown'}
     })
     .catch(error => {
       if (error.code === 'auth/wrong-password') {
@@ -36,7 +49,11 @@ export const loginToFirebase = async (email, password) => {
         return {success: false, error: 'emailIncorrect'}
       }
 
-      return {success: false, error: null}
+      if (error.code === 'auth/too-many-requests') {
+        return {success: false, error: 'tooManyRequests'}
+      }
+
+      return {success: false, error: 'unknown'}
     })
 }
 
@@ -46,6 +63,5 @@ export const loginToFirebase = async (email, password) => {
  */
 export const loginWithRefreshToken = () => {
   const idToken = auth().currentUser ? auth().currentUser.getIdToken(true) : null
-  console.log('result', auth().currentUser.getIdTokenResult())
   return idToken
 }

@@ -5,18 +5,24 @@ import {useMutation, useQuery} from '@apollo/react-hooks'
 import Button from '@components/Buttons/Button'
 import {withTheme} from '@core/themeProvider'
 import actions from '@store/actions'
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {View} from 'react-native'
 import {useDispatch} from 'react-redux'
 import {setUserInformations} from '../../api/graphql/mutations/setUser'
 import {AddTicketScreenSnapper} from './index.styles'
+import {useTranslation} from 'react-i18next'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 
 // type Props = {
 //   theme: Object,
 // }
 
 const AddTicketScreen = (/* {theme}: Props */) => {
-  const {data: userInformations} = useQuery(getUserInformations)
+  const {data: userInformations, error} = useQuery(getUserInformations)
+
+  const {t} = useTranslation()
+
+  const {show} = useContext(ToastContext)
 
   const [queryUserInformations, setQueryUserInformations] = useState(null)
 
@@ -31,6 +37,16 @@ const AddTicketScreen = (/* {theme}: Props */) => {
     if (userInformations?.user && !queryUserInformations) setQueryUserInformations(userInformations?.user)
   }, [userInformations])
 
+  useEffect(() => {
+    if (error) {
+      console.log('erreuuuuur', error)
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+      })
+    }
+  }, [error])
   /**
    * Update user informations on database based on first & lastname
    * By doing this, we ensure that firstname & lastname are always up to date

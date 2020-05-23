@@ -44,6 +44,7 @@ const Toast = ({theme}: Props) => {
     colors: {
       components: {backgroundContainer},
       texts: {text: textColor, description: descriptionColor},
+      palette: {white: errorTextColor, error: errorBackgroundContainer},
     },
   } = theme
 
@@ -66,9 +67,12 @@ const Toast = ({theme}: Props) => {
    * */
   return (
     <Animated.View style={[styles.toastContainer, {transform: [{translateY: translateYRef.current}]}]}>
-      <ToastContentContainer theme={keyTheme} backgroundColor={backgroundContainer}>
-        <ToastContentTitle color={textColor}>{toast.title}</ToastContentTitle>
-        <ToastContentLabel numberOfLines={2} color={descriptionColor}>
+      <ToastContentContainer
+        theme={keyTheme && toast.type === 'error'}
+        backgroundColor={toast.type === 'error' ? errorBackgroundContainer : backgroundContainer}
+      >
+        <ToastContentTitle color={toast.type === 'error' ? errorTextColor : textColor}>{toast.title}</ToastContentTitle>
+        <ToastContentLabel numberOfLines={2} color={toast.type === 'error' ? errorTextColor : descriptionColor}>
           {toast.message}
         </ToastContentLabel>
       </ToastContentContainer>

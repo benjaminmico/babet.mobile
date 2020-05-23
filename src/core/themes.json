@@ -53,6 +53,7 @@
         "separator": "#979797",
         "won": "#14B916",
         "lost": "#CA1010",
+        "error": "#F34949",
         "line": "#D4D8D9"
       }
     }
@@ -112,6 +113,7 @@
         "separator": "#979797",
         "won": "#14B916",
         "lost": "#CA1010",
+        "error": "#F34949",
         "line": "#D4D8D9"
       },
       "shadows": {}
