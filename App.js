@@ -14,6 +14,7 @@ import {ThemeContextProvider} from './src/core/themeProvider'
 import en from './src/languages/en.json'
 import fr from './src/languages/fr.json'
 import {persistor, store} from './src/store/store'
+import {ToastProvider} from '@components/Alerts/Toast/ToastContext'
 import Toast from '@components/Alerts/Toast'
 
 const token = store.getState().auth?.token || null
@@ -57,16 +58,18 @@ const client = new ApolloClient({
 export default class App extends React.Component {
   render() {
     return (
-      <ApolloProvider client={client}>
-        <Provider store={store}>
-          <PersistGate loading={null} persistor={persistor}>
-            <ThemeContextProvider>
-              <NavigationContainer>{token ? <TabNavigator /> : <Navigator />}</NavigationContainer>
-              <Toast />
-            </ThemeContextProvider>
-          </PersistGate>
-        </Provider>
-      </ApolloProvider>
+      <ToastProvider>
+        <ApolloProvider client={client}>
+          <Provider store={store}>
+            <PersistGate loading={null} persistor={persistor}>
+              <ThemeContextProvider>
+                <NavigationContainer>{token ? <TabNavigator /> : <Navigator />}</NavigationContainer>
+                <Toast />
+              </ThemeContextProvider>
+            </PersistGate>
+          </Provider>
+        </ApolloProvider>
+      </ToastProvider>
     )
   }
 }

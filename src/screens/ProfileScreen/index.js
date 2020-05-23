@@ -11,8 +11,8 @@ import Graph from '@components/Stats/Graph'
 import Ticket from '@components/Ticket'
 import {withTheme} from '@core/themeProvider'
 import {useNavigation} from '@react-navigation/native'
-import React, {useEffect, useState} from 'react'
-import {Image} from 'react-native'
+import React, {useContext, useEffect, useState} from 'react'
+import {Image, TouchableOpacity, Text} from 'react-native'
 import {useDispatch, useSelector} from 'react-redux'
 import Filters from '@components/Filters'
 import {
@@ -31,6 +31,7 @@ import {
   ProfileScreenTitleHeader,
 } from './index.styles'
 import actions from '@store/actions'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 
 type Props = {
   theme: Object,
@@ -46,6 +47,8 @@ const ProfileScreen = ({theme}: Props) => {
   const {
     bankrolls: {items: bankrolls},
   } = useSelector(state => state)
+
+  const {show} = useContext(ToastContext)
 
   const dispatch = useDispatch()
 
@@ -221,6 +224,9 @@ const ProfileScreen = ({theme}: Props) => {
   }
   return (
     <ProfileScreenContainer backgroundColor={backgroundColor}>
+      <TouchableOpacity onPress={() => show({title: 'Une erreur est survenue', message: 'Ama simple Toast!'})}>
+        <Text>Show Toast</Text>
+      </TouchableOpacity>
       <ProfileScreenContentContainer showsVerticalScrollIndicator={false}>
         <ProfileScreenHeaderContainer>
           <ProfileScreenImageHeaderContainer>
