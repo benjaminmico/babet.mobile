@@ -4,13 +4,14 @@ import InputButton from '@components/Buttons/InputButton'
 import Input from '@components/Input'
 import {withTheme} from '@core/themeProvider'
 import {useNavigation} from '@react-navigation/native'
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import {
   ChangePasswordButtonContainer,
   ChangePasswordScreenContainer,
   ChangePasswordScreenContentContainer,
 } from './index.styles'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 
 type Props = {
   theme: Object,
@@ -26,6 +27,7 @@ const ChangePasswordScreen = ({theme}: Props) => {
 
   const {goBack} = useNavigation()
 
+  const {show} = useContext(ToastContext)
   const {t} = useTranslation()
 
   /**
@@ -38,6 +40,13 @@ const ChangePasswordScreen = ({theme}: Props) => {
   const updatePassword = async () => {
     const {success} = await changePassword(password)
     if (success) goBack()
+    else {
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+      })
+    }
   }
 
   return (

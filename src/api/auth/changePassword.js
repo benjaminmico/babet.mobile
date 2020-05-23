@@ -6,6 +6,10 @@ import auth from '@react-native-firebase/auth'
  */
 export const changePassword = async password => {
   // sign in with RN Firebase
-  await auth().currentUser.updatePassword(password)
-  return {success: true}
+  try {
+    await auth().currentUser.updatePassword(password)
+    return {success: true}
+  } catch {
+    return {success: false}
+  }
 }
