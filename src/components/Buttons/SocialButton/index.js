@@ -72,7 +72,6 @@ const SocialButton = ({type, theme}: Props) => {
   return (
     <SocialButtonContainer
       // disabled={!onPress}
-      onPress={() => console.log('social')}
       backgroundColor={getBackgroundColor(type) || 'white'}
     >
       <Icon style={{position: 'absolute', left: 13}} size={22} label={type} />

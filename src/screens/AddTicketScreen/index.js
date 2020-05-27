@@ -43,6 +43,7 @@ const AddTicketScreen = (/* {theme}: Props */) => {
    * */
   useEffect(() => {
     if (error) {
+      console.log('error', error)
       show({
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),

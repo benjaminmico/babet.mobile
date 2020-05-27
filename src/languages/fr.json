@@ -40,6 +40,10 @@
     "nickname": "Pseudo",
     "description": "Description",
     "updatePassword": "Nouveau mot de passe",
-    "confirmPassword": "Confirmer le nouveau mot de passe"
+    "confirmPassword": "Confirmer le nouveau mot de passe",
+    "week": "Cette semaine",
+    "lastWeek": "La semaine dernière...",
+    "twoWeeksAgo": "Il y a deux semaines...",
+    "longTimeAgo": "Il y a plus de deux semaines..."
   }
 }

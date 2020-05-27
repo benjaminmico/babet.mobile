@@ -6,8 +6,6 @@
 export function editBankroll(state, action) {
   const {bankroll: editedBankroll} = action
 
-  console.log('jdizojdzoe', editedBankroll)
-
   const bankrolls = state.items
 
   // get bankroll index to edit

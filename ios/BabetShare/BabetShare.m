@@ -17,7 +17,7 @@ RCT_EXPORT_MODULE();
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"BabetShare"
+                                                      moduleName:@"BabetaShare"
                                                initialProperties:nil
                                                    launchOptions:nil];
   rootView.backgroundColor = nil;

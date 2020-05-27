@@ -12,7 +12,6 @@ export const loginToFirebase = async (email, password) => {
     .then(async data => {
       const {
         additionalUserInfo: {isNewUser},
-        user,
         user: {
           email,
           emailVerified: emailValidation,
@@ -21,7 +20,6 @@ export const loginToFirebase = async (email, password) => {
         },
       } = data
       // user token
-      console.log('user', user)
       const tokensData = await auth().currentUser?.getIdTokenResult()
 
       if (tokensData) {

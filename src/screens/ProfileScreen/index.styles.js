@@ -5,26 +5,28 @@ const windowWidth = Dimensions.get('window').width
 
 export const ProfileScreenContainer = styled.View`
   flex: 1;
-  padding-top: 56px;
+  padding-top: 26px;
   background-color: ${props => props.backgroundColor};
 `
 
 export const ProfileScreenContentContainer = styled.ScrollView`
   flex: 1;
-  width: ${windowWidth * 0.89}px;
   align-self: center;
 `
 
 export const ProfileScreenHeaderContainer = styled.View`
   flex-direction: row;
-  align-items: center;
+  align-self: center;
   height: 72px;
+  width: ${windowWidth * 0.89}px;
 `
 
 export const ProfileScreenKPIContainer = styled.View`
   flex-direction: row;
   justify-content: space-between;
   margin-top: 16px;
+  width: ${windowWidth * 0.89}px;
+  align-self: center;
 `
 
 export const ProfileScreenImageHeaderContainer = styled.View`
@@ -59,8 +61,11 @@ export const ProfileScreenTitleDescription = styled.Text`
 
 export const ProfileScreenTicketsHeaderContainer = styled.View`
   margin-top: 33px;
+  margin-bottom: 33px;
   flex-direction: row;
   justify-content: space-between;
+  align-self: center;
+  width: ${windowWidth * 0.89}px;
 `
 
 export const ProfileScreenTicketsHeaderText = styled.Text`
@@ -96,4 +101,15 @@ export const ProfileScreenTicketsIndicatorText = styled.Text`
 
 export const ProfileScreenTicketsContentContainer = styled.View`
   margin-top: 16px;
+`
+
+export const ProfileScreenTicketsSectionTitle = styled.Text`
+  font-family: 'AvenirNext-DemiBold';
+  font-size: 16px;
+  color: ${props => props.color};
+  letter-spacing: -0.17px;
+  line-height: 22px;
+  text-align: left;
+  margin-top: 36px;
+  margin-bottom: 16px;
 `

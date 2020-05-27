@@ -87,6 +87,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
       dispatch(createBankrollAction(data.createBankroll))
     } catch (error) {
       setAlertCreate(false)
+      console.log('error', error)
       show({
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),
@@ -110,6 +111,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
       })
       setAlertEdit(false)
       if (error) {
+        console.log('error', error)
         show({
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
@@ -118,6 +120,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
       }
       dispatch(editBankrollAction(data.editBankroll))
     } catch (error) {
+      console.log('error', error)
       setAlertEdit(false)
       show({
         title: t('unknownErrorTitle'),
@@ -139,6 +142,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
       setAlertDelete(false)
       const {data, error} = await mutationDeleteBankroll({variables: {id}})
       if (error) {
+        console.log('error', error)
         show({
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
@@ -148,6 +152,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
       if (data.deleteBankroll) dispatch(deleteBankrollAction(bankrolls.find(bankroll => bankroll.id === id)))
     } catch (error) {
       setAlertDelete(false)
+      console.log('error', error)
       show({
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),

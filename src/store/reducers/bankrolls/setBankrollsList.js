@@ -11,8 +11,6 @@ export function setBankrollsList(state, action) {
     return {...bankroll, selected: false}
   })
 
-  console.log('bankrollsWithUnselectedProp', bankrollsWithUnselectedProp)
-
   //   const bankrollsToAdd = stateBankrolls?.length
   //     ? stateBankrolls.filter(({id: id1}) => !actionBankrolls.some(({id: id2}) => id2 === id1))
   //     : actionBankrolls

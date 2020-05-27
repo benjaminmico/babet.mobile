@@ -1,7 +1,9 @@
 // @flow
 
 import {getBankrolls} from '@api/graphql/queries/bankrolls'
+import {getTickets} from '@api/graphql/queries/tickets'
 import {useQuery} from '@apollo/react-hooks'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 import Button from '@components/Buttons/Button'
 import Filters from '@components/Filters'
 import Icon from '@components/Icon'
@@ -14,11 +16,12 @@ import {withTheme} from '@core/themeProvider'
 import {useNavigation} from '@react-navigation/native'
 import actions from '@store/actions'
 import React, {useContext, useEffect, useState} from 'react'
-import {Image} from 'react-native'
+import {useTranslation} from 'react-i18next'
+import {Image, SectionList} from 'react-native'
 import {useDispatch, useSelector} from 'react-redux'
+import {getSectionsTickets} from './getSectionsTickets'
 import {
   ProfileScreenContainer,
-  ProfileScreenContentContainer,
   ProfileScreenContentHeaderContainer,
   ProfileScreenHeaderContainer,
   ProfileScreenImageHeaderContainer,
@@ -28,34 +31,58 @@ import {
   ProfileScreenTicketsHeaderText,
   ProfileScreenTicketsIndicatorContainer,
   ProfileScreenTicketsIndicatorText,
+  ProfileScreenTicketsSectionTitle,
   ProfileScreenTitleDescription,
   ProfileScreenTitleHeader,
 } from './index.styles'
-import {useTranslation} from 'react-i18next'
-import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 
 type Props = {
   theme: Object,
 }
 
 const ProfileScreen = ({theme}: Props) => {
-  const {data: dataBankrolls, error} = useQuery(getBankrolls)
-
   const {
     auth: {nickname, description},
-  } = useSelector(state => state)
-
-  const {
     bankrolls: {items: bankrolls},
+    tickets: {items: tickets, count, currentPage: storeCurrentPage, totalPages: storeTotalPages},
   } = useSelector(state => state)
 
-  const {t} = useTranslation()
+  // init sections
+  const initSortedTicketsBySections = [
+    {
+      title: 'week',
+      data: [],
+    },
+    {
+      title: 'lastWeek',
+      data: [],
+    },
+    {
+      title: 'twoWeeksAgo',
+      data: [],
+    },
+    {
+      title: 'longTimeAgo',
+      data: [],
+    },
+  ]
+
+  const [currentPage, setCurrentPage] = useState(1)
+  const [sortedTicketsBySections, setSortedTicketsBySections] = useState(initSortedTicketsBySections)
+  const [onEndReachedCalledDuringMomentum, setOnEndReachedCalledDuringMomentum] = useState(false)
+
+  const {data: dataBankrolls, error: errorBankrolls} = useQuery(getBankrolls)
+  const {data: dataTickets, fetchMore} = useQuery(getTickets, {
+    variables: {page: storeCurrentPage === 1 ? 1 : storeCurrentPage + 1},
+  })
 
   const {show} = useContext(ToastContext)
 
+  const {t} = useTranslation()
+
   const dispatch = useDispatch()
 
-  const {setBankrollsList, setCurrentBankroll} = actions
+  const {setBankrollsList, setCurrentBankroll, setTicketsList} = actions
 
   /**
    * Load GraphQL user bankrolls and add it to local state when :
@@ -72,16 +99,85 @@ const ProfileScreen = ({theme}: Props) => {
    *
    * */
   useEffect(() => {
-    if (error) {
+    if (errorBankrolls) {
+      console.log('error', errorBankrolls)
       show({
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),
         type: 'error',
       })
     }
-  }, [error])
+  }, [errorBankrolls])
 
-  console.log('bankrolls', bankrolls)
+  /**
+   * when sections list list is reaching end
+   * use fetchMore functions from Apollo Client to refetch list based on new current page
+   * load new tickets items and add them on store
+   * sections list is refreshing automatically right after dispatch on store
+   * @param {*} page variable page to update on GraphQL query
+   */
+  const isReachedEnd = page => {
+    fetchMore({
+      variables: {
+        page,
+      },
+      updateQuery: (prev, {fetchMoreResult}) => {
+        if (fetchMoreResult.tickets) dispatch(setTicketsList(fetchMoreResult.tickets))
+      },
+    })
+  }
+
+  /**
+   * Load GraphQL user tickets and add it to local state when :
+   * Tickets store are empty
+   * Tickets queries are different than bankrolls store
+   * On end flat list tickets is reached
+   */
+  useEffect(() => {
+    if (dataTickets?.tickets && !tickets?.length && dataTickets?.tickets.currentPage !== storeCurrentPage) {
+      console.log('dataTickets?.tickets', dataTickets?.tickets, currentPage)
+      dispatch(setTicketsList(dataTickets?.tickets))
+    }
+  }, [dataTickets])
+
+  // useEffect(() => {
+  //   refetch(currentPage)
+  //   if (dataMoreTickets?.tickets?.tickets && tickets.length) {
+  //     console.log('dataMoreTickets?.tickets', dataMoreTickets?.tickets, currentPage)
+  //     dispatch(setTicketsList(dataMoreTickets.tickets))
+  //   }
+  // }, [currentPage])
+
+  useEffect(() => {
+    if (tickets.length > 0)
+      setSortedTicketsBySections([
+        {
+          title: 'week',
+          data: getSectionsTickets(tickets, 'week'),
+        },
+        {
+          title: 'lastWeek',
+          data: getSectionsTickets(tickets, 'lastWeek'),
+        },
+        {
+          title: 'twoWeeksAgo',
+          data: [],
+        },
+        {
+          title: 'longTimeAgo',
+          data: getSectionsTickets(tickets, 'longTimeAgo'),
+        },
+      ])
+  }, [tickets?.length])
+
+  // const getSections = () => {
+  //   let sortedTicketsBySectionsToUpdate = sortedTicketsBySections
+  //   tickets.forEach(ticket => {
+  //     if (tickets.updatedDate < moment())
+
+  //   })
+  // }
+
   // get theme props
   const {
     backgroundColor,
@@ -99,44 +195,6 @@ const ProfileScreen = ({theme}: Props) => {
 
   const {navigate} = useNavigation()
 
-  const updatedDate = 1588707873
-
-  const stake = 15
-
-  const globalOdd = 9.8
-
-  const total = 147
-
-  const status = 'lost'
-
-  const footballBetItem = {
-    sport: 'football',
-    localTeam: 'Marseille',
-    visitorTeam: 'Paris SG',
-    nameTicket: 'Victoire ou nul de Marseille',
-    odd: 1.3,
-    status: 'pending',
-  }
-
-  const tennisBetItem = {
-    sport: 'tennis',
-    localTeam: 'Federer',
-    visitorTeam: 'Nadal',
-    nameTicket: 'Victoire de Federer',
-    odd: 1.3,
-    status: 'pending',
-  }
-
-  const rugbyBetItem = {
-    sport: 'rugby',
-    localTeam: 'Stade Toulousain',
-    visitorTeam: 'RC Toulon',
-    nameTicket: 'Victoire de Stade Toulousain',
-    odd: 1.3,
-    status: 'won',
-  }
-
-  const bets = [footballBetItem, tennisBetItem, rugbyBetItem]
   const comparisonsItems = [
     {value: -321.24, label: '⚽️ 🇫🇷 Ligue 1 '},
     {value: 319, label: '⚽️ 🇫🇷 Ligue 1 '},
@@ -235,13 +293,23 @@ const ProfileScreen = ({theme}: Props) => {
     -80,
   ]
 
+  /**
+   * add current bankroll on store and filter stats && sections list only with bankroll tickets
+   * stats filtering are handled on back-end
+   */
   const onPressBankrollItem = index => {
-    console.log('index', index)
     dispatch(setCurrentBankroll(bankrolls[index]))
   }
-  return (
-    <ProfileScreenContainer backgroundColor={backgroundColor}>
-      <ProfileScreenContentContainer showsVerticalScrollIndicator={false}>
+
+  /**
+   * header component of sections list
+   *  - profile header
+   *  - stats
+   * Handle as a Section header to improve scroll experience
+   */
+  const headerComponent = () => {
+    return (
+      <>
         <ProfileScreenHeaderContainer>
           <ProfileScreenImageHeaderContainer>
             <Image
@@ -322,20 +390,57 @@ const ProfileScreen = ({theme}: Props) => {
         <Button
           style={{width: 146, alignSelf: 'center', marginTop: 20}}
           label="voir moins de stats"
-          onPress={() => setMore(!more)}
+          onPress={() => {
+            setMore(!more)
+          }}
         />
         <ProfileScreenTicketsHeaderContainer>
           <ProfileScreenTicketsHeaderText color={textColor}>Mes tickets</ProfileScreenTicketsHeaderText>
           <ProfileScreenTicketsIndicatorContainer backgroundColor={backgroundIndicatorColor}>
-            <ProfileScreenTicketsIndicatorText color={ticketIndicatorColor}>17</ProfileScreenTicketsIndicatorText>
+            <ProfileScreenTicketsIndicatorText color={ticketIndicatorColor}>{count}</ProfileScreenTicketsIndicatorText>
           </ProfileScreenTicketsIndicatorContainer>
         </ProfileScreenTicketsHeaderContainer>
-        <ProfileScreenTicketsContentContainer>
-          {[1, 1, 1, 1, 1, 1, 1].map((item, index) => {
+      </>
+    )
+  }
+
+  // sections list key extractor
+  function _itemKeyExtractor(item) {
+    return item.id.toString()
+  }
+
+  return (
+    <ProfileScreenContainer backgroundColor={backgroundColor}>
+      <ProfileScreenTicketsContentContainer>
+        <SectionList
+          initialNumToRender={1}
+          showsVerticalScrollIndicator={false}
+          ListHeaderComponent={headerComponent()}
+          sections={sortedTicketsBySections}
+          contentContainerStyle={{paddingLeft: 20, paddingRight: 20, paddingTop: 12}}
+          onMomentumScrollBegin={() => {
+            setOnEndReachedCalledDuringMomentum(false)
+          }}
+          onEndReachedThreshold={1}
+          keyExtractor={_itemKeyExtractor}
+          onEndReached={({distanceFromEnd}) => {
+            /* *
+             * trigger onEndReached at the very bottom of the list
+             * increment local state current page && refetch GraphQL tickets query with incremented variable page
+             */
+
+            if (distanceFromEnd >= 0.01) {
+              if (currentPage < storeTotalPages && !onEndReachedCalledDuringMomentum) {
+                setCurrentPage(currentPage + 1)
+                isReachedEnd(currentPage + 1)
+              }
+            }
+          }}
+          renderItem={({item}) => {
+            const {updatedDate, bets, globalOdd, stake, total, status} = item
             return (
               <Ticket
-                // eslint-disable-next-line react/no-array-index-key
-                key={total + index}
+                key={`${updatedDate}`}
                 updatedDate={updatedDate}
                 bets={bets}
                 stake={stake}
@@ -344,9 +449,19 @@ const ProfileScreen = ({theme}: Props) => {
                 status={status}
               />
             )
-          })}
-        </ProfileScreenTicketsContentContainer>
-      </ProfileScreenContentContainer>
+          }}
+          stickySectionHeadersEnabled={false}
+          renderSectionHeader={({section: {title, data}}) => {
+            return (
+              <>
+                {!!data.length && title !== 'week' && (
+                  <ProfileScreenTicketsSectionTitle color={textColor}>{t(title)}</ProfileScreenTicketsSectionTitle>
+                )}
+              </>
+            )
+          }}
+        />
+      </ProfileScreenTicketsContentContainer>
     </ProfileScreenContainer>
   )
 }

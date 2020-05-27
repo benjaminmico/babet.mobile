@@ -93,18 +93,19 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
   }
 
   const keyExtractor = (item, index) => {
-    return index + item.nameTicket
+    return index + item.id
   }
 
   /**
    * render bet button
    * text can only be de displayed on one line
    * */
+
   return (
     <TicketContainer backgroundColor={backgroundContainerColor} theme={keyTheme}>
       <TicketHeader>
         <TicketLabel color={labelColor}>
-          {`${moment(updatedDate * 1000).calendar()} - ${getTicketType(bets)}`}
+          {`${moment(parseInt(updatedDate, 1)).calendar()} - ${getTicketType(bets)}`}
         </TicketLabel>
         <Icon
           style={{
@@ -117,7 +118,7 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
       </TicketHeader>
       <TicketContentBets>
         {bets.map((bet, index) => {
-          const {sport, localTeam, visitorTeam, nameTicket, odd, status: gameStatus} = bet
+          const {sport, localTeam, visitorTeam, name, odd, status: gameStatus} = bet
           return (
             <Bet
               key={keyExtractor(bet, index)}
@@ -125,7 +126,7 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
               sport={sport}
               localTeam={localTeam}
               visitorTeam={visitorTeam}
-              name={nameTicket}
+              name={name}
               odd={odd}
               status={gameStatus}
             />
