@@ -105,7 +105,7 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
     <TicketContainer backgroundColor={backgroundContainerColor} theme={keyTheme}>
       <TicketHeader>
         <TicketLabel color={labelColor}>
-          {`${moment(parseInt(updatedDate, 1)).calendar()} - ${getTicketType(bets)}`}
+          {`${moment(parseInt(updatedDate, 0)).calendar()} - ${getTicketType(bets)}`}
         </TicketLabel>
         <Icon
           style={{

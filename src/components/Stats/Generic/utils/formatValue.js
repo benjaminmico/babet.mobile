@@ -12,7 +12,7 @@ const formatValue = (value, type, betsLength) => {
     case 'percentage':
       return value > 0 ? `+${value}%` : `${value}%`
     case 'odd':
-      return value.toFixed(2)
+      return value?.toFixed(2)
     case 'currency':
       return currency(value)
     case 'ratio':

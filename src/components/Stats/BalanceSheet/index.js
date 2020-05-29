@@ -20,17 +20,18 @@ type Props = {
   value: Number,
   // Balance sheet description
   description: String,
+  // Selected balance sheet fitler item
+  selected: Boolean,
   // theme
   theme: Object,
 }
 
-const filters = [
-  {label: '1 sem.', selected: true},
-  {label: '1 mois', selected: false},
-  {label: 'Début', selected: false},
-]
-
-const BalanceSheet = ({value, description, theme}: Props) => {
+const BalanceSheet = ({value, description, selected, theme, onPress}: Props) => {
+  const filters = [
+    {id: 'week', label: '1 sem.', selected: selected === 'week'},
+    {id: 'month', label: '1 mois', selected: selected === 'month'},
+    {id: 'all', label: 'Début', selected: selected === 'all'},
+  ]
   // get theme props
   const {
     key: keyTheme,
@@ -55,7 +56,7 @@ const BalanceSheet = ({value, description, theme}: Props) => {
         <BalanceSheetDescription color={descriptionColor}>{description}</BalanceSheetDescription>
       </BalanceSheetContentContainer>
       <BalanceSheetFilters>
-        <Filters items={filters} />
+        <Filters items={filters} onPress={onPress} />
       </BalanceSheetFilters>
     </BalanceSheetContainer>
   )

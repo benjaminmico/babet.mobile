@@ -9,6 +9,8 @@ import Tick from '@assets/icons/tick.svg'
 type Props = {
   // display list to horizontal or not
   horizontal: Boolean,
+  // id item
+  id: String,
   // index item position
   index: Number,
   // filter label
@@ -23,9 +25,8 @@ type Props = {
   theme: Object,
 }
 
-const FilterItem = ({horizontal, index, label, onPress, selected, multiFilter, theme}: Props) => {
+const FilterItem = ({horizontal, id, index, label, onPress, selected, multiFilter, theme}: Props) => {
   //   const {t} = useTranslation()
-
   // get theme props
   const {
     colors: {
@@ -42,7 +43,7 @@ const FilterItem = ({horizontal, index, label, onPress, selected, multiFilter, t
       index={index}
       backgroundColor={selected ? backgroundFilter : 'transparent'}
       horizontal={horizontal}
-      onPress={() => onPress(index)}
+      onPress={() => onPress(id)}
     >
       <FilterItemText color={selected ? (multiFilter ? colorMultiFilter : colorSelected) : colorUnselected}>
         {label}

@@ -6,7 +6,6 @@ import {LineChart} from 'react-native-svg-charts'
 import * as shape from 'd3-shape'
 import Dash from 'react-native-dash'
 import LinearGradient from 'react-native-linear-gradient'
-import {median} from './utils/median'
 import {ChartsContainer, ChartLastItemContainer, ChartLastItemValue} from './index.styles'
 import {currency} from '@utils/currency'
 
@@ -29,9 +28,6 @@ const Charts = ({data, theme}: Props) => {
 
   const windowWidth = Dimensions.get('window').width
 
-  // median to render dash line correctly
-  const graphMedian = median(data)
-
   // get theme props
   const {
     key: keyTheme,
@@ -52,6 +48,7 @@ const Charts = ({data, theme}: Props) => {
       return null
     })
   }
+
   const Gradient = () => (
     <Defs key="gradient">
       <SVGLinearGradient id="gradient" x1="0" y="0%" x2="100%" y2="0%">
@@ -66,7 +63,7 @@ const Charts = ({data, theme}: Props) => {
     <>
       <ChartsContainer>
         <LineChart
-          style={{width: windowWidth * 0.603, height: 90}}
+          style={{width: windowWidth * 0.603, height: 80}}
           data={data}
           curve={shape.curveNatural}
           svg={{
@@ -94,35 +91,19 @@ const Charts = ({data, theme}: Props) => {
             borderColor: '#D4D8D9',
           }}
         />
-        {lastItem > graphMedian ? (
-          <Dash
-            dashThickness={0.86}
-            dashLength={4}
-            dashColor={backgroundColorLastItemValue}
-            style={{
-              position: 'absolute',
-              zIndex: -1,
-              right: 4.5,
-              height: 90 - yLastItemPos,
-              marginTop: yLastItemPos,
-              flexDirection: 'column',
-            }}
-          />
-        ) : (
-          <Dash
-            dashThickness={0.86}
-            dashLength={4}
-            dashColor={backgroundColorLastItemValue}
-            style={{
-              position: 'absolute',
-              zIndex: -1,
-              right: 4.5,
-              height: yLastItemPos,
-              marginBottom: yLastItemPos,
-              flexDirection: 'column',
-            }}
-          />
-        )}
+        <Dash
+          dashThickness={0.86}
+          dashLength={4}
+          dashColor={backgroundColorLastItemValue}
+          style={{
+            position: 'absolute',
+            zIndex: -1,
+            right: 4.5,
+            height: yLastItemPos,
+            marginBottom: yLastItemPos,
+            flexDirection: 'column',
+          }}
+        />
         <ChartLastItemContainer theme={keyTheme}>
           <ChartLastItemValue color={colorLastItemValueText}>{currency(lastItem)}</ChartLastItemValue>
         </ChartLastItemContainer>

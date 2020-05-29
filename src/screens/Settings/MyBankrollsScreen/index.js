@@ -38,6 +38,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
   // get bankrolls items from store
   const {
     bankrolls: {items: bankrolls},
+    auth: {token},
   } = useSelector(state => state)
 
   const {show} = useContext(ToastContext)
@@ -86,13 +87,15 @@ const MyBankrollsScreen = ({theme}: Props) => {
       }
       dispatch(createBankrollAction(data.createBankroll))
     } catch (error) {
-      setAlertCreate(false)
       console.log('error', error)
-      show({
-        title: t('unknownErrorTitle'),
-        message: t('unknownErrorDescription'),
-        type: 'error',
-      })
+      setAlertCreate(false)
+      if (token) {
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
+      }
     }
   }
 
@@ -110,8 +113,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
         variables: {id, name: newName},
       })
       setAlertEdit(false)
-      if (error) {
-        console.log('error', error)
+      if (error && token) {
         show({
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
@@ -120,13 +122,14 @@ const MyBankrollsScreen = ({theme}: Props) => {
       }
       dispatch(editBankrollAction(data.editBankroll))
     } catch (error) {
-      console.log('error', error)
       setAlertEdit(false)
-      show({
-        title: t('unknownErrorTitle'),
-        message: t('unknownErrorDescription'),
-        type: 'error',
-      })
+      if (token) {
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
+      }
     }
   }
 
@@ -141,8 +144,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
     try {
       setAlertDelete(false)
       const {data, error} = await mutationDeleteBankroll({variables: {id}})
-      if (error) {
-        console.log('error', error)
+      if (error && token) {
         show({
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
@@ -152,12 +154,13 @@ const MyBankrollsScreen = ({theme}: Props) => {
       if (data.deleteBankroll) dispatch(deleteBankrollAction(bankrolls.find(bankroll => bankroll.id === id)))
     } catch (error) {
       setAlertDelete(false)
-      console.log('error', error)
-      show({
-        title: t('unknownErrorTitle'),
-        message: t('unknownErrorDescription'),
-        type: 'error',
-      })
+      if (token) {
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
+      }
     }
   }
 

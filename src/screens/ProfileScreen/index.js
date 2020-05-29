@@ -1,6 +1,7 @@
 // @flow
 
 import {getBankrolls} from '@api/graphql/queries/bankrolls'
+import {getUserStats} from '@api/graphql/queries/stats'
 import {getTickets} from '@api/graphql/queries/tickets'
 import {useQuery} from '@apollo/react-hooks'
 import {ToastContext} from '@components/Alerts/Toast/ToastContext'
@@ -19,7 +20,8 @@ import React, {useContext, useEffect, useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import {Image, SectionList} from 'react-native'
 import {useDispatch, useSelector} from 'react-redux'
-import {getSectionsTickets} from './getSectionsTickets'
+import {getSectionsTickets} from './utils/getSectionsTickets'
+import {getBalanceSheet, getResult, getShape} from './utils/getStats'
 import {
   ProfileScreenContainer,
   ProfileScreenContentHeaderContainer,
@@ -42,9 +44,10 @@ type Props = {
 
 const ProfileScreen = ({theme}: Props) => {
   const {
-    auth: {nickname, description},
+    auth: {nickname, description, token},
     bankrolls: {items: bankrolls},
     tickets: {items: tickets, count, currentPage: storeCurrentPage, totalPages: storeTotalPages},
+    stats: {averageOdd, averageStake, balanceSheet, shape},
   } = useSelector(state => state)
 
   // init sections
@@ -70,9 +73,12 @@ const ProfileScreen = ({theme}: Props) => {
   const [currentPage, setCurrentPage] = useState(1)
   const [sortedTicketsBySections, setSortedTicketsBySections] = useState(initSortedTicketsBySections)
   const [onEndReachedCalledDuringMomentum, setOnEndReachedCalledDuringMomentum] = useState(false)
+  const [balanceSheetRange, setBalanceSheetRange] = useState('week')
+  const [resultRange, setResultRange] = useState('week')
 
   const {data: dataBankrolls, error: errorBankrolls} = useQuery(getBankrolls)
-  const {data: dataTickets, fetchMore} = useQuery(getTickets, {
+  const {data: dataStats, error: errorStats} = useQuery(getUserStats)
+  const {data: dataTickets, error: errorTickets, fetchMore} = useQuery(getTickets, {
     variables: {page: storeCurrentPage === 1 ? 1 : storeCurrentPage + 1},
   })
 
@@ -82,7 +88,9 @@ const ProfileScreen = ({theme}: Props) => {
 
   const dispatch = useDispatch()
 
-  const {setBankrollsList, setCurrentBankroll, setTicketsList} = actions
+  const {setBankrollsList, setCurrentBankroll, setStats, setTicketsList} = actions
+
+  console.log('stats', dataStats)
 
   /**
    * Load GraphQL user bankrolls and add it to local state when :
@@ -95,12 +103,11 @@ const ProfileScreen = ({theme}: Props) => {
   }, [dataBankrolls])
 
   /**
-   * handle GraphQL query error by displaying toast
+   * handle GraphQL query error bankrolls by displaying toast
    *
    * */
   useEffect(() => {
-    if (errorBankrolls) {
-      console.log('error', errorBankrolls)
+    if (errorBankrolls && token) {
       show({
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),
@@ -108,6 +115,43 @@ const ProfileScreen = ({theme}: Props) => {
       })
     }
   }, [errorBankrolls])
+
+  /**
+   * Load GraphQL user bankrolls and add it to local state when :
+   * Bankrolls store are empty
+   * Bankrolls queries are different than bankrolls store
+   */
+  useEffect(() => {
+    if (dataStats?.stats && !averageOdd && !averageStake && !balanceSheet && !shape) dispatch(setStats(dataStats.stats))
+  }, [dataStats])
+
+  /**
+   * handle GraphQL query error stats by displaying toast
+   *
+   * */
+  useEffect(() => {
+    if (errorStats && token) {
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+      })
+    }
+  }, [errorStats])
+
+  /**
+   * handle GraphQL query error tickets by displaying toast
+   *
+   * */
+  useEffect(() => {
+    if (errorTickets && token) {
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+      })
+    }
+  }, [errorTickets])
 
   /**
    * when sections list list is reaching end
@@ -135,18 +179,9 @@ const ProfileScreen = ({theme}: Props) => {
    */
   useEffect(() => {
     if (dataTickets?.tickets && !tickets?.length && dataTickets?.tickets.currentPage !== storeCurrentPage) {
-      console.log('dataTickets?.tickets', dataTickets?.tickets, currentPage)
       dispatch(setTicketsList(dataTickets?.tickets))
     }
   }, [dataTickets])
-
-  // useEffect(() => {
-  //   refetch(currentPage)
-  //   if (dataMoreTickets?.tickets?.tickets && tickets.length) {
-  //     console.log('dataMoreTickets?.tickets', dataMoreTickets?.tickets, currentPage)
-  //     dispatch(setTicketsList(dataMoreTickets.tickets))
-  //   }
-  // }, [currentPage])
 
   useEffect(() => {
     if (tickets.length > 0)
@@ -200,105 +235,28 @@ const ProfileScreen = ({theme}: Props) => {
     {value: 319, label: '⚽️ 🇫🇷 Ligue 1 '},
     {value: 318, label: '⚽️ 🇫🇷 Ligue 1 '},
   ]
-  const graphItems = [
-    50,
-    10,
-    40,
-    95,
-    -4,
-    -24,
-    85,
-    91,
-    35,
-    53,
-    -53,
-    24,
-    50,
-    -20,
-    -80,
-    50,
-    10,
-    40,
-    95,
-    -4,
-    -24,
-    85,
-    91,
-    35,
-    53,
-    -53,
-    24,
-    50,
-    -20,
-    -80,
-    50,
-    10,
-    40,
-    95,
-    -4,
-    -24,
-    85,
-    91,
-    35,
-    53,
-    -53,
-    24,
-    50,
-    -20,
-    -80,
-    50,
-    10,
-    40,
-    95,
-    -4,
-    -24,
-    85,
-    91,
-    35,
-    53,
-    -53,
-    24,
-    50,
-    -20,
-    -80,
-    50,
-    10,
-    40,
-    95,
-    -4,
-    -24,
-    85,
-    91,
-    35,
-    53,
-    -53,
-    24,
-    50,
-    -20,
-    -80,
-    50,
-    10,
-    40,
-    95,
-    -4,
-    -24,
-    85,
-    91,
-    35,
-    53,
-    -53,
-    24,
-    50,
-    -20,
-    -80,
-  ]
 
   /**
    * add current bankroll on store and filter stats && sections list only with bankroll tickets
    * stats filtering are handled on back-end
    */
-  const onPressBankrollItem = index => {
-    dispatch(setCurrentBankroll(bankrolls[index]))
+  const onPressBankrollItem = id => {
+    dispatch(setCurrentBankroll(bankrolls.find(bankroll => bankroll.id === id)))
+    // dispatch(setCurrentBankroll(bankrolls[index]))
+  }
+
+  /**
+   * toggle balance sheet filters and display the right value between 'week', 'month' & 'all
+   */
+  const onPressBalanceSheetRange = id => {
+    setBalanceSheetRange(id)
+  }
+
+  /**
+   * toggle result filters and display the right value between 'week', 'month' & 'all
+   */
+  const onPressResultRange = id => {
+    setResultRange(id)
   }
 
   /**
@@ -331,24 +289,29 @@ const ProfileScreen = ({theme}: Props) => {
           />
         </ProfileScreenHeaderContainer>
         {bankrolls?.length > 0 && (
-          <Filters style={{marginTop: 31}} items={bankrolls} onPress={onPressBankrollItem} horizontal />
+          <Filters style={{marginTop: 31}} items={bankrolls} onPress={onPressBankrollItem} disableScroll horizontal />
         )}
         <ProfileScreenKPIContainer style={{marginTop: 31}}>
-          <BalanceSheet value={405.93} description="T’es sur une série folle ! 7/7 ! truc de malade !" />
+          <BalanceSheet
+            value={getBalanceSheet(balanceSheet, balanceSheetRange) || 0}
+            selected={balanceSheetRange}
+            onPress={onPressBalanceSheetRange}
+            description="T’es sur une série folle ! 7/7 ! truc de malade !"
+          />
         </ProfileScreenKPIContainer>
         {more && (
           <>
             <ProfileScreenKPIContainer>
               <Generic
                 label="Ma forme"
-                value={7}
+                value={getShape(shape, 'week').value}
                 description="T’es sur une série folle ! 7/7 ! truc de malade !"
-                history={['won', 'won', 'won', 'won', 'won', 'won', 'won']}
+                history={getShape(shape, 'week').array}
                 type="ratio"
               />
               <Generic
                 label="Côte moyenne"
-                value={3.43}
+                value={averageOdd?.value}
                 KPIDescription="En augmentation"
                 description="Depuis plusieurs tu joues des côtes elevés ! 💪"
                 type="odd"
@@ -364,7 +327,7 @@ const ProfileScreen = ({theme}: Props) => {
               />
               <Generic
                 label="Mise moyenne"
-                value={25.98}
+                value={averageStake?.value}
                 KPIDescription="C'est raisonnable"
                 description="T’es sur une série folle ! 7/7 ! truc de malade !"
                 type="currency"
@@ -374,7 +337,9 @@ const ProfileScreen = ({theme}: Props) => {
             <ProfileScreenKPIContainer>
               <Graph
                 label="Ma courbe de gains"
-                items={graphItems}
+                items={getResult(balanceSheet, resultRange) || 0}
+                onPress={onPressResultRange}
+                selected={resultRange}
                 description="Depuis une semaine, tu as gagné 405,93€ grâce aux paris sportifs 😊."
               />
             </ProfileScreenKPIContainer>

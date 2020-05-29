@@ -7,18 +7,18 @@ import {withTheme} from '@core/themeProvider'
 import actions from '@store/actions'
 import React, {useContext, useEffect, useState} from 'react'
 import {View} from 'react-native'
-import {useDispatch} from 'react-redux'
+import {useSelector, useDispatch} from 'react-redux'
 import {setUserInformations} from '../../api/graphql/mutations/setUser'
 import {AddTicketScreenSnapper} from './index.styles'
 import {useTranslation} from 'react-i18next'
 import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 
-// type Props = {
-//   theme: Object,
-// }
-
-const AddTicketScreen = (/* {theme}: Props */) => {
+const AddTicketScreen = () => {
   const {data: userInformations, error} = useQuery(getUserInformations)
+
+  const {
+    auth: {token},
+  } = useSelector(state => state)
 
   const {t} = useTranslation()
 
@@ -42,8 +42,7 @@ const AddTicketScreen = (/* {theme}: Props */) => {
    *
    * */
   useEffect(() => {
-    if (error) {
-      console.log('error', error)
+    if (error && token) {
       show({
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),

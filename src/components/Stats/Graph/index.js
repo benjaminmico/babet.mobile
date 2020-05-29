@@ -23,15 +23,19 @@ type Props = {
   items: [Object],
   // Graph descriptions
   label: String,
+  // Graph selected
+  selected: Boolean,
+  // Graph press
+  onPress: () => void,
   // theme
   theme: Object,
 }
 
-const Graph = ({label, items, description, theme}: Props) => {
+const Graph = ({label, items, selected, onPress, description, theme}: Props) => {
   const filters = [
-    {label: '1 sem.', selected: true},
-    {label: '1 mois', selected: false},
-    {label: 'Début', selected: false},
+    {id: 'week', label: '1 sem.', selected: selected === 'week'},
+    {id: 'month', label: '1 mois', selected: selected === 'month'},
+    {id: 'all', label: 'Début', selected: selected === 'all'},
   ]
 
   // get theme props
@@ -55,7 +59,7 @@ const Graph = ({label, items, description, theme}: Props) => {
       <GraphContent>
         <Charts data={items} />
         <GraphFilters>
-          <Filters items={filters} />
+          <Filters items={filters} onPress={onPress} />
         </GraphFilters>
       </GraphContent>
       <GraphFooter>

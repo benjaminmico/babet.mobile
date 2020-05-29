@@ -14,6 +14,10 @@ export const ProfileScreenContentContainer = styled.ScrollView`
   align-self: center;
 `
 
+export const ProfileScreenScrollFiltersContainer = styled.View`
+  flex-direction: row;
+`
+
 export const ProfileScreenHeaderContainer = styled.View`
   flex-direction: row;
   align-self: center;

@@ -64,7 +64,6 @@ const LoginScreen = ({theme}: Props) => {
       await navigate('TabNavigator')
       setLoading(false)
     } else {
-      console.log('error', error)
       if (error === 'passwordIncorrect')
         show({
           title: t('passwordIncorrectTitle'),
