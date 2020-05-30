@@ -289,7 +289,7 @@ const ProfileScreen = ({theme}: Props) => {
           />
         </ProfileScreenHeaderContainer>
         {bankrolls?.length > 0 && (
-          <Filters style={{marginTop: 31}} items={bankrolls} onPress={onPressBankrollItem} disableScroll horizontal />
+          <Filters style={{marginTop: 31}} items={bankrolls} onPress={onPressBankrollItem} horizontal />
         )}
         <ProfileScreenKPIContainer style={{marginTop: 31}}>
           <BalanceSheet

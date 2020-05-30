@@ -16,11 +16,13 @@ type Props = {
   iconLabel: String,
   // black color label
   black: Boolean,
+  // button action
+  onPress: () => void,
   // theme
   theme: Object,
 }
 
-const Button = ({isPrimaryAction, isCancellable, label, iconLabel, black, theme, ...props}: Props) => {
+const Button = ({isPrimaryAction, isCancellable, label, iconLabel, black, onPress, theme, ...props}: Props) => {
   // get theme props
   const {
     colors: {
@@ -42,7 +44,11 @@ const Button = ({isPrimaryAction, isCancellable, label, iconLabel, black, theme,
    * */
 
   return (
-    <ButtonContainer {...props} backgroundColor={isPrimaryAction ? backgroundPrimaryAction : backgroundAction}>
+    <ButtonContainer
+      onPress={onPress}
+      {...props}
+      backgroundColor={isPrimaryAction ? backgroundPrimaryAction : backgroundAction}
+    >
       {iconLabel && <Icon style={{marginRight: 3}} size={18} label={iconLabel} />}
       <ButtonText
         color={

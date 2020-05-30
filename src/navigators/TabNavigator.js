@@ -1,7 +1,7 @@
 import {ApolloProvider} from '@apollo/react-hooks'
 import BottomTab from '@components/Navigation/Tabs/BottomTab'
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs'
-import AddTicketScreen from '@screens/AddTicketScreen'
+import AddTicketScreen from '@screens/ProcessTickets/AddTicketScreen'
 import ProfileScreen from '@screens/ProfileScreen'
 import {HttpLink, InMemoryCache} from 'apollo-boost'
 import {ApolloClient} from 'apollo-client'

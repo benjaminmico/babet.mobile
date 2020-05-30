@@ -60,6 +60,7 @@ const Navigator = () => {
           component={LoginScreen}
           options={{...headerStyle('LoginScreen', 'Login', true), animationEnabled: false}}
         />
+
         <OutTab.Screen
           name="TabNavigator"
           component={TabNavigator}

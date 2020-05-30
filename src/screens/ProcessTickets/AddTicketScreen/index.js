@@ -8,10 +8,12 @@ import actions from '@store/actions'
 import React, {useContext, useEffect, useState} from 'react'
 import {View} from 'react-native'
 import {useSelector, useDispatch} from 'react-redux'
-import {setUserInformations} from '../../api/graphql/mutations/setUser'
+import {setUserInformations} from '@api/graphql/mutations/setUser'
 import {AddTicketScreenSnapper} from './index.styles'
 import {useTranslation} from 'react-i18next'
 import {ToastContext} from '@components/Alerts/Toast/ToastContext'
+import ImagePicker from 'react-native-image-crop-picker'
+import ConfirmTicketScreen from '@screens/ProcessTickets/ConfirmTicketScreen'
 
 const AddTicketScreen = () => {
   const {data: userInformations, error} = useQuery(getUserInformations)
@@ -25,6 +27,7 @@ const AddTicketScreen = () => {
   const {show} = useContext(ToastContext)
 
   const [queryUserInformations, setQueryUserInformations] = useState(null)
+  const [images, setImages] = useState([])
 
   const dispatch = useDispatch()
 
@@ -68,6 +71,21 @@ const AddTicketScreen = () => {
     }
   }, [queryUserInformations?.firstname])
 
+  useEffect(() => {
+    console.log('images', images)
+  }, [images])
+
+  /**
+   * get selected images
+   */
+  function getSelectedImages() {
+    ImagePicker.openPicker({
+      multiple: true,
+    }).then(imagesFromPicker => {
+      setImages(imagesFromPicker)
+    })
+  }
+
   return (
     <View style={{flex: 1, backgroundColor: 'black'}}>
       {/* <RNCamera
@@ -85,9 +103,10 @@ const AddTicketScreen = () => {
         label="choisir une photo"
         iconLabel="ticket"
         black
+        onPress={() => getSelectedImages()}
       />
-
       <AddTicketScreenSnapper />
+      {!!images.length && <ConfirmTicketScreen images={images} />}
     </View>
   )
 }

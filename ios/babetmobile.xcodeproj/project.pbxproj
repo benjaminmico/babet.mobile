@@ -329,6 +329,7 @@
 				1AD66A4C3841D9B2A881FFAC /* [CP-User] [RNFB] Core Configuration */,
 				4188F2AD24670D090084E04B /* Setup Firebase plist files */,
 				41AF0CB924784DA400F57359 /* Embed App Extensions */,
+				6585BBC925956C77E7BAC2EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,6 +370,7 @@
 				41AF0CAA24784DA400F57359 /* Frameworks */,
 				41AF0CAB24784DA400F57359 /* Resources */,
 				41AF0CC024785B3D00F57359 /* ShellScript */,
+				0071F7FB36A66192C5305E05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -477,6 +479,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0071F7FB36A66192C5305E05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-babetmobile-dev-BabetShare/Pods-babetmobile-dev-BabetShare-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-babetmobile-dev-BabetShare/Pods-babetmobile-dev-BabetShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -608,6 +630,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		6585BBC925956C77E7BAC2EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-babetmobile-dev/Pods-babetmobile-dev-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-babetmobile-dev/Pods-babetmobile-dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		ACBCD5DC815BCDF277883CC3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
