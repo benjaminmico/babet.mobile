@@ -208,7 +208,133 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
         backgroundColor="transparent"
         horizontal={true}
         index={0}
+        multiFilter={true}
         onPress={[Function]}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -232,8 +358,10 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                   [Function],
                   ";
   height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: ",
+                  [Function],
+                  "px;
+  padding-right: 19px;
   justify-content: center;
   align-items: center;
 ",
@@ -251,13 +379,141 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
           forwardedRef={null}
           horizontal={true}
           index={0}
+          multiFilter={true}
           onPress={[Function]}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={true}
             index={0}
+            multiFilter={true}
             onPress={[Function]}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -269,8 +525,132 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                   "justifyContent": "center",
                   "marginLeft": 0,
                   "marginTop": 0,
-                  "paddingLeft": 9,
-                  "paddingRight": 9,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                },
+              ]
+            }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
                 },
               ]
             }
@@ -280,7 +660,9 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
               horizontal={true}
               hostRef={null}
               index={0}
+              multiFilter={true}
               onPress={[Function]}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -292,8 +674,132 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                     "justifyContent": "center",
                     "marginLeft": 0,
                     "marginTop": 0,
-                    "paddingLeft": 9,
-                    "paddingRight": 9,
+                    "paddingLeft": 19,
+                    "paddingRight": 19,
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }
@@ -320,8 +826,8 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                         "justifyContent": "center",
                         "marginLeft": 0,
                         "marginTop": 0,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       },
                     ],
                     Object {
@@ -352,8 +858,8 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                           "justifyContent": "center",
                           "marginLeft": 0,
                           "marginTop": 0,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         },
                       ],
                       Object {
@@ -383,8 +889,8 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                         "marginLeft": 0,
                         "marginTop": 0,
                         "opacity": 1,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       }
                     }
                   >
@@ -409,8 +915,8 @@ exports[`FilterItem Props tests renders FilterItem with index 0  1`] = `
                           "marginLeft": 0,
                           "marginTop": 0,
                           "opacity": 1,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         }
                       }
                     >
@@ -699,7 +1205,133 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
       <Styled(Component)
         backgroundColor="transparent"
         index={1}
+        multiFilter={true}
         onPress={[Function]}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -723,8 +1355,10 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                   [Function],
                   ";
   height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: ",
+                  [Function],
+                  "px;
+  padding-right: 19px;
   justify-content: center;
   align-items: center;
 ",
@@ -741,12 +1375,140 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
           }
           forwardedRef={null}
           index={1}
+          multiFilter={true}
           onPress={[Function]}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="transparent"
             index={1}
+            multiFilter={true}
             onPress={[Function]}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -758,8 +1520,132 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                   "justifyContent": "center",
                   "marginLeft": 0,
                   "marginTop": 11,
-                  "paddingLeft": 9,
-                  "paddingRight": 9,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                },
+              ]
+            }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
                 },
               ]
             }
@@ -768,7 +1654,9 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
               backgroundColor="transparent"
               hostRef={null}
               index={1}
+              multiFilter={true}
               onPress={[Function]}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -780,8 +1668,132 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                     "justifyContent": "center",
                     "marginLeft": 0,
                     "marginTop": 11,
-                    "paddingLeft": 9,
-                    "paddingRight": 9,
+                    "paddingLeft": 19,
+                    "paddingRight": 19,
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }
@@ -808,8 +1820,8 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                         "justifyContent": "center",
                         "marginLeft": 0,
                         "marginTop": 11,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       },
                     ],
                     Object {
@@ -840,8 +1852,8 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                           "justifyContent": "center",
                           "marginLeft": 0,
                           "marginTop": 11,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         },
                       ],
                       Object {
@@ -871,8 +1883,8 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                         "marginLeft": 0,
                         "marginTop": 11,
                         "opacity": 1,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       }
                     }
                   >
@@ -897,8 +1909,8 @@ exports[`FilterItem Props tests renders FilterItem with index greater than 0 1`]
                           "marginLeft": 0,
                           "marginTop": 11,
                           "opacity": 1,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         }
                       }
                     >
@@ -1190,7 +2202,133 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
         backgroundColor="transparent"
         horizontal={true}
         index={0}
+        multiFilter={true}
         onPress={[Function]}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -1214,8 +2352,10 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                   [Function],
                   ";
   height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: ",
+                  [Function],
+                  "px;
+  padding-right: 19px;
   justify-content: center;
   align-items: center;
 ",
@@ -1233,13 +2373,141 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
           forwardedRef={null}
           horizontal={true}
           index={0}
+          multiFilter={true}
           onPress={[Function]}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={true}
             index={0}
+            multiFilter={true}
             onPress={[Function]}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -1251,8 +2519,132 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                   "justifyContent": "center",
                   "marginLeft": 0,
                   "marginTop": 0,
-                  "paddingLeft": 9,
-                  "paddingRight": 9,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                },
+              ]
+            }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
                 },
               ]
             }
@@ -1262,7 +2654,9 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
               horizontal={true}
               hostRef={null}
               index={0}
+              multiFilter={true}
               onPress={[Function]}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -1274,8 +2668,132 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                     "justifyContent": "center",
                     "marginLeft": 0,
                     "marginTop": 0,
-                    "paddingLeft": 9,
-                    "paddingRight": 9,
+                    "paddingLeft": 19,
+                    "paddingRight": 19,
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }
@@ -1302,8 +2820,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                         "justifyContent": "center",
                         "marginLeft": 0,
                         "marginTop": 0,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       },
                     ],
                     Object {
@@ -1334,8 +2852,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                           "justifyContent": "center",
                           "marginLeft": 0,
                           "marginTop": 0,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         },
                       ],
                       Object {
@@ -1365,8 +2883,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                         "marginLeft": 0,
                         "marginTop": 0,
                         "opacity": 1,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       }
                     }
                   >
@@ -1391,8 +2909,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index 0  1`] 
                           "marginLeft": 0,
                           "marginTop": 0,
                           "opacity": 1,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         }
                       }
                     >
@@ -1684,7 +3202,133 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
         backgroundColor="transparent"
         horizontal={true}
         index={1}
+        multiFilter={true}
         onPress={[Function]}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -1708,8 +3352,10 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                   [Function],
                   ";
   height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: ",
+                  [Function],
+                  "px;
+  padding-right: 19px;
   justify-content: center;
   align-items: center;
 ",
@@ -1727,13 +3373,141 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
           forwardedRef={null}
           horizontal={true}
           index={1}
+          multiFilter={true}
           onPress={[Function]}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={true}
             index={1}
+            multiFilter={true}
             onPress={[Function]}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -1745,8 +3519,132 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                   "justifyContent": "center",
                   "marginLeft": 19,
                   "marginTop": 0,
-                  "paddingLeft": 9,
-                  "paddingRight": 9,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                },
+              ]
+            }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
                 },
               ]
             }
@@ -1756,7 +3654,9 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
               horizontal={true}
               hostRef={null}
               index={1}
+              multiFilter={true}
               onPress={[Function]}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -1768,8 +3668,132 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                     "justifyContent": "center",
                     "marginLeft": 19,
                     "marginTop": 0,
-                    "paddingLeft": 9,
-                    "paddingRight": 9,
+                    "paddingLeft": 19,
+                    "paddingRight": 19,
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }
@@ -1796,8 +3820,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                         "justifyContent": "center",
                         "marginLeft": 19,
                         "marginTop": 0,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       },
                     ],
                     Object {
@@ -1828,8 +3852,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                           "justifyContent": "center",
                           "marginLeft": 19,
                           "marginTop": 0,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         },
                       ],
                       Object {
@@ -1859,8 +3883,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                         "marginLeft": 19,
                         "marginTop": 0,
                         "opacity": 1,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       }
                     }
                   >
@@ -1885,8 +3909,8 @@ exports[`FilterItem Props tests renders horizontal FilterItem with index greater
                           "marginLeft": 19,
                           "marginTop": 0,
                           "opacity": 1,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         }
                       }
                     >
@@ -2177,6 +4201,131 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
         horizontal={false}
         index={0}
         onPress={[Function]}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="#F3F2F2"
@@ -2200,8 +4349,10 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                   [Function],
                   ";
   height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: ",
+                  [Function],
+                  "px;
+  padding-right: 19px;
   justify-content: center;
   align-items: center;
 ",
@@ -2220,12 +4371,138 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
           horizontal={false}
           index={0}
           onPress={[Function]}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="#F3F2F2"
             horizontal={false}
             index={0}
             onPress={[Function]}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -2237,8 +4514,132 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                   "justifyContent": "center",
                   "marginLeft": 0,
                   "marginTop": 0,
-                  "paddingLeft": 9,
-                  "paddingRight": 9,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                },
+              ]
+            }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
                 },
               ]
             }
@@ -2249,6 +4650,7 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
               hostRef={null}
               index={0}
               onPress={[Function]}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -2260,8 +4662,132 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                     "justifyContent": "center",
                     "marginLeft": 0,
                     "marginTop": 0,
-                    "paddingLeft": 9,
-                    "paddingRight": 9,
+                    "paddingLeft": 19,
+                    "paddingRight": 19,
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }
@@ -2288,8 +4814,8 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                         "justifyContent": "center",
                         "marginLeft": 0,
                         "marginTop": 0,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       },
                     ],
                     Object {
@@ -2320,8 +4846,8 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                           "justifyContent": "center",
                           "marginLeft": 0,
                           "marginTop": 0,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         },
                       ],
                       Object {
@@ -2351,8 +4877,8 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                         "marginLeft": 0,
                         "marginTop": 0,
                         "opacity": 1,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       }
                     }
                   >
@@ -2377,8 +4903,8 @@ exports[`FilterItem Props tests renders selected FilterItem 1`] = `
                           "marginLeft": 0,
                           "marginTop": 0,
                           "opacity": 1,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         }
                       }
                     >
@@ -2670,7 +5196,133 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
         backgroundColor="#F3F2F2"
         horizontal={false}
         index={0}
+        multiFilter={true}
         onPress={[Function]}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="#F3F2F2"
@@ -2694,8 +5346,10 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                   [Function],
                   ";
   height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: ",
+                  [Function],
+                  "px;
+  padding-right: 19px;
   justify-content: center;
   align-items: center;
 ",
@@ -2713,13 +5367,141 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
           forwardedRef={null}
           horizontal={false}
           index={0}
+          multiFilter={true}
           onPress={[Function]}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="#F3F2F2"
             horizontal={false}
             index={0}
+            multiFilter={true}
             onPress={[Function]}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -2731,8 +5513,132 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                   "justifyContent": "center",
                   "marginLeft": 0,
                   "marginTop": 0,
-                  "paddingLeft": 9,
-                  "paddingRight": 9,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                },
+              ]
+            }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
                 },
               ]
             }
@@ -2742,7 +5648,9 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
               horizontal={false}
               hostRef={null}
               index={0}
+              multiFilter={true}
               onPress={[Function]}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -2754,8 +5662,132 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                     "justifyContent": "center",
                     "marginLeft": 0,
                     "marginTop": 0,
-                    "paddingLeft": 9,
-                    "paddingRight": 9,
+                    "paddingLeft": 19,
+                    "paddingRight": 19,
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }
@@ -2782,8 +5814,8 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                         "justifyContent": "center",
                         "marginLeft": 0,
                         "marginTop": 0,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       },
                     ],
                     Object {
@@ -2814,8 +5846,8 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                           "justifyContent": "center",
                           "marginLeft": 0,
                           "marginTop": 0,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         },
                       ],
                       Object {
@@ -2845,8 +5877,8 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                         "marginLeft": 0,
                         "marginTop": 0,
                         "opacity": 1,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       }
                     }
                   >
@@ -2871,8 +5903,8 @@ exports[`FilterItem Props tests renders selected multi filter FilterItem 1`] = `
                           "marginLeft": 0,
                           "marginTop": 0,
                           "opacity": 1,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         }
                       }
                     >
@@ -3172,6 +6204,131 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
         horizontal={false}
         index={0}
         onPress={[Function]}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -3195,8 +6352,10 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                   [Function],
                   ";
   height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: ",
+                  [Function],
+                  "px;
+  padding-right: 19px;
   justify-content: center;
   align-items: center;
 ",
@@ -3215,12 +6374,138 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
           horizontal={false}
           index={0}
           onPress={[Function]}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={false}
             index={0}
             onPress={[Function]}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -3232,8 +6517,132 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                   "justifyContent": "center",
                   "marginLeft": 0,
                   "marginTop": 0,
-                  "paddingLeft": 9,
-                  "paddingRight": 9,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                },
+              ]
+            }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
                 },
               ]
             }
@@ -3244,6 +6653,7 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
               hostRef={null}
               index={0}
               onPress={[Function]}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -3255,8 +6665,132 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                     "justifyContent": "center",
                     "marginLeft": 0,
                     "marginTop": 0,
-                    "paddingLeft": 9,
-                    "paddingRight": 9,
+                    "paddingLeft": 19,
+                    "paddingRight": 19,
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }
@@ -3283,8 +6817,8 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                         "justifyContent": "center",
                         "marginLeft": 0,
                         "marginTop": 0,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       },
                     ],
                     Object {
@@ -3315,8 +6849,8 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                           "justifyContent": "center",
                           "marginLeft": 0,
                           "marginTop": 0,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         },
                       ],
                       Object {
@@ -3346,8 +6880,8 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                         "marginLeft": 0,
                         "marginTop": 0,
                         "opacity": 1,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       }
                     }
                   >
@@ -3372,8 +6906,8 @@ exports[`FilterItem Props tests renders unselected FilterItem 1`] = `
                           "marginLeft": 0,
                           "marginTop": 0,
                           "opacity": 1,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         }
                       }
                     >
@@ -3665,7 +7199,133 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
         backgroundColor="transparent"
         horizontal={false}
         index={0}
+        multiFilter={true}
         onPress={[Function]}
+        setTheme={[Function]}
+        themes={
+          Array [
+            Object {
+              "backgroundColor": "#101112",
+              "color": "#ffffff",
+              "colors": Object {
+                "components": Object {
+                  "background": "#101112",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#2F3134",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#FFFFFF",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#FFFFFF",
+                  },
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#FFFFFF",
+                  },
+                  "text": "#FFFFFF",
+                  "title": "#FFFFFF",
+                },
+              },
+              "isShadow": false,
+              "key": "dark",
+              "statusBar": "light-content",
+            },
+            Object {
+              "backgroundColor": "#ffffff",
+              "color": "#101112",
+              "colors": Object {
+                "components": Object {
+                  "background": "#FFFFFF",
+                  "backgroundAction": "#F3F2F2",
+                  "backgroundContainer": "#FFFFFF",
+                  "backgroundFilter": "#F3F2F2",
+                  "backgroundInputButton": "#5100FF",
+                  "backgroundPrimaryAction": "#5100FF",
+                  "icon": "#000000",
+                },
+                "palette": Object {
+                  "black": "#000000",
+                  "comparisonDescription": "#A3A2A2",
+                  "error": "#F34949",
+                  "line": "#D4D8D9",
+                  "lost": "#CA1010",
+                  "pending": "#7C7C7C",
+                  "purple": "#5100FF",
+                  "separator": "#979797",
+                  "white": "#FFFFFF",
+                  "won": "#14B916",
+                },
+                "shadows": Object {},
+                "texts": Object {
+                  "buttons": Object {
+                    "actions": "#5100FF",
+                    "cancellable": "#3E3E3E",
+                    "filter": "#3E3E3E",
+                    "isPrimaryAction": "#FFFFFF",
+                    "social": Object {
+                      "apple": "#000000",
+                      "facebook": "#1976D2",
+                      "gmail": "#F44336",
+                    },
+                  },
+                  "description": "#ADADAD",
+                  "filters": Object {
+                    "multiFilter": "#5100FF",
+                    "selected": "#000000",
+                    "unselected": "#A3A2A2",
+                  },
+                  "input": Object {
+                    "label": "#7C7C7C",
+                    "value": "#000000",
+                  },
+                  "labelInput": "#7C7C7C",
+                  "reverseText": "#FFFFFF",
+                  "stats": Object {
+                    "kpiValue": "#3E3E3E",
+                  },
+                  "text": "#000000",
+                  "title": "#000000",
+                },
+              },
+              "isShadow": true,
+              "key": "white",
+              "statusBar": "dark-content",
+            },
+          ]
+        }
       >
         <StyledNativeComponent
           backgroundColor="transparent"
@@ -3689,8 +7349,10 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                   [Function],
                   ";
   height: 24px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: ",
+                  [Function],
+                  "px;
+  padding-right: 19px;
   justify-content: center;
   align-items: center;
 ",
@@ -3708,13 +7370,141 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
           forwardedRef={null}
           horizontal={false}
           index={0}
+          multiFilter={true}
           onPress={[Function]}
+          setTheme={[Function]}
+          themes={
+            Array [
+              Object {
+                "backgroundColor": "#101112",
+                "color": "#ffffff",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#101112",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#2F3134",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#FFFFFF",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#FFFFFF",
+                    },
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#FFFFFF",
+                    },
+                    "text": "#FFFFFF",
+                    "title": "#FFFFFF",
+                  },
+                },
+                "isShadow": false,
+                "key": "dark",
+                "statusBar": "light-content",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "color": "#101112",
+                "colors": Object {
+                  "components": Object {
+                    "background": "#FFFFFF",
+                    "backgroundAction": "#F3F2F2",
+                    "backgroundContainer": "#FFFFFF",
+                    "backgroundFilter": "#F3F2F2",
+                    "backgroundInputButton": "#5100FF",
+                    "backgroundPrimaryAction": "#5100FF",
+                    "icon": "#000000",
+                  },
+                  "palette": Object {
+                    "black": "#000000",
+                    "comparisonDescription": "#A3A2A2",
+                    "error": "#F34949",
+                    "line": "#D4D8D9",
+                    "lost": "#CA1010",
+                    "pending": "#7C7C7C",
+                    "purple": "#5100FF",
+                    "separator": "#979797",
+                    "white": "#FFFFFF",
+                    "won": "#14B916",
+                  },
+                  "shadows": Object {},
+                  "texts": Object {
+                    "buttons": Object {
+                      "actions": "#5100FF",
+                      "cancellable": "#3E3E3E",
+                      "filter": "#3E3E3E",
+                      "isPrimaryAction": "#FFFFFF",
+                      "social": Object {
+                        "apple": "#000000",
+                        "facebook": "#1976D2",
+                        "gmail": "#F44336",
+                      },
+                    },
+                    "description": "#ADADAD",
+                    "filters": Object {
+                      "multiFilter": "#5100FF",
+                      "selected": "#000000",
+                      "unselected": "#A3A2A2",
+                    },
+                    "input": Object {
+                      "label": "#7C7C7C",
+                      "value": "#000000",
+                    },
+                    "labelInput": "#7C7C7C",
+                    "reverseText": "#FFFFFF",
+                    "stats": Object {
+                      "kpiValue": "#3E3E3E",
+                    },
+                    "text": "#000000",
+                    "title": "#000000",
+                  },
+                },
+                "isShadow": true,
+                "key": "white",
+                "statusBar": "dark-content",
+              },
+            ]
+          }
         >
           <ForwardRef
             backgroundColor="transparent"
             horizontal={false}
             index={0}
+            multiFilter={true}
             onPress={[Function]}
+            setTheme={[Function]}
             style={
               Array [
                 Object {
@@ -3726,8 +7516,132 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                   "justifyContent": "center",
                   "marginLeft": 0,
                   "marginTop": 0,
-                  "paddingLeft": 9,
-                  "paddingRight": 9,
+                  "paddingLeft": 19,
+                  "paddingRight": 19,
+                },
+              ]
+            }
+            themes={
+              Array [
+                Object {
+                  "backgroundColor": "#101112",
+                  "color": "#ffffff",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#101112",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#2F3134",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#FFFFFF",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#FFFFFF",
+                      },
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#FFFFFF",
+                      },
+                      "text": "#FFFFFF",
+                      "title": "#FFFFFF",
+                    },
+                  },
+                  "isShadow": false,
+                  "key": "dark",
+                  "statusBar": "light-content",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "color": "#101112",
+                  "colors": Object {
+                    "components": Object {
+                      "background": "#FFFFFF",
+                      "backgroundAction": "#F3F2F2",
+                      "backgroundContainer": "#FFFFFF",
+                      "backgroundFilter": "#F3F2F2",
+                      "backgroundInputButton": "#5100FF",
+                      "backgroundPrimaryAction": "#5100FF",
+                      "icon": "#000000",
+                    },
+                    "palette": Object {
+                      "black": "#000000",
+                      "comparisonDescription": "#A3A2A2",
+                      "error": "#F34949",
+                      "line": "#D4D8D9",
+                      "lost": "#CA1010",
+                      "pending": "#7C7C7C",
+                      "purple": "#5100FF",
+                      "separator": "#979797",
+                      "white": "#FFFFFF",
+                      "won": "#14B916",
+                    },
+                    "shadows": Object {},
+                    "texts": Object {
+                      "buttons": Object {
+                        "actions": "#5100FF",
+                        "cancellable": "#3E3E3E",
+                        "filter": "#3E3E3E",
+                        "isPrimaryAction": "#FFFFFF",
+                        "social": Object {
+                          "apple": "#000000",
+                          "facebook": "#1976D2",
+                          "gmail": "#F44336",
+                        },
+                      },
+                      "description": "#ADADAD",
+                      "filters": Object {
+                        "multiFilter": "#5100FF",
+                        "selected": "#000000",
+                        "unselected": "#A3A2A2",
+                      },
+                      "input": Object {
+                        "label": "#7C7C7C",
+                        "value": "#000000",
+                      },
+                      "labelInput": "#7C7C7C",
+                      "reverseText": "#FFFFFF",
+                      "stats": Object {
+                        "kpiValue": "#3E3E3E",
+                      },
+                      "text": "#000000",
+                      "title": "#000000",
+                    },
+                  },
+                  "isShadow": true,
+                  "key": "white",
+                  "statusBar": "dark-content",
                 },
               ]
             }
@@ -3737,7 +7651,9 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
               horizontal={false}
               hostRef={null}
               index={0}
+              multiFilter={true}
               onPress={[Function]}
+              setTheme={[Function]}
               style={
                 Array [
                   Object {
@@ -3749,8 +7665,132 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                     "justifyContent": "center",
                     "marginLeft": 0,
                     "marginTop": 0,
-                    "paddingLeft": 9,
-                    "paddingRight": 9,
+                    "paddingLeft": 19,
+                    "paddingRight": 19,
+                  },
+                ]
+              }
+              themes={
+                Array [
+                  Object {
+                    "backgroundColor": "#101112",
+                    "color": "#ffffff",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#101112",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#2F3134",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#FFFFFF",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#FFFFFF",
+                        },
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#FFFFFF",
+                        },
+                        "text": "#FFFFFF",
+                        "title": "#FFFFFF",
+                      },
+                    },
+                    "isShadow": false,
+                    "key": "dark",
+                    "statusBar": "light-content",
+                  },
+                  Object {
+                    "backgroundColor": "#ffffff",
+                    "color": "#101112",
+                    "colors": Object {
+                      "components": Object {
+                        "background": "#FFFFFF",
+                        "backgroundAction": "#F3F2F2",
+                        "backgroundContainer": "#FFFFFF",
+                        "backgroundFilter": "#F3F2F2",
+                        "backgroundInputButton": "#5100FF",
+                        "backgroundPrimaryAction": "#5100FF",
+                        "icon": "#000000",
+                      },
+                      "palette": Object {
+                        "black": "#000000",
+                        "comparisonDescription": "#A3A2A2",
+                        "error": "#F34949",
+                        "line": "#D4D8D9",
+                        "lost": "#CA1010",
+                        "pending": "#7C7C7C",
+                        "purple": "#5100FF",
+                        "separator": "#979797",
+                        "white": "#FFFFFF",
+                        "won": "#14B916",
+                      },
+                      "shadows": Object {},
+                      "texts": Object {
+                        "buttons": Object {
+                          "actions": "#5100FF",
+                          "cancellable": "#3E3E3E",
+                          "filter": "#3E3E3E",
+                          "isPrimaryAction": "#FFFFFF",
+                          "social": Object {
+                            "apple": "#000000",
+                            "facebook": "#1976D2",
+                            "gmail": "#F44336",
+                          },
+                        },
+                        "description": "#ADADAD",
+                        "filters": Object {
+                          "multiFilter": "#5100FF",
+                          "selected": "#000000",
+                          "unselected": "#A3A2A2",
+                        },
+                        "input": Object {
+                          "label": "#7C7C7C",
+                          "value": "#000000",
+                        },
+                        "labelInput": "#7C7C7C",
+                        "reverseText": "#FFFFFF",
+                        "stats": Object {
+                          "kpiValue": "#3E3E3E",
+                        },
+                        "text": "#000000",
+                        "title": "#000000",
+                      },
+                    },
+                    "isShadow": true,
+                    "key": "white",
+                    "statusBar": "dark-content",
                   },
                 ]
               }
@@ -3777,8 +7817,8 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                         "justifyContent": "center",
                         "marginLeft": 0,
                         "marginTop": 0,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       },
                     ],
                     Object {
@@ -3809,8 +7849,8 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                           "justifyContent": "center",
                           "marginLeft": 0,
                           "marginTop": 0,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         },
                       ],
                       Object {
@@ -3840,8 +7880,8 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                         "marginLeft": 0,
                         "marginTop": 0,
                         "opacity": 1,
-                        "paddingLeft": 9,
-                        "paddingRight": 9,
+                        "paddingLeft": 19,
+                        "paddingRight": 19,
                       }
                     }
                   >
@@ -3866,8 +7906,8 @@ exports[`FilterItem Props tests renders unselected multi filter FilterItem 1`] =
                           "marginLeft": 0,
                           "marginTop": 0,
                           "opacity": 1,
-                          "paddingLeft": 9,
-                          "paddingRight": 9,
+                          "paddingLeft": 19,
+                          "paddingRight": 19,
                         }
                       }
                     >

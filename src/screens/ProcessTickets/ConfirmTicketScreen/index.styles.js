@@ -4,12 +4,17 @@ import {Dimensions} from 'react-native'
 const windowWidth = Dimensions.get('window').width
 
 export const ConfirmTicketScreenContainer = styled.View`
-  margin-top: 230px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
 `
 
 export const ConfirmTicketScreenImagePreviewContainer = styled.View`
-  padding-bottom: 16px;
   flex-direction: row;
+  width: 100%;
+  width: ${windowWidth * 0.89}px;
+  padding-bottom: 14px;
 `
 
 export const ConfirmTicketScreenImageItemPreview = styled.View`
@@ -22,11 +27,23 @@ export const ConfirmTicketScreenImageItemPreview = styled.View`
 
 export const ConfirmTicketBankrollSelectContainer = styled.View`
   background-color: ${props => props.backgroundColor};
-  width: ${windowWidth * 0.89}px;
   height: 89px;
+  width: ${windowWidth * 0.89}px;
   border-radius: 10.89px;
   padding-left: 11px;
   padding-top: 15px;
+`
+
+export const ConfirmTicketScreenSendButton = styled.View`
+  background-color: ${props => props.backgroundColor};
+  position: absolute;
+  bottom: 25px;
+  right: 17px;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 34px;
 `
 
 export const ConfirmTicketBankrollTitleHeader = styled.Text`

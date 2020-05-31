@@ -42,6 +42,7 @@ const FilterItem = ({horizontal, id, index, label, onPress, selected, multiFilte
   return (
     <FilterItemContainer
       {...props}
+      multiFilter={multiFilter}
       index={index}
       backgroundColor={selected ? backgroundFilter : 'transparent'}
       horizontal={horizontal}

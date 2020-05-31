@@ -21,6 +21,8 @@ import SelectedProfile from '@assets/icons/navigation/selectedProfile.svg'
 import ShareIcon from '@assets/icons/share.svg'
 import Tick from '@assets/icons/tick.svg'
 import Ticket from '@assets/icons/ticket.svg'
+import Close from '@assets/icons/close.svg'
+import Send from '@assets/icons/send.svg'
 import BankrollWhiteIcon from '@assets/icons/whites/bankrollIcon.svg'
 import ContactUsWhiteIcon from '@assets/icons/whites/contactUsIcon.svg'
 import GoBackWhiteIcon from '@assets/icons/whites/goBackIcon.svg'
@@ -146,6 +148,10 @@ const renderIcon = (label, size, themeKey) => {
       return <AddTicket width={size} height={size} />
     case 'ticket':
       return <Ticket width={size} height={size} />
+    case 'close':
+      return <Close width={size} height={size} />
+    case 'send':
+      return <Send width={size} height={size} />
     default:
       return <EmptyView />
   }

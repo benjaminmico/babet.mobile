@@ -2,6 +2,7 @@ import {ApolloProvider} from '@apollo/react-hooks'
 import TabNavigator from '@navigators/TabNavigator'
 import {createStackNavigator} from '@react-navigation/stack'
 import LoginScreen from '@screens/Login/LoginScreen'
+import ConfirmTicketScreen from '@screens/ProcessTickets/ConfirmTicketScreen'
 import ChangePasswordScreen from '@screens/Settings/ChangePasswordScreen'
 import MyBankrollsScreen from '@screens/Settings/MyBankrollsScreen'
 import MyInformationsScreen from '@screens/Settings/MyInformationsScreen'
@@ -65,6 +66,11 @@ const Navigator = () => {
           name="TabNavigator"
           component={TabNavigator}
           options={{gestureEnabled: false, headerShown: false, animationEnabled: false}}
+        />
+        <OutTab.Screen
+          name="ConfirmTicketScreen"
+          component={ConfirmTicketScreen}
+          options={{headerShown: false, animationEnabled: false}}
         />
         <OutTab.Screen
           name="SettingsScreen"

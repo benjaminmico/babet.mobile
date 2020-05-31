@@ -1,19 +1,19 @@
 // @flow
 
+import {setUserInformations} from '@api/graphql/mutations/setUser'
 import {getUserInformations} from '@api/graphql/queries/user'
 import {useMutation, useQuery} from '@apollo/react-hooks'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 import Button from '@components/Buttons/Button'
 import {withTheme} from '@core/themeProvider'
+import {useNavigation} from '@react-navigation/native'
 import actions from '@store/actions'
 import React, {useContext, useEffect, useState} from 'react'
-import {View} from 'react-native'
-import {useSelector, useDispatch} from 'react-redux'
-import {setUserInformations} from '@api/graphql/mutations/setUser'
-import {AddTicketScreenSnapper} from './index.styles'
 import {useTranslation} from 'react-i18next'
-import {ToastContext} from '@components/Alerts/Toast/ToastContext'
+import {View} from 'react-native'
 import ImagePicker from 'react-native-image-crop-picker'
-import ConfirmTicketScreen from '@screens/ProcessTickets/ConfirmTicketScreen'
+import {useDispatch, useSelector} from 'react-redux'
+import {AddTicketScreenSnapper} from './index.styles'
 
 const AddTicketScreen = () => {
   const {data: userInformations, error} = useQuery(getUserInformations)
@@ -21,6 +21,8 @@ const AddTicketScreen = () => {
   const {
     auth: {token},
   } = useSelector(state => state)
+
+  const {navigate} = useNavigation()
 
   const {t} = useTranslation()
 
@@ -64,7 +66,9 @@ const AddTicketScreen = () => {
     if (queryUserInformations) {
       const {firstname, lastname, nickname, description} = queryUserInformations
       // add mutation to update lastTimeLogged
-      mutationSetUserInformations({variables: {firstname, lastname, nickname, description}})
+      mutationSetUserInformations({
+        variables: {firstname, lastname, nickname, description},
+      })
 
       // action to add firstname && last name on store
       dispatch(addUserInformations({firstname, lastname, nickname, description}))
@@ -83,17 +87,20 @@ const AddTicketScreen = () => {
       multiple: true,
     }).then(imagesFromPicker => {
       setImages(imagesFromPicker)
+      navigate('ConfirmTicketScreen', {images})
     })
   }
 
   return (
-    <View style={{flex: 1, backgroundColor: 'black'}}>
-      {/* <RNCamera
+    <>
+      <View style={{flex: 1, backgroundColor: 'black'}}>
+        {/* <RNCamera
         style={{
           flex: 1,
           backgroundColor: 'black',
         }}
       /> */}
+      </View>
       <Button
         style={{
           position: 'absolute',
@@ -105,9 +112,9 @@ const AddTicketScreen = () => {
         black
         onPress={() => getSelectedImages()}
       />
+
       <AddTicketScreenSnapper />
-      {!!images.length && <ConfirmTicketScreen images={images} />}
-    </View>
+    </>
   )
 }
 
