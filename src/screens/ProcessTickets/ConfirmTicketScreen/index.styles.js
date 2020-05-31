@@ -34,7 +34,7 @@ export const ConfirmTicketBankrollSelectContainer = styled.View`
   padding-top: 15px;
 `
 
-export const ConfirmTicketScreenSendButton = styled.View`
+export const ConfirmTicketScreenSendButton = styled.TouchableOpacity`
   background-color: ${props => props.backgroundColor};
   position: absolute;
   bottom: 25px;

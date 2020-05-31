@@ -3,23 +3,10 @@ import gql from 'graphql-tag'
 /**
  * add a new ticket
  */
+
 export const addTicket = gql`
-  mutation addTicket(
-    $bets: [BetInput]
-    $stake: Float
-    $globalOdd: Float
-    $total: Float
-    $status: String
-    $bankrolls: [String]
-  ) {
-    addTicket(
-      bets: $bets
-      stake: $stake
-      globalOdd: $globalOdd
-      total: $total
-      status: $status
-      bankrolls: $bankrolls
-    ) {
+  mutation addTicket($bets: [BetInput], $stake: Float, $bankrolls: [String]) {
+    addTicket(bets: $bets, stake: $stake, bankrolls: $bankrolls) {
       id
       creationDate
       updatedDate

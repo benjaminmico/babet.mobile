@@ -2,11 +2,15 @@
 
 import Filters from '@components/Filters'
 import {withTheme} from '@core/themeProvider'
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {Image, ScrollView, FlatList, View} from 'react-native'
-import {useSelector} from 'react-redux'
+import {useSelector, useDispatch} from 'react-redux'
+import actions from '@store/actions'
 import {useNavigation} from '@react-navigation/native'
-
+import {useMutation} from '@apollo/react-hooks'
+import {addTicket} from '@api/graphql/mutations/addTicket'
+import {ToastContext} from '@components/Alerts/Toast/ToastContext'
+import ticketsProps from '@utils/ticketsProps'
 import {
   ConfirmTicketBankrollSelectContainer,
   ConfirmTicketBankrollTitleHeader,
@@ -16,6 +20,7 @@ import {
   ConfirmTicketScreenSendButton,
 } from './index.styles'
 import Ticket from '@components/Ticket'
+import {useTranslation} from 'react-i18next'
 import Icon from '@components/Icon'
 
 type Props = {
@@ -28,14 +33,58 @@ type Props = {
 const ConfirmTicketScreen = ({images, theme}: Props) => {
   const {
     bankrolls: {items: bankrolls},
-    // tickets: {items: tickets},
+    auth: {token},
   } = useSelector(state => state)
 
-  const {goBack} = useNavigation()
+  // add store actions
+  const {addTicket: addTicketAction} = actions
+
+  const {t} = useTranslation()
+
+  const dispatch = useDispatch()
+
+  const [mutationAddTicket] = useMutation(addTicket)
+
+  const {show} = useContext(ToastContext)
+
+  const {goBack, navigate} = useNavigation()
 
   const [bankrollsToSelect, setBankrollsToSelect] = useState(bankrolls)
 
   useEffect(() => {}, [bankrollsToSelect])
+
+  /**
+   * Add a ticket
+   * Execute mutation to add ticket
+   * Update Store by adding ticket
+   * @param {Object} ticket to add on database && store
+   */
+  const onAddTicket = async ticket => {
+    console.log('ticket onadd', ticket)
+    try {
+      const {data, error} = await mutationAddTicket({
+        variables: {bets: ticket.bets, stake: ticket.stake, bankrolls: ticket.bankrolls},
+      })
+      if (error && token) {
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
+      }
+      dispatch(addTicketAction(data.addTicket))
+      navigate('ProfileScreen')
+    } catch (error) {
+      console.log('error', error)
+      if (token) {
+        show({
+          title: t('unknownErrorTitle'),
+          message: t('unknownErrorDescription'),
+          type: 'error',
+        })
+      }
+    }
+  }
 
   /**
    * toggle balance sheet filters and display the right value between 'week', 'month' & 'all
@@ -63,29 +112,43 @@ const ConfirmTicketScreen = ({images, theme}: Props) => {
     },
   } = theme
 
-  // const {updatedDate, bets, globalOdd, stake, total, status} = tickets[0]
+  const ticket = {
+    bets: [
+      {
+        sport: 'football',
+        localTeam: 'Marseille',
+        visitorTeam: 'Paris SG',
+        name: 'Victoire de Marseille',
+        odd: 2.89,
+        status: 'won',
+        specialBet: false,
+      },
+      {
+        sport: 'football',
+        localTeam: 'Lyon',
+        visitorTeam: 'Reims',
+        name: 'Victoire de Reims',
+        odd: 3.2,
+        status: 'won',
+        specialBet: false,
+      },
+      {
+        sport: 'football',
+        localTeam: 'Bordeaux',
+        visitorTeam: 'Brest',
+        name: 'Victoire ou nul de Brest',
+        odd: 2.24,
+        status: 'lost',
+        specialBet: false,
+      },
+    ],
+    stake: 10,
+    bankrolls: [],
+  }
 
-  const updatedDate = 1588707873
+  const ticketWithProps = ticketsProps(ticket)
 
-  const stake = 15
-
-  const globalOdd = 9.8
-
-  const total = 147
-
-  const status = 'pending'
-
-  const bets = [
-    {
-      sport: 'football',
-      localTeam: 'Marseille',
-      visitorTeam: 'Paris SG',
-      nameBet: 'Victoire ou nul de Marseille',
-      odd: 1.3,
-      status: 'pending',
-    },
-  ]
-
+  console.log('ticketsProps', ticketsProps(ticket))
   // sections list key extractor
   function _itemKeyExtractor(item) {
     return item.localIdentifier
@@ -115,13 +178,13 @@ const ConfirmTicketScreen = ({images, theme}: Props) => {
             />
           </ConfirmTicketScreenImagePreviewContainer>
           <Ticket
-            key={`${updatedDate}`}
-            updatedDate={updatedDate}
-            bets={bets}
-            stake={stake}
-            globalOdd={globalOdd}
-            total={total}
-            status={status}
+            key={`${ticketWithProps.updatedDate}`}
+            updatedDate={ticketWithProps.updatedDate}
+            bets={ticketWithProps.bets}
+            stake={ticketWithProps.stake}
+            globalOdd={ticketWithProps.globalOdd}
+            total={ticketWithProps.total}
+            status={ticketWithProps.status}
           />
 
           <ConfirmTicketBankrollSelectContainer backgroundColor={backgroundColor}>
@@ -144,7 +207,7 @@ const ConfirmTicketScreen = ({images, theme}: Props) => {
           left: 20,
         }}
       />
-      <ConfirmTicketScreenSendButton backgroundColor={backgroundActionsContainer}>
+      <ConfirmTicketScreenSendButton backgroundColor={backgroundActionsContainer} onPress={() => onAddTicket(ticket)}>
         <Icon size={31} label="send" />
       </ConfirmTicketScreenSendButton>
     </View>

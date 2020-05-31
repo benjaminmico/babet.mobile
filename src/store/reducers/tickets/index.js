@@ -1,5 +1,6 @@
 import {createReducer} from '../reducerFactory'
 import {setTicketsList} from './tickets'
+import {addTicket} from './addTicket'
 
 // Default State
 const defaultState = {
@@ -18,6 +19,7 @@ function initializeReducer() {
 const strategies = {
   /* tickets */
   SET_TICKETS_LIST: setTicketsList,
+  ADD_TICKET: addTicket,
   /* commons */
   __default__: state => state,
   /* reinit */

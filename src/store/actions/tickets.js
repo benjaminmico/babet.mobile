@@ -4,6 +4,11 @@ export const setTicketsList = tickets => ({
   tickets,
 })
 
+export const addTicket = ticket => ({
+  type: 'ADD_TICKET',
+  ticket,
+})
+
 // Logout
 export const logout = () => {
   return {
