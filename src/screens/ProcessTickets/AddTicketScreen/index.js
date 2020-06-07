@@ -86,8 +86,9 @@ const AddTicketScreen = () => {
     ImagePicker.openPicker({
       multiple: true,
     }).then(imagesFromPicker => {
+      console.log('imagesFromPicker', imagesFromPicker)
       setImages(imagesFromPicker)
-      navigate('ConfirmTicketScreen', {images})
+      navigate('ConfirmTicketScreen', {images: imagesFromPicker})
     })
   }
 

@@ -36,7 +36,8 @@ export const getResult = (balanceSheet, filter) => {
 export const getShape = (shape, filter) => {
   if (shape) {
     let shapeArray = shape[filter].value
-    shapeArray = shapeArray.length < 7 ? shapeArray : shapeArray.slice(7, shapeArray.length)
+    console.log('shapeArray length', shapeArray.length)
+    shapeArray = shapeArray.length <= 7 ? shapeArray : shapeArray.slice(shapeArray.length - 7, shapeArray.length)
     const shapeWonLength = shapeArray.filter(result => result === 'won')?.length
 
     return {value: shapeWonLength, array: shapeArray}

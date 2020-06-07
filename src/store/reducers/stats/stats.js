@@ -17,3 +17,13 @@ export function setStats(state, action) {
   }
   return state
 }
+
+/**
+ * Stats
+ * @param {*} state
+ * @param {*} action
+ */
+export function updateStats(state, action) {
+  if (action?.stats) return action.stats
+  return state
+}

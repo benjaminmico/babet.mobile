@@ -1,5 +1,5 @@
 import {createReducer} from '../reducerFactory'
-import {setStats} from './stats'
+import {updateStats, setStats} from './stats'
 
 // Default State
 const defaultState = {
@@ -16,8 +16,9 @@ function initializeReducer() {
 }
 
 const strategies = {
-  /* tickets */
+  /* stats */
   SET_STATS: setStats,
+  UPDATE_STATS: updateStats,
   /* commons */
   __default__: state => state,
   /* reinit */

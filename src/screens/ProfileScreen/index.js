@@ -47,7 +47,8 @@ const ProfileScreen = ({theme}: Props) => {
     auth: {nickname, description, token},
     bankrolls: {items: bankrolls},
     tickets: {items: tickets, count, currentPage: storeCurrentPage, totalPages: storeTotalPages},
-    stats: {averageOdd, averageStake, balanceSheet, shape},
+    stats,
+    stats: {ticketsLength, averageOdd, averageStake, balanceSheet, shape},
   } = useSelector(state => state)
 
   // init sections
@@ -90,7 +91,7 @@ const ProfileScreen = ({theme}: Props) => {
 
   const {setBankrollsList, setCurrentBankroll, setStats, setTicketsList} = actions
 
-  console.log('stats', dataStats)
+  console.log('stats aaa', stats)
 
   /**
    * Load GraphQL user bankrolls and add it to local state when :
@@ -122,7 +123,8 @@ const ProfileScreen = ({theme}: Props) => {
    * Bankrolls queries are different than bankrolls store
    */
   useEffect(() => {
-    if (dataStats?.stats && !averageOdd && !averageStake && !balanceSheet && !shape) dispatch(setStats(dataStats.stats))
+    if (dataStats?.stats && !ticketsLength && !averageOdd && !averageStake && !balanceSheet && !shape)
+      dispatch(setStats(dataStats.stats))
   }, [dataStats])
 
   /**
@@ -188,7 +190,9 @@ const ProfileScreen = ({theme}: Props) => {
       setSortedTicketsBySections([
         {
           title: 'week',
-          data: getSectionsTickets(tickets, 'week'),
+          data: getSectionsTickets(tickets, 'week').sort((a, b) => {
+            return b.updatedDate - a.updatedDate
+          }),
         },
         {
           title: 'lastWeek',
@@ -265,6 +269,8 @@ const ProfileScreen = ({theme}: Props) => {
    *  - stats
    * Handle as a Section header to improve scroll experience
    */
+
+  console.log('shape', shape, getShape(shape, 'week').value)
   const headerComponent = () => {
     return (
       <>

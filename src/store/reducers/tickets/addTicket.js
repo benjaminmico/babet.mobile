@@ -7,10 +7,13 @@ export function addTicket(state, action) {
   if (action?.ticket) {
     const {ticket} = action
 
-    console.log('ticket from store', ticket)
+    const {items} = state
+
+    items.unshift(ticket)
+
     return {
       ...state,
-      items: [...state.items, ticket],
+      items,
     }
   }
   return state

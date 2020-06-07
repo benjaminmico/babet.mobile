@@ -93,7 +93,7 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
   }
 
   const keyExtractor = (item, index) => {
-    return index + item.id
+    return `${index}-${item.id}`
   }
 
   /**
