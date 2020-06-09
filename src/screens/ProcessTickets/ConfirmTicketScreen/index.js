@@ -25,17 +25,19 @@ import {
 } from './index.styles'
 
 type Props = {
-  // images props
-  images: Array,
+  // route from react-navigation
+  route: Object,
   // theme props
   theme: Object,
 }
 
-const ConfirmTicketScreen = ({images, theme}: Props) => {
+const ConfirmTicketScreen = ({route, theme}: Props) => {
   const {
     bankrolls: {items: bankrolls},
     auth: {token},
   } = useSelector(state => state)
+
+  const {images} = route.params
 
   // bankrolls to select when adding a ticket
   const [bankrollsToSelect, setBankrollsToSelect] = useState(bankrolls)

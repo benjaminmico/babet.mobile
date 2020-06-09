@@ -46,8 +46,7 @@ const ProfileScreen = ({theme}: Props) => {
   const {
     auth: {nickname, description, token},
     bankrolls: {items: bankrolls},
-    tickets: {items: tickets, count, currentPage: storeCurrentPage, totalPages: storeTotalPages},
-    stats,
+    tickets: {items: tickets, count},
     stats: {ticketsLength, averageOdd, averageStake, balanceSheet, shape},
   } = useSelector(state => state)
 
@@ -71,16 +70,14 @@ const ProfileScreen = ({theme}: Props) => {
     },
   ]
 
-  const [currentPage, setCurrentPage] = useState(1)
   const [sortedTicketsBySections, setSortedTicketsBySections] = useState(initSortedTicketsBySections)
-  const [onEndReachedCalledDuringMomentum, setOnEndReachedCalledDuringMomentum] = useState(false)
   const [balanceSheetRange, setBalanceSheetRange] = useState('week')
   const [resultRange, setResultRange] = useState('week')
 
   const {data: dataBankrolls, error: errorBankrolls} = useQuery(getBankrolls)
   const {data: dataStats, error: errorStats} = useQuery(getUserStats)
   const {data: dataTickets, error: errorTickets, fetchMore} = useQuery(getTickets, {
-    variables: {page: storeCurrentPage === 1 ? 1 : storeCurrentPage + 1},
+    variables: {offset: 0, limit: 7},
   })
 
   const {show} = useContext(ToastContext)
@@ -90,8 +87,6 @@ const ProfileScreen = ({theme}: Props) => {
   const dispatch = useDispatch()
 
   const {setBankrollsList, setCurrentBankroll, setStats, setTicketsList} = actions
-
-  console.log('stats aaa', stats)
 
   /**
    * Load GraphQL user bankrolls and add it to local state when :
@@ -157,20 +152,23 @@ const ProfileScreen = ({theme}: Props) => {
 
   /**
    * when sections list list is reaching end
-   * use fetchMore functions from Apollo Client to refetch list based on new current page
+   * use fetchMore functions from Apollo Client to refetch list based on offset
    * load new tickets items and add them on store
    * sections list is refreshing automatically right after dispatch on store
-   * @param {*} page variable page to update on GraphQL query
    */
-  const isReachedEnd = page => {
-    fetchMore({
-      variables: {
-        page,
-      },
-      updateQuery: (prev, {fetchMoreResult}) => {
-        if (fetchMoreResult.tickets) dispatch(setTicketsList(fetchMoreResult.tickets))
-      },
-    })
+  const isReachedEnd = async () => {
+    try {
+      await fetchMore({
+        variables: {
+          offset: tickets.length,
+        },
+        updateQuery: (prev, {fetchMoreResult}) => {
+          if (fetchMoreResult.tickets) dispatch(setTicketsList(fetchMoreResult.tickets))
+        },
+      })
+    } catch (e) {
+      console.warn('error fetch more', e)
+    }
   }
 
   /**
@@ -180,7 +178,7 @@ const ProfileScreen = ({theme}: Props) => {
    * On end flat list tickets is reached
    */
   useEffect(() => {
-    if (dataTickets?.tickets && !tickets?.length && dataTickets?.tickets.currentPage !== storeCurrentPage) {
+    if (dataTickets?.tickets && !tickets?.length) {
       dispatch(setTicketsList(dataTickets?.tickets))
     }
   }, [dataTickets])
@@ -270,7 +268,6 @@ const ProfileScreen = ({theme}: Props) => {
    * Handle as a Section header to improve scroll experience
    */
 
-  console.log('shape', shape, getShape(shape, 'week').value)
   const headerComponent = () => {
     return (
       <>
@@ -389,22 +386,12 @@ const ProfileScreen = ({theme}: Props) => {
           ListHeaderComponent={headerComponent()}
           sections={sortedTicketsBySections}
           contentContainerStyle={{paddingLeft: 20, paddingRight: 20, paddingTop: 12}}
-          onMomentumScrollBegin={() => {
-            setOnEndReachedCalledDuringMomentum(false)
-          }}
           onEndReachedThreshold={1}
           keyExtractor={_itemKeyExtractor}
-          onEndReached={({distanceFromEnd}) => {
-            /* *
-             * trigger onEndReached at the very bottom of the list
-             * increment local state current page && refetch GraphQL tickets query with incremented variable page
-             */
-
+          onEndReached={async ({distanceFromEnd}) => {
+            // trigger onEndReached at the very bottom of the list
             if (distanceFromEnd >= 0.01) {
-              if (currentPage < storeTotalPages && !onEndReachedCalledDuringMomentum) {
-                setCurrentPage(currentPage + 1)
-                isReachedEnd(currentPage + 1)
-              }
+              await isReachedEnd()
             }
           }}
           renderItem={({item}) => {

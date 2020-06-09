@@ -87,7 +87,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
       }
       dispatch(createBankrollAction(data.createBankroll))
     } catch (error) {
-      console.log('error', error)
+      console.error('error', error)
       setAlertCreate(false)
       if (token) {
         show({

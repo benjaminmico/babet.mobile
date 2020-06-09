@@ -24,7 +24,6 @@ const Filters = ({items, multiFilters, onPress, disableScroll, horizontal, ...pr
    * render filters horizontally with scroll on verticaly with a view depends on display option "horizontal"
    * */
 
-  console.log('filters', items)
   return (
     <>
       {horizontal ? (
@@ -58,7 +57,6 @@ const Filters = ({items, multiFilters, onPress, disableScroll, horizontal, ...pr
             {items.map((item, index) => {
               return (
                 <FilterItem
-                  style={{paddingLeft: 40}}
                   key={item.id + item.label}
                   horizontal={horizontal}
                   id={item.id}

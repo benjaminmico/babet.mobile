@@ -7,8 +7,8 @@ export const FilterItemContainer = styled.TouchableOpacity`
   margin-top: ${props => (props.index === 0 ? '0px' : props.horizontal ? '0px' : '11px')};
   margin-left: ${props => (props.index === 0 ? '0px' : props.horizontal ? '19px' : '0px')};
   height: 24px;
-  padding-left: ${props => (props.multiFilter ? 19 : 19)}px;
-  padding-right: 19px;
+  padding-left: 9px;
+  padding-right: 9px;
   justify-content: center;
   align-items: center;
 `

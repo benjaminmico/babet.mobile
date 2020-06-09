@@ -29,7 +29,6 @@ const AddTicketScreen = () => {
   const {show} = useContext(ToastContext)
 
   const [queryUserInformations, setQueryUserInformations] = useState(null)
-  const [images, setImages] = useState([])
 
   const dispatch = useDispatch()
 
@@ -75,10 +74,6 @@ const AddTicketScreen = () => {
     }
   }, [queryUserInformations?.firstname])
 
-  useEffect(() => {
-    console.log('images', images)
-  }, [images])
-
   /**
    * get selected images
    */
@@ -86,8 +81,6 @@ const AddTicketScreen = () => {
     ImagePicker.openPicker({
       multiple: true,
     }).then(imagesFromPicker => {
-      console.log('imagesFromPicker', imagesFromPicker)
-      setImages(imagesFromPicker)
       navigate('ConfirmTicketScreen', {images: imagesFromPicker})
     })
   }

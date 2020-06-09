@@ -6,8 +6,6 @@ import {addTicket} from './addTicket'
 const defaultState = {
   items: [],
   count: null,
-  totalPages: null,
-  currentPage: null,
 }
 
 function initializeReducer() {

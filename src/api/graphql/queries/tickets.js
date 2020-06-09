@@ -5,11 +5,9 @@ import gql from 'graphql-tag'
  */
 
 export const getTickets = gql`
-  query($page: Int) {
-    tickets(page: $page) {
+  query($offset: Int, $limit: Int) {
+    tickets(offset: $offset, limit: $limit) {
       count
-      totalPages
-      currentPage
       tickets {
         id
         updatedDate
