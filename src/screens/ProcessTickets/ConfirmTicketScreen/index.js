@@ -8,6 +8,7 @@ import Filters from '@components/Filters'
 import Icon from '@components/Icon'
 import Ticket from '@components/Ticket'
 import {withTheme} from '@core/themeProvider'
+import vision from '@react-native-firebase/ml-vision'
 import {useNavigation} from '@react-navigation/native'
 import actions from '@store/actions'
 import ticketsProps from '@utils/ticketsProps'
@@ -23,7 +24,8 @@ import {
   ConfirmTicketScreenImagePreviewContainer,
   ConfirmTicketScreenSendButton,
 } from './index.styles'
-import processOCR from '@utils/processOCR'
+
+// import processOCR from '@utils/processOCR'
 
 type Props = {
   // route from react-navigation
@@ -46,7 +48,6 @@ const ConfirmTicketScreen = ({route, theme}: Props) => {
   const [loading, setLoading] = useState(false)
   // value to check if ticket was added correctly
   const [ticketAdded, setTicketAdded] = useState(false)
-  const [ticketFromOCR, setTicketFromOCR] = useState([])
 
   // actions
   const {addTicket: addTicketAction, updateStats: updateStatsAction} = actions
@@ -63,18 +64,49 @@ const ConfirmTicketScreen = ({route, theme}: Props) => {
   // graphQL query to update stats just after adding a ticket
   const {data: dataStats, error: errorStats} = useQuery(getUserStats)
 
-  async function getOCRTicket() {
-    const data = await processOCR(
+  // async function getOCRTicket() {
+  //   const data = await processOCR(
+  //     images.map(image => {
+  //       return `file://${image.path}`
+  //     })[0],
+  //   )
+
+  //   setTicketFromOCR(data)
+  // }
+
+  async function processDocument(localPath) {
+    const processed = await vision().cloudDocumentTextRecognizerProcessImage(localPath)
+
+    console.log('Found text in document: ', processed.text)
+
+    processed.blocks.forEach(block => {
+      console.log('Found block with text: ', block.text)
+      console.log('Confidence in block: ', block.confidence)
+      console.log('Languages found in block: ', block.recognizedLanguages)
+    })
+  }
+
+  // async function processImage(localPath) {
+  //   const labels = await vision().cloudImageLabelerProcessImage(localPath)
+
+  //   labels.forEach(label => {
+  //     console.log('Service labelled the image: ', label.text)
+  //     console.log('Confidence in the label: ', label.confidence)
+  //   })
+  // }
+
+  useEffect(() => {
+    processDocument(
       images.map(image => {
         return `file://${image.path}`
       })[0],
-    )
+    ).then(() => console.log('Finished processing file.'))
 
-    setTicketFromOCR(data)
-  }
-
-  useEffect(() => {
-    getOCRTicket()
+    // processImage(
+    //   images.map(image => {
+    //     return `file://${image.path}`
+    //   })[0],
+    // ).then(() => console.log('Finished processing file.'))
   }, [])
   /**
    * when a ticket is added : update stats
@@ -163,45 +195,45 @@ const ConfirmTicketScreen = ({route, theme}: Props) => {
     },
   } = theme
 
-  // const ticket = {
-  //   bets: [
-  //     {
-  //       sport: 'football',
-  //       localTeam: 'Marseille',
-  //       visitorTeam: 'Paris SG',
-  //       name: 'Victoire de Marseille',
-  //       odd: 2.89,
-  //       status: 'won',
-  //       specialBet: false,
-  //     },
-  //     {
-  //       sport: 'football',
-  //       localTeam: 'Lyon',
-  //       visitorTeam: 'Reims',
-  //       name: 'Victoire de Reims',
-  //       odd: 3.2,
-  //       status: 'won',
-  //       specialBet: false,
-  //     },
-  //     {
-  //       sport: 'football',
-  //       localTeam: 'Bordeaux',
-  //       visitorTeam: 'Brest',
-  //       name: 'Victoire ou nul de Brest',
-  //       odd: 2.24,
-  //       status: 'lost',
-  //       specialBet: false,
-  //     },
-  //   ],
-  //   stake: 1000,
-  //   bankrolls: [],
-  // }
-  console.log('ticketFromOCR', ticketFromOCR)
   const ticket = {
-    bets: ticketFromOCR,
-    stake: 0.01,
+    bets: [
+      {
+        sport: 'football',
+        localTeam: 'Marseille',
+        visitorTeam: 'Paris SG',
+        name: 'Victoire de Marseille',
+        odd: 2.89,
+        status: 'won',
+        specialBet: false,
+      },
+      {
+        sport: 'football',
+        localTeam: 'Lyon',
+        visitorTeam: 'Reims',
+        name: 'Victoire de Reims',
+        odd: 3.2,
+        status: 'won',
+        specialBet: false,
+      },
+      {
+        sport: 'football',
+        localTeam: 'Bordeaux',
+        visitorTeam: 'Brest',
+        name: 'Victoire ou nul de Brest',
+        odd: 2.24,
+        status: 'lost',
+        specialBet: false,
+      },
+    ],
+    stake: 1000,
     bankrolls: [],
   }
+  // console.log('ticketFromOCR', ticketFromOCR)
+  // const ticket = {
+  //   bets: ticketFromOCR,
+  //   stake: 0.01,
+  //   bankrolls: [],
+  // }
 
   const ticketWithProps = ticketsProps(ticket)
 

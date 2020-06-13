@@ -1546,10 +1546,10 @@
   resolved "https://registry.yarnpkg.com/@react-native-firebase/auth/-/auth-6.7.1.tgz#d0e59e3f4960fdab7858af7bfcf408c4379147d4"
   integrity sha512-93t4UlyylX1iUj7jSyFfE4voLk2LmBw5oDJ/BdyfAO7u9DysXE4yu3kkaq+hBlBN4tlSfS+XwWXrigCplMbfpg==
 
-"@react-native-firebase/ml-vision@^7.1.4":
-  version "7.1.4"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/ml-vision/-/ml-vision-7.1.4.tgz#884ab5484e10b9818941996e5a542596ffebeb85"
-  integrity sha512-fnl6unAdUAIH/Si12QGQ3aoVY89NKk+S5RWXKxeGBLs2sytF/T4UUWBY8D2BBnFbL3yQX+x0OJ/NNrOdfaosoA==
+"@react-native-firebase/ml-vision@^6.7.1":
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/ml-vision/-/ml-vision-6.7.1.tgz#c79e89299ed8d5c76825a0c57ea0f7d1091a8dd5"
+  integrity sha512-ktVg5DM1C4uuy13EnofrXoEcyzreeiIlXKDVx3AXrkJMf3vO1BVsMsXIAgGZaFPa05X3OXImraU2ceoOPuIrow==
 
 "@react-navigation/bottom-tabs@^5.2.7":
   version "5.4.1"
@@ -10660,11 +10660,6 @@ react-native-device-info@^5.5.7:
   version "5.5.7"
   resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-5.5.7.tgz#aafe2581a702637a66fc04f333052980a4f9e8c5"
   integrity sha512-0021blhx/N1+mWQPOW3QAMWhOjYdG0uC5n+P6sMXZD3pF9aiIeCKuw4JpBpfNXXpUmDmQ7qWgHZUZO7JBMRijw==
-
-react-native-firebase-mlkit@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/react-native-firebase-mlkit/-/react-native-firebase-mlkit-0.6.2.tgz#4fddd7f493ba1ff03c3f6b5240599ad4176bc9b9"
-  integrity sha512-ISHkwbajT+OCMGqxYXApQZFPyx6zFP+qduMambHXENZfi5g5ybHmx6Kly9kEhonoLeqvTtA6nERuH3kJhamYHw==
 
 react-native-gesture-handler@^1.6.1:
   version "1.6.1"

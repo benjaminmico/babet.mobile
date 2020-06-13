@@ -79,9 +79,8 @@ target 'babetmobile-dev' do
 
   pod 'Firebase/Analytics'
   pod 'Firebase/Core'
-  pod 'Firebase/MLVision'
-  pod 'Firebase/MLVisionTextModel'
   pod 'Firebase/MLVisionBarcodeModel'
+
 
   use_native_modules!
 
