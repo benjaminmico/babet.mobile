@@ -51,6 +51,7 @@ const AddTicketScreen = () => {
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),
         type: 'error',
+        error,
       })
     }
   }, [error])

@@ -83,6 +83,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
           type: 'error',
+          error,
         })
       }
       dispatch(createBankrollAction(data.createBankroll))
@@ -94,6 +95,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
           type: 'error',
+          error,
         })
       }
     }
@@ -118,16 +120,19 @@ const MyBankrollsScreen = ({theme}: Props) => {
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
           type: 'error',
+          error,
         })
       }
       dispatch(editBankrollAction(data.editBankroll))
     } catch (error) {
+      console.warn('error', error)
       setAlertEdit(false)
       if (token) {
         show({
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
           type: 'error',
+          error,
         })
       }
     }
@@ -149,6 +154,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
           type: 'error',
+          error,
         })
       }
       if (data.deleteBankroll) dispatch(deleteBankrollAction(bankrolls.find(bankroll => bankroll.id === id)))
@@ -159,6 +165,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
           type: 'error',
+          error,
         })
       }
     }

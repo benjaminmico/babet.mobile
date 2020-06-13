@@ -69,24 +69,28 @@ const LoginScreen = ({theme}: Props) => {
           title: t('passwordIncorrectTitle'),
           message: t('passwordIncorrectDescription'),
           type: 'error',
+          error,
         })
       else if (error === 'emailIncorrect')
         show({
           title: t('emailIncorrectTitle'),
           message: t('emailIncorrectDescription'),
           type: 'error',
+          error,
         })
       else if (error === 'tooManyRequests')
         show({
           title: t('tooManyRequestsTitle'),
           message: t('tooManyRequestsDescription'),
           type: 'error',
+          error,
         })
       else
         show({
           title: t('unknownErrorTitle'),
           message: t('unknownErrorDescription'),
           type: 'error',
+          error,
         })
       setLoading(false)
     }

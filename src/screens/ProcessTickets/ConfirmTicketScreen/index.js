@@ -23,6 +23,7 @@ import {
   ConfirmTicketScreenImagePreviewContainer,
   ConfirmTicketScreenSendButton,
 } from './index.styles'
+import processOCR from '@utils/processOCR'
 
 type Props = {
   // route from react-navigation
@@ -45,6 +46,7 @@ const ConfirmTicketScreen = ({route, theme}: Props) => {
   const [loading, setLoading] = useState(false)
   // value to check if ticket was added correctly
   const [ticketAdded, setTicketAdded] = useState(false)
+  const [ticketFromOCR, setTicketFromOCR] = useState([])
 
   // actions
   const {addTicket: addTicketAction, updateStats: updateStatsAction} = actions
@@ -61,6 +63,19 @@ const ConfirmTicketScreen = ({route, theme}: Props) => {
   // graphQL query to update stats just after adding a ticket
   const {data: dataStats, error: errorStats} = useQuery(getUserStats)
 
+  async function getOCRTicket() {
+    const data = await processOCR(
+      images.map(image => {
+        return `file://${image.path}`
+      })[0],
+    )
+
+    setTicketFromOCR(data)
+  }
+
+  useEffect(() => {
+    getOCRTicket()
+  }, [])
   /**
    * when a ticket is added : update stats
    * navigate to Profile with updated stats && a new added ticket
@@ -148,37 +163,43 @@ const ConfirmTicketScreen = ({route, theme}: Props) => {
     },
   } = theme
 
+  // const ticket = {
+  //   bets: [
+  //     {
+  //       sport: 'football',
+  //       localTeam: 'Marseille',
+  //       visitorTeam: 'Paris SG',
+  //       name: 'Victoire de Marseille',
+  //       odd: 2.89,
+  //       status: 'won',
+  //       specialBet: false,
+  //     },
+  //     {
+  //       sport: 'football',
+  //       localTeam: 'Lyon',
+  //       visitorTeam: 'Reims',
+  //       name: 'Victoire de Reims',
+  //       odd: 3.2,
+  //       status: 'won',
+  //       specialBet: false,
+  //     },
+  //     {
+  //       sport: 'football',
+  //       localTeam: 'Bordeaux',
+  //       visitorTeam: 'Brest',
+  //       name: 'Victoire ou nul de Brest',
+  //       odd: 2.24,
+  //       status: 'lost',
+  //       specialBet: false,
+  //     },
+  //   ],
+  //   stake: 1000,
+  //   bankrolls: [],
+  // }
+  console.log('ticketFromOCR', ticketFromOCR)
   const ticket = {
-    bets: [
-      {
-        sport: 'football',
-        localTeam: 'Marseille',
-        visitorTeam: 'Paris SG',
-        name: 'Victoire de Marseille',
-        odd: 2.89,
-        status: 'won',
-        specialBet: false,
-      },
-      {
-        sport: 'football',
-        localTeam: 'Lyon',
-        visitorTeam: 'Reims',
-        name: 'Victoire de Reims',
-        odd: 3.2,
-        status: 'won',
-        specialBet: false,
-      },
-      {
-        sport: 'football',
-        localTeam: 'Bordeaux',
-        visitorTeam: 'Brest',
-        name: 'Victoire ou nul de Brest',
-        odd: 2.24,
-        status: 'lost',
-        specialBet: false,
-      },
-    ],
-    stake: 1000,
+    bets: ticketFromOCR,
+    stake: 0.01,
     bankrolls: [],
   }
 

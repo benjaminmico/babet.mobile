@@ -23,6 +23,7 @@ export const ToastProvider = ({children}) => {
   // show toast by passing visible props to true
   const show = useCallback(args => {
     setToast({...initialToast, visible: true, ...args})
+    console.log('error', args.error)
   }, [])
 
   // hide by passing visible props to false

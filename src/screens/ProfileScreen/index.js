@@ -108,6 +108,7 @@ const ProfileScreen = ({theme}: Props) => {
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),
         type: 'error',
+        error: errorBankrolls,
       })
     }
   }, [errorBankrolls])
@@ -132,6 +133,7 @@ const ProfileScreen = ({theme}: Props) => {
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),
         type: 'error',
+        error: errorStats,
       })
     }
   }, [errorStats])
@@ -146,6 +148,7 @@ const ProfileScreen = ({theme}: Props) => {
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),
         type: 'error',
+        error: errorTickets,
       })
     }
   }, [errorTickets])

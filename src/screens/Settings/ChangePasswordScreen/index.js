@@ -45,6 +45,7 @@ const ChangePasswordScreen = ({theme}: Props) => {
         title: t('unknownErrorTitle'),
         message: t('unknownErrorDescription'),
         type: 'error',
+        error: 'updatePasswordError',
       })
     }
   }

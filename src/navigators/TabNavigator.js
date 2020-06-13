@@ -21,13 +21,15 @@ const TabNavigator = () => {
 
   const client = new ApolloClient({
     link: new HttpLink({
-      uri: 'http://localhost:5000/dev-babet/us-central1/graphql',
+      uri: 'https://us-central1-dev-babet.cloudfunctions.net/graphql',
       headers: {
         authorization: token,
       },
     }),
     cache: new InMemoryCache(),
   })
+
+  console.log('client', client)
 
   return (
     <ApolloProvider client={client}>

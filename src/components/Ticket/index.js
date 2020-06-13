@@ -71,7 +71,7 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
       case 'lost':
         return lostBackgroundColor
       default:
-        return null
+        return 'won'
     }
   }
 
@@ -142,7 +142,7 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
         </TicketKPIContainer>
         <TicketKPIContainer>
           <TicketKPILabel color={reverseTextColor}>Côte totale</TicketKPILabel>
-          <TicketKPIValue color={reverseTextColor}>{globalOdd.toFixed(2)}</TicketKPIValue>
+          <TicketKPIValue color={reverseTextColor}>{globalOdd?.toFixed(2) || (1.0).toFixed(2)}</TicketKPIValue>
         </TicketKPIContainer>
         <TicketKPIContainer>
           <TicketMainKPILabel color={reverseTextColor}>{getTotalLabel(status)}</TicketMainKPILabel>

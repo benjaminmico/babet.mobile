@@ -2,24 +2,21 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 // @flow
 
+import Icon from '@components/Icon'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {
   BetContainer,
   BetContentContainer,
   BetLabel,
-  BetResultLabel,
-  BetResultValue,
+  BetLine,
   BetOddContainer,
   BetOddValue,
-  BetLine,
+  BetResultLabel,
+  BetResultValue,
 } from './index.styles'
-import {sportEmoji} from './utils/sport'
-import Icon from '@components/Icon'
 
 type Props = {
-  // sport value
-  sport: String,
   // localTeam value
   localTeam: String,
   // visitorTeam value
@@ -38,7 +35,7 @@ type Props = {
   theme: Object,
 }
 
-const Bet = ({sport, localTeam, visitorTeam, name, odd, status, isLast, theme}: Props) => {
+const Bet = ({localTeam, visitorTeam, name, odd, status, isLast, theme}: Props) => {
   // get theme props
   const {
     colors: {
@@ -54,7 +51,7 @@ const Bet = ({sport, localTeam, visitorTeam, name, odd, status, isLast, theme}: 
     <>
       <BetContainer>
         <BetContentContainer>
-          <BetLabel color={colorText}>{`${sportEmoji(sport)}  ${localTeam} - ${visitorTeam}`}</BetLabel>
+          <BetLabel color={colorText}>{`${localTeam} - ${visitorTeam}`}</BetLabel>
           <BetResultLabel color={colorText}>
             Mon pari : <BetResultValue color={colorText}>{name}</BetResultValue>
           </BetResultLabel>
