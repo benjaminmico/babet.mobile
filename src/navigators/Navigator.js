@@ -44,7 +44,7 @@ const Navigator = () => {
   // Apollo Client Client graphQL, depending on token session (handle on back-end)
   const client = new ApolloClient({
     link: new HttpLink({
-      uri: 'https://us-central1-dev-babet.cloudfunctions.net/graphql',
+      uri: 'http://localhost:5000/dev-babet/us-central1/graphql',
       headers: {
         authorization: stateToken,
       },

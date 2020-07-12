@@ -46,7 +46,7 @@ const ProfileScreen = ({theme}: Props) => {
   const {
     auth: {nickname, description, token},
     bankrolls: {items: bankrolls},
-    tickets: {items: tickets, count},
+    tickets: {items: tickets},
     stats: {ticketsLength, averageOdd, averageStake, balanceSheet, shape},
   } = useSelector(state => state)
 
@@ -77,7 +77,7 @@ const ProfileScreen = ({theme}: Props) => {
   const {data: dataBankrolls, error: errorBankrolls} = useQuery(getBankrolls)
   const {data: dataStats, error: errorStats} = useQuery(getUserStats)
   const {data: dataTickets, error: errorTickets, fetchMore} = useQuery(getTickets, {
-    variables: {offset: 0, limit: 7},
+    variables: {offset: 0, limit: 5},
   })
 
   const {show} = useContext(ToastContext)
@@ -160,12 +160,14 @@ const ProfileScreen = ({theme}: Props) => {
    * sections list is refreshing automatically right after dispatch on store
    */
   const isReachedEnd = async () => {
+    console.log('end', tickets.length)
     try {
       await fetchMore({
         variables: {
           offset: tickets.length,
         },
         updateQuery: (prev, {fetchMoreResult}) => {
+          console.log('fetchMoreResult', fetchMoreResult)
           if (fetchMoreResult.tickets) dispatch(setTicketsList(fetchMoreResult.tickets))
         },
       })
@@ -368,7 +370,9 @@ const ProfileScreen = ({theme}: Props) => {
         <ProfileScreenTicketsHeaderContainer>
           <ProfileScreenTicketsHeaderText color={textColor}>Mes tickets</ProfileScreenTicketsHeaderText>
           <ProfileScreenTicketsIndicatorContainer backgroundColor={backgroundIndicatorColor}>
-            <ProfileScreenTicketsIndicatorText color={ticketIndicatorColor}>{count}</ProfileScreenTicketsIndicatorText>
+            <ProfileScreenTicketsIndicatorText color={ticketIndicatorColor}>
+              {tickets.length}
+            </ProfileScreenTicketsIndicatorText>
           </ProfileScreenTicketsIndicatorContainer>
         </ProfileScreenTicketsHeaderContainer>
       </>
@@ -389,13 +393,11 @@ const ProfileScreen = ({theme}: Props) => {
           ListHeaderComponent={headerComponent()}
           sections={sortedTicketsBySections}
           contentContainerStyle={{paddingLeft: 20, paddingRight: 20, paddingTop: 12}}
-          onEndReachedThreshold={1}
           keyExtractor={_itemKeyExtractor}
-          onEndReached={async ({distanceFromEnd}) => {
+          onEndReachedThreshold={0.1}
+          onEndReached={async () => {
             // trigger onEndReached at the very bottom of the list
-            if (distanceFromEnd >= 0.01) {
-              await isReachedEnd()
-            }
+            if (tickets.length > 0) await isReachedEnd()
           }}
           renderItem={({item}) => {
             const {updatedDate, bets, globalOdd, stake, total, status} = item

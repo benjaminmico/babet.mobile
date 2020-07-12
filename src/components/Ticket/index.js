@@ -138,7 +138,7 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
           <TicketKPILabel testID="STAKE_LABEL" color={reverseTextColor}>
             Mise totale
           </TicketKPILabel>
-          <TicketKPIValue color={reverseTextColor}>{currency(stake)}</TicketKPIValue>
+          <TicketKPIValue color={reverseTextColor}>{currency(102)}</TicketKPIValue>
         </TicketKPIContainer>
         <TicketKPIContainer>
           <TicketKPILabel color={reverseTextColor}>Côte totale</TicketKPILabel>

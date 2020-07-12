@@ -5,10 +5,11 @@
  */
 export function setStats(state, action) {
   if (action?.stats) {
-    const {averageOdd, averageStake, balanceSheet, shape} = action?.stats
+    const {ticketsLength, averageOdd, averageStake, balanceSheet, shape} = action?.stats
 
     return {
       ...state,
+      ticketsLength,
       averageOdd,
       averageStake,
       balanceSheet,

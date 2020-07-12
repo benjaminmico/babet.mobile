@@ -6,6 +6,7 @@ import gql from 'graphql-tag'
 export const getUserStats = gql`
   query {
     stats {
+      ticketsLength
       averageOdd {
         value
         previousValue
