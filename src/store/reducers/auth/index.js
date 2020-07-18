@@ -3,6 +3,7 @@ import {createReducer} from '../reducerFactory'
 import {login} from './login'
 import {logout} from './logout'
 import {addUserInformations} from './addUserInformations'
+import refreshToken from './refreshToken'
 
 import {initialMode} from 'react-native-dark-mode'
 import * as RNLocalize from 'react-native-localize'
@@ -42,6 +43,8 @@ const strategies = {
   LOGOUT: logout,
   /* add user informations */
   ADD_USER_INFORMATIONS: addUserInformations,
+  /* refresh token */
+  REFRESH_TOKEN: refreshToken,
   /* commons */
   __default__: state => state,
   /* reinit */

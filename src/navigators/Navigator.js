@@ -9,12 +9,14 @@ import MyInformationsScreen from '@screens/Settings/MyInformationsScreen'
 import PrivacyScreen from '@screens/Settings/PrivacyScreen'
 import SettingsScreen from '@screens/Settings/SettingsScreen'
 import {HttpLink, InMemoryCache} from 'apollo-boost'
+import {AppState} from 'react-native'
 import {ApolloClient} from 'apollo-client'
-import React, {useEffect, useState} from 'react'
-import {useSelector} from 'react-redux'
+import React, {useEffect, useState, useRef} from 'react'
+import {useSelector, useDispatch} from 'react-redux'
 import headerStyle from './utils/headerStyle'
 import {loginWithRefreshToken} from '@api/auth/login'
-
+import auth from '@react-native-firebase/auth'
+import {refreshToken} from '@store/actions/auth'
 /**
  * Onboarding && Login Screens Navigators
  */
@@ -23,7 +25,35 @@ const Navigator = () => {
     auth: {token},
   } = useSelector(state => state)
 
+  const dispatch = useDispatch()
+
   const [stateToken, setStateToken] = useState(token)
+
+  const appState = useRef(AppState.currentState)
+
+  async function getIdToken() {
+    const idTokenResult = await auth().currentUser.getIdToken()
+    console.log('User JWT from navigation: ', idTokenResult)
+    setStateToken(idTokenResult)
+    dispatch(refreshToken(idTokenResult))
+  }
+
+  const _handleAppStateChange = nextAppState => {
+    if (appState.current.match(/inactive|background/) && nextAppState === 'active') {
+      console.log('App has come to the foreground!')
+      getIdToken()
+    }
+
+    appState.current = nextAppState
+  }
+
+  useEffect(() => {
+    AppState.addEventListener('change', _handleAppStateChange)
+
+    return () => {
+      AppState.removeEventListener('change', _handleAppStateChange)
+    }
+  }, [])
 
   /**
    * get token from loginWithRefreshToken actions (onAuthStateChanged)

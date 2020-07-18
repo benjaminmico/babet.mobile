@@ -16,3 +16,9 @@ export const addUserInformations = userInformations => ({
   type: 'ADD_USER_INFORMATIONS',
   userInformations,
 })
+
+// Refresh token
+export const refreshToken = token => ({
+  type: 'REFRESH_TOKEN',
+  token,
+})
