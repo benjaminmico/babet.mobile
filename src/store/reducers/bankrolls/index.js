@@ -1,7 +1,7 @@
 import {createReducer} from '../reducerFactory'
 import {setBankrollsList} from './setBankrollsList'
 import {setCurrentBankroll} from './setCurrentBankroll'
-import {createBankroll} from './createBankroll'
+import {addBankroll} from './addBankroll'
 import {editBankroll} from './editBankroll'
 import {deleteBankroll} from './deleteBankroll'
 
@@ -23,7 +23,7 @@ const strategies = {
   /* set current bankroll */
   SET_CURRENT_BANKROLL: setCurrentBankroll,
   /* create bankroll */
-  CREATE_BANKROLL: createBankroll,
+  ADD_BANKROLL: addBankroll,
   /* edit bankroll */
   EDIT_BANKROLL: editBankroll,
   /* delete bankroll */

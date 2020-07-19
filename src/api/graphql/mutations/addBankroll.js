@@ -3,9 +3,9 @@ import gql from 'graphql-tag'
 /**
  * create bankroll
  */
-export const createBankroll = gql`
-  mutation createBankroll($name: String) {
-    createBankroll(name: $name) {
+export const addBankroll = gql`
+  mutation addBankroll($name: String) {
+    addBankroll(name: $name) {
       id
       name
       creationDate

@@ -2,7 +2,7 @@
 
 import {withTheme} from '@core/themeProvider'
 import React, {useContext, useState} from 'react'
-import {createBankroll} from '@api/graphql/mutations/createBankroll'
+import {addBankroll} from '@api/graphql/mutations/addBankroll'
 import {editBankroll} from '@api/graphql/mutations/editBankroll'
 import {deleteBankroll} from '@api/graphql/mutations/deleteBankroll'
 import {useMutation} from '@apollo/react-hooks'
@@ -47,12 +47,12 @@ const MyBankrollsScreen = ({theme}: Props) => {
 
   // add store actions
   const {
-    createBankroll: createBankrollAction,
+    addBankroll: addBankrollAction,
     editBankroll: editBankrollAction,
     deleteBankroll: deleteBankrollAction,
   } = actions
 
-  const [mutationCreateBankroll] = useMutation(createBankroll)
+  const [mutationaddBankroll] = useMutation(addBankroll)
   const [mutationEditBankroll] = useMutation(editBankroll)
   const [mutationDeleteBankroll] = useMutation(deleteBankroll)
 
@@ -72,9 +72,9 @@ const MyBankrollsScreen = ({theme}: Props) => {
    * @param {String} name bankroll name
    *
    */
-  const onCreateBankroll = async name => {
+  const onaddBankroll = async name => {
     try {
-      const {data, error} = await mutationCreateBankroll({
+      const {data, error} = await mutationaddBankroll({
         variables: {name},
       })
       setAlertCreate(false)
@@ -86,7 +86,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
           error,
         })
       }
-      dispatch(createBankrollAction(data.createBankroll))
+      dispatch(addBankrollAction(data.addBankroll))
     } catch (error) {
       console.error('error', error)
       setAlertCreate(false)
@@ -216,7 +216,7 @@ const MyBankrollsScreen = ({theme}: Props) => {
           actionButtonLabel="Confirmer"
           inputPlaceholder={t('nameBankrollCreationInputPlaceholder')}
           onChangeInputValue={setBankrollNameToCreate}
-          actionButtonPress={() => onCreateBankroll(bankrollNameToCreate)}
+          actionButtonPress={() => onaddBankroll(bankrollNameToCreate)}
         />
       )}
       {alertEdit && (

@@ -3,7 +3,7 @@
  * @param {*} state
  * @param {*} action
  */
-export function createBankroll(state, action) {
+export function addBankroll(state, action) {
   const {bankroll: createdBankroll} = action
 
   const bankrolls = state.items

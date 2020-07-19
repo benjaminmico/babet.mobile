@@ -11,8 +11,8 @@ export const setCurrentBankroll = bankroll => ({
 })
 
 // Create bankroll
-export const createBankroll = bankroll => ({
-  type: 'CREATE_BANKROLL',
+export const addBankroll = bankroll => ({
+  type: 'ADD_BANKROLL',
   bankroll,
 })
 
