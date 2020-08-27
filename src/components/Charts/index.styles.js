@@ -4,8 +4,7 @@ import {Dimensions} from 'react-native'
 const windowWidth = Dimensions.get('window').width
 
 export const ChartsContainer = styled.View`
-  width: ${windowWidth * 0.603}px;
-  height: 90px;
+  flex: 1;
 `
 
 export const ChartLastItemContainer = styled.View`

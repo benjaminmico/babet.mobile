@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import {withTheme} from '@core/themeProvider'
-import {Dimensions} from 'react-native'
+import {Dimensions, ScrollView, TouchableOpacity} from 'react-native'
 import {Defs, LinearGradient as SVGLinearGradient, Stop} from 'react-native-svg'
 import {LineChart} from 'react-native-svg-charts'
 import * as shape from 'd3-shape'
@@ -16,7 +16,7 @@ type Props = {
   theme: Object,
 }
 
-const Charts = ({data, theme}: Props) => {
+const Charts = ({data, theme, s}: Props) => {
   // state of latest item
   const [yLastItemPos, setYLastItemPos] = useState(0)
 
@@ -59,11 +59,24 @@ const Charts = ({data, theme}: Props) => {
     </Defs>
   )
 
+  console.log('scrollYPos', scrollYPos)
+
+  const handleScroll = event => {
+    console.log('event', event.nativeEvent.contentOffset.x)
+  }
+
+  useEffect(() => {
+    // scrollViewRef.current?.scrollTo({x: 375 - scrollYPos / 200, y: 0})
+  }, [scrollYPos])
+
+  const scrollViewRef = useRef()
+
   return (
-    <>
+    <ScrollView onScroll={handleScroll} ref={scrollViewRef} horizontal showsHorizontalScrollIndicator={false}>
+      <TouchableOpacity style={{backgroundColor: 'red', height: 30, width: 30}} />
       <ChartsContainer>
         <LineChart
-          style={{width: windowWidth * 0.603, height: 80}}
+          style={{width: 375, height: 100}}
           data={data}
           curve={shape.curveNatural}
           svg={{
@@ -82,7 +95,7 @@ const Charts = ({data, theme}: Props) => {
           style={{
             position: 'absolute',
             top: yLastItemPos - 5,
-            left: windowWidth * 0.603 - 11,
+            left: 375 - 20 - scrollYPos / 8,
             width: 11,
             height: 11,
             borderRadius: 7.5,
@@ -108,7 +121,7 @@ const Charts = ({data, theme}: Props) => {
           <ChartLastItemValue color={colorLastItemValueText}>{currency(lastItem)}</ChartLastItemValue>
         </ChartLastItemContainer>
       </ChartsContainer>
-    </>
+    </ScrollView>
   )
 }
 

@@ -31,7 +31,7 @@ type Props = {
   theme: Object,
 }
 
-const Graph = ({label, items, selected, onPress, description, theme}: Props) => {
+const Graph = ({label, items, selected, onPress, description, theme, scrollYPos}: Props) => {
   const filters = [
     {id: 'week', label: '1 sem.', selected: selected === 'week'},
     {id: 'month', label: '1 mois', selected: selected === 'month'},
@@ -53,18 +53,7 @@ const Graph = ({label, items, selected, onPress, description, theme}: Props) => 
    * */
   return (
     <GraphContainer backgroundColor={backgroundContainerColor} theme={keyTheme}>
-      <GraphHeader>
-        <GraphLabel color={textColor}>{label}</GraphLabel>
-      </GraphHeader>
-      <GraphContent>
-        <Charts data={items} />
-        <GraphFilters>
-          <Filters items={filters} onPress={onPress} />
-        </GraphFilters>
-      </GraphContent>
-      <GraphFooter>
-        <GraphDescription color={descriptionColor}>{description}</GraphDescription>
-      </GraphFooter>
+      <Charts scrollYPos={scrollYPos} data={items} />
     </GraphContainer>
   )
 }

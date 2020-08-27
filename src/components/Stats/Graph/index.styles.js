@@ -4,8 +4,6 @@ import {Dimensions} from 'react-native'
 const windowWidth = Dimensions.get('window').width
 
 export const GraphContainer = styled.View`
-  background-color: ${props => props.backgroundColor};
-  width: ${windowWidth * 0.89}px;
   border-radius: 12.6px;
   shadow-offset: ${props => (props.theme === 'white' ? '0px 10px' : '0px')};
   shadow-radius: ${props => (props.theme === 'white' ? '18px' : '0px')};
@@ -22,8 +20,7 @@ export const GraphHeader = styled.View`
 `
 
 export const GraphContent = styled.View`
-  width: 100%;
-  height: 95px;
+  flex: 1;
 `
 
 export const GraphFooter = styled.View`
