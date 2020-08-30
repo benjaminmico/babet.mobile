@@ -111,16 +111,22 @@ const ProfileScreen = ({theme}: Props) => {
   }
 
   const data = [
+    {x: new Date(2018, 8, 1), y: 0},
+    {x: new Date(2018, 8, 2), y: 50},
+    {x: new Date(2018, 8, 3), y: 100},
+    {x: new Date(2018, 8, 4), y: 150},
+    {x: new Date(2018, 8, 8), y: 200},
     {x: new Date(2018, 9, 1), y: 0},
-    {x: new Date(2018, 9, 16), y: 0},
-    {x: new Date(2018, 9, 17), y: 200},
+    {x: new Date(2018, 9, 2), y: 50},
+    {x: new Date(2018, 9, 3), y: 100},
+    {x: new Date(2018, 9, 4), y: 150},
+    {x: new Date(2018, 9, 8), y: 200},
     {x: new Date(2018, 9, 18), y: 100},
     {x: new Date(2018, 9, 19), y: 100},
-    {x: new Date(2018, 9, 20), y: 1200},
-    {x: new Date(2018, 9, 17), y: 200},
+    {x: new Date(2018, 9, 20), y: 300},
+    {x: new Date(2018, 9, 21), y: 200},
     {x: new Date(2018, 10, 1), y: 200},
     {x: new Date(2018, 10, 2), y: 300},
-    {x: new Date(2018, 10, 5), y: 200},
   ]
 
   return (
@@ -151,7 +157,7 @@ const ProfileScreen = ({theme}: Props) => {
         showsHorizontalScrollIndicator={false}
         ref={scrollViewHorizontalRef}
         onScroll={handleHorizontalScroll}
-        scrollEventThrottle={1}
+        scrollEventThrottle={16}
       >
         <AnimatedCharts
           data={data}
@@ -165,7 +171,7 @@ const ProfileScreen = ({theme}: Props) => {
         showsVerticalScrollIndicator={true}
         ref={scrollViewRef}
         onScroll={handleScroll}
-        scrollEventThrottle={11}
+        scrollEventThrottle={16}
       >
         <View style={{height: 3000}}></View>
       </ScrollView>
