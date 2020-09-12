@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Status/Lite/WinLite</title>
+    <g id="Icons/Status/Lite/WinLite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#14B916" cx="20" cy="20" r="20"></circle>
+        <path d="M20.104562,25.9970419 C19.6295493,26.412678 19.581415,27.1346916 19.9970512,27.6097043 C20.4126873,28.0847171 21.1347009,28.1328513 21.6097136,27.7172152 L26.1811369,23.7172198 C26.688427,23.273341 26.7033313,22.489095 26.2132728,22.026262 L15.9275704,12.3119875 C15.4686929,11.8786032 14.7453718,11.8992695 14.3119875,12.358147 C13.8786032,12.8170245 13.8992695,13.5403456 14.358147,13.9737299 L23.7299226,22.8248513 L20.104562,25.9970419 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" transform="translate(20.285709, 20.000000) rotate(-270.000000) translate(-20.285709, -20.000000) "></path>
+    </g>
+</svg>

@@ -1,23 +1,43 @@
 // @flow
+import {withTheme} from '@core/themeProvider'
 import {scaleLinear, scaleQuantile, scaleTime} from 'd3-scale'
 import * as shape from 'd3-shape'
-import React, {useEffect} from 'react'
-import {Animated, Dimensions, StyleSheet, TextInput, TouchableOpacity, View} from 'react-native'
+import React, {useEffect, useState} from 'react'
+import {Animated, Dimensions, StyleSheet, TextInput, View} from 'react-native'
 import Svg, {Defs, LinearGradient, Path, Stop} from 'react-native-svg'
 import * as path from 'svg-path-properties'
+import {
+  AnimatedChartsContainer,
+  AnimatedChartsValueContainer,
+  AnimatedChartsValueTextInput,
+  AnimatedChartsCursor,
+} from './index.styles'
 
 const d3 = {
   shape,
 }
-const width = Dimensions.get('window').width * 2
+const {width} = Dimensions.get('window')
 const height = 162
 const cursorRadius = 10
 
-const AnimatedCharts = ({scrollHeightContent, scrollYPos, scrollX, data}) => {
-  const scaleX = scaleTime()
-    .domain([new Date(2018, 8, 1), new Date(2018, 10, 2)])
-    .range([0, width])
-  const scaleY = scaleLinear().domain([0, 300]).range([height, 0])
+const AnimatedCharts = ({theme, scrollHeightContent, scrollYPos, scrollX, data}) => {
+  // get theme props
+  const {
+    key: keyTheme,
+    colors: {
+      components: {backgroundContainer},
+      texts: {text: textColor, description: descriptionColor},
+      palette: {white: errorTextColor, error: errorBackgroundContainer},
+    },
+  } = theme
+
+  const [maxValue, setMaxValue] = useState(null)
+  const [minDate, setMinDate] = useState(0)
+  const [maxDate, setMaxDate] = useState(1)
+
+  //
+  const scaleX = scaleTime().domain([minDate, maxDate]).range([0, width])
+  const scaleY = scaleLinear().domain([0, maxValue]).range([height, 0])
   const scaleLabel = scaleQuantile()
     .domain(data.map(d => d.x))
 
@@ -42,17 +62,39 @@ const AnimatedCharts = ({scrollHeightContent, scrollYPos, scrollX, data}) => {
   }
 
   function update(top, left) {
-    cursor.current.setNativeProps({top: top - cursorRadius, left: left - cursorRadius})
+    cursor.current.setNativeProps({
+      top: top - cursorRadius,
+      left: left - cursorRadius,
+    })
     const text = scaleLabel(scaleX.invert(left))
-    console.log('tsext', text)
     label.current.setNativeProps({text: `${text} €`})
   }
 
   useEffect(() => {
+    setMaxValue(
+      Math.max.apply(
+        null,
+        data.map(value => value.y),
+      ),
+    )
+    setMinDate(
+      Math.min.apply(
+        null,
+        data.map(value => value.x),
+      ),
+    )
+    setMaxDate(
+      Math.max.apply(
+        null,
+        data.map(value => value.x),
+      ),
+    )
+    console.log('minDate', minDate, maxDate)
+
     const {x} = animatedValues
     x.addListener(({value}) =>
       requestAnimationFrame(() => {
-        const {x: left, y: top} = properties.getPointAtLength(totalLength - value)
+        const {x: left, y: top} = properties.getPointAtLength(totalLength)
         update(top, left)
       }),
     )
@@ -61,20 +103,24 @@ const AnimatedCharts = ({scrollHeightContent, scrollYPos, scrollX, data}) => {
   }, [])
 
   useEffect(() => {
-    if (properties)
-      requestAnimationFrame(() => {
-        const {x: left, y: top} = properties.getPointAtLength((scrollYPos * totalLength) / scrollHeightContent)
+    if (properties && scrollYPos && totalLength && scrollHeightContent) {
+      const {x: left, y: top} = properties.getPointAtLength(
+        totalLength - (scrollYPos * (400 * 2)) / scrollHeightContent,
+      )
 
-        scrollX(left)
-        update(top, left)
-      })
+      scrollX(left)
+      update(top, left)
+    }
   }, [scrollYPos])
 
-  const {x} = animatedValues
-
   return (
-    <View style={styles.container}>
-      <Svg {...{width, height: height * 2}}>
+    <AnimatedChartsContainer>
+      <Svg
+        {...{
+          width,
+          height: height * 2,
+        }}
+      >
         <Defs>
           <LinearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%">
             <Stop offset="0%" stopColor="white" />
@@ -85,63 +131,14 @@ const AnimatedCharts = ({scrollHeightContent, scrollYPos, scrollX, data}) => {
       </Svg>
 
       <View style={StyleSheet.absoluteFill}>
-        <View ref={cursor} style={styles.cursor}>
-          <View style={styles.label}>
-            <TextInput underlineColorAndroid="transparent" ref={label} />
-          </View>
-        </View>
+        <AnimatedChartsCursor ref={cursor}>
+          <AnimatedChartsValueContainer backgroundColor={backgroundContainer} theme={keyTheme}>
+            <AnimatedChartsValueTextInput underlineColorAndroid="transparent" ref={label} />
+          </AnimatedChartsValueContainer>
+        </AnimatedChartsCursor>
       </View>
-      <Animated.ScrollView
-        style={StyleSheet.absoluteFill}
-        contentContainerStyle={{width: totalLength * 2}}
-        bounces={false}
-        showsHorizontalScrollIndicator={false}
-        scrollEventThrottle={16}
-        onScroll={Animated.event(
-          [
-            {
-              nativeEvent: {
-                contentOffset: {x},
-              },
-            },
-          ],
-          {useNativeDriver: true},
-        )}
-        horizontal
-      />
-      <TouchableOpacity
-        style={{width: 50, height: 50, backgroundColor: 'blue'}}
-        onPress={() => {
-          requestAnimationFrame(() => {
-            const {x: left, y: top} = properties.getPointAtLength(totalLength * (9 / data.length))
-
-            scrollX(left)
-            update(top, left)
-          })
-        }}
-      />
-    </View>
+    </AnimatedChartsContainer>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    width: width * 2,
-    height: '100%',
-  },
-  label: {
-    position: 'absolute',
-    top: -20,
-    width: 200,
-  },
-  cursor: {
-    borderWidth: 3,
-    borderColor: '#5100FF',
-    backgroundColor: 'white',
-    width: 20,
-    height: 20,
-    borderRadius: cursorRadius,
-  },
-})
-
-export default AnimatedCharts
+export default withTheme(AnimatedCharts)

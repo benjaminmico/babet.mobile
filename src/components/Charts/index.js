@@ -59,8 +59,6 @@ const Charts = ({data, theme, s}: Props) => {
     </Defs>
   )
 
-  console.log('scrollYPos', scrollYPos)
-
   const handleScroll = event => {
     console.log('event', event.nativeEvent.contentOffset.x)
   }

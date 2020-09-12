@@ -1,43 +1,30 @@
 // @flow
 
-import {getBankrolls} from '@api/graphql/queries/bankrolls'
-import {getUserStats} from '@api/graphql/queries/stats'
 import {getTickets} from '@api/graphql/queries/tickets'
 import {useQuery} from '@apollo/react-hooks'
+import {getUserStats} from '@api/graphql/queries/stats'
 import {ToastContext} from '@components/Alerts/Toast/ToastContext'
-import Button from '@components/Buttons/Button'
-import Filters from '@components/Filters'
 import Icon from '@components/Icon'
-import BalanceSheet from '@components/Stats/BalanceSheet'
-import Comparisons from '@components/Stats/Comparisons'
-import Generic from '@components/Stats/Generic'
-import Graph from '@components/Stats/Graph'
-import Ticket from '@components/Ticket'
+import TicketLite from '@components/Ticket/TicketLite'
+import AnimatedCharts from '@components/AnimatedCharts'
 import {withTheme} from '@core/themeProvider'
 import {useNavigation} from '@react-navigation/native'
 import actions from '@store/actions'
 import React, {useContext, useEffect, useState, useRef} from 'react'
 import {useTranslation} from 'react-i18next'
-import {Dimensions, Image, SectionList, ScrollView, View} from 'react-native'
+import {Image, SectionList, FlatList, ScrollView, Dimensions, View} from 'react-native'
 import {useDispatch, useSelector} from 'react-redux'
-import {getSectionsTickets} from './utils/getSectionsTickets'
-import {getBalanceSheet, getResult, getShape} from './utils/getStats'
-import AnimatedCharts from '@components/AnimatedCharts'
 import {
   ProfileScreenContainer,
   ProfileScreenContentHeaderContainer,
   ProfileScreenHeaderContainer,
   ProfileScreenImageHeaderContainer,
-  ProfileScreenKPIContainer,
   ProfileScreenTicketsContentContainer,
-  ProfileScreenTicketsHeaderContainer,
-  ProfileScreenTicketsHeaderText,
-  ProfileScreenTicketsIndicatorContainer,
-  ProfileScreenTicketsIndicatorText,
   ProfileScreenTicketsSectionTitle,
   ProfileScreenTitleDescription,
   ProfileScreenTitleHeader,
 } from './index.styles'
+import {getSectionsTickets} from './utils/getSectionsTickets'
 
 type Props = {
   theme: Object,
@@ -46,46 +33,152 @@ type Props = {
 const ProfileScreen = ({theme}: Props) => {
   const {
     auth: {nickname, description, token},
-    bankrolls: {items: bankrolls},
     tickets: {items: tickets},
     stats: {ticketsLength, averageOdd, averageStake, balanceSheet, shape},
   } = useSelector(state => state)
 
-  // const {data: dataStats, error: errorStats} = useQuery(getUserStats)
+  const {data: dataStats, error: errorStats} = useQuery(getUserStats)
 
-  const {navigate} = useNavigation()
+  // init sections
+  const initSortedTicketsBySections = [
+    {
+      title: 'week',
+      data: [],
+    },
+    {
+      title: 'lastWeek',
+      data: [],
+    },
+    {
+      title: 'twoWeeksAgo',
+      data: [],
+    },
+    {
+      title: 'longTimeAgo',
+      data: [],
+    },
+  ]
 
-  const dispatch = useDispatch()
-
+  const [sortedTicketsBySections, setSortedTicketsBySections] = useState(initSortedTicketsBySections)
   const [scrollXPos, setScrollXPos] = useState(0)
   const [scrollYPos, setScrollYPos] = useState(0)
   const [currentScrolledPosThreshold, setCurrentScrolledPosThreshold] = useState(Dimensions.get('window').width)
   const [scrollHeightContent, setScrollHeightContent] = useState(0)
 
-  const {setStats} = actions
+  const {data: dataTickets, error: errorTickets, fetchMore} = useQuery(getTickets, {
+    variables: {offset: 0, limit: 20},
+  })
 
-  // /**
-  //  * Load GraphQL user bankrolls and add it to local state when :
-  //  * Bankrolls store are empty
-  //  * Bankrolls queries are different than bankrolls store
-  //  */
-  // useEffect(() => {
-  //   if (dataStats?.stats && !ticketsLength && !averageOdd && !averageStake && !balanceSheet && !shape)
-  //     dispatch(setStats(dataStats.stats))
-  // }, [dataStats])
+  const {show} = useContext(ToastContext)
 
-  // get theme props
+  const {t} = useTranslation()
+
+  const dispatch = useDispatch()
+
+  const {setTicketsList, setStats} = actions
+
+  /**
+   * Load GraphQL user bankrolls and add it to local state when :
+   * Bankrolls store are empty
+   * Bankrolls queries are different than bankrolls store
+   */
+  useEffect(() => {
+    if (dataStats?.stats && !ticketsLength && !averageOdd && !averageStake && !balanceSheet && !shape)
+      dispatch(setStats(dataStats.stats))
+  }, [dataStats])
+
+  /**
+   * handle GraphQL query error tickets by displaying toast
+   *
+   * */
+  useEffect(() => {
+    if (errorTickets && token) {
+      show({
+        title: t('unknownErrorTitle'),
+        message: t('unknownErrorDescription'),
+        type: 'error',
+        error: errorTickets,
+      })
+    }
+  }, [errorTickets])
+
+  /**
+   * Load GraphQL user tickets and add it to local state when :
+   * Tickets store are empty
+   * Tickets queries are different than bankrolls store
+   * On end flat list tickets is reached
+   */
+  useEffect(() => {
+    if (dataTickets?.tickets && !tickets?.length) {
+      dispatch(setTicketsList(dataTickets?.tickets))
+    }
+  }, [dataTickets])
+
+  useEffect(() => {
+    if (tickets.length > 0)
+      setSortedTicketsBySections([
+        {
+          title: 'week',
+          data: getSectionsTickets(tickets, 'week').sort((a, b) => {
+            return b.updatedDate - a.updatedDate
+          }),
+        },
+        {
+          title: 'lastWeek',
+          data: getSectionsTickets(tickets, 'lastWeek'),
+        },
+        {
+          title: 'twoWeeksAgo',
+          data: [],
+        },
+        {
+          title: 'longTimeAgo',
+          data: getSectionsTickets(tickets, 'longTimeAgo'),
+        },
+      ])
+  }, [tickets?.length])
+
+  /**
+   * when sections list list is reaching end
+   * use fetchMore functions from Apollo Client to refetch list based on offset
+   * load new tickets items and add them on store
+   * sections list is refreshing automatically right after dispatch on store
+   */
+  const isReachedEnd = async () => {
+    try {
+      await fetchMore({
+        variables: {
+          offset: tickets.length,
+        },
+        updateQuery: (prev, {fetchMoreResult}) => {
+          if (fetchMoreResult.tickets) dispatch(setTicketsList(fetchMoreResult.tickets))
+        },
+      })
+    } catch (e) {
+      console.warn('error fetch more', e)
+    }
+  }
+
   const {
     backgroundColor,
     colors: {
-      components: {backgroundAction: backgroundIndicatorColor},
-      texts: {
-        text: textColor,
-        description: descriptionColor,
-        buttons: {filter: ticketIndicatorColor},
-      },
+      texts: {text: textColor, description: descriptionColor},
     },
   } = theme
+
+  const {navigate} = useNavigation()
+
+  /**
+   * header component of sections list
+   *  - profile header
+   *  - stats
+   * Handle as a Section header to improve scroll experience
+   */
+
+  // sections list key extractor
+  function _itemKeyExtractor(item) {
+    return item.id.toString()
+  }
 
   const scrollViewRef = useRef()
   const scrollViewHorizontalRef = useRef()
@@ -94,40 +187,46 @@ const ProfileScreen = ({theme}: Props) => {
     setScrollYPos(event.nativeEvent.contentOffset.y)
     setScrollHeightContent(event.nativeEvent.contentSize.height - event.nativeEvent.layoutMeasurement.height)
   }
+
   const handleHorizontalScroll = event => {
     setScrollXPos(event.nativeEvent.contentOffset.x)
   }
 
   const scrollX = scrollPos => {
     if (scrollPos > currentScrolledPosThreshold) {
-      scrollViewHorizontalRef.current?.scrollTo({x: currentScrolledPosThreshold, y: 0})
+      scrollViewHorizontalRef.current?.scrollTo({
+        x: currentScrolledPosThreshold,
+      })
       setCurrentScrolledPosThreshold(currentScrolledPosThreshold + Dimensions.get('window').width)
     }
 
     if (scrollPos < currentScrolledPosThreshold - Dimensions.get('window').width) {
-      scrollViewHorizontalRef.current?.scrollTo({x: scrollPos - Dimensions.get('window').width, y: 0})
+      scrollViewHorizontalRef.current?.scrollTo({
+        x: scrollPos - Dimensions.get('window').width,
+      })
       setCurrentScrolledPosThreshold(currentScrolledPosThreshold - Dimensions.get('window').width)
     }
   }
 
   const data = [
-    {x: new Date(2018, 8, 1), y: 0},
-    {x: new Date(2018, 8, 2), y: 50},
-    {x: new Date(2018, 8, 3), y: 100},
-    {x: new Date(2018, 8, 4), y: 150},
-    {x: new Date(2018, 8, 8), y: 200},
-    {x: new Date(2018, 9, 1), y: 0},
-    {x: new Date(2018, 9, 2), y: 50},
-    {x: new Date(2018, 9, 3), y: 100},
-    {x: new Date(2018, 9, 4), y: 150},
-    {x: new Date(2018, 9, 8), y: 200},
-    {x: new Date(2018, 9, 18), y: 100},
-    {x: new Date(2018, 9, 19), y: 100},
-    {x: new Date(2018, 9, 20), y: 300},
-    {x: new Date(2018, 9, 21), y: 200},
-    {x: new Date(2018, 10, 1), y: 200},
-    {x: new Date(2018, 10, 2), y: 300},
+    {x: new Date('2018-08-01T00:00:00.000Z'), y: 441},
+    {x: new Date('2018-08-02T00:00:00.000Z'), y: -10},
+    {x: new Date('2018-08-02T00:00:00.000Z'), y: 514},
+    {x: new Date('2018-08-04T00:00:00.000Z'), y: 146},
+    {x: new Date('2018-08-04T00:00:00.000Z'), y: -8},
+    {x: new Date('2018-08-06T00:00:00.000Z'), y: 146},
+    {x: new Date('2018-08-06T00:00:00.000Z'), y: -8},
+    {x: new Date('2018-08-08T00:00:00.000Z'), y: 294},
+    {x: new Date('2018-08-09T00:00:00.000Z'), y: 225},
+    {x: new Date('2018-08-10T00:00:00.000Z'), y: -8},
+    {x: new Date('2018-08-12T00:00:00.000Z'), y: -8},
+    {x: new Date('2018-08-12T00:00:00.000Z'), y: -8},
+    {x: new Date('2018-08-13T00:00:00.000Z'), y: 900},
+    {x: new Date('2018-08-14T00:00:00.000Z'), y: 117},
+    {x: new Date('2018-09-21T00:00:00.000Z'), y: -800},
   ]
+
+  console.log('balanceSheet', balanceSheet?.all?.value?.result)
 
   return (
     <ProfileScreenContainer backgroundColor={backgroundColor}>
@@ -167,14 +266,33 @@ const ProfileScreen = ({theme}: Props) => {
           scrollHeightContent={scrollHeightContent}
         />
       </ScrollView>
-      <ScrollView
-        showsVerticalScrollIndicator={true}
+      {/* <ScrollView ref={scrollViewRef} onScroll={handleScroll} scrollEventThrottle={16}>
+        <View style={{height: 3000}}></View>
+      </ScrollView> */}
+
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{alignItems: 'center'}}
+        data={tickets}
         ref={scrollViewRef}
         onScroll={handleScroll}
         scrollEventThrottle={16}
-      >
-        <View style={{height: 3000}}></View>
-      </ScrollView>
+        initialNumToRender={1}
+        renderItem={({item}) => {
+          const {updatedDate, bets, globalOdd, stake, total, status} = item
+          return (
+            <TicketLite
+              key={`${updatedDate}`}
+              updatedDate={updatedDate}
+              bets={bets}
+              stake={stake}
+              globalOdd={globalOdd}
+              total={total}
+              status={status}
+            />
+          )
+        }}
+      />
     </ProfileScreenContainer>
   )
 }

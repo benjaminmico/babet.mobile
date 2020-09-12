@@ -18,7 +18,6 @@ const TabNavigator = () => {
   const {
     auth: {token},
   } = useSelector(state => state)
-  console.log('token', token)
 
   const client = new ApolloClient({
     link: new HttpLink({
@@ -29,8 +28,6 @@ const TabNavigator = () => {
     }),
     cache: new InMemoryCache(),
   })
-
-  console.log('client', client)
 
   return (
     <ApolloProvider client={client}>

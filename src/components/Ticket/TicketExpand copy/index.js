@@ -38,7 +38,7 @@ type Props = {
   theme: Object,
 }
 
-const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Props) => {
+const TicketExpand = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Props) => {
   // get theme props
   const {
     key: keyTheme,
@@ -161,4 +161,4 @@ const Ticket = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Pro
   )
 }
 
-export default withTheme(Ticket)
+export default withTheme(TicketExpand)

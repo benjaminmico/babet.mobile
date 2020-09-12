@@ -14,6 +14,9 @@ import DeleteWhiteIcon from '@assets/icons/whites/deleteIcon.svg'
 import LostIcon from '@assets/icons/gameStatus/lost.svg'
 import PendingIcon from '@assets/icons/gameStatus/pending.svg'
 import WonIcon from '@assets/icons/gameStatus/won.svg'
+import LostLiteIcon from '@assets/icons/gameStatus/lostLite.svg'
+import PendingLiteIcon from '@assets/icons/gameStatus/pendingLite.svg'
+import WonLiteIcon from '@assets/icons/gameStatus/wonLite.svg'
 import AddTicket from '@assets/icons/navigation/addTicket.svg'
 import Profile from '@assets/icons/navigation/profile.svg'
 import SelectedAddTicket from '@assets/icons/navigation/selectedAddTicket.svg'
@@ -127,6 +130,12 @@ const renderIcon = (label, size, themeKey) => {
       return <WonIcon width={size} height={size} />
     case 'lost':
       return <LostIcon width={size} height={size} />
+    case 'pendingLite':
+      return <PendingLiteIcon width={size} height={size} />
+    case 'wonLite':
+      return <WonLiteIcon width={size} height={size} />
+    case 'lostLite':
+      return <LostLiteIcon width={size} height={size} />
     case 'facebook':
       return (
         <Image

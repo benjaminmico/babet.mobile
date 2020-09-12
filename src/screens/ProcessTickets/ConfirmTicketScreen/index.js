@@ -6,7 +6,7 @@ import {useMutation, useQuery} from '@apollo/react-hooks'
 import {ToastContext} from '@components/Alerts/Toast/ToastContext'
 import Filters from '@components/Filters'
 import Icon from '@components/Icon'
-import Ticket from '@components/Ticket'
+import TicketExpand from '@components/Ticket/TicketExpand'
 import {withTheme} from '@core/themeProvider'
 import {useNavigation} from '@react-navigation/native'
 import actions from '@store/actions'
@@ -196,7 +196,6 @@ const ConfirmTicketScreen = ({route, theme}: Props) => {
   //   stake: 1000,
   //   bankrolls: [],
   // }
-  console.log('ticketFromOCR', ticketFromOCR)
   const ticket = {
     bets: ticketFromOCR,
     stake: 0.01,
@@ -233,7 +232,7 @@ const ConfirmTicketScreen = ({route, theme}: Props) => {
               }}
             />
           </ConfirmTicketScreenImagePreviewContainer>
-          <Ticket
+          <TicketExpand
             updatedDate={ticketWithProps.updatedDate}
             bets={ticketWithProps.bets}
             stake={ticketWithProps.stake}

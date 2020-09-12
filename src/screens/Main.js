@@ -2,7 +2,7 @@ import BalanceSheet from '@components/Stats/BalanceSheet'
 import Comparisons from '@components/Stats/Comparisons'
 import Generic from '@components/Stats/Generic'
 import Graph from '@components/Stats/Graph'
-import Ticket from '@components/Ticket'
+import TicketExpand from '@components/Ticket/TicketExpand'
 import {withTheme} from '@core/themeProvider'
 import React from 'react'
 import {Dimensions, StatusBar, StyleSheet, View} from 'react-native'
@@ -206,7 +206,7 @@ const MainScreen = ({theme}) => {
           />
         </View>
         <View style={{marginTop: 75}}>
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -214,7 +214,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -222,7 +222,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -230,7 +230,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -238,7 +238,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -246,7 +246,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -254,7 +254,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -262,7 +262,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -270,7 +270,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -278,7 +278,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}
@@ -286,7 +286,7 @@ const MainScreen = ({theme}) => {
             total={total}
             status={status}
           />
-          <Ticket
+          <TicketExpand
             updatedDate={updatedDate}
             bets={bets}
             stake={stake}

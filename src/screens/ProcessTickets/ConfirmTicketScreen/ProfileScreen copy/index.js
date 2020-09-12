@@ -12,7 +12,7 @@ import BalanceSheet from '@components/Stats/BalanceSheet'
 import Comparisons from '@components/Stats/Comparisons'
 import Generic from '@components/Stats/Generic'
 import Graph from '@components/Stats/Graph'
-import TicketExpand from '@components/Ticket/TicketExpand'
+import Ticket from '@components/Ticket/TicketExpand'
 import {withTheme} from '@core/themeProvider'
 import {useNavigation} from '@react-navigation/native'
 import actions from '@store/actions'
@@ -160,14 +160,12 @@ const ProfileScreen = ({theme}: Props) => {
    * sections list is refreshing automatically right after dispatch on store
    */
   const isReachedEnd = async () => {
-    console.log('end', tickets.length)
     try {
       await fetchMore({
         variables: {
           offset: tickets.length,
         },
         updateQuery: (prev, {fetchMoreResult}) => {
-          console.log('fetchMoreResult', fetchMoreResult)
           if (fetchMoreResult.tickets) dispatch(setTicketsList(fetchMoreResult.tickets))
         },
       })
