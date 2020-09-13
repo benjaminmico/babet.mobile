@@ -223,7 +223,7 @@ const ProfileScreen = ({theme}: Props) => {
     {x: new Date('2018-08-12T00:00:00.000Z'), y: -8},
     {x: new Date('2018-08-13T00:00:00.000Z'), y: 900},
     {x: new Date('2018-08-14T00:00:00.000Z'), y: 117},
-    {x: new Date('2018-09-21T00:00:00.000Z'), y: -800},
+    {x: new Date('2018-09-21T00:00:00.000Z'), y: -40},
   ]
 
   console.log('balanceSheet', balanceSheet?.all?.value?.result)

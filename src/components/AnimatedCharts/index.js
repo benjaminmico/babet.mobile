@@ -32,12 +32,13 @@ const AnimatedCharts = ({theme, scrollHeightContent, scrollYPos, scrollX, data})
   } = theme
 
   const [maxValue, setMaxValue] = useState(null)
+  const [minValue, setMinValue] = useState(null)
   const [minDate, setMinDate] = useState(0)
   const [maxDate, setMaxDate] = useState(1)
 
   //
   const scaleX = scaleTime().domain([minDate, maxDate]).range([0, width])
-  const scaleY = scaleLinear().domain([0, maxValue]).range([height, 0])
+  const scaleY = scaleLinear().domain([minValue, maxValue]).range([height, 0])
   const scaleLabel = scaleQuantile()
     .domain(data.map(d => d.x))
 
@@ -71,6 +72,12 @@ const AnimatedCharts = ({theme, scrollHeightContent, scrollYPos, scrollX, data})
   }
 
   useEffect(() => {
+    setMinValue(
+      Math.min.apply(
+        null,
+        data.map(value => value.y),
+      ),
+    )
     setMaxValue(
       Math.max.apply(
         null,
