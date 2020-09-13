@@ -18,37 +18,73 @@ export const getUserStats = gql`
       balanceSheet {
         week {
           value {
-            cumulativeBalance
-            result
+            cumulativeBalance {
+              x
+              y
+            }
+            result {
+              x
+              y
+            }
             value
           }
           previousValue {
-            cumulativeBalance
-            result
+            cumulativeBalance {
+              x
+              y
+            }
+            result {
+              x
+              y
+            }
             value
           }
         }
         month {
           value {
-            cumulativeBalance
-            result
+            cumulativeBalance {
+              x
+              y
+            }
+            result {
+              x
+              y
+            }
             value
           }
           previousValue {
-            cumulativeBalance
-            result
+            cumulativeBalance {
+              x
+              y
+            }
+            result {
+              x
+              y
+            }
             value
           }
         }
         all {
           value {
-            cumulativeBalance
-            result
+            cumulativeBalance {
+              x
+              y
+            }
+            result {
+              x
+              y
+            }
             value
           }
           previousValue {
-            cumulativeBalance
-            result
+            cumulativeBalance {
+              x
+              y
+            }
+            result {
+              x
+              y
+            }
             value
           }
         }

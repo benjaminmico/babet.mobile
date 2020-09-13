@@ -34,7 +34,7 @@ type Props = {
   theme: Object,
 }
 
-const TicketLite = ({updatedDate, bets, stake, globalOdd, total, status, theme}: Props) => {
+const TicketLite = ({updatedDate, bets, stake, globalOdd, total, status, index, theme}: Props) => {
   // get theme props
   const {
     key: keyTheme,
@@ -111,7 +111,7 @@ const TicketLite = ({updatedDate, bets, stake, globalOdd, total, status, theme}:
    * */
 
   const betLabel = bets
-    .map((bet, index) => {
+    .map(bet => {
       return bet.name
     })
     .toString()
@@ -120,9 +120,9 @@ const TicketLite = ({updatedDate, bets, stake, globalOdd, total, status, theme}:
     <TicketLiteContainer>
       <Icon size={40} label={`${status}Lite`} />
       <TicketLiteContentContainer>
-        <TicketLiteContentText>{betLabel}</TicketLiteContentText>
+        <TicketLiteContentText>{index}</TicketLiteContentText>
         <TicketLiteDateText color={labelColor}>
-          {`${moment(parseInt(updatedDate, 0)).calendar()} - ${getTicketType(bets)}`}
+          {`${moment(updatedDate).calendar()} - ${getTicketType(bets)}`}
         </TicketLiteDateText>
       </TicketLiteContentContainer>
       <TicketLiteRightContainer>

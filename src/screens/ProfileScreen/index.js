@@ -66,7 +66,7 @@ const ProfileScreen = ({theme}: Props) => {
   const [scrollHeightContent, setScrollHeightContent] = useState(0)
 
   const {data: dataTickets, error: errorTickets, fetchMore} = useQuery(getTickets, {
-    variables: {offset: 0, limit: 20},
+    variables: {offset: 0, limit: 98},
   })
 
   const {show} = useContext(ToastContext)
@@ -83,8 +83,10 @@ const ProfileScreen = ({theme}: Props) => {
    * Bankrolls queries are different than bankrolls store
    */
   useEffect(() => {
-    if (dataStats?.stats && !ticketsLength && !averageOdd && !averageStake && !balanceSheet && !shape)
+    if (dataStats?.stats && !ticketsLength && !averageOdd && !averageStake && !balanceSheet && !shape) {
+      console.log('ok stats')
       dispatch(setStats(dataStats.stats))
+    }
   }, [dataStats])
 
   /**
@@ -226,7 +228,19 @@ const ProfileScreen = ({theme}: Props) => {
     {x: new Date('2018-09-21T00:00:00.000Z'), y: -40},
   ]
 
-  console.log('balanceSheet', balanceSheet?.all?.value?.result)
+  console.log(
+    'balanceSheet?.all?.value?.result',
+    balanceSheet?.all?.value?.result.map(item => {
+      return {x: new Date(item.x), y: item.y}
+    }),
+  )
+  console.log('data', data)
+  console.log(
+    'result',
+    balanceSheet?.all?.value?.cumulativeBalance.map(item => {
+      return {x: new Date(item.x), y: item.y}
+    }),
+  )
 
   return (
     <ProfileScreenContainer backgroundColor={backgroundColor}>
@@ -259,11 +273,16 @@ const ProfileScreen = ({theme}: Props) => {
         scrollEventThrottle={16}
       >
         <AnimatedCharts
-          data={data}
+          data={
+            balanceSheet?.all?.value?.result.map(item => {
+              return {x: new Date(item.x), y: item.y}
+            }) || data
+          }
           scrollX={scrollX}
           scrollXPos={scrollXPos}
           scrollYPos={scrollYPos}
           scrollHeightContent={scrollHeightContent}
+          scrollWidthContent={scrollHeightContent}
         />
       </ScrollView>
       {/* <ScrollView ref={scrollViewRef} onScroll={handleScroll} scrollEventThrottle={16}>
@@ -278,10 +297,11 @@ const ProfileScreen = ({theme}: Props) => {
         onScroll={handleScroll}
         scrollEventThrottle={16}
         initialNumToRender={1}
-        renderItem={({item}) => {
+        renderItem={({item, index}) => {
           const {updatedDate, bets, globalOdd, stake, total, status} = item
           return (
             <TicketLite
+              index={index}
               key={`${updatedDate}`}
               updatedDate={updatedDate}
               bets={bets}

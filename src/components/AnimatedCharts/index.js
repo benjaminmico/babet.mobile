@@ -5,6 +5,7 @@ import * as shape from 'd3-shape'
 import React, {useEffect, useState} from 'react'
 import {Animated, Dimensions, StyleSheet, TextInput, View} from 'react-native'
 import Svg, {Defs, LinearGradient, Path, Stop} from 'react-native-svg'
+import {currency} from '@utils/currency'
 import * as path from 'svg-path-properties'
 import {
   AnimatedChartsContainer,
@@ -16,11 +17,16 @@ import {
 const d3 = {
   shape,
 }
-const {width} = Dimensions.get('window')
 const height = 162
 const cursorRadius = 10
 
 const AnimatedCharts = ({theme, scrollHeightContent, scrollYPos, scrollX, data}) => {
+  const scrollSections = Math.ceil(data.length / 35)
+
+  console.log('scrollSections', scrollSections)
+
+  const width = Dimensions.get('window').width
+
   // get theme props
   const {
     key: keyTheme,
@@ -36,7 +42,6 @@ const AnimatedCharts = ({theme, scrollHeightContent, scrollYPos, scrollX, data})
   const [minDate, setMinDate] = useState(0)
   const [maxDate, setMaxDate] = useState(1)
 
-  //
   const scaleX = scaleTime().domain([minDate, maxDate]).range([0, width])
   const scaleY = scaleLinear().domain([minValue, maxValue]).range([height, 0])
   const scaleLabel = scaleQuantile()
@@ -68,7 +73,7 @@ const AnimatedCharts = ({theme, scrollHeightContent, scrollYPos, scrollX, data})
       left: left - cursorRadius,
     })
     const text = scaleLabel(scaleX.invert(left))
-    label.current.setNativeProps({text: `${text} €`})
+    label.current.setNativeProps({text: currency(text)})
   }
 
   useEffect(() => {
@@ -111,10 +116,7 @@ const AnimatedCharts = ({theme, scrollHeightContent, scrollYPos, scrollX, data})
 
   useEffect(() => {
     if (properties && scrollYPos && totalLength && scrollHeightContent) {
-      const {x: left, y: top} = properties.getPointAtLength(
-        totalLength - (scrollYPos * (400 * 2)) / scrollHeightContent,
-      )
-
+      const {x: left, y: top} = properties.getPointAtLength(totalLength - scrollYPos)
       scrollX(left)
       update(top, left)
     }

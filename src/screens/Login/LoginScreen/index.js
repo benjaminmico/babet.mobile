@@ -52,8 +52,10 @@ const LoginScreen = ({theme}: Props) => {
     setLoading(true)
     // You can await here
     const {userInformations, success, error} = await loginToFirebase(
-      'dev+test@babet.app',
-      'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM',
+      // 'dev+test@babet.app',
+      // 'ewG3yp8eK7A7Lt4H8bcMRMNx3yk72WkzK8rLyM',
+      'test1309@babet.app',
+      'babetapp',
     )
     // const {userInformations, success, error} = await loginToFirebase('benjamin.mico@gmail.com', 'Azertyuiop')
 
